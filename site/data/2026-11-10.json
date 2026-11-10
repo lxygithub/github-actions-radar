@@ -1,0 +1,777 @@
+{
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T09:33:37.533Z",
+  "scanned": 80,
+  "rejected": [
+    {
+      "name": "kingcharleslzy-ai/dsh-purge",
+      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "onehumanbeing/esp32-iphone-agent",
+      "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "mmparko/dsh-purge",
+      "url": "https://github.com/mmparko/dsh-purge",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "jwasham/coding-interview-university",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "unclebob/ub-mode",
+      "url": "https://github.com/unclebob/ub-mode",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "liseami/CCBaga",
+      "url": "https://github.com/liseami/CCBaga",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "amosblomqvist/learnharness",
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "anomalyco/rune",
+      "url": "https://github.com/anomalyco/rune",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "huamidev/GestaltX",
+      "url": "https://github.com/huamidev/GestaltX",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "NotRexed/Hookshot",
+      "url": "https://github.com/NotRexed/Hookshot",
+      "reason": "分数 52 未达 60 线"
+    },
+    {
+      "name": "xiaoyang111222/cn-math-taxonomy",
+      "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "designfuchen/word-atlas",
+      "url": "https://github.com/designfuchen/word-atlas",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "Revivedx/SavageWindRecomp",
+      "url": "https://github.com/Revivedx/SavageWindRecomp",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "reason": "分数 48 未达 60 线"
+    },
+    {
+      "name": "zortos293/Lichii",
+      "url": "https://github.com/zortos293/Lichii",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "reason": "分数 46 未达 60 线"
+    },
+    {
+      "name": "InukaAsith/TwinDesk",
+      "url": "https://github.com/InukaAsith/TwinDesk",
+      "reason": "分数 45 未达 60 线"
+    },
+    {
+      "name": "Gathin23/cleanyourtv",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "reason": "分数 43 未达 60 线"
+    },
+    {
+      "name": "ossu/computer-science",
+      "url": "https://github.com/ossu/computer-science",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "reason": "分数 40 未达 60 线"
+    },
+    {
+      "name": "JustAResearcher/gpu-unlock-ada",
+      "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "Zagitta/gpu-unlock",
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "reason": "分数 37 未达 60 线"
+    },
+    {
+      "name": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "reason": "分数 31 未达 60 线"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "reason": "分数 30 未达 60 线"
+    },
+    {
+      "name": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "reason": "分数 22 未达 60 线"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "reason": "分数 21 未达 60 线"
+    },
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "reason": "分数 20 未达 60 线"
+    },
+    {
+      "name": "seedds/nxnative",
+      "url": "https://github.com/seedds/nxnative",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "simbasjungles/free-my-tv",
+      "url": "https://github.com/simbasjungles/free-my-tv",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "HeyPuter/everything",
+      "url": "https://github.com/HeyPuter/everything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "jhaizhou-ops/d2r-mobile",
+      "url": "https://github.com/jhaizhou-ops/d2r-mobile",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "wangzan101/Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Leonxlnx/earshot",
+      "url": "https://github.com/Leonxlnx/earshot",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "aicodeking/leanrea",
+      "url": "https://github.com/aicodeking/leanrea",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "t3dotgg/tstack",
+      "url": "https://github.com/t3dotgg/tstack",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/DeepInfer",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "ly05010419/MacNativeGames",
+      "url": "https://github.com/ly05010419/MacNativeGames",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "valentderah/totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "interplains/Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "BryceYuuu/RUN",
+      "url": "https://github.com/BryceYuuu/RUN",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "reason": "名额 / 冷却限制"
+    }
+  ],
+  "picks": [
+    {
+      "fullName": "rddmwmddr/android-ad-cleaner",
+      "owner": "rddmwmddr",
+      "name": "android-ad-cleaner",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+      "stars": 7324,
+      "todayStars": null,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 243,
+      "sizeKb": 24555,
+      "createdAt": "2026-10-24T05:35:47Z",
+      "pushedAt": "2026-11-10T09:31:40Z",
+      "topics": [
+        "adb",
+        "ai-agent",
+        "android",
+        "coloros",
+        "debloat",
+        "hyperos",
+        "magicos",
+        "originos"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# 肉呆去广告\n\n关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。\n\n介绍页：**https://rddmwmddr.github.io/android-ad-cleaner/**\n\n如果大家有其他需求可以加VX和电报群：\n\nhttps://t.me/+A5X3Mxzs-Cg3NjYx\n\n<img width=\"1080\" height=\"1596\" alt=\"IMG_7235\" src=\"https://github.com/user-attachments/assets/6197911c-7b6d-47eb-a698-107b99865aee\" />\n\n\n## 下载桌面客户端\n\n插上手机，点几下按钮。不需要 Python，也不需要 AI 工具。\n\n> **v0.4.1 · 2026-11-09**：这一版修「结果显示成功、开关没关上」：段落没走完、开关拨不动、手机锁屏，现在都记成未完成，结果页可以重试没做成的步骤。手机版执行时屏幕保持常亮，没插电也不会中途锁屏。新增红米 K90 Ultra、小米 MIX Flip 2、一加 15T 三个机型脚本。旧版不会自动更新，0.2.7 起的客户端左下角会提示新版；请重新下载，已有备份会保留。详见 [更新记录](CHANGELOG.md)，错误日志上报说明见 [这里](docs/12-错误日志上报.md)。官网：https://ahuamiao.com/sites/other/android-ad-removal-intro.html\n\n此前版本已处理 Windows 本地页面超时、荣耀截图越界、通知渠道误操作风险、vivo 快应用与备份问题。各 Issue 的处理范围和待验证项见 [社区问题处理记录](docs/09-社区问题处理.md)。已发布的 0.4.1 安装包只支持 adb 设备；当前开发分支已合并纯血鸿蒙桌面能力，尚未正式发布，见 [鸿蒙接入说明](harmony/README.md)。\n\n| 设备 | 下载 | 说明 |\n|---|---|---|\n| Mac · Apple 芯片（M1 及以后） | [AndroidAdCleaner-0.4.1-mac-arm64.dmg](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.1/AndroidAdCleaner-0.4.1-mac-arm64.dmg) | 已签名、通过苹果公证，双击就能打开 |\n| Mac · Intel 芯片（macOS 11 及以上） | [AndroidAdCleaner-0.4.1-mac-intel.dmg](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.1/AndroidAdCleaner-0.4.1-mac-intel.dmg) | 同上 |\n| Windows 10 / 11 · 安装版 | [AndroidAdCleaner-0.4.1-windows-setup.exe](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.1/AndroidAdCleaner-0.4.1-windows-setup.exe) | 弹「Windows 已保护你的电脑」时点「更多信息」→「仍要运行」；和旧版共用安装标识，会原地升级 |\n| Windows 10 / 11 · 免安装 | [AndroidAdCleaner-0.4.1-windows-portable.zip](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.1/AndroidAdCleaner-0.4.1-windows-portable.zip) | 解压后双击 `AndroidAdCleaner.exe`；不会替换、也不会卸载已安装的旧版 |\n| 安卓手机 · 手机版（安卓 11 及以上） | [AndroidAdCleaner-0.4.1-android-arm64.apk](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.1/AndroidAdCleaner-0.4.1-android-arm64.apk) | 不用连电脑，安装和授权见[手机版教程](docs/手机版教程/README.md) |\n\n不知道 Mac 是哪种芯片：左上角苹果图标 → 关于本机，「芯",
+      "score": 100,
+      "grade": "S",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 15,
+        "需求真实": 20,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 8
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+        "what": "先包一层中文界面 / 配置，把 android-ad-cleaner 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "pengchujin/aerial-tv",
+      "owner": "pengchujin",
+      "name": "aerial-tv",
+      "url": "https://github.com/pengchujin/aerial-tv",
+      "description": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+      "stars": 11017,
+      "todayStars": null,
+      "language": "Kotlin",
+      "license": "MIT",
+      "openIssues": 390,
+      "sizeKb": 15244,
+      "createdAt": "2026-10-20T09:13:06Z",
+      "pushedAt": "2026-11-10T08:06:17Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<img src=\"docs/brand/icon.png\" width=\"96\" alt=\"Aerial 图标\">\n\n# Aerial\n\n**给国产电视的一块干净桌面。**\n\n参照 Apple TV 做的 Android TV 桌面：没有广告，没有推荐流，只有你的 App、壁纸和航拍屏保。<br>\n适合小米、TCL、创维、索尼等国产电视，也能装在盒子和投影仪上。开机自动进入，待机也不会被清理。\n\n**中文** · [English](README.en.md)\n\n<a href=\"https://aerial.qust.me\"><img alt=\"官网\" src=\"https://img.shields.io/badge/%E5%AE%98%E7%BD%91-1f6feb?style=for-the-badge&logo=safari&logoColor=white\"></a>\n<a href=\"https://github.com/pengchujin/aerial-tv/releases/latest\"><img alt=\"下载 APK\" src=\"https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD%20APK-34a853?style=for-the-badge&logo=android&logoColor=white\"></a>\n<a href=\"#安装\"><img alt=\"安装\" src=\"https://img.shields.io/badge/%E5%AE%89%E8%A3%85-d97757?style=for-the-badge&logo=gnubash&logoColor=white\"></a>\n\n<a href=\"https://github.com/pengchujin/aerial-tv/releases/latest\"><img alt=\"版本\" src=\"https://img.shields.io/github/v/release/pengchujin/aerial-tv?style=flat-square&label=%E7%89%88%E6%9C%AC&color=2997ff\"></a>\n<a href=\"LICENSE\"><img alt=\"许可证 MIT\" src=\"https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-MIT-555555?style=flat-square\"></a>\n<img alt=\"Android TV 5.0+\" src=\"https://img.shields.io/badge/Android%20TV-5.0%2B-3ddc84?style=flat-square&logo=android&logoColor=white\">\n<a href=\"#lite\"><img alt=\"Lite 4.0–4.4 测试版\" src=\"https://img.shields.io/badge/Lite-4.0%E2%80%934.4%20%E6%B5%8B%E8%AF%95%E7%89%88-f5a623?style=flat-square&logo=android&logoColor=white\"></a>\n\n![Aerial 首页](site/img/home.jpg)\n\n| 电视自带的桌面 | 换上 Aerial 之后 |\n|:---:|:---:|\n| <img src=\"site/img/stock-xiaomi.jpg\" alt=\"电视自带的桌面：满屏剧集推荐、会员和限免角标\"> | <img src=\"site/img/home.jpg\" alt=\"Aerial 首页\"> |\n\n</div>\n\n## 功能\n\n<p align=\"center\">\n  <img src=\"site/img/focus.jpg\" width=\"49%\" alt=\"第一排的玻璃底板\">\n  <img src=\"site/img/grid.jpg\" width=\"49%\" alt=\"往下滚动后的应用网格，中间有一个文件夹\">\n</p>\n\n- **首页**：常用的一排 App 放在屏幕下方的玻璃底板上，往下是全部 App。小米「应用中心」「米家」这类藏起来的系统 App 也在。\n- **整理**：长按 OK 键（或按菜单键）可以移动、放进文件夹、隐藏、卸载，或者设成「开机时打开」（开机、待机醒来直接进这个 App 或信号源）。固定到主屏幕的 HDMI 可以选接的是 Apple TV、PlayStation、Switch、Xbox、电",
+      "score": 93,
+      "grade": "S",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 15,
+        "需求真实": 20,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "内容创作",
+      "landing": {
+        "plain": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+        "what": "先包一层中文界面 / 配置，把 aerial-tv 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "Jakeschincariol/day-trader-skill",
+      "owner": "Jakeschincariol",
+      "name": "day-trader-skill",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill",
+      "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+      "stars": 6489,
+      "todayStars": null,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 58,
+      "sizeKb": 414,
+      "createdAt": "2026-10-20T14:17:54Z",
+      "pushedAt": "2026-10-20T14:18:00Z",
+      "topics": [
+        "backtesting",
+        "claude",
+        "claude-skills",
+        "day-trading",
+        "stock-market"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# The Day Trader skill\n\n11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.\n\nFree, MIT, no signup, no API key. The tools are plain Python that read free\npublic data: Yahoo Finance charts, Nasdaq Trader's symbol lists, SEC EDGAR\nand the House Clerk.\n\nOne scans thousands of charts for setups. Another tracks breaking news on\nevery stock you watch. One watches a setup bar by bar and tells you the moment\nto get in, and another sets your stop and your target before you do. And the\ncraziest one is the Time Machine: before you risk a dollar, it replays the\nrest of the session 10,000 times from the stock's own recent bars, plus every\npast day the same setup fired, and tells you the honest odds.\n\nAnd no trade goes through until you say yes. Nothing in this pack can place\nan order on its own. Paper trading is the default.\n\n> **Looking for the original Trader skill?** Copy an investor's 13F, the\n> stock screener, tax lots and rebalancing live in\n> [github.com/Jakeschincariol/trader-skill](https://github.com/Jakeschincariol/trader-skill).\n> This repo is its day-trading sequel: the Trader skill v2.\n\n## Install\n\nPaste this into Claude:\n\n```\nhttps://github.com/Jakeschincariol/day-trader-skill\n\ninstall skill\n```\n\nOr as a plugin, in Claude Code:\n\n```\n/plugin marketplace add Jakeschincariol/day-trader-skill\n/plugin install day-trader-skill@day-trader-skill\n```\n\nClaude Code namespaces plugin skills, so installed as a plugin they show up as\n`/day-trader-skill:trader-scanner` and so on. Copy the folders instead if you want\nplain `/trader-scanner`:\n\n```bash\ngit clone https://github.com/Jakeschincariol/day-trader-skill.git\ncp -r day-trader-skill/trader-* ~/.claude/skills/\n```\n\nProject-local instead of global: copy the same folders into your repo's\n`.claude/skills/`. No Claude Code at all? Paste any single `SKILL.md` at the\ntop of a chat and it runs as a mode. You lose the Python tools",
+      "score": 81,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+        "what": "先包一层中文界面 / 配置，把 day-trader-skill 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "LNPANDY/NX2Apple",
+      "owner": "LNPANDY",
+      "name": "NX2Apple",
+      "url": "https://github.com/LNPANDY/NX2Apple",
+      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+      "stars": 5835,
+      "todayStars": null,
+      "language": "Swift",
+      "license": "MIT",
+      "openIssues": 140,
+      "sizeKb": 237073,
+      "createdAt": "2026-10-20T18:16:07Z",
+      "pushedAt": "2026-11-10T09:17:04Z",
+      "topics": [
+        "apple-silicon",
+        "custom-format",
+        "homebrew",
+        "ios",
+        "ipa",
+        "ipad",
+        "ipados",
+        "iphone",
+        "metal",
+        "native-port",
+        "nintendo-switch",
+        "nxnative",
+        "romfs",
+        "switch-games"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"frontend/screenshots/logo-dark.png\">\n  <img src=\"frontend/screenshots/logo-light.png\" width=\"360\" alt=\"NX2Apple, by nxnative\">\n</picture>\n\n**Your Switch games, running on your iPhone.**\n\n**Not an emulator. No terminal. A macOS or Windows app does the whole build in a few clicks.**\n\n[![Stars](https://img.shields.io/github/stars/LNPANDY/NX2Apple?style=social)](https://github.com/LNPANDY/NX2Apple/stargazers)\n[![Forks](https://img.shields.io/github/forks/LNPANDY/NX2Apple?style=social)](https://github.com/LNPANDY/NX2Apple/network/members)\n[![Issues](https://img.shields.io/github/issues/LNPANDY/NX2Apple)](https://github.com/LNPANDY/NX2Apple/issues)\n[![License](https://img.shields.io/github/license/LNPANDY/NX2Apple)](LICENSE)\n[![Games](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLNPANDY%2FNX2Apple%2Fmain%2F.github%2Fbadges%2Fgames.json)](.github/badges/games.json)\n\n[![中文](https://img.shields.io/badge/🇨🇳_中文-available-green)](README.zh-CN.md)\n[![English](https://img.shields.io/badge/🇺🇸_English-current-blue)](README.md)\n[![Svenska](https://img.shields.io/badge/🇸🇪_Svenska-available-green)](README.sv.md)\n[![Deutsch](https://img.shields.io/badge/🇩🇪_Deutsch-available-green)](README.de.md)\n[![Français](https://img.shields.io/badge/🇫🇷_Français-available-green)](README.fr.md)\n[![Italiano](https://img.shields.io/badge/🇮🇹_Italiano-available-green)](README.it.md)\n\n<img src=\"frontend/screenshots/hero-features-en.png\" width=\"100%\" alt=\"NX2Apple — Switch games on iPhone and Mac\">\n\n#### 🆕 Latest highlights\n\n- **Windows launcher (`NX2Apple-windows-x64.zip`)**: Build iPhone and iPad IPAs on Windows with the same 1.2 interface, a bundled engine tree (no git needed), guided first-run setup, multi-core NSO rewriting, and in-app self-update (`NX2Apple.exe`).\n- **Switch 2 games**: Pick a Switch 2 game folder or `.nup` file in the Mac or Windows launcher, with no `p",
+      "score": 81,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 8,
+        "需求真实": 20,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+        "what": "先包一层中文界面 / 配置，把 NX2Apple 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "KKKKhazix/agent-autoloop",
+      "owner": "KKKKhazix",
+      "name": "agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "stars": 4374,
+      "todayStars": null,
+      "language": "TypeScript",
+      "license": "MIT",
+      "openIssues": 0,
+      "sizeKb": 1198,
+      "createdAt": "2026-11-03T08:02:11Z",
+      "pushedAt": "2026-11-10T09:21:57Z",
+      "topics": [
+        "ai-agents",
+        "automation",
+        "claude-code",
+        "cli",
+        "codex",
+        "event-driven",
+        "mcp",
+        "nodejs",
+        "self-hosted",
+        "typescript",
+        "workflow"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# Agent Autoloop\n\n**让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。**\n\n**中文** | [English](README.en.md)\n\n[上手](#上手) · [场景模板](#拿来即用的场景模板) · [插件](#插件体系四个方向都能自由替换) · [内核](#内核的四个机制) · [文档](#更多文档)\n\n![架构图](docs/architecture.svg)\n\n## 它解决什么问题？\n\n平时我们用 Claude Code、Codex 这类命令行 Agent，大多是“人守着终端用”：你输一句话，盯着它跑，等它问你下一步；一旦关掉窗口或者人走开，事情就断了。\n\n**Agent Autoloop** 是一个极轻量的自动化中台。它把任务调度做成一个零外部依赖的**内核**，把事件来源、Agent、通知通道，甚至代码上线流水线全部拆成可随时插拔的**插件**。\n\n- **一台电脑、一条命令就能跑。** 装在你的 Windows、Mac 或 Linux 上，不用买云服务器，也不用开放公网端口。\n- **一行配置接新 Agent。** 不需要 SDK，也不需要改 Agent 源码，能接收提示词并打印最后一条回复的命令行工具都能接。\n- **没有后台界面。** 需要你拍板时把卡片推到飞书、钉钉、企微、Slack、Discord 或桌面通知；想看全局进展，敲一行命令。\n\n## 上手\n\n支持 Windows、macOS 和 Linux。需要 Node 24 或更新、Git，以及一个已经登录的命令行 Agent；macOS/Linux 还需要 curl，不需要 GitHub 账号。也可以把[安装说明](INSTALL.md)交给你的 Agent。\n\nWindows PowerShell：\n\n```powershell\nirm https://raw.githubusercontent.com/KKKKhazix/agent-autoloop/main/install.ps1 | iex\n```\n\nmacOS / Linux：\n\n```bash\ncurl -fsSL https://raw.githubusercontent.com/KKKKhazix/agent-autoloop/main/install.sh | sh\n```\n\n安装和 `agent-autoloop update` 都装最新的 [Release](https://github.com/KKKKhazix/agent-autoloop/releases)，那是通过了全部检查的版本。\n\n装好后用你本机的 Agent 真实走一遍“提问 → 退出等回复 → 拍板 → 接着干完”：\n\n```bash\nagent-autoloop try\n```\n\n下面是在终端里的真实输出：\n\n```text\n事件发出去了，Agent 开始干活……\n\nAgent 结束了这一轮，问了你一个问题。它现在不占进程、不花 Token。\n\n【等你决定】#1 试跑：选一个颜色\n这是一次试跑，选哪个都行。\n  1. 蓝色\n  2. 绿色\n回答：agent-autoloop answer 1 <序号>\n答完运行 agent-autoloop status，能看到它接着把活干完。\n```\n\n交互终端里直接输入数字回车；非交互终端运行 `agent-autoloop answer 1 2` 选择“绿色”。再跑 `agent-autoloop status`，就能看到它接上刚才的会话并显示“你选了绿色，试跑通过”，还有今天和最近 7 天的轮数、Token 和费用（[统计口径](skills/agent-autoloop/SKILL.md#看情况回答)）。\n\n## 一件事怎么转起来\n\n编号和上面的架构图一一对应：\n\n1. **新事件进来。** 早上 9 点的定时任务、GitHub 上新提的 Issue、业务系统报的错，都变成一条标准事件送进内核。\n2. **按规则派活。** 内核照你写的规则，决定交给哪个 Agent、去哪个目录干。同一件事排队时又来的消息，会合并成一轮处理。\n3. **干完一轮就退出。** Agent 把结果写在最后一条回复里，进程直接退出。\n4. **拿不准才问你。** 碰到删数据、重启服务、花钱、对外发消息这类事，内核通过飞书或桌面通知发一张卡片给你。等你回复期间，它不占后台进程，也不消耗 Token。\n5. **点一下，接着干。** 你选完，它接上原来的对话，把剩下的活干完。\n\n能自己搞定的事走图上方的自动闭环：直接办完，或者约个时间（比如半小时后）再醒来复查，全程不打扰你。\n\n## 日常怎么配？\n\n### 写一份规则",
+      "score": 80,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 15,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": -6
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+        "what": "先包一层中文界面 / 配置，把 agent-autoloop 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "Arekejoker/qwen21-nsfw-pose-skill",
+      "owner": "Arekejoker",
+      "name": "qwen21-nsfw-pose-skill",
+      "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
+      "description": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
+      "stars": 4280,
+      "todayStars": null,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "openIssues": 2,
+      "sizeKb": 36986,
+      "createdAt": "2026-10-13T03:09:42Z",
+      "pushedAt": "2026-10-26T16:43:07Z",
+      "topics": [
+        "agent-skill",
+        "comfyui",
+        "image-generation",
+        "openclaw",
+        "pose-control",
+        "qwen-image"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# qwen21-nsfw-pose\n\n[![Package checks](https://github.com/Arekejoker/qwen21-nsfw-pose-skill/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/Arekejoker/qwen21-nsfw-pose-skill/actions/workflows/validate.yml)\n\n[English](README.en.md) | 中文\n\n**Qwen-Image 2.1 本地 NSFW / 姿势出图完整配方** — 作者级提示词结构 + NSFW LoRA + 136 个 3D 姿势库 + VNCCS 人偶精确姿势控制。\n\n基于 ComfyUI + `qwen_image_2.1_int8_convrot` 底模（与 Civitai 作者同款底模），复刻并验证过 Civitai 作者样图（2026-10-12）。\n\n- 适用：Claude Code / Codex / Cursor / OpenClaw（agent 技能）+ 人类手动使用\n- 内容：可跟跑的作者案例、强制配方、姿势大胆度阶梯（L0–L3）、完整依赖与安装指南\n\n**演示**（3D 人偶调姿势 → 一键生成 → 成品，Route ④）：\n\n<img src=\"references/demo_pose_studio.gif\" width=\"100%\" alt=\"演示：3D 人偶变形 → 实时生成 → 成品\" />\n\n---\n\n## 效果展示\n\n### 本配方输出：同一海边场景的三级对照（L0 → L1 → L2）\n\n| L0 · 全着装，无 LoRA（提示词即全部） | L1 · 湿身泳装 + LoRA@1.0 | L2 · 极低机位 + 湿身蹲姿 + LoRA@1.0 |\n| --- | --- | --- |\n| <img src=\"references/pose_examples/01_seaside.png\" width=\"290\" /> | <img src=\"references/pose_examples/01b_seaside_lora.png\" width=\"290\" /> | <img src=\"references/pose_examples/06_l2_squat_lowangle.png\" width=\"290\" /> |\n\n三张图同场景递进：L0 只有提示词；L1 加 LoRA + 显式皮肤/水珠描写；L2 再加低机位与开合姿态。**LoRA 负责质感，提示词负责信息密度，机位负责大胆度。**\n\n### NSFW 效果（⚠️ 以下图片包含裸露内容）\n\n<details>\n<summary><picture><img src=\"references/author_samples_cover_cursor.gif?v=3\" width=\"100%\" alt=\"作者原图（NSFW）· 点击卡片展开\" /></picture><br/><b>👇 点击上方卡片展开作者原图（含裸露内容 · 18+，再点收起）</b></summary>\n\n**作者原图**（Civitai showcase，本配方复刻的目标）：\n\n| 作者 · 淋浴（tawsLoRa） | 作者 · 按摩（tawsLoRa） | 作者 · 自拍（TheseAlpacas） |\n| --- | --- | --- |\n| <img src=\"downloads/samples/taws_v13_shower_author.jpg\" width=\"300\" /> | <img src=\"downloads/samples/taws_v13_massage_author.jpg\" width=\"300\" /> | <img src=\"downloads/samples/thesealpacas_v2_selfie_author.jpg\" width=\"300\" /> |\n\n</details>\n\n用 §「快速开始」的命令可复刻淋浴那张（复刻输出已验证与作者原图同场景同构图，见 `downloads/samples/phase5_meta.json` 与本文快速开始一节）。\n\n### 3D 人偶精确姿势（Route ④，136 姿势库）\n\n默认人物图 `references/src_standing.png`；姿势 = 骨骼旋转 JSON（MakeHuman 网格 + three.js 渲染），\n换姿势且保身份。姿势库来源：HuggingFace 4 个公开仓库（`Totemistyk/General_P",
+      "score": 80,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 15,
+        "需求真实": 6,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw",
+        "what": "先包一层中文界面 / 配置，把 qwen21-nsfw-pose-skill 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "l0ng-ai/openidea",
+      "owner": "l0ng-ai",
+      "name": "openidea",
+      "url": "https://github.com/l0ng-ai/openidea",
+      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+      "stars": 8314,
+      "todayStars": null,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "openIssues": 224,
+      "sizeKb": 75312,
+      "createdAt": "2026-10-21T12:23:14Z",
+      "pushedAt": "2026-11-10T09:30:17Z",
+      "topics": [
+        "code-editor",
+        "cross-platform",
+        "dap",
+        "database-client",
+        "debugger",
+        "desktop-app",
+        "developer-tools",
+        "git",
+        "http-client",
+        "ide",
+        "intellij",
+        "lsp",
+        "rust",
+        "tauri",
+        "terminal"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"src-tauri/icons/source/openidea-wordmark-dark.svg\">\n    <img src=\"src-tauri/icons/source/openidea-wordmark.svg\" alt=\"OpenIDEA\" height=\"56\">\n  </picture>\n</p>\n\n<p align=\"center\">\n  The IDE you know, rebuilt in Rust.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/l0ng-ai/openidea/releases/latest\"><b>Download</b></a>\n  &nbsp;·&nbsp;\n  <a href=\"#benchmark\">Benchmark</a>\n  &nbsp;·&nbsp;\n  <a href=\"#plugins\">Plugins</a>\n  &nbsp;·&nbsp;\n  <a href=\"#community\">Community</a>\n</p>\n\nhttps://github.com/user-attachments/assets/234dd54c-1255-4b3a-b35c-533d78d737c0\n\nOpenIDEA brings the IntelliJ IDEA way of working — its keymap, its tool windows,\nits search-everything habits — to a native app with a Rust core.\n\nEditor, code insight, debugger, Git, terminal, database and HTTP clients,\nfor 60+ languages. Builds for macOS, Windows and Linux. On Windows, if you'd\nrather skip the installer, each release also ships a portable zip — unpack it\nand run `openidea.exe`.\n\n## Benchmark\n\nOpening [freqtrade](https://github.com/freqtrade/freqtrade) (Python, ~770 files)\nwith warm caches, median of 5 runs:\n\n|                             | OpenIDEA          | IntelliJ IDEA 2026.2.3 |\n| --------------------------- | ----------------- | ---------------------- |\n| Window with the project     | **0.9 s**         | 3.1 s                  |\n| Ready (CPU settled)         | **1.1 s**         | 13.2 s                 |\n| Memory (USS, all processes) | **169 MB**        | 2011 MB                |\n| CPU time until ready        | **2.4 s**         | 47.9 s                 |\n| Idle CPU                    | **4 %** of a core | 7 % of a core          |\n| Quit                        | **0.3 s**         | 5.9 s                  |\n\nA release build of OpenIDEA from `main` and IDEA with default settings and plugins, on\nWindows 11, 32-core AMD, 62 GB RAM.\nIDEA analyses Python more deeply, so \"ready\" doesn't mean the same work o",
+      "score": 79,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 20,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+        "what": "先包一层中文界面 / 配置，把 openidea 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "microsoft/TokenEconomizer",
+      "owner": "microsoft",
+      "name": "TokenEconomizer",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
+      "stars": 5577,
+      "todayStars": null,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "openIssues": 30,
+      "sizeKb": 6997,
+      "createdAt": "2026-10-13T04:16:50Z",
+      "pushedAt": "2026-11-08T22:09:30Z",
+      "topics": [
+        "agentic-ai",
+        "agentic-coding",
+        "ai-coding",
+        "ai-coding-assistant",
+        "anthropic",
+        "artificial-intelligence",
+        "claude-code",
+        "codex",
+        "coding-agent",
+        "coding-agents",
+        "cost-optimization",
+        "cost-reduction",
+        "developer-tools",
+        "github-copilot",
+        "llm",
+        "open-source",
+        "openai",
+        "productivity",
+        "token-optimization"
+      ],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "# TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents\n\n<p align=\"center\">\n  Aaron J. Li<sup>1</sup>,\n  Weijia Xu<sup>2</sup>,\n  Chandan Singh<sup>2</sup>,\n  Zixiao Chen<sup>3</sup>,\n  Jeevana Priya Inala<sup>2</sup>,\n  Charlotte Siska<sup>3</sup>,\n  <br>\n  Acar Tamersoy<sup>3</sup>,\n  Bin Yu<sup>1</sup>,\n  Ion Stoica<sup>1</sup>,\n  Michel Galley<sup>2</sup>,\n  Jianfeng Gao<sup>2</sup>\n</p>\n<p align=\"center\">\n  <sup>1</sup>UC Berkeley &nbsp; <sup>2</sup>Microsoft Research &nbsp; <sup>3</sup>Microsoft Security\n</p>\n\n<p align=\"center\">\n  <a href=\"https://arxiv.org/abs/2610.22732\"><img src=\"https://img.shields.io/badge/arXiv-2610.22732-b31b1b.svg\" alt=\"arXiv\"></a>\n  <a href=\"https://tokeneconomizer.github.io\"><img src=\"https://img.shields.io/badge/project-page-2f6fb0.svg\" alt=\"Project page\"></a>\n  <a href=\"https://x.com/aaron_jli/status/2114797313613053952\"><img src=\"https://img.shields.io/badge/X-post-000000.svg?logo=x&logoColor=white\" alt=\"X post\"></a>\n  <img src=\"https://img.shields.io/badge/python-3.10%2B-3776ab.svg\" alt=\"Python 3.10+\">\n  <img src=\"https://img.shields.io/badge/license-Apache%202.0-blue.svg\" alt=\"Apache 2.0 license\">\n</p>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/315380\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/315380/daily?language=Python\" alt=\"#1 Python repository of the day on Trendshift\" width=\"250\" height=\"55\"></a>\n  <a href=\"https://trendshift.io/repositories/315380\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/315380/weekly?language=Python\" alt=\"#10 Python repository of the week on Trendshift\" width=\"250\" height=\"55\"></a>\n</p>\n\n<p align=\"center\">\n  Our measurement on SWE-Bench tasks: <b>18.4–30.9% lower mean cost</b> across five agent–model\n  combinations, cheaper in <b>all 30</b> repository × combination cells, and Pass@1 up in\n  <b>4 of 5</b>. <a href=\"#results\">Results</a>\n</p>\n\n<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-reduced-mot",
+      "score": 78,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "Experience-Driven Black-Box Cost Control for Coding Agents",
+        "what": "先包一层中文界面 / 配置，把 TokenEconomizer 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    }
+  ],
+  "aiUsed": false,
+  "aiModel": "@cf/zai-org/glm-4.7-flash",
+  "aiError": "未配置 CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_API_TOKEN"
+}

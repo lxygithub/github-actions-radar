@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 副业雷达 · 2026-11-10</title><style>
+:root{--bg:#0e1117;--card:#171c26;--line:#2a3242;--fg:#e8ecf4;--muted:#9aa5b8;--accent:#7aa2ff;--good:#4ade80;--warn:#fbbf24;--chip:#202837}
+body[data-theme="light"]{--bg:#f6f7f9;--card:#fff;--line:#e3e7ee;--fg:#1b2230;--muted:#6b7688;--accent:#2f6bff;--good:#0f9d58;--warn:#b45309;--chip:#eef1f6}
+body[data-theme="green"]{--bg:#eef6ef;--card:#fff;--line:#d3e6d8;--fg:#1e3325;--muted:#5f7b68;--accent:#2e7d4f;--good:#16803c;--warn:#a86a00;--chip:#e2f0e6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:24px 16px 60px}
+h1{font-size:22px;margin:0 0 4px;font-weight:500}
+h2{font-size:16px;margin:24px 0 10px;font-weight:500}
+a{color:var(--accent)}
+.date{color:var(--muted);font-size:13px;margin-bottom:14px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.bar button,.bar a{font:inherit;font-size:12px;color:var(--muted);background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 11px;text-decoration:none;cursor:pointer}
+.bar input,.bar select{font:inherit;font-size:13px;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px;outline:none}
+.bar input{flex:1;min-width:200px}
+.summary,.card,.day,.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.summary{margin-bottom:18px}
+.stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:12px;color:var(--muted);font-size:12px}
+.stats b{color:var(--fg);font-size:21px;display:block;font-weight:500}
+.card,.day,.item{margin-bottom:12px}
+.grade{float:right;font-weight:500;color:var(--good);font-size:14px}
+.card h3,.item h3{font-size:16px;margin:0 0 6px;word-break:break-all;font-weight:500}
+.card h3 a,.item h3 a{text-decoration:none}
+.meta{color:var(--muted);font-size:12px;margin-bottom:8px}
+.badge{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin:0 6px 6px 0;color:var(--muted)}
+.row{margin:6px 0}
+.row span{display:inline-block;min-width:64px;color:var(--muted);font-size:12px;vertical-align:top}
+.risk{color:var(--warn);font-size:13px;margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:20px}
+details ul{padding-left:18px;margin:8px 0 0;color:var(--muted);font-size:13px;max-height:340px;overflow:auto}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.day{margin:0}
+.day a.daylink{font-size:16px;text-decoration:none;font-weight:500}
+.muted{color:var(--muted);font-size:12px}
+.empty{color:var(--muted);font-size:13px;padding:14px 0}
+footer{color:var(--muted);font-size:12px;margin-top:26px;text-align:center}
+@media(max-width:520px){.wrap{padding:16px 12px 40px}.card,.summary,.item,.day{padding:13px}.row span{display:block}}
+</style></head>
+<body data-theme="dark"><div class="wrap">
+
+<div class="bar"><a href="../index.html">← 历史归档与选品库</a></div>
+<h1>GitHub 副业雷达</h1>
+<div class="date">2026-11-10 · 生成于 2026-11-10 09:33 UTC</div>
+
+<div class="bar">
+<button data-set-theme="light">白天</button>
+<button data-set-theme="green">摸鱼绿</button>
+<button data-set-theme="dark">深夜</button>
+</div>
+<div class="summary"><div><b>今晚可动手：先包一层中文界面 / 配置，把 android-ad-cleaner 的核心能力做成开箱即用的小工具</b></div>
+<div class="muted" style="margin-top:6px">扫了 80 个仓库，排掉 72 个，只留 8 个能写清「改哪一处 / 卖给谁 / 怎么交付」的。</div>
+<div class="stats"><div><b>80</b>扫过</div><div><b>72</b>排掉</div><div><b>8</b>留下</div><div><b>84</b>平均分</div></div></div>
+<article class="card" id="repo-rddmwmddr-android-ad-cleaner">
+<span class="grade">S · 100</span>
+<h3>1. <a href="https://github.com/rddmwmddr/android-ad-cleaner" target="_blank" rel="noopener">rddmwmddr/android-ad-cleaner</a></h3>
+<div class="meta">rddmwmddr · Python · MIT · ★ 7324 · 通用工具</div>
+<div><span class="badge">许可证 +25</span><span class="badge">上手成本 +20</span><span class="badge">中文友好 +15</span><span class="badge">需求真实 +20</span><span class="badge">交付轻重 +4</span><span class="badge">时效红利 +10</span><span class="badge">可接手度 +8</span></div>
+<div class="row"><span>说人话</span>关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。</div>
+<div class="row"><span>改哪一处</span>先包一层中文界面 / 配置，把 android-ad-cleaner 的核心能力做成开箱即用的小工具</div>
+<div class="row"><span>卖给谁</span>有明确需求、但不想自己搭环境的中小团队或内容创作者</div>
+<div class="row"><span>怎么交付</span>打包成成品 + 中文说明，按份交付或按部署次数收费</div>
+<div class="row"><span>预计工时</span>1–3 天（待人工核实）</div>
+<div class="risk">风险：需核实上游依赖稳定性，以及许可证是否允许闭源商用</div>
+</article><article class="card" id="repo-pengchujin-aerial-tv">
+<span class="grade">S · 93</span>
+<h3>2. <a href="https://github.com/pengchujin/aerial-tv" target="_blank" rel="noopener">pengchujin/aerial-tv</a></h3>
+<div class="meta">pengchujin · Kotlin · MIT · ★ 11017 · 内容创作</div>
+<div><span class="badge">许可证 +25</span><span class="badge">上手成本 +16</span><span class="badge">中文友好 +15</span><span class="badge">需求真实 +20</span><span class="badge">交付轻重 +7</span><span class="badge">时效红利 +10</span><span class="badge">可接手度 0</span></div>
+<div class="row"><span>说人话</span>给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.</div>
+<div class="row"><span>改哪一处</span>先包一层中文界面 / 配置，把 aerial-tv 的核心能力做成开箱即用的小工具</div>
+<div class="row"><span>卖给谁</span>有明确需求、但不想自己搭环境的中小团队或内容创作者</div>
+<div class="row"><span>怎么交付</span>打包成成品 + 中文说明，按份交付或按部署次数收费</div>
+<div class="row"><span>预计工时</span>1–3 天（待人工核实）</div>
+<div class="risk">风险：需核实上游依赖稳定性，以及许可证是否允许闭源商用</div>
+</article><article class="card" id="repo-jakeschincariol-day-trader-skill">
+<span class="grade">A · 81</span>
+<h3>3. <a href="https://github.com/Jakeschincariol/day-trader-skill" target="_blank" rel="noopener">Jakeschincariol/day-trader-skill</a></h3>
+<div class="meta">Jakeschincariol · Python · MIT · ★ 6489 · 通用工具</div>
+<div><span class="badge">许可证 +25</span><span class="badge">上手成本 +20</span><span class="badge">中文友好 0</span><span class="badge">需求真实 +16</span><span class="badge">交付轻重 +10</span><span class="badge">时效红利 +10</span><span class="badge">可接手度 0</span></div>
+<div class="row"><span>说人话</span>11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.</div>
+<div class="row"><span>改哪一处</span>先包一层中文界面 / 配置，把 day-trader-skill 的核心能力做成开箱即用的小工具</div>
+<div class="row"><span>卖给谁</span>有明确需求、但不想自己搭环境的中小团队或内容创作者</div>
+<div class="row"><span>怎么交付</span>打包成成品 + 中文说明，按份交付或按部署次数收费</div>
+<div class="row"><span>预计工时</span>1–3 天（待人工核实）</div>
+<div class="risk">风险：需核实上游依赖稳定性，以及许可证是否允许闭源商用</div>
+</article><article class="card" id="repo-lnpandy-nx2apple">
+<span class="grade">A · 81</span>
+<h3>4. <a href="https://github.com/LNPANDY/NX2Apple" target="_blank" rel="noopener">LNPANDY/NX2Apple</a></h3>
+<div class="meta">LNPANDY · Swift · MIT · ★ 5835 · 通用工具</div>
+<div><span class="badge">许可证 +25</span><span class="badge">上手成本 +16</span><span class="badge">中文友好 +8</span><span class="badge">需求真实 +20</span><span class="badge">交付轻重 +2</span><span class="badge">时效红利 +10</span><span class="badge">可接手度 0</span></div>
+<div class="row"><span>说人话</span>Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.</div>
+<div class="row"><span>改哪一处</span>先包一层中文界面 / 配置，把 NX2Apple 的核心能力做成开箱即用的小工具</div>
+<div class="row"><span>卖给谁</span>有明确需求、但不想自己搭环境的中小团队或内容创作者</div>
+<div class="row"><span>怎么交付</span>打包成成品 + 中文说明，按份交付或按部署次数收费</div>
+<div class="row"><span>预计工时</span>1–3 天（待人工核实）</div>
+<div class="risk">风险：需核实上游依赖稳定性，以及许可证是否允许闭源商用</div>
+</article><article class="card" id="repo-kkkkhazix-agent-autoloop">
+<span class="grade">A · 80</span>
+<h3>5. <a href="https://github.com/KKKKhazix/agent-autoloop" target="_blank" rel="noopener">KKKKhazix/agent-autoloop</a></h3>
+<div class="meta">KKKKhazix · TypeScript · MIT · ★ 4374 · 通用工具</div>
+<div><span class="badge">许可证 +25</span><span class="badge">上手成本 +20</span><span class="badge">中文友好 +15</span><span class="badge">需求真实 +6</span><span class="badge">交付轻重 +10</span><span class="badge">时效红利 +10</span><span class="badge">可接手度 -6</span></div>
+<div class="row"><span>说人话</span>让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。</div>
+<div class="row"><span>改哪一处</span>先包一层中文界面 / 配置，把 agent-autoloop 的核心能力做成开箱即用的小工具</div>
+<div class="row"><span>卖给谁</span>有明确需求、但不想自己搭环境的中小团队或内容创作者</div>
+<div class="row"><span>怎么交付</span>打包成成品 + 中文说明，按份交付或按部署次数收费</div>
+<div class="row"><span>预计工时</span>1–3 天（待人工核实）</div>
+<div class="risk">风险：需核实上游依赖稳定性，以及许可证是否允许闭源商用</div>
+</article><article class="card" id="repo-arekejoker-qwen21-nsfw-pose-skill">
+<span class="grade">A · 80</span>
+<h3>6. <a href="https://github.com/Arekejoker/qwen21-nsfw-pose-skill" target="_blank" rel="noopener">Arekejoker/qwen21-nsfw-pose-skill</a></h3>
+<div class="meta">Arekejoker · Python · Apache-2.0 · ★ 4280 · 通用工具</div>
+<div><span class="badge">许可证 +25</span><span class="badge">上手成本 +20</span><span class="badge">中文友好 +15</span><span class="badge">需求真实 +6</span><span class="badge">交付轻重 +4</span><span class="badge">时效红利 +10</span><span class="badge">可接手度 0</span></div>
+<div class="row"><span>说人话</span>Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw</div>
+<div class="row"><span>改哪一处</span>先包一层中文界面 / 配置，把 qwen21-nsfw-pose-skill 的核心能力做成开箱即用的小工具</div>
+<div class="row"><span>卖给谁</span>有明确需求、但不想自己搭环境的中小团队或内容创作者</div>
+<div class="row"><span>怎么交付</span>打包成成品 + 中文说明，按份交付或按部署次数收费</div>
+<div class="row"><span>预计工时</span>1–3 天（待人工核实）</div>
+<div class="risk">风险：需核实上游依赖稳定性，以及许可证是否允许闭源商用</div>
+</article><article class="card" id="repo-l0ng-ai-openidea">
+<span class="grade">B · 79</span>
+<h3>7. <a href="https://github.com/l0ng-ai/openidea" target="_blank" rel="noopener">l0ng-ai/openidea</a></h3>
+<div class="meta">l0ng-ai · TypeScript · Apache-2.0 · ★ 8314 · 通用工具</div>
+<div><span class="badge">许可证 +25</span><span class="badge">上手成本 +20</span><span class="badge">中文友好 0</span><span class="badge">需求真实 +20</span><span class="badge">交付轻重 +4</span><span class="badge">时效红利 +10</span><span class="badge">可接手度 0</span></div>
+<div class="row"><span>说人话</span>The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.</div>
+<div class="row"><span>改哪一处</span>先包一层中文界面 / 配置，把 openidea 的核心能力做成开箱即用的小工具</div>
+<div class="row"><span>卖给谁</span>有明确需求、但不想自己搭环境的中小团队或内容创作者</div>
+<div class="row"><span>怎么交付</span>打包成成品 + 中文说明，按份交付或按部署次数收费</div>
+<div class="row"><span>预计工时</span>1–3 天（待人工核实）</div>
+<div class="risk">风险：需核实上游依赖稳定性，以及许可证是否允许闭源商用</div>
+</article><article class="card" id="repo-microsoft-tokeneconomizer">
+<span class="grade">B · 78</span>
+<h3>8. <a href="https://github.com/microsoft/TokenEconomizer" target="_blank" rel="noopener">microsoft/TokenEconomizer</a></h3>
+<div class="meta">microsoft · Python · Apache-2.0 · ★ 5577 · 通用工具</div>
+<div><span class="badge">许可证 +25</span><span class="badge">上手成本 +20</span><span class="badge">中文友好 0</span><span class="badge">需求真实 +16</span><span class="badge">交付轻重 +7</span><span class="badge">时效红利 +10</span><span class="badge">可接手度 0</span></div>
+<div class="row"><span>说人话</span>Experience-Driven Black-Box Cost Control for Coding Agents</div>
+<div class="row"><span>改哪一处</span>先包一层中文界面 / 配置，把 TokenEconomizer 的核心能力做成开箱即用的小工具</div>
+<div class="row"><span>卖给谁</span>有明确需求、但不想自己搭环境的中小团队或内容创作者</div>
+<div class="row"><span>怎么交付</span>打包成成品 + 中文说明，按份交付或按部署次数收费</div>
+<div class="row"><span>预计工时</span>1–3 天（待人工核实）</div>
+<div class="risk">风险：需核实上游依赖稳定性，以及许可证是否允许闭源商用</div>
+</article>
+<details><summary>今天排掉了什么（72）</summary><ul><li>kingcharleslzy-ai/dsh-purge — 合规红线：破解 / 绕过类</li><li>onehumanbeing/esp32-iphone-agent — 合规红线：破解 / 绕过类</li><li>mmparko/dsh-purge — 合规红线：破解 / 绕过类</li><li>nilbuild/developer-roadmap — 纯清单 / 合集型仓库</li><li>jwasham/coding-interview-university — 纯清单 / 合集型仓库</li><li>awesome-selfhosted/awesome-selfhosted — 纯清单 / 合集型仓库</li><li>vinta/awesome-python — 纯清单 / 合集型仓库</li><li>practical-tutorials/project-based-learning — 纯清单 / 合集型仓库</li><li>avelino/awesome-go — 纯清单 / 合集型仓库</li><li>unclebob/ub-mode — 分数 59 未达 60 线</li><li>JoasASantos/REA-Prompts — 分数 59 未达 60 线</li><li>liseami/CCBaga — 分数 59 未达 60 线</li><li>yt-dlp/yt-dlp — 分数 58 未达 60 线</li><li>amosblomqvist/learnharness — 分数 57 未达 60 线</li><li>anomalyco/rune — 分数 57 未达 60 线</li><li>huamidev/GestaltX — 分数 57 未达 60 线</li><li>affaan-m/ECC — 分数 56 未达 60 线</li><li>react/react — 分数 56 未达 60 线</li><li>anomalyco/opencode — 分数 56 未达 60 线</li><li>heydamir/unslop — 分数 54 未达 60 线</li><li>morluto/rea — 分数 54 未达 60 线</li><li>NotRexed/Hookshot — 分数 52 未达 60 线</li><li>xiaoyang111222/cn-math-taxonomy — 分数 51 未达 60 线</li><li>designfuchen/word-atlas — 分数 51 未达 60 线</li><li>deepseek-ai/deepseek-harness — 分数 51 未达 60 线</li><li>microsoft/markitdown — 分数 51 未达 60 线</li><li>Revivedx/SavageWindRecomp — 分数 50 未达 60 线</li><li>mattpocock/skills — 分数 50 未达 60 线</li><li>Minireel/HGhub — 分数 49 未达 60 线</li><li>anhao/ai-pose-gallery-zh — 分数 49 未达 60 线</li><li>anefzaoui/misterdownloadmanager — 分数 49 未达 60 线</li><li>ccch1mneyyy/dsh-Go — 分数 48 未达 60 线</li><li>zortos293/Lichii — 分数 47 未达 60 线</li><li>Eglantine-Community/Eglantine — 分数 47 未达 60 线</li><li>freeCodeCamp/freeCodeCamp — 分数 46 未达 60 线</li><li>InukaAsith/TwinDesk — 分数 45 未达 60 线</li><li>Gathin23/cleanyourtv — 分数 43 未达 60 线</li><li>ossu/computer-science — 分数 42 未达 60 线</li><li>tensorflow/tensorflow — 分数 42 未达 60 线</li><li>obra/superpowers — 分数 41 未达 60 线</li><li>ultraworkers/claw-code — 分数 40 未达 60 线</li><li>JustAResearcher/gpu-unlock-ada — 分数 39 未达 60 线</li><li>anthropics/skills — 分数 39 未达 60 线</li><li>Zagitta/gpu-unlock — 分数 37 未达 60 线</li><li>ohmyzsh/ohmyzsh — 分数 35 未达 60 线</li><li>EbookFoundation/free-programming-books — 分数 31 未达 60 线</li><li>n8n-io/n8n — 分数 30 未达 60 线</li><li>torvalds/linux — 分数 22 未达 60 线</li><li>firecrawl/firecrawl — 分数 21 未达 60 线</li><li>codecrafters-io/build-your-own-x — 分数 20 未达 60 线</li><li>seedds/nxnative — 名额 / 冷却限制</li><li>simbasjungles/free-my-tv — 名额 / 冷却限制</li><li>HeyPuter/everything — 名额 / 冷却限制</li><li>jhaizhou-ops/d2r-mobile — 名额 / 冷却限制</li><li>wangzan101/Mika — 名额 / 冷却限制</li><li>JuneYaooo/rea-video — 名额 / 冷却限制</li><li>Leonxlnx/earshot — 名额 / 冷却限制</li><li>aicodeking/leanrea — 名额 / 冷却限制</li><li>t3dotgg/tstack — 名额 / 冷却限制</li><li>deepseek-ai/DeepInfer — 名额 / 冷却限制</li><li>ly05010419/MacNativeGames — 名额 / 冷却限制</li><li>patch-gg/pixelfx — 名额 / 冷却限制</li><li>qybaihe/bla — 名额 / 冷却限制</li><li>deepseek-ai/dsh-superagent-prototype — 名额 / 冷却限制</li><li>valentderah/totk-pc-recomp — 名额 / 冷却限制</li><li>storytold/craft-anything — 名额 / 冷却限制</li><li>interplains/Zero-Breach-Toolkit — 名额 / 冷却限制</li><li>BryceYuuu/RUN — 名额 / 冷却限制</li><li>public-apis/public-apis — 名额 / 冷却限制</li><li>openclaw/openclaw — 名额 / 冷却限制</li><li>NousResearch/hermes-agent — 名额 / 冷却限制</li><li>microsoft/vscode — 名额 / 冷却限制</li></ul></details>
+<footer>模板文案（AI 未启用） · 数据来自 GitHub 公开 API，仅供选品参考</footer>
+</div>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search).get('theme');
+  var t=q||localStorage.getItem('radar-theme')||'dark';
+  document.body.dataset.theme=t;
+  document.querySelectorAll('[data-set-theme]').forEach(function(b){
+    b.addEventListener('click',function(){
+      localStorage.setItem('radar-theme',b.dataset.setTheme);
+      document.body.dataset.theme=b.dataset.setTheme;
+    });
+  });
+})();
+</script></body></html>
