@@ -69,6 +69,8 @@ button{width:100%;font:inherit;font-size:14px;color:#0e1117;background:#7aa2ff;b
 padding:10px 12px;cursor:pointer;font-weight:500}
 button:hover{background:#96b4ff}
 .err{color:#fbbf24;font-size:12px;min-height:18px;margin:10px 0 0}
+[hidden]{display:none!important}
+.wait{color:#9aa5b8;font-size:13px;letter-spacing:.04em}
 `;
 
 /* 浏览器端脚本里不含 ${}，避免与外层模板字符串冲突 */
@@ -85,7 +87,15 @@ const GATE_JS = `
   }
   var K='radar-pass-v1';
   var B=JSON.parse(document.getElementById('radar-blob').textContent);
+  var gate=document.getElementById('gate'), wait=document.getElementById('wait');
   var form=document.getElementById('f'), input=document.getElementById('p'), err=document.getElementById('e');
+  var waitTimer=0;
+  // 登录卡片默认 hidden；只有首次访问或自动解锁失败才显示，已验证用户切页时不会闪出弹窗。
+  function showGate(msg){
+    clearTimeout(waitTimer);
+    wait.hidden=true;gate.hidden=false;
+    err.textContent=msg||'';input.focus();
+  }
   function u8(s){var b=atob(s),a=new Uint8Array(b.length);for(var i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return a;}
   function key(pass){
     return crypto.subtle.importKey('raw',new TextEncoder().encode(pass),'PBKDF2',false,['deriveKey'])
@@ -94,6 +104,7 @@ const GATE_JS = `
         k,{name:'AES-GCM',length:256},false,['decrypt']);});
   }
   function show(html){
+    clearTimeout(waitTimer);
     var doc=new DOMParser().parseFromString(html,'text/html');
     document.head.innerHTML=doc.head.innerHTML;
     document.body.innerHTML=doc.body.innerHTML;
@@ -114,13 +125,19 @@ const GATE_JS = `
         show(new TextDecoder().decode(buf));
       }).catch(function(){
         try{sessionStorage.removeItem(K);}catch(e){}
-        if(silent){form.style.display='';input.focus();return;}
-        err.textContent='密码不对，再试一次';input.value='';input.focus();
+        if(silent){showGate('登录状态已失效，请重新输入密码');return;}
+        input.value='';showGate('密码不对，再试一次');
       });
   }
   form.addEventListener('submit',function(e){e.preventDefault();if(input.value)unlock(input.value,false);});
   var saved=null;try{saved=sessionStorage.getItem(K);}catch(e){}
-  if(saved){form.style.display='none';unlock(saved,true);}else{input.focus();}
+  if(saved){
+    // 已验证：后台直接解密，全程不渲染登录卡片；超过 300ms 才显示一行轻提示，避免快速解锁时也闪一下
+    waitTimer=setTimeout(function(){wait.hidden=false;},300);
+    unlock(saved,true);
+  }else{
+    showGate();
+  }
 })();
 `;
 
@@ -134,15 +151,16 @@ export function gatePage(blob, faviconHref = "favicon.svg") {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="${escAttr(faviconHref)}">
 <meta name="robots" content="noindex,nofollow">
-<title>需要访问密码 · GitHub 副业雷达</title><style>${GATE_CSS}</style></head>
-<body><div class="box"><div class="lock"></div>
+<title>GitHub 副业雷达</title><style>${GATE_CSS}</style></head>
+<body><div class="box" id="gate" hidden><div class="lock"></div>
 <h1>需要访问密码</h1>
 <p class="hint">这份雷达仅对持有密码的人开放</p>
-<form id="f"><input id="p" type="password" placeholder="输入密码" autocomplete="current-password" required autofocus>
+<form id="f"><input id="p" type="password" placeholder="输入密码" autocomplete="current-password" required>
 <button type="submit">解锁</button></form>
 <p class="err" id="e"></p>
 <p class="note">解锁后本标签页内自动记住，关闭标签页即失效。</p>
-</div><script id="radar-blob" type="application/json">${payload}</script><script>${GATE_JS}</script></body></html>`;
+</div><div class="wait" id="wait" hidden>正在解锁…</div>
+<script id="radar-blob" type="application/json">${payload}</script><script>${GATE_JS}</script></body></html>`;
 }
 
 /** 从 data/*.json 全量重建所有页面。每次运行都重渲染历史页，
