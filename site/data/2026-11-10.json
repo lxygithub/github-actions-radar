@@ -1,0 +1,742 @@
+{
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T10:03:58.440Z",
+  "scanned": 80,
+  "rejected": [
+    {
+      "name": "kingcharleslzy-ai/dsh-purge",
+      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "onehumanbeing/esp32-iphone-agent",
+      "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "mmparko/dsh-purge",
+      "url": "https://github.com/mmparko/dsh-purge",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "jwasham/coding-interview-university",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "unclebob/ub-mode",
+      "url": "https://github.com/unclebob/ub-mode",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "liseami/CCBaga",
+      "url": "https://github.com/liseami/CCBaga",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "amosblomqvist/learnharness",
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "anomalyco/rune",
+      "url": "https://github.com/anomalyco/rune",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "huamidev/GestaltX",
+      "url": "https://github.com/huamidev/GestaltX",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "NotRexed/Hookshot",
+      "url": "https://github.com/NotRexed/Hookshot",
+      "reason": "分数 52 未达 60 线"
+    },
+    {
+      "name": "xiaoyang111222/cn-math-taxonomy",
+      "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "designfuchen/word-atlas",
+      "url": "https://github.com/designfuchen/word-atlas",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "Revivedx/SavageWindRecomp",
+      "url": "https://github.com/Revivedx/SavageWindRecomp",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "reason": "分数 48 未达 60 线"
+    },
+    {
+      "name": "zortos293/Lichii",
+      "url": "https://github.com/zortos293/Lichii",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "reason": "分数 46 未达 60 线"
+    },
+    {
+      "name": "InukaAsith/TwinDesk",
+      "url": "https://github.com/InukaAsith/TwinDesk",
+      "reason": "分数 45 未达 60 线"
+    },
+    {
+      "name": "Gathin23/cleanyourtv",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "reason": "分数 43 未达 60 线"
+    },
+    {
+      "name": "ossu/computer-science",
+      "url": "https://github.com/ossu/computer-science",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "reason": "分数 40 未达 60 线"
+    },
+    {
+      "name": "JustAResearcher/gpu-unlock-ada",
+      "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "Zagitta/gpu-unlock",
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "reason": "分数 37 未达 60 线"
+    },
+    {
+      "name": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "reason": "分数 31 未达 60 线"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "reason": "分数 30 未达 60 线"
+    },
+    {
+      "name": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "reason": "分数 22 未达 60 线"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "reason": "分数 21 未达 60 线"
+    },
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "reason": "分数 20 未达 60 线"
+    },
+    {
+      "name": "rddmwmddr/android-ad-cleaner",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "pengchujin/aerial-tv",
+      "url": "https://github.com/pengchujin/aerial-tv",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Jakeschincariol/day-trader-skill",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "LNPANDY/NX2Apple",
+      "url": "https://github.com/LNPANDY/NX2Apple",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Arekejoker/qwen21-nsfw-pose-skill",
+      "url": "https://github.com/Arekejoker/qwen21-nsfw-pose-skill",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "l0ng-ai/openidea",
+      "url": "https://github.com/l0ng-ai/openidea",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "microsoft/TokenEconomizer",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/DeepInfer",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "ly05010419/MacNativeGames",
+      "url": "https://github.com/ly05010419/MacNativeGames",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "valentderah/totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "interplains/Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "BryceYuuu/RUN",
+      "url": "https://github.com/BryceYuuu/RUN",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "reason": "名额 / 冷却限制"
+    }
+  ],
+  "picks": [
+    {
+      "fullName": "seedds/nxnative",
+      "owner": "seedds",
+      "name": "nxnative",
+      "url": "https://github.com/seedds/nxnative",
+      "description": "Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE host, NVN→Metal)",
+      "stars": 14322,
+      "todayStars": 14,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 1051,
+      "sizeKb": 198464,
+      "createdAt": "2026-10-13T05:20:14Z",
+      "pushedAt": "2026-11-10T09:23:34Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# nxnative\n\nPlay your own Nintendo Switch and Switch 2 games natively on Apple silicon Macs, iPhone and iPad. One script packs your game into a Mac app or an unsigned IPA that you sideload.\n\nIt is not an emulator: the game's own code runs directly on the Apple chip, with Switch graphics rebuilt on Metal. Nothing from any game is in this repository, and the project is not affiliated with Nintendo or any game publisher.\n\n[Games](#games) · [Community front ends](#community-front-ends) · [Requirements](#requirements) · [How to play](#how-to-play) · [Discussions](#discussions) · [For developers](#for-developers)\n\n## Games\n\nThe full [tested games table](dm/games/README.md#games) includes original Switch games, tested builds, engines and graphics APIs. Each game's note records its tested platforms, progress and known issues.\n\nThese Switch 2 games have passed Mac gameplay testing. Build them from a [`.nup` file or a dump folder](#switch-2-games):\n\n- [Donkey Kong Bananza](dm/games/040074A01BF12000/README.md)\n- [Fire Emblem Fortune's Weave](dm/games/04007EF01F8AE000/README.md) — up to 120 fps\n- [Hyrule Warriors: Age of Imprisonment](dm/games/04003F40232DE000/README.md)\n- [Kirby Air Riders](dm/games/040077201BE50000/README.md)\n- [Mario Kart World](dm/games/0400C3F00006E000/README.md)\n- [Mario Tennis Fever](dm/games/0400D4201C6EA000/README.md)\n- [Pokémon Pokopia](dm/games/0400A3A01EE4C000/README.md)\n- [Splatoon Raiders](dm/games/0400380020056000/README.md)\n- [Star Fox](dm/games/0400E88025B1A000/README.md)\n- [The Legend of Zelda: Ocarina of Time](dm/games/0400486024DEC000/README.md)\n- [Yoshi and the Mysterious Book](dm/games/0400245021D2C000/README.md)\n\n## Community front ends\n\nCommunity projects build on nxnative with tools to turn your games into apps for your iPhone, iPad or Mac without the command line, and libraries to organize and launch them. They are separate projects: questions and bugs about them go to their own pages.\n\n- [NX2Apple](https://github.com/LNPANDY/NX2Apple)",
+      "score": 77,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 20,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE host, NVN→Metal)",
+        "what": "先包一层中文界面 / 配置，把 nxnative 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "simbasjungles/free-my-tv",
+      "owner": "simbasjungles",
+      "name": "free-my-tv",
+      "url": "https://github.com/simbasjungles/free-my-tv",
+      "description": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+      "stars": 6225,
+      "todayStars": 0,
+      "language": "Java",
+      "license": "MIT",
+      "openIssues": 101,
+      "sizeKb": 19185,
+      "createdAt": "2026-10-19T19:29:01Z",
+      "pushedAt": "2026-11-10T01:43:12Z",
+      "topics": [
+        "android-tv",
+        "claude-code",
+        "google-tv",
+        "home-screen",
+        "launcher",
+        "no-ads",
+        "open-source",
+        "samsung-tizen",
+        "tizen",
+        "tmdb",
+        "webos"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<img src=\"docs/assets/icon-512.png\" width=\"96\" alt=\"\">\n\n# Free My TV\n\n**A fast, ad-free home screen for Google TV, LG and Samsung TVs.**\n\nTrending picks from your own apps, the weather at a glance, and a look that follows the sunset.<br>\nOpen source. Built with Claude Code. One button to undo.\n\n[**freemytv.io**](https://freemytv.io) · [Install](#install) · [LG TVs](#lg-tvs-webos) · [Samsung TVs](#samsung-tvs-tizen) · [Any TV](#any-tv) · [Make it yours](#make-it-yours)\n\n<img src=\".github/preview.webp\" width=\"880\" alt=\"The Free My TV home screen: a glass shelf of apps, trending picks, and a drawer with the weather and crypto prices\">\n\n</div>\n\n## What you get\n\n- **No ads.** No sponsored rows, banners or autoplaying promos. Not one.\n- **Your apps, front and center.** The streaming apps you actually use, on a glass shelf. Pick them and their order right on the TV.\n- **Trending, not sponsored.** Three fresh picks every hour (up to six, in Home Settings) from what's trending this week and the latest releases, only from apps you already have, and from the services you choose. The focused one opens wide and the others show their posters. Movies and Shows get their own tabs, and on Google TV your own [Plex library](#your-plex-library-optional) can join in.\n- **Continue Watching** (Google TV and Android TV). *Home Settings* → *Top of the screen* puts what you left halfway in your apps on top, with its progress, and OK picks it up in its app. Or a big clock, or the picks.\n- **Your TMDB key from your phone.** *Home Settings* → *TMDB key* shows a QR code: scan it and paste the key. On LG and Samsung, type it with the remote.\n- **Weather and markets, one press away.** The hour-by-hour forecast (or the next 5 days), sunrise and sunset, and live crypto prices; on LG and Samsung, also rain in the next two hours, the UV index and the air quality.\n- **Live TV or your box on HDMI, one press away** (LG and Samsung). *Home Settings* → *Live TV button* picks what the ",
+      "score": 74,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+        "what": "先包一层中文界面 / 配置，把 free-my-tv 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "HeyPuter/everything",
+      "owner": "HeyPuter",
+      "name": "everything",
+      "url": "https://github.com/HeyPuter/everything",
+      "description": "We're rebuilding and open-sourcing the world’s software from scratch.",
+      "stars": 7931,
+      "todayStars": 4,
+      "language": "JavaScript",
+      "license": "MIT",
+      "openIssues": 69,
+      "sizeKb": 469143,
+      "createdAt": "2026-10-13T16:18:22Z",
+      "pushedAt": "2026-11-10T06:27:46Z",
+      "topics": [
+        "adobe",
+        "cad",
+        "microsoft",
+        "office",
+        "photoshop",
+        "saas",
+        "spreadsheet"
+      ],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "<p align=\"center\"><img src=\"assets/everything.png\" width=\"300\" alt=\"Everything\"></p>\n\n<h3 align=\"center\">The world’s software. Rebuilt, and open-sourced.</h3>\n\n<p align=\"center\"><strong>English</strong> · <a href=\"README.zh-CN.md\">简体中文</a> · <a href=\"README.es.md\">Español</a></p>\n\n<!-- App names, descriptions, and navigation are native text. The Everything logo, app icons, and decorative hero are images. Demo and source links use project metadata where available; missing destinations point to the link-status note. -->\n\n<p align=\"center\"><img src=\"assets/hero/variants/34-app-wall-intact.png\" width=\"100%\" alt=\"Everything: a wall of app screenshots extending beyond the frame\"></p>\n\nThe Everything Project is an effort to rebuild and open-source the world’s software from scratch. From Office to Slack and Photoshop to AutoCAD, we are recreating free, open-source alternatives to all proprietary software. This is a mono-repository containing all the applications and tools developed under the project.\n\n\n[Office](#office) · [Collaboration](#collaboration) · [Creative Tools](#creative-tools) · [Engineering](#engineering) · [Productivity](#productivity) · [Finance](#finance) · [Business](#business) · [Developer Tools](#developer-tools) · [Games](#games)\n\n<br>\n\n## Getting started\n\nRequires Node.js 22.12 or newer.\n\n```sh\ngit clone https://github.com/HeyPuter/everything.git\ncd everything/src/[app-name]\nnpm install\nnpm run dev\n```\n\n<br>\n\n## Office\n\n<table width=\"100%\">\n<tr><th width=\"296\" align=\"left\">Application</th><th width=\"420\" align=\"left\">Alternative to</th><th width=\"150\" align=\"left\">Links</th></tr>\n<tr><td width=\"296\" valign=\"middle\" nowrap><a href=\"https://spreadsheet.puter.com/\"><img src=\"src/spreadsheet/icon-128.png\" width=\"48\" height=\"48\" alt=\"\" align=\"center\"></a> &nbsp; <strong><a href=\"https://spreadsheet.puter.com/\">Spreadsheet</a></strong></td><td width=\"420\" valign=\"middle\">Microsoft Excel, Google Sheets, Apple Numbers</td><td width=\"150\" valign=\"middle\" nowrap>",
+      "score": 73,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "We're rebuilding and open-sourcing the world’s software from scratch.",
+        "what": "先包一层中文界面 / 配置，把 everything 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "jhaizhou-ops/d2r-mobile",
+      "owner": "jhaizhou-ops",
+      "name": "d2r-mobile",
+      "url": "https://github.com/jhaizhou-ops/d2r-mobile",
+      "description": "Open-source compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs your own Switch copy natively on iPhone, iPad, Mac, Android and HarmonyOS — full touch controls, 60 fps, new endgame modes. Bring your own game files. 开源的《暗黑破坏神 II：狱火重生》术士君临 iOS / macOS / 安卓 / 鸿蒙兼容层",
+      "stars": 5246,
+      "todayStars": 1,
+      "language": "C",
+      "license": "MIT",
+      "openIssues": 105,
+      "sizeKb": 9778,
+      "createdAt": "2026-10-12T08:41:19Z",
+      "pushedAt": "2026-11-08T20:52:41Z",
+      "topics": [
+        "android",
+        "compatibility-layer",
+        "diablo-2-resurrected",
+        "diablo2",
+        "game-port",
+        "harmonyos",
+        "ios",
+        "ipad",
+        "iphone",
+        "mac",
+        "macos",
+        "metal",
+        "reign-of-the-warlock",
+        "vulkan"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# D2R Mobile\n\n**An open-source compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion, for iOS, macOS, Android and HarmonyOS.** It brings the Nintendo Switch release you bought, expansion included, to iPhone, iPad and Mac in full: the original game code runs natively, every control is rebuilt for touch, the frame rate holds at 60 fps, and you are in a game one second after the main menu. There is now a native macOS version as well (first version): on an Apple silicon Mac it starts on double-click and works with keyboard, mouse and gamepad. **Since v2.0 there is an Android version** (community port): the same game program executes natively on ARM64 Android phones, with the graphics reimplemented on Vulkan; on a Snapdragon 8+ Gen 1 phone the camp and the Den of Evil and Cow Level fights all run at a median 60 fps (see \"Android\" below); a HarmonyOS version runs on the same engine (community port: an unsigned shell from the Releases page that you re-sign yourself, nothing to build; see \"HarmonyOS\"). Apple TV 4K (3rd generation, A15) has a community port (developer preview) that has reached the character-selection screen only on its author's device; see the device table below.\n\nThis is not a tech demo that \"sort of runs\". It is a mobile version polished for daily play, from your first character all the way through the endgame.\n\nPlatforms: iPhone / iPad (iOS 26 and later; iOS 18 – 25 with the older-API build) · Mac (Apple silicon, macOS 26 or later; macOS 15 – 25 with the older-API build) · Apple TV 4K (3rd generation, A15; community port, developer preview) · Android phones (ARM64, Android 12 or later, Vulkan 1.1; community port) · HarmonyOS phones (HarmonyOS NEXT; community port, unsigned shell from the Releases page that you re-sign yourself) · Game version: Switch release with Reign of the Warlock, 1.0.34.0 (corresponds to PC version 3.3.94012) · English / 中文 / Español / Русский / 한국어 · License: MIT · **Bring your own game files**\n\n中文: ",
+      "score": 72,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 10,
+        "中文友好": 0,
+        "需求真实": 20,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "Open-source compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs your own Switch copy natively on iPhone, iPad, Mac, Android and HarmonyOS — full touch controls, 60 fps, new endgame modes. Bring your own game files. 开源的《暗黑破坏神 II：狱火重生》术士君临 iOS / macOS / 安卓 / 鸿蒙兼容层",
+        "what": "先包一层中文界面 / 配置，把 d2r-mobile 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "wangzan101/Mika",
+      "owner": "wangzan101",
+      "name": "Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "stars": 7981,
+      "todayStars": 3,
+      "language": "Kotlin",
+      "license": "Apache-2.0",
+      "openIssues": 117,
+      "sizeKb": 92969,
+      "createdAt": "2026-10-29T14:34:07Z",
+      "pushedAt": "2026-11-10T07:49:02Z",
+      "topics": [
+        "accessibility",
+        "ai-agent",
+        "android",
+        "automation",
+        "jetpack-compose",
+        "kotlin",
+        "llm",
+        "mobile-agent"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<img src=\"docs/media/logo.png\" alt=\"Mika\" width=\"88\" />\n\n# Mika\n\n**An AI assistant on your phone: say what you need, and it works your apps and the web until it's done.**\n\nIt works on a hidden background screen, so you can keep using your phone.\n\n<a href=\"https://github.com/wangzan101/Mika/releases/latest\"><img src=\"https://img.shields.io/badge/Download%20APK-Android%2011%2B-2ea043?style=for-the-badge&logo=android&logoColor=white\" alt=\"Download APK\" /></a>\n\n<a href=\"https://github.com/wangzan101/Mika/stargazers\"><img src=\"https://img.shields.io/github/stars/wangzan101/Mika?style=flat&logo=github&label=Star&color=1f6feb\" alt=\"stars\" /></a>\n<a href=\"https://github.com/wangzan101/Mika/releases\"><img src=\"https://img.shields.io/github/downloads/wangzan101/Mika/total?label=downloads&color=2ea043\" alt=\"downloads\" /></a>\n<a href=\"https://github.com/wangzan101/Mika/releases/latest\"><img src=\"https://img.shields.io/github/v/release/wangzan101/Mika?include_prereleases&label=version\" alt=\"version\" /></a>\n<a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-Apache--2.0-lightgrey\" alt=\"license\" /></a>\n\n<br/>\n\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/daily?language=Kotlin\" alt=\"#1 Kotlin Repository of the Day\" width=\"250\" height=\"55\" /></a>\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/weekly?language=Kotlin\" alt=\"#1 Kotlin Repository of the Week\" width=\"250\" height=\"55\" /></a>\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/daily\" alt=\"#5 Repository of the Day\" width=\"250\" height=\"55\" /></a>\n\n<br/>\n\nEnglish · [简体中文](docs/readme/README.zh-CN.md) · [繁體中文](docs/readme/README.zh-Hant.md) · [日本語](docs/readme/README.ja.md) · [한국어](docs/readme/README.ko.md) · [Español](docs/read",
+      "score": 71,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+        "what": "先包一层中文界面 / 配置，把 Mika 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "Leonxlnx/earshot",
+      "owner": "Leonxlnx",
+      "name": "earshot",
+      "url": "https://github.com/Leonxlnx/earshot",
+      "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+      "stars": 4399,
+      "todayStars": 2,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 4,
+      "sizeKb": 3489,
+      "createdAt": "2026-10-15T06:52:46Z",
+      "pushedAt": "2026-11-06T17:24:16Z",
+      "topics": [
+        "ai-agents",
+        "audio",
+        "claude-code",
+        "mcp",
+        "sound-design"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# earshot\n\n**Ears for coding agents.**\n\n<!-- launch video -->\n[**Watch the 0.4 launch film**](https://github.com/Leonxlnx/earshot/releases/tag/v0.4.0) (35 s): its sound effects are\ntakes from the earshot bank placed with the launch kit, plus the one CC0 recording it shows being re-made, over a\nlicensed music track. Play every sound in the bank on\n[the earshot site](https://leonxlnx.github.io/earshot-site/).\n\n![Frames from the first launch film (0.1)](docs/media/launch_frames.png)\n\nAI coding agents can now write the code that renders a film, a product demo or a game. They still cannot hear what\nthey made. They cannot tell a premium key press from a cheap one, notice that a hit lands 80 ms after the cut, or\nhear that the music swells in the wrong place.\n\nearshot turns sound into evidence an agent can reason about: what a file sounds like in words, how well it fits a\ndescription, the best moment inside a long recording, whether it is a real recording or code-synthesized, a\nsecond-by-second listening transcript of a whole film, an annotated picture of it, and a scorecard against\nprofessional launch films. It runs locally on CPU, as a CLI, a Python API and an MCP server.\n\nWith ears, an agent can also **make its own sounds in code** and improve them by listening (`earshot forge`), and\n**translate a recording into code** it can vary (`earshot fit`). Both below.\n\n**New in 0.4: the sound of a music-led launch film.** 51 new sounds made in code for the soft, short, mid-register\nstyle those films use: rounded UI pops, wood and plastic knocks, short cut hits and sub hits with a kick, gated\nglockenspiel / celesta / marimba notes and chime runs, water drops, camera shutters, reverse cymbals, a thump-whoosh,\nshort dark risers, bright swishes, burst glitches and mid dings (the bank now holds 252). A new `launch` kit preset\nmixes every effect against the music bed instead of at a fixed level, says where each one sits against the cut (taps\nlead it, whoosh peaks land after it) and how",
+      "score": 71,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+        "what": "先包一层中文界面 / 配置，把 earshot 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "aicodeking/leanrea",
+      "owner": "aicodeking",
+      "name": "leanrea",
+      "url": "https://github.com/aicodeking/leanrea",
+      "description": "One 8 KB skill that replaces REA (Reverse Engineer Anything): plain CLI tools, no MCP. Benchmarked: 38% faster, 35% cheaper.",
+      "stars": 4164,
+      "todayStars": 2,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 10,
+      "sizeKb": 24,
+      "createdAt": "2026-10-17T02:53:24Z",
+      "pushedAt": "2026-10-19T11:34:21Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# leanrea\n\n**One 8 KB skill file that does what [REA](https://github.com/morluto/rea) does: no MCP server, no 207 tools, no setup.**\n\nREA (Reverse Engineer Anything) puts an MCP layer between your agent and tools it can already use: asar, otool, nm, `go version -m`, jadx, apktool, Ghidra, tshark, binwalk, sqlite3. leanrea drops that layer. It tells the agent which command is fastest for each kind of target, gives it ready-to-paste recon commands, and lists the traps that REA's code handles for you. The agent then runs the real tools itself.\n\n|  | REA 6.5.0 | leanrea |\n|---|---|---|\n| What gets installed | 25 MB npm package + MCP server | one `SKILL.md` |\n| Instructions | 23.5 KB skill + 48.8 KB references | 8 KB |\n| Tools added to the agent | 207 (3.35 MB of definitions) | 0 (uses Bash) |\n| Context for \"Reply OK\", all tools loaded | 400.7k tokens, $1.60 | 34.5k tokens, $0.09 |\n\n## Benchmark\n\nClaude Code headless (`claude -p`), Sonnet 5.5, macOS arm64. 4 reverse-engineering tasks × 3 reps × 3 arms, with the arms run side by side. Answers are graded against hand-made keys.\n\n| arm | total wall time | cost | turns | tokens | score |\n|---|---|---|---|---|---|\n| **leanrea** | **388 s** | **$2.17** | **55** | **2.40 M** | 74/75 |\n| no skill | 479 s | $2.21 | 81 | 3.11 M | 67/75 (one refusal) |\n| REA (MCP + its skill) | 627 s | $3.36 | 124 | 5.93 M | 75/75 |\n\nAgainst REA, leanrea had **38% less wall time, 35% lower cost, 56% fewer turns and 60% fewer tokens, at the same accuracy**. Its one partial miss named an older IPC channel instead of the v2 one (both channels exist).\n\nThe tasks:\n- **electron**: trace a feature through a real Electron app's app.asar (native function → main-process class → IPC channels).\n- **native**: inventory the exports, a TCC permission check and the single-instance lock of that app's native addon (`.node`).\n- **go**: toolchain and dependency versions of a stripped `gh` binary.\n- **deep**: from disassembly alone, the exact socket path format, wire p",
+      "score": 71,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "One 8 KB skill that replaces REA (Reverse Engineer Anything): plain CLI tools, no MCP. Benchmarked: 38% faster, 35% cheaper.",
+        "what": "先包一层中文界面 / 配置，把 leanrea 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "t3dotgg/tstack",
+      "owner": "t3dotgg",
+      "name": "tstack",
+      "url": "https://github.com/t3dotgg/tstack",
+      "description": "The agent skills I use every day. Works with Claude Code and Codex.",
+      "stars": 3413,
+      "todayStars": 2,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 15,
+      "sizeKb": 25,
+      "createdAt": "2026-10-24T05:00:20Z",
+      "pushedAt": "2026-10-28T02:38:03Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# tstack\n\nThe agent skills I use every day, cleaned up so anyone can use them. They work\nin Claude Code and Codex. Some use [T3 Code](https://github.com/pingdotgg/t3code)\nfeatures when they are available and fall back to native tools when they are\nnot.\n\n## Skills\n\n| Skill | Say | What it does |\n|---|---|---|\n| `full-send` | \"full send\" | Takes a change to a merged PR with nobody watching: proves it, reviews it, files it, babysits it, merges it. |\n| `full-stop` | \"full stop\" | Same as `full-send`, but stops when the PR is ready for you to merge. |\n| `council` | \"council\" | Gets review from three models from different providers, and loops until they agree. |\n| `sol-loop` | \"sol loop\" | Reviews a change with GPT Sol in a loop until both agents agree. |\n| `file-pr` | \"file a PR\" | Files a short PR that leads with the problem, not an inventory of changes. |\n| `takeover` | \"take over\" | Finishes someone else's PR, branch, or agent thread, and keeps their credit. |\n| `babysit-pr` | \"babysit\" | Watches a PR through CI and review bots, and fixes the real findings. |\n| `modernize` | \"modernize\" | Rebases an old PR and decides if it should still exist. |\n| `leaving-pr-comments` | (automatic) | Formats comments that an agent posts on your behalf. |\n\nSome skills call others. Install the ones they need too:\n\n- `full-send` uses `sol-loop`, `file-pr`, and `babysit-pr`.\n- `full-stop` uses `full-send`.\n- `takeover` uses `modernize`, `file-pr`, `babysit-pr`, and `leaving-pr-comments`.\n- `file-pr`, `babysit-pr`, and `modernize` use `leaving-pr-comments`.\n\n## Install\n\n```bash\ngit clone https://github.com/t3dotgg/tstack\ncp -R tstack/skills/* ~/.claude/skills/   # Claude Code\ncp -R tstack/skills/* ~/.codex/skills/    # Codex\n```\n\n## Requirements\n\n- An authenticated [GitHub CLI](https://cli.github.com) (`gh`).\n- `python3` for `babysit-pr`'s `pr-wait` script.\n- `council` and `sol-loop` need subagents on other providers' models. T3 Code\n  does this with `delegate_task`. Otherwise you need a ",
+      "score": 71,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "plain": "The agent skills I use every day. Works with Claude Code and Codex.",
+        "what": "先包一层中文界面 / 配置，把 tstack 的核心能力做成开箱即用的小工具",
+        "who": "有明确需求、但不想自己搭环境的中小团队或内容创作者",
+        "how": "打包成成品 + 中文说明，按份交付或按部署次数收费",
+        "hours": "1–3 天（待人工核实）",
+        "risk": "需核实上游依赖稳定性，以及许可证是否允许闭源商用"
+      },
+      "revisit": false
+    }
+  ],
+  "aiUsed": false,
+  "aiModel": "@cf/zai-org/glm-4.7-flash",
+  "aiError": "Error: 模型返回空内容"
+}
