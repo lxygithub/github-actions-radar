@@ -66,7 +66,30 @@ details ul{padding-left:18px;margin:8px 0 0;color:var(--muted);font-size:13px;ma
 .muted{color:var(--muted);font-size:12px}
 .empty{color:var(--muted);font-size:13px;padding:14px 0}
 footer{color:var(--muted);font-size:12px;margin-top:26px;text-align:center}
-@media(max-width:520px){.wrap{padding:16px 12px 40px}.card,.summary,.item,.day{padding:13px}.row span{display:block}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 20px}
+.ctl{display:flex;flex-direction:column;gap:5px;font-size:13px;min-width:0}
+.ctl .lab{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:12px}
+.ctl output{color:var(--fg);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ctl input[type=range]{width:100%;accent-color:var(--accent);margin:2px 0 0}
+.ctl input[type=number],.ctl input[type=text],.ctl input[type=password],.ctl textarea,.ctl select{font:inherit;font-size:13px;color:var(--fg);background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:7px 9px;outline:none;width:100%}
+.ctl textarea{min-height:62px;resize:vertical;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;line-height:1.5}
+.switch{display:flex;align-items:center;gap:8px;font-size:13px;padding:6px 0}
+.switch input{accent-color:var(--accent);width:16px;height:16px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+.actions button{font:inherit;font-size:13px;color:var(--fg);background:var(--chip);border:1px solid var(--line);border-radius:9px;padding:8px 14px;cursor:pointer}
+.actions button.primary{color:#fff;background:var(--accent);border-color:var(--accent)}
+.actions button:hover{filter:brightness(1.12)}
+.pv{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:10px 0}
+.pv div{background:var(--chip);border-radius:9px;padding:9px 11px}
+.pv b{display:block;font-size:20px;font-weight:500;color:var(--fg)}
+.pv span{color:var(--muted);font-size:12px}
+.pvlist{font-size:13px;color:var(--muted);line-height:1.9;word-break:break-all}
+.pvlist b{color:var(--fg);font-weight:500}
+.note{color:var(--muted);font-size:12px;margin:8px 0 0}
+.status{font-size:13px;margin-top:10px;min-height:19px;color:var(--good)}
+.status.bad{color:var(--warn)}
+@media(max-width:520px){.wrap{padding:16px 12px 40px}.card,.summary,.item,.day,.panel{padding:13px}.row span{display:block}}
 `;
 
 const THEME_SCRIPT = `
@@ -137,7 +160,7 @@ ${plainRow}
   const ai = d.aiUsed ? `Workers AI · ${esc(d.aiModel)}` : "模板文案（AI 未启用）";
 
   return page(`GitHub 副业雷达 · ${d.date}`, `
-<div class="bar"><a href="../index.html">← 历史归档与选品库</a></div>
+<div class="bar"><a href="../index.html">← 历史归档与选品库</a><a href="../settings.html">筛选设置</a></div>
 <h1>GitHub 副业雷达</h1>
 <div class="date">${esc(d.date)} · 生成于 ${esc(String(d.generatedAt).replace("T", " ").slice(0, 16))} UTC</div>
 ${themeBar()}
@@ -216,6 +239,7 @@ export function renderArchive(history) {
 <h1>GitHub 副业雷达 · 历史归档</h1>
 <div class="date">每天一份日报，永久留存；下面是可检索的选品库</div>
 ${themeBar()}
+<div class="bar"><a href="settings.html">筛选设置</a></div>
 <div class="summary">
 <div class="stats"><div><b>${days.length}</b>报告天数</div><div><b>${totalScanned}</b>累计扫描</div><div><b>${totalKept}</b>累计推荐</div><div><b>${avgAll}</b>平均评分</div></div>
 </div>
@@ -227,4 +251,250 @@ ${themeBar()}
 <div class="muted" id="count" style="margin-bottom:10px"></div>
 <div id="items"></div>
 <footer>数据来自 GitHub 公开 API · 中文解说由 Cloudflare Workers AI 免费模型生成</footer>`, script, "favicon.svg");
+}
+
+/* ---------------- 筛选设置页 ---------------- */
+
+const SETTINGS_JS = String.raw`
+(function(){
+  var D=JSON.parse(document.getElementById('settings-data').textContent);
+  var R=window.RadarRules;
+  var cfg=R.normalizeConfig(D.config), POOL=D.pool||{repos:[]};
+  function get(o,p){return p.split('.').reduce(function(x,k){return x==null?undefined:x[k];},o);}
+  function set(o,p,v){var a=p.split('.'),x=o;for(var i=0;i<a.length-1;i++)x=x[a[i]];x[a[a.length-1]]=v;}
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function status(id,msg,bad){var e=document.getElementById(id);e.className='status'+(bad?' bad':'');e.textContent=msg||'';}
+  function cur(){
+    document.querySelectorAll('[data-path]').forEach(function(el){
+      if(el.dataset.special)return;
+      var v=el.type==='checkbox'?el.checked:(el.type==='range'||el.type==='number')?Number(el.value):el.value;
+      set(cfg,el.dataset.path,v);
+    });
+    var d=document.querySelector('[data-special="directions"]');
+    cfg.directions=d.value.split(String.fromCharCode(10)).map(function(l){var i=l.indexOf('|');return i<1?null:{name:l.slice(0,i).trim(),pattern:l.slice(i+1).trim()};}).filter(function(x){return x&&x.name&&x.pattern;});
+    var q=document.querySelector('[data-special="queries"]');
+    cfg.collect.queries=q.value.split(String.fromCharCode(10)).map(function(s){return s.trim();}).filter(Boolean);
+    cfg=R.normalizeConfig(cfg);
+  }
+  function out(el){
+    var o=el.parentElement.querySelector('output');if(!o)return;
+    var u=el.dataset.unit||'';
+    if(el.dataset.path.indexOf('weights.')===0){
+      var t=0;['license','language','cjk','demand','size','freshness'].forEach(function(k){t+=cfg.weights[k];});
+      o.textContent=el.value+'  ('+Math.round(Number(el.value)/t*100)+'%)';
+    }else{o.textContent=el.value+u;}
+  }
+  function fill(){
+    document.querySelectorAll('[data-path]').forEach(function(el){
+      if(el.dataset.special)return;
+      var v=get(cfg,el.dataset.path);
+      if(el.type==='checkbox')el.checked=!!v;else el.value=v;
+      out(el);
+    });
+    document.querySelector('[data-special="directions"]').value=cfg.directions.map(function(x){return x.name+' | '+x.pattern;}).join(String.fromCharCode(10));
+    document.querySelector('[data-special="queries"]').value=cfg.collect.queries.join(String.fromCharCode(10));
+  }
+  function recompute(){
+    var rules=R.createRules(cfg), now=new Date((POOL.date||new Date().toISOString().slice(0,10))+'T00:00:00Z');
+    var reasons={},scored=[];
+    (POOL.repos||[]).forEach(function(r){
+      var why=rules.hardFilter(r,now);
+      if(why){reasons[why]=(reasons[why]||0)+1;return;}
+      scored.push(rules.scoreRepo(r,now));
+    });
+    scored.sort(function(a,b){return b.score-a.score;});
+    var over=scored.filter(function(r){return r.score>=cfg.filter.minScore;});
+    var picks=over.slice(0,cfg.filter.maxPicks);
+    document.getElementById('pv-stats').innerHTML=
+      '<div><b>'+(POOL.repos||[]).length+'</b><span>候选样本</span></div>'+
+      '<div><b>'+((POOL.repos||[]).length-scored.length)+'</b><span>红线排除</span></div>'+
+      '<div><b>'+over.length+'</b><span>过分数线</span></div>'+
+      '<div><b>'+picks.length+'</b><span>最终入选</span></div>';
+    document.getElementById('pv-list').innerHTML=picks.length?picks.slice(0,6).map(function(r){
+      return '<div><b>'+r.score+' / '+esc(r.grade)+'</b>  '+esc(r.fullName)+' <span>· '+esc(r.direction)+'</span></div>';
+    }).join(''):'<div>当前参数下没有项目入选，试试降低分数线或放宽红线。</div>';
+    var rk=Object.keys(reasons).sort(function(a,b){return reasons[b]-reasons[a];}).slice(0,4);
+    document.getElementById('pv-reasons').textContent=rk.length?'红线淘汰：'+rk.map(function(k){return k+' × '+reasons[k];}).join('；'):'';
+  }
+  function refresh(){cur();fill();recompute();}
+  function text(){return JSON.stringify(R.normalizeConfig(cfg),null,2)+String.fromCharCode(10);}
+  function download(){
+    var b=new Blob([text()],{type:'application/json'}),a=document.createElement('a');
+    a.href=URL.createObjectURL(b);a.download='radar.config.json';document.body.appendChild(a);a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1000);
+    status('main-status','已下载 radar.config.json，放回仓库根目录并 push 即可。');
+  }
+  function copy(){
+    var t=text();
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){status('main-status','配置已复制，粘贴替换仓库里的 radar.config.json 即可。');},function(){legacy(t);});}
+    else legacy(t);
+  }
+  function legacy(t){
+    var x=document.createElement('textarea');x.value=t;x.style.position='absolute';x.style.left='-9999px';
+    document.body.appendChild(x);x.select();var ok=false;try{ok=document.execCommand('copy');}catch(e){}
+    x.remove();status('main-status',ok?'配置已复制。':'复制失败，请改用「下载」按钮。',!ok);
+  }
+  function b64(s){var b=new TextEncoder().encode(s),x='';for(var i=0;i<b.length;i++)x+=String.fromCharCode(b[i]);return btoa(x);}
+  async function submit(){
+    var token=document.getElementById('gh-token').value.trim();
+    var repo=document.getElementById('gh-repo').value.trim();
+    var branch=document.getElementById('gh-branch').value.trim()||'main';
+    if(!token){status('gh-status','请先填写 PAT。',true);return;}
+    if(!/^[^/\s]+\/[^/\s]+$/.test(repo)){status('gh-status','仓库格式应为 owner/repo。',true);return;}
+    status('gh-status','正在提交…');
+    try{
+      var url='https://api.github.com/repos/'+repo+'/contents/radar.config.json';
+      var h={Authorization:'Bearer '+token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+      var c=await fetch(url+'?ref='+encodeURIComponent(branch),{headers:h});
+      var sha=null;
+      if(c.ok){sha=(await c.json()).sha;}
+      else if(c.status!==404){throw new Error('读取现有配置失败 HTTP '+c.status);}
+      var body={message:'chore: 从筛选设置页更新参数',content:b64(text()),branch:branch};
+      if(sha)body.sha=sha;
+      var r=await fetch(url,{method:'PUT',headers:Object.assign({},h,{'Content-Type':'application/json'}),body:JSON.stringify(body)});
+      if(!r.ok){throw new Error('提交失败 HTTP '+r.status+' '+(await r.text()).slice(0,160));}
+      status('gh-status','已提交到 '+repo+' 的 '+branch+'，下次定时任务生效；想立刻看效果可在 Actions 手动 Run workflow。');
+    }catch(e){status('gh-status',String(e),true);}
+  }
+  document.querySelectorAll('[data-path]').forEach(function(el){
+    el.addEventListener(el.type==='checkbox'||el.tagName==='TEXTAREA'?'change':'input',refresh);
+  });
+  document.querySelectorAll('[data-special]').forEach(function(el){el.addEventListener('change',refresh);});
+  document.getElementById('btn-download').addEventListener('click',download);
+  document.getElementById('btn-copy').addEventListener('click',copy);
+  document.getElementById('btn-reset').addEventListener('click',function(){cfg=R.normalizeConfig(D.defaultConfig);fill();recompute();status('main-status','已还原为仓库当前生效的配置。');});
+  document.getElementById('btn-import').addEventListener('click',function(){document.getElementById('file-import').click();});
+  document.getElementById('file-import').addEventListener('change',function(e){
+    var f=e.target.files[0];if(!f)return;var rd=new FileReader();
+    rd.onload=function(){try{cfg=R.normalizeConfig(JSON.parse(rd.result));fill();recompute();status('main-status','已导入 '+f.name);}catch(err){status('main-status','导入失败：'+String(err),true);}};
+    rd.readAsText(f);e.target.value='';
+  });
+  document.getElementById('btn-submit').addEventListener('click',submit);
+  fill();recompute();
+})();`;
+
+/** 生成设置页。rulesSource 是 scripts/rules.mjs 的源码（去掉 export 后内联），
+ *  保证浏览器预览与 Actions 打分用的是同一份规则实现。 */
+export function renderSettings({ config, defaultConfig, rulesSource, pool, repo }) {
+  const data = JSON.stringify({ config, defaultConfig, pool, repo }).replace(/</g, "\\u003c");
+  const browserRules = rulesSource.replace(/^export\s+/gm, "") +
+    "\nwindow.RadarRules={normalizeConfig:normalizeConfig,createRules:createRules,DEFAULT_CONFIG:DEFAULT_CONFIG};";
+
+  const range = (p, label, min, max, step, unit = "") => `<label class="ctl"><span class="lab"><span>${esc(label)}</span><output></output></span><input type="range" data-path="${p}" min="${min}" max="${max}" step="${step}" data-unit="${esc(unit)}"></label>`;
+  const number = (p, label, min, max, step = 1) => `<label class="ctl"><span class="lab"><span>${esc(label)}</span></span><input type="number" data-path="${p}" min="${min}" max="${max}" step="${step}"></label>`;
+  const check = (p, label) => `<label class="switch"><input type="checkbox" data-path="${p}"><span>${esc(label)}</span></label>`;
+  const textarea = (p, label, rows = 2) => `<label class="ctl"><span class="lab"><span>${esc(label)}</span></span><textarea data-path="${p}" rows="${rows}"></textarea></label>`;
+
+  const body = `
+<div class="bar"><a href="index.html">← 历史归档与选品库</a></div>
+<h1>筛选设置</h1>
+<div class="date">参数保存在仓库根目录 radar.config.json，下次定时任务运行生效</div>
+${themeBar()}
+<div class="summary"><div><b>实时预览</b> <span class="muted">用最近一次扫描的候选池快照，按与线上相同的规则代码重算</span></div>
+<div class="pv" id="pv-stats"></div>
+<div class="pvlist" id="pv-list"></div>
+<div class="note" id="pv-reasons"></div>
+<div class="note">预览不含冷却账本；正式运行还会按「同项目 / 同方向冷却」再排除一次，并只保留前 N 个。</div></div>
+
+<h2>基础参数</h2>
+<div class="panel"><div class="grid">
+${range("filter.minScore", "入选分数线", 0, 100, 1, " 分")}
+${range("filter.maxPicks", "每日最多推荐", 1, 20, 1, " 个")}
+${range("collect.maxCandidates", "候选池上限", 20, 200, 10, " 个")}
+${range("collect.maxReadmes", "抓取 README 数", 0, 50, 1, " 个")}
+${number("filter.minStars", "最低星数", 0, 100000, 50)}
+${number("filter.maxPushedDays", "最长未提交天数", 1, 3650, 30)}
+${range("cooldown.projectDays", "同项目冷却", 0, 60, 1, " 天")}
+${range("cooldown.directionDays", "同方向冷却", 0, 60, 1, " 天")}
+${check("filter.blockLists", "拦截清单 / 合集型仓库")}
+${check("filter.blockRisk", "拦截破解 / 绕过类（合规红线）")}
+</div></div>
+
+<h2>评分权重</h2>
+<div class="panel"><div class="note" style="margin:0 0 12px">权重按总和归一化，分数线始终是百分制；调权重只改变各维度的重要性，不会改变分数线的含义。</div>
+<div class="grid">
+${range("weights.license", "许可证", 0, 50, 1)}
+${range("weights.language", "上手成本", 0, 50, 1)}
+${range("weights.cjk", "中文友好", 0, 50, 1)}
+${range("weights.demand", "需求真实", 0, 50, 1)}
+${range("weights.size", "交付轻重", 0, 50, 1)}
+${range("weights.freshness", "时效红利", 0, 50, 1)}
+${number("grades.S", "S 级线", 0, 100)}
+${number("grades.A", "A 级线", 0, 100)}
+${number("grades.B", "B 级线", 0, 100)}
+</div>
+<details style="margin-top:12px"><summary class="muted">可接手度加减项</summary><div class="grid" style="margin-top:12px">
+${number("handoff.heavy", "重型 / GPU 集群扣分", -100, 0)}
+${number("handoff.infra", "框架 / 编译器扣分", -100, 0)}
+${number("handoff.bigOrg", "大厂大项目扣分", -100, 0)}
+${number("handoff.vertical", "垂类关键词加分", 0, 100)}
+${number("handoff.bigOrgStars", "大项目星数门槛", 0, 10000000, 1000)}
+${number("handoff.min", "扣分下限", -100, 0)}
+${number("handoff.max", "加分上限", 0, 100)}
+</div></details></div>
+
+<h2>判定阈值</h2>
+<div class="panel"><div class="grid">
+${range("thresholds.cjkDesc", "描述汉字比例阈值", 0, 1, 0.01)}
+${range("thresholds.cjkReadme", "README 汉字比例阈值", 0, 1, 0.01)}
+${range("thresholds.issueHigh", "issue/星数 高线", 0, 0.1, 0.001)}
+${range("thresholds.issueMid", "issue/星数 中线", 0, 0.1, 0.001)}
+${number("thresholds.sizeSmallKb", "小仓库上限 KB", 1, 10000000, 512)}
+${number("thresholds.sizeMidKb", "中仓库上限 KB", 1, 10000000, 1024)}
+${number("thresholds.sizeLargeKb", "大仓库上限 KB", 1, 10000000, 1024)}
+${number("thresholds.newDays", "新建满分天数", 1, 3650, 10)}
+${number("thresholds.midDays", "次新分界天数", 1, 3650, 10)}
+${number("thresholds.oldDays", "老旧分界天数", 1, 3650, 10)}
+</div></div>
+
+<h2>方向与关键词</h2>
+<div class="panel">
+<label class="ctl"><span class="lab"><span>方向识别（每行「名称 | 正则」，自上而下首个命中；都不命中归「通用工具」）</span></span><textarea data-special="directions" rows="8"></textarea></label>
+<div class="grid" style="margin-top:12px">
+${textarea("keywords.listName", "清单型仓库名正则")}
+${textarea("keywords.listDesc", "清单型描述正则")}
+${textarea("keywords.risk", "合规红线正则")}
+${textarea("keywords.heavy", "重型项目正则")}
+${textarea("keywords.infra", "基础设施正则")}
+${textarea("keywords.vertical", "垂类加分正则")}
+</div></div>
+
+<h2>采集查询</h2>
+<div class="panel"><label class="ctl"><span class="lab"><span>GitHub Search 查询（每行一条，{dN} 展开为 N 天前的日期）</span></span><textarea data-special="queries" rows="4"></textarea></label>
+<div class="note">查询越多越耗 GitHub API 配额；匿名调用限 60 次/小时，workflow 使用内置 github.token。</div></div>
+
+<h2>导出与应用</h2>
+<div class="panel"><div class="actions">
+<button id="btn-download" class="primary">下载 radar.config.json</button>
+<button id="btn-copy">复制到剪贴板</button>
+<button id="btn-import">导入配置</button>
+<button id="btn-reset">撤销改动</button>
+<input type="file" id="file-import" accept=".json,application/json" style="display:none">
+</div>
+<div class="note">把文件放回仓库根目录替换现有 radar.config.json 并 push，下次运行（每天北京 08:00）生效；也可以在 Actions 手动 Run workflow 立即跑一次。</div>
+<div class="status" id="main-status"></div></div>
+
+<details class="panel"><summary>直接提交到 GitHub（免手动上传）</summary>
+<div class="note" style="margin-top:10px">填一个只授予该仓库 Contents 读写权限的 fine-grained PAT。Token 仅在当前页面内存中使用，不写入 localStorage、不保存进页面或配置文件，关闭标签页即消失。公开站点上请勿使用权限过大的经典 Token。</div>
+<div class="grid" style="margin-top:12px">
+<label class="ctl"><span class="lab"><span>仓库 owner/repo</span></span><input type="text" id="gh-repo" value="${esc(repo)}"></label>
+<label class="ctl"><span class="lab"><span>分支</span></span><input type="text" id="gh-branch" value="main"></label>
+<label class="ctl"><span class="lab"><span>Fine-grained PAT</span></span><input type="password" id="gh-token" placeholder="github_pat_..." autocomplete="off"></label>
+</div>
+<div class="actions"><button id="btn-submit" class="primary">提交到仓库</button></div>
+<div class="status" id="gh-status"></div></details>
+
+<footer>配置改动只影响下一次扫描，已生成的历史报告不会被改写</footer>`;
+
+  return `<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>筛选设置 · GitHub 副业雷达</title><style>${CSS}</style></head>
+<body data-theme="dark"><div class="wrap">
+${body}
+</div><script id="settings-data" type="application/json">${data}</script>
+<script>${browserRules}</script>
+<script>${SETTINGS_JS}</script>
+${THEME_SCRIPT}</body></html>`;
 }

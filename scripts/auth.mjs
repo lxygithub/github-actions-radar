@@ -5,7 +5,8 @@
 import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
-import { renderReport, renderArchive } from "./render.mjs";
+import { renderReport, renderArchive, renderSettings } from "./render.mjs";
+import { DEFAULT_CONFIG, normalizeConfig } from "./rules.mjs";
 
 const webcrypto = crypto.webcrypto;
 const enc = new TextEncoder();
@@ -146,7 +147,7 @@ export function gatePage(blob, faviconHref = "favicon.svg") {
 
 /** 从 data/*.json 全量重建所有页面。每次运行都重渲染历史页，
  *  这样改密码后旧日报也会被重新加密，不会出现「新旧密码混用」。 */
-export async function rebuildPages({ SITE, DATA, REPORTS, password = "" }) {
+export async function rebuildPages({ SITE, DATA, REPORTS, ROOT, password = "", repo = "" }) {
   const files = (await fs.readdir(DATA).catch(() => []))
     .filter((f) => DATE_JSON.test(f)).sort().reverse();
   const history = [];
@@ -163,5 +164,65 @@ export async function rebuildPages({ SITE, DATA, REPORTS, password = "" }) {
     await write(path.join(REPORTS, `${d.date}.html`), renderReport(d), "../favicon.svg");
   }
   await write(path.join(SITE, "index.html"), renderArchive(history), "favicon.svg");
+
+  // 设置页：把同一份规则源码内联进去，保证预览与线上打分口径一致
+  if (ROOT) {
+    let rulesSource = "";
+    let config = normalizeConfig(DEFAULT_CONFIG);
+    try {
+      config = normalizeConfig(JSON.parse(await fs.readFile(path.join(ROOT, "radar.config.json"), "utf8")));
+    } catch (e) {
+      console.warn("[设置页] 读取 radar.config.json 失败，使用内置默认:", String(e));
+    }
+    try {
+      rulesSource = await fs.readFile(path.join(ROOT, "scripts", "rules.mjs"), "utf8");
+    } catch (e) {
+      console.warn("[设置页] 读取 rules.mjs 失败，跳过设置页:", String(e));
+    }
+    if (rulesSource) {
+      const pool = await loadPreviewPool(DATA, history);
+      const html = renderSettings({
+        config,
+        defaultConfig: config,
+        rulesSource,
+        pool,
+        repo: repo || process.env.RADAR_REPO || "lxygithub/github-actions-radar",
+      });
+      await write(path.join(SITE, "settings.html"), html, "favicon.svg");
+    }
+  }
   return { days: history.length, locked };
+}
+
+/** 设置页的预览样本：优先用最近一次扫描的完整候选池，否则退回历史日报里入选过的项目 */
+async function loadPreviewPool(DATA, history) {
+  let pool = null;
+  try {
+    const p = JSON.parse(await fs.readFile(path.join(DATA, "pool.json"), "utf8"));
+    if (Array.isArray(p.repos)) pool = p;
+  } catch { /* 没有快照，走兜底 */ }
+  if (!pool) {
+    const seen = new Set();
+    const repos = [];
+    for (const d of history) {
+      for (const p of d.picks || []) {
+        if (seen.has(p.fullName)) continue;
+        seen.add(p.fullName);
+        repos.push({
+          fullName: p.fullName, owner: p.owner, name: p.name, url: p.url,
+          description: p.description, stars: p.stars, language: p.language,
+          license: p.license, openIssues: p.openIssues, sizeKb: p.sizeKb,
+          createdAt: p.createdAt, pushedAt: p.pushedAt, topics: p.topics,
+          isOrg: p.isOrg, readmeHead: String(p.readmeHead || "").slice(0, 600),
+        });
+      }
+    }
+    pool = { date: history[0]?.date || new Date().toISOString().slice(0, 10), repos };
+  }
+  return {
+    date: pool.date,
+    repos: pool.repos.slice(0, 120).map((r) => ({
+      ...r, readmeHead: String(r.readmeHead || "").slice(0, 400),
+    })),
+  };
 }

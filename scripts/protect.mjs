@@ -15,6 +15,7 @@ if (!password) {
 }
 const r = await rebuildPages({
   SITE,
+  ROOT,
   DATA: path.join(SITE, "data"),
   REPORTS: path.join(SITE, "reports"),
   password,

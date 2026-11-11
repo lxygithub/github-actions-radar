@@ -5,7 +5,8 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { renderReport, renderArchive } from "./render.mjs";
+import { renderReport, renderArchive, renderSettings } from "./render.mjs";
+import { normalizeConfig } from "./rules.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "preview");
@@ -86,4 +87,15 @@ for (const d of history) {
   await fs.writeFile(path.join(OUT, "reports", `${d.date}.html`), renderReport(d));
 }
 await fs.writeFile(path.join(OUT, "index.html"), renderArchive(history));
-console.log(`示例预览已生成：${path.join(OUT, "index.html")}（${history.length} 天 / ${history.reduce((s, d) => s + d.picks.length, 0)} 个项目）`);
+
+// 设置页明文预览：同样内联 rules.mjs，可直接试滑块与实时重算
+const config = normalizeConfig(JSON.parse(await fs.readFile(path.join(ROOT, "radar.config.json"), "utf8")));
+const rulesSource = await fs.readFile(path.join(ROOT, "scripts", "rules.mjs"), "utf8");
+const pool = {
+  date: dates[0],
+  repos: history.flatMap((d) => d.picks.map((p) => ({ ...p, readmeHead: String(p.readmeHead || "").slice(0, 400) }))),
+};
+await fs.writeFile(path.join(OUT, "settings.html"), renderSettings({
+  config, defaultConfig: config, rulesSource, pool, repo: "lxygithub/github-actions-radar",
+}));
+console.log(`示例预览已生成：${path.join(OUT, "index.html")}（${history.length} 天 / ${history.reduce((s, d) => s + d.picks.length, 0)} 个项目）+ 设置页`);
