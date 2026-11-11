@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "generatedAt": "2026-11-11T04:27:26.858Z",
+  "generatedAt": "2026-11-11T04:33:19.052Z",
   "scanned": 80,
   "rejected": [
     {
@@ -409,13 +409,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "利用 Claude 或 Codex 分析代码库并生成可视化的交互式架构地图。",
-        "plain": "把复杂的代码结构变成一张清晰的图，方便理解和维护。",
-        "what": "开发一个集成 AI 的代码分析工具，自动解析文件依赖并绘制架构图。",
-        "who": "需要梳理复杂项目代码的新手或维护遗留代码的老手。",
-        "how": "搭建代码解析器，对接大模型 API，实现交互式图表渲染。",
-        "hours": "40",
-        "risk": "AI 生成结果可能不准确，需要大量人工校验。"
+        "intro": "AI驱动的代码库交互式地图生成工具。",
+        "plain": "帮助开发团队快速理解复杂的代码架构。",
+        "what": "开发一个SaaS平台，用户上传代码后自动生成可视化的架构关系图。",
+        "who": "技术团队、CTO、非技术背景的产品经理。",
+        "how": "后端调用AI解析代码结构，前端渲染交互式图表。",
+        "hours": "40小时",
+        "risk": "AI解析代码的准确度难以保证，API调用成本较高。"
       },
       "revisit": false
     },
@@ -426,7 +426,7 @@
       "url": "https://github.com/deepseek-ai/DeepInfer",
       "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
       "stars": 25825,
-      "todayStars": 1,
+      "todayStars": 0,
       "language": "Python",
       "license": "Apache-2.0",
       "openIssues": 247,
@@ -450,13 +450,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "DeepSeek 模型的高性能大规模推理框架。",
-        "plain": "优化大模型推理速度，降低部署成本。",
-        "what": "编写针对 DeepSeek 模型的优化内核和并行调度逻辑。",
-        "who": "需要部署 DeepSeek 模型的企业级开发者或 AI 服务商。",
-        "how": "使用 C++/CUDA 开发底层推理加速库。",
-        "hours": "100",
-        "risk": "技术门槛极高，且面临 vLLM 等成熟竞品的压力。"
+        "intro": "DeepSeek模型的高性能推理框架。",
+        "plain": "为需要部署DeepSeek模型的用户提供高性能、低延迟的推理服务。",
+        "what": "部署DeepInfer框架，提供云端推理API或优化版Docker镜像。",
+        "who": "AI初创公司、需要本地化部署的企业。",
+        "how": "构建云端推理服务，提供API接口。",
+        "hours": "60小时",
+        "risk": "模型授权政策变动，竞品竞争激烈。"
       },
       "revisit": false
     },
@@ -467,7 +467,7 @@
       "url": "https://github.com/ly05010419/MacNativeGames",
       "description": "Play your own Tears of the Kingdom and Breath of the Wild natively on Apple silicon Mac, iPhone and iPad. Not an emulator: the game's ARM64 code runs directly, NVN rebuilt on Metal. Bring your own game.",
       "stars": 7495,
-      "todayStars": 1,
+      "todayStars": 0,
       "language": "C",
       "license": "MIT",
       "openIssues": 159,
@@ -504,8 +504,8 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "将 Nintendo Switch 游戏（如塞尔达传说）移植到 Apple 硬件上运行。",
-        "plain": "在 Mac/iPhone 上原生运行 Switch 游戏。",
+        "intro": "将任天堂Switch游戏移植到苹果芯片的方案。",
+        "plain": "让Mac/iPhone/iPad用户原生运行Switch游戏。",
         "what": "不推荐",
         "who": "不推荐",
         "how": "不推荐",
@@ -520,8 +520,8 @@
       "name": "pixelfx",
       "url": "https://github.com/patch-gg/pixelfx",
       "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
-      "stars": 6727,
-      "todayStars": 4,
+      "stars": 6728,
+      "todayStars": 1,
       "language": "JavaScript",
       "license": "MIT",
       "openIssues": 11,
@@ -554,13 +554,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "包含 244 种像素画特效和动画的代码库。",
-        "plain": "提供现成的像素特效代码，让游戏开发更简单。",
-        "what": "编写各种 Canvas 像素特效函数并封装成库。",
-        "who": "游戏开发者、独立开发者。",
-        "how": "使用 JavaScript 编写特效逻辑，打包成 npm 包。",
-        "hours": "20",
-        "risk": "市场同类素材库较多，竞争激烈。"
+        "intro": "包含244个像素风特效代码片段的库。",
+        "plain": "为游戏开发者提供现成的像素特效素材和代码。",
+        "what": "整理并销售这些像素特效代码片段，或提供定制服务。",
+        "who": "独立游戏开发者、移动应用开发者。",
+        "how": "在Gumroad或itch.io上售卖代码包。",
+        "hours": "10小时",
+        "risk": "特效风格单一，市场需求小众。"
       },
       "revisit": false
     },
@@ -571,7 +571,7 @@
       "url": "https://github.com/qybaihe/bla",
       "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
       "stars": 5058,
-      "todayStars": 3,
+      "todayStars": 0,
       "language": "TypeScript",
       "license": "MIT",
       "openIssues": 15,
@@ -606,13 +606,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "专门对抗 AI 反编译攻击的防御工具。",
-        "plain": "防止你的软件被 AI 工具轻易分析破解。",
-        "what": "开发反编译对抗机制，如代码混淆和干扰数据。",
-        "who": "需要保护知识产权的软件公司。",
-        "how": "实现二进制混淆和对抗性数据注入。",
-        "hours": "50",
-        "risk": "防御手段可能误伤正常代码分析工具。"
+        "intro": "防御AI逆向工程的对抗性安全盾。",
+        "plain": "保护企业代码不被AI模型逆向分析或窃取。",
+        "what": "开发一款代码混淆或注入干扰项的工具，防止AI解析。",
+        "who": "拥有核心代码的软件公司、SaaS服务商。",
+        "how": "提供代码托管服务或本地化混淆工具。",
+        "hours": "50小时",
+        "risk": "AI模型进化速度快，防御容易被破解。"
       },
       "revisit": false
     },
@@ -647,13 +647,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "DeepSeek 团队开发的自主智能体系统原型。",
-        "plain": "搭建一套能让 AI 智能体自主协作的系统框架。",
-        "what": "构建多智能体通信与任务分配的底层架构。",
-        "who": "研究复杂自动化任务的 AI 工程师。",
-        "how": "设计 Agent 交互协议和状态管理逻辑。",
-        "hours": "60",
-        "risk": "原型代码不稳定，不可直接用于生产环境。"
+        "intro": "将塞尔达传说：王国之泪静态重编译为PC原生程序。",
+        "plain": "让PC用户原生运行Switch游戏。",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
       },
       "revisit": false
     },
@@ -664,7 +664,7 @@
       "url": "https://github.com/valentderah/totk-pc-recomp",
       "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
       "stars": 6496,
-      "todayStars": 3,
+      "todayStars": 0,
       "language": "C",
       "license": "MIT",
       "openIssues": 386,
@@ -694,13 +694,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "将《塞尔达传说：王国之泪》Switch 版本静态重编译为 PC 版。",
-        "plain": "在 PC 上运行 Switch 游戏。",
-        "what": "不推荐",
-        "who": "不推荐",
-        "how": "不推荐",
-        "hours": "不推荐",
-        "risk": "不推荐"
+        "intro": "DeepSeek的自主代理系统研究原型。",
+        "plain": "将研究原型转化为生产级的多智能体自动化系统。",
+        "what": "修复原型中的Bug，优化架构，使其能处理复杂任务。",
+        "who": "需要自动化工作流的开发者和企业。",
+        "how": "开源核心框架，售卖高级功能或企业级支持。",
+        "hours": "80小时",
+        "risk": "原型代码质量不稳定，维护成本高。"
       },
       "revisit": false
     },
@@ -710,7 +710,7 @@
       "name": "rune",
       "url": "https://github.com/anomalyco/rune",
       "description": "Rune: Native UI framework",
-      "stars": 6364,
+      "stars": 6365,
       "todayStars": 1,
       "language": "Rust",
       "license": "MIT",
@@ -735,13 +735,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "基于 Rust 的原生 UI 框架。",
-        "plain": "用 Rust 写一个高性能的 UI 渲染库。",
-        "what": "实现 Rust 平台的图形渲染引擎和组件系统。",
-        "who": "Rust 开发者或跨平台应用开发者。",
-        "how": "编写 Rust 代码处理图形绘制和 UI 事件。",
-        "hours": "80",
-        "risk": "学习曲线陡峭，且需与 Tauri 等框架竞争。"
+        "intro": "Rust语言的原生UI框架。",
+        "plain": "为Rust开发者提供高性能、跨平台的UI开发解决方案。",
+        "what": "开发一个类似Tauri或Slint的Rust UI框架。",
+        "who": "Rust开发者、高性能桌面应用开发者。",
+        "how": "开源核心库，售卖主题、插件或企业定制服务。",
+        "hours": "100小时",
+        "risk": "市场被Tauri等框架占据，Rust学习曲线陡峭。"
       },
       "revisit": false
     }
