@@ -1,3 +1,5 @@
+# store.mjs pull 的本地状态标记，不属于数据、不需要提交
+site/data/.radar-state-hash
 node_modules/
 preview/
 .dev.vars

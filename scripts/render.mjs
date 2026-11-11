@@ -29,9 +29,9 @@ export function projectIntro(p) {
 }
 
 const CSS = `
-:root{--bg:#0e1117;--card:#171c26;--line:#2a3242;--fg:#e8ecf4;--muted:#9aa5b8;--accent:#7aa2ff;--good:#4ade80;--warn:#fbbf24;--chip:#202837}
-body[data-theme="light"]{--bg:#f6f7f9;--card:#fff;--line:#e3e7ee;--fg:#1b2230;--muted:#6b7688;--accent:#2f6bff;--good:#0f9d58;--warn:#b45309;--chip:#eef1f6}
-body[data-theme="green"]{--bg:#eef6ef;--card:#fff;--line:#d3e6d8;--fg:#1e3325;--muted:#5f7b68;--accent:#2e7d4f;--good:#16803c;--warn:#a86a00;--chip:#e2f0e6}
+:root{--bg:#0e1117;--card:#171c26;--line:#2a3242;--fg:#e8ecf4;--muted:#9aa5b8;--accent:#7aa2ff;--good:#4ade80;--warn:#fbbf24;--chip:#202837;color-scheme:dark}
+body[data-theme="light"]{--bg:#f6f7f9;--card:#fff;--line:#e3e7ee;--fg:#1b2230;--muted:#6b7688;--accent:#2f6bff;--good:#0f9d58;--warn:#b45309;--chip:#eef1f6;color-scheme:light}
+body[data-theme="green"]{--bg:#eef6ef;--card:#fff;--line:#d3e6d8;--fg:#1e3325;--muted:#5f7b68;--accent:#2e7d4f;--good:#16803c;--warn:#a86a00;--chip:#e2f0e6;color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
 .wrap{max-width:880px;margin:0 auto;padding:24px 16px 60px}
@@ -43,11 +43,11 @@ a{color:var(--accent)}
 .bar button,.bar a{font:inherit;font-size:12px;color:var(--muted);background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 11px;text-decoration:none;cursor:pointer}
 .bar input,.bar select{font:inherit;font-size:13px;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px;outline:none}
 .bar input{flex:1;min-width:200px}
-.summary,.card,.day,.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.summary,.card,.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
 .summary{margin-bottom:18px}
 .stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:12px;color:var(--muted);font-size:12px}
 .stats b{color:var(--fg);font-size:21px;display:block;font-weight:500}
-.card,.day,.item{margin-bottom:12px}
+.card,.item{margin-bottom:12px}
 .grade{float:right;font-weight:500;color:var(--good);font-size:14px}
 .card h3,.item h3{font-size:16px;margin:0 0 6px;word-break:break-all;font-weight:500}
 .card h3 a,.item h3 a{text-decoration:none}
@@ -60,9 +60,49 @@ a{color:var(--accent)}
 .risk{color:var(--warn);font-size:13px;margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
 details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:20px}
 details ul{padding-left:18px;margin:8px 0 0;color:var(--muted);font-size:13px;max-height:340px;overflow:auto}
-.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
-.day{margin:0}
-.day a.daylink{font-size:16px;text-decoration:none;font-weight:500}
+/* 手动重跑面板 */
+.rerun{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 14px}
+.rerun[hidden]{display:none}
+.rerun-title{font-size:14px;margin:0 0 10px;font-weight:500}
+.rerun .actions{align-items:center}
+.rr-link{font-size:12px;color:var(--muted);text-decoration:none}
+.rr-link:hover{color:var(--accent)}
+/* 报告日历：52 周热力图 */
+.cal{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;overflow-x:auto}
+.cal-inner{min-width:0}
+.cal-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.cal-head b{font-size:14px;font-weight:500}
+.cal-months{display:grid;gap:3px;margin:2px 0 6px 22px;font-size:10px;line-height:14px;color:var(--muted);height:16px;white-space:nowrap}
+.cal-main{display:flex;gap:4px}
+.cal-wd{display:grid;grid-template-rows:repeat(7,11px);gap:3px;width:18px;font-size:9px;color:var(--muted);text-align:right}
+.cal-wd span{line-height:11px}
+.cal-grid{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,11px);grid-auto-columns:11px;gap:3px}
+.cc{display:block;width:11px;height:11px;border-radius:2px;background:var(--chip)}
+.cc-none{opacity:.7}
+.cc-future{opacity:.22}
+.cc-l1{background:var(--accent);opacity:.35}
+.cc-l2{background:var(--accent);opacity:.55}
+.cc-l3{background:var(--accent);opacity:.78}
+.cc-l4{background:var(--accent)}
+a.cc:hover{outline:1px solid var(--fg);outline-offset:1px}
+.cal-legend{display:flex;align-items:center;gap:4px;color:var(--muted);font-size:11px;margin-top:10px;flex-wrap:wrap}
+.cal-legend .cc{width:10px;height:10px}
+.cal-legend .spacer{margin-left:auto}
+/* 按日期：月份折叠 + 紧凑行 */
+.month{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.month summary{list-style:none;cursor:pointer;padding:11px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.month summary::-webkit-details-marker{display:none}
+.month summary:hover{background:var(--chip)}
+.mh-title{font-size:14px;font-weight:500}
+.mh-arrow{color:var(--muted);font-size:11px;margin-left:auto}
+.dayrow{display:grid;grid-template-columns:120px minmax(200px,1fr) minmax(0,1.1fr);gap:10px;align-items:center;padding:8px 14px;border-top:1px solid var(--line);font-size:13px}
+.dayrow:hover{background:var(--chip)}
+.dr-date{display:flex;align-items:baseline;gap:7px;white-space:nowrap}
+.dr-date a{text-decoration:none;font-variant-numeric:tabular-nums}
+.dr-wd{color:var(--muted);font-size:11px}
+.dr-stat{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+.dr-stat b{color:var(--fg);font-weight:500}
+.dr-top{color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .muted{color:var(--muted);font-size:12px}
 .empty{color:var(--muted);font-size:13px;padding:14px 0}
 footer{color:var(--muted);font-size:12px;margin-top:26px;text-align:center}
@@ -89,7 +129,8 @@ footer{color:var(--muted);font-size:12px;margin-top:26px;text-align:center}
 .note{color:var(--muted);font-size:12px;margin:8px 0 0}
 .status{font-size:13px;margin-top:10px;min-height:19px;color:var(--good)}
 .status.bad{color:var(--warn)}
-@media(max-width:520px){.wrap{padding:16px 12px 40px}.card,.summary,.item,.day,.panel{padding:13px}.row span{display:block}}
+@media(max-width:640px){.dayrow{grid-template-columns:110px 1fr;gap:4px 10px}.dr-top{grid-column:1/-1}}
+@media(max-width:520px){.wrap{padding:16px 12px 40px}.card,.summary,.item,.panel,.rerun{padding:13px}.row span{display:block}}
 `;
 
 const THEME_SCRIPT = `
@@ -114,6 +155,59 @@ const themeBar = () => `
 <button data-set-theme="dark">深夜</button>
 </div>`;
 
+const DEFAULT_REPO = "lxygithub/github-actions-radar";
+const WORKFLOW_FILE = "daily.yml";
+const rerunButton = `<button type="button" id="btn-rerun">↻ 立即重跑</button>`;
+
+/** 手动重跑面板：归档页 / 日报页 / 设置页共用，点击后直接调 workflow_dispatch。
+ *  不填 PAT 也能用右侧链接跳到 GitHub 网页手动 Run workflow。 */
+const rerunPanel = (repo) => `<div class="rerun" id="rerun-panel" hidden>
+<div class="rerun-title">手动重跑一次完整扫描</div>
+<div class="grid">
+<label class="ctl"><span class="lab"><span>仓库 owner/repo</span></span><input type="text" id="rr-repo" value="${esc(repo)}"></label>
+<label class="ctl"><span class="lab"><span>分支</span></span><input type="text" id="rr-branch" value="main"></label>
+<label class="ctl"><span class="lab"><span>Fine-grained PAT（Actions 读写）</span></span><input type="password" id="rr-token" placeholder="github_pat_..." autocomplete="off"></label>
+</div>
+<div class="actions"><button type="button" id="rr-go" class="primary">触发重跑</button>
+<a class="rr-link" id="rr-gh" href="https://github.com/${esc(repo)}/actions/workflows/${WORKFLOW_FILE}" target="_blank" rel="noopener">在 GitHub 上手动 Run workflow ↗</a></div>
+<div class="status" id="rr-status"></div>
+<div class="note">Token 只保存在当前标签页的 sessionStorage，关闭标签页即失效，不会写进页面源码或配置文件；需要该仓库 <b>Actions: read/write</b>（设置页提交配置还需要 <b>Contents: read/write</b>）。也可不填 Token，点右侧链接到 GitHub 网页手动运行。</div>
+</div>`;
+
+const RERUN_SCRIPT = `<script>
+(function(){
+  var btn=document.getElementById('btn-rerun'),panel=document.getElementById('rerun-panel');
+  if(!btn||!panel)return;
+  var K='radar-pat',go=document.getElementById('rr-go'),st=document.getElementById('rr-status');
+  var repoEl=document.getElementById('rr-repo'),brEl=document.getElementById('rr-branch'),tkEl=document.getElementById('rr-token'),ghLink=document.getElementById('rr-gh');
+  try{var saved=sessionStorage.getItem(K)||'';if(saved)tkEl.value=saved;}catch(e){}
+  function msg(s,bad){st.className='status'+(bad?' bad':'');st.textContent=s||'';}
+  btn.addEventListener('click',function(){panel.hidden=!panel.hidden;if(!panel.hidden){msg('');tkEl.focus();}});
+  repoEl.addEventListener('change',function(){ghLink.href='https://github.com/'+repoEl.value.trim()+'/actions/workflows/${WORKFLOW_FILE}';});
+  go.addEventListener('click',async function(){
+    var repo=repoEl.value.trim(),br=brEl.value.trim()||'main',tk=tkEl.value.trim();
+    var parts=repo.split('/');
+    if(parts.length!==2||!parts[0]||!parts[1]||/\\s/.test(repo)){msg('仓库格式应为 owner/repo',true);return;}
+    if(!tk){msg('请先填 PAT，或点「在 GitHub 上手动 Run workflow」',true);return;}
+    go.disabled=true;msg('正在触发…');
+    try{
+      var r=await fetch('https://api.github.com/repos/'+repo+'/actions/workflows/${WORKFLOW_FILE}/dispatches',{
+        method:'POST',
+        headers:{Authorization:'Bearer '+tk,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Content-Type':'application/json'},
+        body:JSON.stringify({ref:br})
+      });
+      if(!r.ok){
+        var hint=(r.status===401||r.status===403)?'（请确认 PAT 授予了该仓库 Actions: read/write）':'';
+        throw new Error('HTTP '+r.status+' '+(await r.text()).slice(0,140)+hint);
+      }
+      try{sessionStorage.setItem(K,tk);}catch(e){}
+      msg('已触发 '+br+' 分支的重跑，约 1 分钟后刷新本页；右侧链接可查看运行进度。');
+    }catch(e){msg('触发失败：'+String(e),true);}
+    finally{go.disabled=false;}
+  });
+})();
+</script>`;
+
 const page = (title, body, extraScript = "", faviconHref = "favicon.svg") => `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -127,7 +221,8 @@ ${body}
 const introBlock = (text) =>
   `<div class="intro"><span class="intro-label">项目简介</span>${esc(text)}</div>`;
 
-export function renderReport(d) {
+export function renderReport(d, opts = {}) {
+  const repo = opts.repo || DEFAULT_REPO;
   const cards = d.picks.map((p, i) => {
     const badges = Object.entries(p.breakdown || {})
       .map(([k, v]) => `<span class="badge">${esc(k)} ${v > 0 ? "+" : ""}${v}</span>`).join("");
@@ -160,7 +255,8 @@ ${plainRow}
   const ai = d.aiUsed ? `Workers AI · ${esc(d.aiModel)}` : "模板文案（AI 未启用）";
 
   return page(`GitHub 副业雷达 · ${d.date}`, `
-<div class="bar"><a href="../index.html">← 历史归档与选品库</a><a href="../settings.html">筛选设置</a></div>
+<div class="bar"><a href="../index.html">← 历史归档与选品库</a><a href="../settings.html">筛选设置</a>${rerunButton}</div>
+${rerunPanel(repo)}
 <h1>GitHub 副业雷达</h1>
 <div class="date">${esc(d.date)} · 生成于 ${esc(String(d.generatedAt).replace("T", " ").slice(0, 16))} UTC</div>
 ${themeBar()}
@@ -169,11 +265,93 @@ ${themeBar()}
 <div class="stats"><div><b>${d.scanned}</b>扫过</div><div><b>${(d.rejected || []).length}</b>排掉</div><div><b>${d.picks.length}</b>留下</div><div><b>${avg}</b>平均分</div></div></div>
 ${cards || '<div class="card">今天没有够格的项目。</div>'}
 <details><summary>今天排掉了什么（${(d.rejected || []).length}）</summary><ul>${rejected || "<li>无</li>"}</ul></details>
-<footer>${ai} · 数据来自 GitHub 公开 API，仅供选品参考</footer>`, "", "../favicon.svg");
+<footer>${ai} · 数据来自 GitHub 公开 API，仅供选品参考</footer>`, RERUN_SCRIPT, "../favicon.svg");
 }
 
-/** 归档页：所有历史日报 + 可按关键词检索的选品库（数据内联，无 fetch，本地双击也能用） */
-export function renderArchive(history) {
+/* ---------------- 归档页：日历 + 月份折叠 + 选品库 ---------------- */
+
+const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+const DAY_MS = 86_400_000;
+const isoDay = (dt) => dt.toISOString().slice(0, 10);
+const weekdayOf = (s) => WEEKDAYS[new Date(`${s}T00:00:00Z`).getUTCDay()];
+
+/** GitHub 风格报告日历：按周排列，颜色深浅 = 当天入选数；有报告的格子可直接点开。
+ *  跨度随历史自动增长，最多 52 周，更早的日期交给下面的月份列表。 */
+function calendarHTML(days) {
+  if (!days.length) return '<div class="empty">还没有报告，等定时任务跑一次。</div>';
+  const byDate = new Map(days.map((d) => [d.date, d]));
+  const last = new Date(`${days[0].date}T00:00:00Z`);
+  const first = new Date(`${days[days.length - 1].date}T00:00:00Z`);
+  const end = new Date(last.getTime() + (6 - last.getUTCDay()) * DAY_MS);
+  const spanWeeks = Math.ceil((end - first) / (7 * DAY_MS)) + 1;
+  const weeks = Math.min(52, Math.max(16, spanWeeks));
+  const start = new Date(end.getTime() - (weeks * 7 - 1) * DAY_MS);
+  const maxKept = Math.max(1, ...days.map((d) => d.kept));
+  const lastKey = isoDay(last);
+
+  let cells = "";
+  for (let w = 0; w < weeks; w++) {
+    for (let d = 0; d < 7; d++) {
+      const key = isoDay(new Date(start.getTime() + (w * 7 + d) * DAY_MS));
+      const rec = byDate.get(key);
+      if (rec) {
+        const lvl = Math.min(4, Math.max(1, Math.ceil(rec.kept / maxKept * 4)));
+        cells += `<a class="cc cc-l${lvl}" href="reports/${esc(key)}.html" title="${esc(key)} · 扫 ${rec.scanned} / 排 ${rec.rejected} / 留 ${rec.kept} / 均分 ${rec.avg}"></a>`;
+      } else {
+        cells += `<span class="cc ${key > lastKey ? "cc-future" : "cc-none"}" title="${esc(key)} · 无报告"></span>`;
+      }
+    }
+  }
+
+  let labels = "", prevCol = -1;
+  const cur = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth(), 1));
+  while (cur <= end) {
+    if (cur >= start) {
+      const col = Math.floor((cur - start) / (7 * DAY_MS));
+      if (col > prevCol && col < weeks) {
+        const yTag = cur.getUTCFullYear() === end.getUTCFullYear() ? "" : `${String(cur.getUTCFullYear()).slice(2)}/`;
+        labels += `<span style="grid-column:${col + 1}">${yTag}${cur.getUTCMonth() + 1}月</span>`;
+        prevCol = col;
+      }
+    }
+    cur.setUTCMonth(cur.getUTCMonth() + 1);
+  }
+
+  const legend = `<div class="cal-legend"><span>共 ${days.length} 天有报告 · 覆盖近 ${weeks} 周</span>
+<span class="spacer">少</span><i class="cc"></i><i class="cc cc-l1"></i><i class="cc cc-l2"></i><i class="cc cc-l3"></i><i class="cc cc-l4"></i><span>多</span></div>`;
+  return `<div class="cal"><div class="cal-inner" style="min-width:${22 + weeks * 14 + 24}px">
+<div class="cal-head"><b>报告日历</b><span class="muted">点方块直接打开当天日报；留得越多颜色越深</span></div>
+<div class="cal-months" style="grid-template-columns:repeat(${weeks},11px)">${labels}</div>
+<div class="cal-main"><div class="cal-wd"><span></span><span>一</span><span></span><span>三</span><span></span><span>五</span><span></span></div>
+<div class="cal-grid">${cells}</div></div>
+${legend}</div></div>`;
+}
+
+/** 按月份分组的紧凑行列表：最新一个月默认展开，其余折叠，日期再多也不用长翻。 */
+function monthCards(days) {
+  const groups = new Map();
+  for (const d of days) {
+    const ym = d.date.slice(0, 7);
+    if (!groups.has(ym)) groups.set(ym, []);
+    groups.get(ym).push(d);
+  }
+  return [...groups.entries()].map(([ym, list], i) => {
+    const [y, m] = ym.split("-");
+    const kept = list.reduce((s, d) => s + d.kept, 0);
+    const avg = kept ? Math.round(list.reduce((s, d) => s + d.avg * d.kept, 0) / kept) : 0;
+    const rows = list.map((d) => `<div class="dayrow" data-year="${esc(y)}" data-hay="${esc(`${d.date} ${ym} ${d.top}`.toLowerCase())}">
+<div class="dr-date"><a href="reports/${esc(d.date)}.html">${esc(d.date)}</a><span class="dr-wd">${esc(weekdayOf(d.date))}</span></div>
+<div class="dr-stat"><span>扫 <b>${d.scanned}</b></span><span>排 <b>${d.rejected}</b></span><span>留 <b>${d.kept}</b></span><span>均分 <b>${d.avg}</b></span></div>
+<div class="dr-top" title="Top 1 · ${esc(d.top)}">Top 1 · ${esc(d.top)}</div></div>`).join("");
+    return `<details class="month" ${i === 0 ? "open" : ""}>
+<summary><span class="mh-title">${esc(y)} 年 ${Number(m)} 月</span><span class="muted"><span class="mh-count">${list.length}</span> 份报告 · 留 ${kept} · 均分 ${avg}</span><span class="mh-arrow">▾</span></summary>
+<div class="dayrows">${rows}</div></details>`;
+  }).join("");
+}
+
+/** 归档页：报告日历 + 按日期折叠列表 + 可按关键词检索的选品库（数据内联，本地双击也能用） */
+export function renderArchive(history, opts = {}) {
+  const repo = opts.repo || DEFAULT_REPO;
   const days = history.map((d) => ({
     date: d.date,
     scanned: d.scanned,
@@ -202,19 +380,20 @@ export function renderArchive(history) {
   const directions = [...new Set(items.map((i) => i.direction).filter(Boolean))].sort();
   const payload = JSON.stringify({ days, items }).replace(/</g, "\\u003c");
 
-  const dayCards = days.map((d) => `<div class="day">
-<a class="daylink" href="reports/${esc(d.date)}.html">${esc(d.date)}</a>
-<div class="muted" style="margin:6px 0">扫 ${d.scanned} · 排 ${d.rejected} · 留 ${d.kept} · 均分 ${d.avg}</div>
-<div class="muted">Top 1：${esc(d.top)}</div></div>`).join("");
+  const years = [...new Set(days.map((d) => d.date.slice(0, 4)))].sort().reverse();
+  const minDate = days.length ? days[days.length - 1].date : "";
+  const maxDate = days.length ? days[0].date : "";
 
   const script = `
 <script id="radar-data" type="application/json">${payload}</script>
 <script>
 (function(){
   var data=JSON.parse(document.getElementById('radar-data').textContent);
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+
+  /* 选品库检索 */
   var q=document.getElementById('q'),dir=document.getElementById('dir'),box=document.getElementById('items');
   var count=document.getElementById('count');
-  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
   function render(){
     var kw=(q.value||'').trim().toLowerCase(),d=dir.value,out=[];
     data.items.forEach(function(i){
@@ -232,25 +411,67 @@ export function renderArchive(history) {
     count.textContent='共 '+data.items.length+' 条，匹配 '+out.length+' 条';
   }
   q.addEventListener('input',render);dir.addEventListener('change',render);render();
+
+  /* 日历日期跳转 */
+  var jump=document.getElementById('cal-jump'),jmsg=document.getElementById('cal-jump-msg');
+  document.getElementById('cal-go').addEventListener('click',function(){
+    var v=jump.value;
+    if(!v){jmsg.textContent='先选一个日期';return;}
+    var hit=data.days.some(function(d){return d.date===v;});
+    if(hit)location.href='reports/'+v+'.html';
+    else jmsg.textContent=v+' 没有报告（日历里浅色格子就是没跑）';
+  });
+
+  /* 月份列表筛选 / 展开收起 */
+  var ys=document.getElementById('day-year'),dq=document.getElementById('day-q'),dcount=document.getElementById('day-count');
+  var months=[].slice.call(document.querySelectorAll('#day-months .month'));
+  function filterDays(){
+    var y=ys.value,kw=(dq.value||'').trim().toLowerCase(),n=0;
+    months.forEach(function(m){
+      var vis=0;
+      [].slice.call(m.querySelectorAll('.dayrow')).forEach(function(row){
+        var ok=(!y||row.dataset.year===y)&&(!kw||(row.dataset.hay||'').indexOf(kw)>=0);
+        row.style.display=ok?'':'none';
+        if(ok)vis++;
+      });
+      m.style.display=vis?'':'none';
+      m.querySelector('.mh-count').textContent=vis;
+      if(y||kw)m.open=true;
+      n+=vis;
+    });
+    dcount.textContent='共 '+data.days.length+' 天报告，当前显示 '+n+' 天'+(n?'（点月份标题可折叠）':'');
+  }
+  ys.addEventListener('change',filterDays);dq.addEventListener('input',filterDays);
+  document.getElementById('day-expand').addEventListener('click',function(){months.forEach(function(m){if(m.style.display!=='none')m.open=true;});});
+  document.getElementById('day-collapse').addEventListener('click',function(){months.forEach(function(m){m.open=false;});});
+  filterDays();
 })();
 </script>`;
 
   return page("GitHub 副业雷达 · 历史归档", `
+<div class="bar"><a href="settings.html">筛选设置</a>${rerunButton}</div>
+${rerunPanel(repo)}
 <h1>GitHub 副业雷达 · 历史归档</h1>
 <div class="date">每天一份日报，永久留存；下面是可检索的选品库</div>
 ${themeBar()}
-<div class="bar"><a href="settings.html">筛选设置</a></div>
 <div class="summary">
 <div class="stats"><div><b>${days.length}</b>报告天数</div><div><b>${totalScanned}</b>累计扫描</div><div><b>${totalKept}</b>累计推荐</div><div><b>${avgAll}</b>平均评分</div></div>
 </div>
 <h2>按日期查看</h2>
-<div class="days">${dayCards || '<div class="empty">还没有报告，等定时任务跑一次。</div>'}</div>
+${calendarHTML(days)}
+<div class="bar"><input type="date" id="cal-jump" min="${esc(minDate)}" max="${esc(maxDate)}" value="${esc(maxDate)}">
+<button type="button" id="cal-go">打开该日报告</button><span class="muted" id="cal-jump-msg"></span></div>
+<div class="bar"><select id="day-year"><option value="">全部年份</option>${years.map((y) => `<option value="${esc(y)}">${esc(y)} 年</option>`).join("")}</select>
+<input id="day-q" placeholder="按日期或 Top 1 项目筛选，例如 11 / ziwei">
+<button type="button" id="day-expand">展开全部</button><button type="button" id="day-collapse">收起全部</button></div>
+<div class="muted" id="day-count" style="margin-bottom:10px"></div>
+<div id="day-months">${monthCards(days)}</div>
 <h2>选品库检索</h2>
 <div class="bar"><input id="q" placeholder="搜项目名、简介、方向、语言、许可证或三行落地，例如：命理 / TypeScript / MIT / SEO">
 <select id="dir"><option value="">全部方向</option>${directions.map((d) => `<option value="${esc(d)}">${esc(d)}</option>`).join("")}</select></div>
 <div class="muted" id="count" style="margin-bottom:10px"></div>
 <div id="items"></div>
-<footer>数据来自 GitHub 公开 API · 中文解说由 Cloudflare Workers AI 免费模型生成</footer>`, script, "favicon.svg");
+<footer>数据来自 GitHub 公开 API · 中文解说由 Cloudflare Workers AI 免费模型生成</footer>`, script + RERUN_SCRIPT, "favicon.svg");
 }
 
 /* ---------------- 筛选设置页 ---------------- */
@@ -263,6 +484,8 @@ const SETTINGS_JS = String.raw`
   function get(o,p){return p.split('.').reduce(function(x,k){return x==null?undefined:x[k];},o);}
   function set(o,p,v){var a=p.split('.'),x=o;for(var i=0;i<a.length-1;i++)x=x[a[i]];x[a[a.length-1]]=v;}
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  var K='radar-pat',saved='';try{saved=sessionStorage.getItem(K)||'';}catch(e){}
+  if(saved)document.getElementById('gh-token').value=saved;
   function status(id,msg,bad){var e=document.getElementById(id);e.className='status'+(bad?' bad':'');e.textContent=msg||'';}
   function cur(){
     document.querySelectorAll('[data-path]').forEach(function(el){
@@ -353,7 +576,8 @@ const SETTINGS_JS = String.raw`
       if(sha)body.sha=sha;
       var r=await fetch(url,{method:'PUT',headers:Object.assign({},h,{'Content-Type':'application/json'}),body:JSON.stringify(body)});
       if(!r.ok){throw new Error('提交失败 HTTP '+r.status+' '+(await r.text()).slice(0,160));}
-      status('gh-status','已提交到 '+repo+' 的 '+branch+'，下次定时任务生效；想立刻看效果可在 Actions 手动 Run workflow。');
+      try{sessionStorage.setItem(K,token);}catch(e){}
+      status('gh-status','已提交到 '+repo+' 的 '+branch+'，push 会自动触发一次重算；想立刻看效果也可以点右上角「立即重跑」。');
     }catch(e){status('gh-status',String(e),true);}
   }
   document.querySelectorAll('[data-path]').forEach(function(el){
@@ -386,7 +610,8 @@ export function renderSettings({ config, defaultConfig, rulesSource, pool, repo 
   const textarea = (p, label, rows = 2) => `<label class="ctl"><span class="lab"><span>${esc(label)}</span></span><textarea data-path="${p}" rows="${rows}"></textarea></label>`;
 
   const body = `
-<div class="bar"><a href="index.html">← 历史归档与选品库</a></div>
+<div class="bar"><a href="index.html">← 历史归档与选品库</a>${rerunButton}</div>
+${rerunPanel(repo)}
 <h1>筛选设置</h1>
 <div class="date">参数保存在仓库根目录 radar.config.json，下次定时任务运行生效</div>
 ${themeBar()}
@@ -475,7 +700,7 @@ ${textarea("keywords.vertical", "垂类加分正则")}
 <div class="status" id="main-status"></div></div>
 
 <details class="panel"><summary>直接提交到 GitHub（免手动上传）</summary>
-<div class="note" style="margin-top:10px">填一个只授予该仓库 Contents 读写权限的 fine-grained PAT。Token 仅在当前页面内存中使用，不写入 localStorage、不保存进页面或配置文件，关闭标签页即消失。公开站点上请勿使用权限过大的经典 Token。</div>
+<div class="note" style="margin-top:10px">填一个只授予该仓库 Contents 读写权限的 fine-grained PAT。Token 只保存在当前标签页的 sessionStorage（与「立即重跑」共用），关闭标签页即失效，不写入 localStorage、不保存进页面源码或配置文件。公开站点上请勿使用权限过大的经典 Token。</div>
 <div class="grid" style="margin-top:12px">
 <label class="ctl"><span class="lab"><span>仓库 owner/repo</span></span><input type="text" id="gh-repo" value="${esc(repo)}"></label>
 <label class="ctl"><span class="lab"><span>分支</span></span><input type="text" id="gh-branch" value="main"></label>
@@ -496,5 +721,6 @@ ${body}
 </div><script id="settings-data" type="application/json">${data}</script>
 <script>${browserRules}</script>
 <script>${SETTINGS_JS}</script>
+${RERUN_SCRIPT}
 ${THEME_SCRIPT}</body></html>`;
 }

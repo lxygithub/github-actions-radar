@@ -156,14 +156,16 @@ export async function rebuildPages({ SITE, DATA, REPORTS, ROOT, password = "", r
     catch { /* 跳过损坏的数据文件 */ }
   }
   const locked = Boolean(password);
+  const repoName = repo || process.env.RADAR_REPO || process.env.GITHUB_REPOSITORY || "";
+  const pageOpts = { repo: repoName || undefined };
   const write = async (file, html, faviconHref) => {
     const out = locked ? gatePage(await seal(html, password), faviconHref) : html;
     await fs.writeFile(file, out);
   };
   for (const d of history) {
-    await write(path.join(REPORTS, `${d.date}.html`), renderReport(d), "../favicon.svg");
+    await write(path.join(REPORTS, `${d.date}.html`), renderReport(d, pageOpts), "../favicon.svg");
   }
-  await write(path.join(SITE, "index.html"), renderArchive(history), "favicon.svg");
+  await write(path.join(SITE, "index.html"), renderArchive(history, pageOpts), "favicon.svg");
 
   // 设置页：把同一份规则源码内联进去，保证预览与线上打分口径一致
   if (ROOT) {
@@ -186,7 +188,7 @@ export async function rebuildPages({ SITE, DATA, REPORTS, ROOT, password = "", r
         defaultConfig: config,
         rulesSource,
         pool,
-        repo: repo || process.env.RADAR_REPO || "lxygithub/github-actions-radar",
+        repo: repoName || "lxygithub/github-actions-radar",
       });
       await write(path.join(SITE, "settings.html"), html, "favicon.svg");
     }

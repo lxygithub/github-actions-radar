@@ -8,14 +8,13 @@ on:
   # push 代码后自动跑完整流程并发布，不用再手动点 Run workflow
   push:
     branches: [main]
-    # 两道防循环保险：① 本 workflow 用内置 github.token 回写的 commit 天然不触发新 run；
-    # ② 再排除站点产物与纯文档，避免无意义的扫描和 bot commit。
+    # 排除站点产物与纯文档，避免无意义的扫描
     paths-ignore:
       - "site/**"
       - "**.md"
 
 permissions:
-  contents: write      # 把历史报告 commit 回仓库，永久留存
+  contents: write      # 把历史数据写到独立的 radar-data 分支（main 不再有 bot commit）
   pages: write
   id-token: write
 
@@ -37,6 +36,27 @@ jobs:
           node-version: "22"
 
       # 零 npm 依赖：只用 Node 22 内置 fetch / fs
+
+      # ── 存储模式 A（默认）：历史数据放独立 radar-data 分支 ──
+      # main 分支不再产生任何 bot commit，本地不用反复 fetch/rebase，历史仍由 Git 永久留存。
+      - name: 恢复历史数据（radar-data 分支）
+        if: vars.RADAR_STORAGE != 'cache'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RADAR_REPO: ${{ github.repository }}
+          RADAR_DATA_BRANCH: ${{ vars.RADAR_DATA_BRANCH }}
+        run: node scripts/store.mjs pull
+
+      # ── 存储模式 B（可选，设 Variables → RADAR_STORAGE=cache）──
+      # 真·零 commit：用 Actions cache 全量快照，代价是缓存 7 天未访问会被回收。
+      - name: 恢复历史数据（Actions cache）
+        if: vars.RADAR_STORAGE == 'cache'
+        uses: actions/cache/restore@v5
+        with:
+          path: site/data
+          key: radar-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: radar-state-
+
       - name: 扫描 GitHub 并生成日报
         env:
           RADAR_GITHUB_TOKEN: ${{ github.token }}
@@ -48,20 +68,23 @@ jobs:
           RADAR_REPO: ${{ github.repository }}
         run: node scripts/run.mjs
 
-      - name: 归档历史报告到仓库
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site
-          if git diff --cached --quiet; then
-            echo "本次无新增报告"
-          else
-            git commit -m "chore: 副业雷达日报 $(date -u +%F)"
-            git push
-          fi
+      - name: 回写历史数据（仅 radar-data 分支）
+        if: vars.RADAR_STORAGE != 'cache'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RADAR_REPO: ${{ github.repository }}
+          RADAR_DATA_BRANCH: ${{ vars.RADAR_DATA_BRANCH }}
+        run: node scripts/store.mjs push
 
-      # data/*.json 是仓库里的原始数据源（已 commit 留存），但不必发布到 Pages；
-      # 页面内容已内联在 HTML 里，移除后避免加密页面旁还留着明文数据。
+      - name: 保存历史数据快照（Actions cache）
+        if: vars.RADAR_STORAGE == 'cache'
+        uses: actions/cache/save@v5
+        with:
+          path: site/data
+          key: radar-state-${{ github.run_id }}-${{ github.run_attempt }}
+
+      # data/*.json 是原始数据源，不必发布到 Pages；页面内容已内联在 HTML 里，
+      # 移除后避免加密页面旁还留着明文数据。
       - name: 发布前移除原始数据
         run: rm -rf site/data
 
