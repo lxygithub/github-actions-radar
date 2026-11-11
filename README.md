@@ -27,7 +27,7 @@
    不需要 `GITHUB_TOKEN`（workflow 直接用内置的 `github.token`）；`RADAR_REPO` 也由 `${{ github.repository }}` 自动注入，供设置页「一键提交」定位仓库，无需手工配置。
 3. **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
 4. **Actions → 每日 GitHub 副业雷达 → Run workflow** 手动跑第一次。
-5. 之后每天 UTC 00:00（北京时间 08:00）自动运行，日报回写仓库并发布。
+5. 之后每天 UTC 00:00（北京时间 08:00）自动运行；往 `main` push 代码也会自动触发一次完整运行并发布，详见下节。
 
 访问地址：默认是 `https://<用户名>.github.io/<仓库名>/`；本实例绑定了自定义域 **`https://gh-radar.ieop.top/`**，日报路径形如 `/reports/YYYY-MM-DD.html`。
 
@@ -45,6 +45,18 @@
 - 分数线、名额、权重等筛选参数不在这里设，见下节「筛选设置」。
 
 缺凭据或 Workers AI 调用失败时，会自动降级成模板文案，并在报告页脚标注「AI 未启用」，不会伪装成 AI 生成。
+
+## push 自动触发
+
+`daily.yml` 除了每天定时和手动 Run workflow，还监听 `main` 分支的 push：
+
+- 改动涉及代码或配置（`scripts/**`、`radar.config.json`、workflow 本身等）时，**自动跑完整流程**：重新扫描、调 AI、回写当日日报、发布 Pages。改渲染、密码、图标、筛选参数后，push 完就生效，不必再手动点。
+- `paths-ignore` 排除 `site/**` 与 `*.md`：workflow 自己回写的日报 commit 不会重复触发，纯文档改动也不会浪费一次扫描；只改文档或站点产物时若想重新发布，手动 Run workflow。
+- **不会无限循环**，有两道保险：bot commit 用的是内置 `github.token`，GitHub 规定这类 push 不会再创建新的 workflow run；`paths-ignore` 是额外一道。
+- 设置页「一键提交」用 fine-grained PAT 修改 `radar.config.json` 的那次 commit 属于普通 push，会**立即触发一次重算**，新参数当天就生效。
+- 手动 Run workflow 仍然保留，随时可强制补跑；`schedule` 与 push 撞车时由 `concurrency: git-radar` 排队，不会互相取消。
+
+> 注意：push 触发的是**完整扫描**，会重新消耗一次 GitHub API 与 Workers AI 免费额度，并产生一条 `chore: 副业雷达日报 …` 的 bot commit。纯改 README 已不会触发。
 
 ## 筛选设置
 
@@ -65,7 +77,7 @@
 3. **导入** 已有的配置文件，继续在上面改。
 4. **一键提交**：页面底部展开「直接提交到 GitHub」，用只授予该仓库 Contents 读写权限的 fine-grained PAT 走 GitHub Contents API commit（Token 只在当前页面内存中使用，不落盘、不写 localStorage）。
 
-另有「撤销改动」可还原到线上配置。**下一次定时任务运行才生效**，想立刻看效果就手动 Run workflow；配置改动不会改写已生成的历史报告。
+另有「撤销改动」可还原到线上配置。配置改动在**下一次运行**生效：用「一键提交」或把配置 push 到 `main` 会自动触发一次重算，也可以手动 Run workflow；配置改动不会改写已生成的历史报告。
 
 ## 访问密码
 
@@ -118,5 +130,5 @@ site/                         Pages 发布目录（日报 + 归档 + 设置页�
 - Actions 的 `schedule` 在整点高峰期可能延迟几分钟，且不保证必定触发，可用 `workflow_dispatch` 手动补跑。
 - Workers AI 免费额度 10000 Neurons/天，一天一次批量请求绰绰有余。默认模型是推理 + OpenAI 兼容模型：`scripts/cf-ai.mjs` 优先请求 `/ai/v1/chat/completions`（`max_completion_tokens`），失败回退经典 `/ai/run/{model}` 并带 gateway 头重试；解析兼容 `content` / `response` / `output_text` / `reasoning_content` 等结构，推理模型返回 `content: null` 也能取到文本。确实取不到内容时会把 `finish_reason` 与响应结构写进 `aiError`，便于定位。
 - workflow 里的官方 action 已全部升级到 Node 24 版本（`checkout@v7`、`setup-node@v7`、`configure-pages@v6`、`upload-pages-artifact@v5`、`deploy-pages@v5`）；继续用 v4/v5 会收到 `Node.js 20 is deprecated` 警告。项目脚本本身仍跑 Node 22。
-- **`git push` 只更新仓库代码**，Pages 发布的是上一次 workflow 生成的 artifact。改了渲染、页面、密码或配置之后，要手动 Run workflow 一次才会真正上线。
+- 改了渲染、页面、图标或配置后，push 到 `main` 会自动重新发布；但**改密码 Secret 本身不会触发 push**，需要再 push 一次任意代码或手动 Run workflow，才会用新密码全量重新加密所有历史页。
 - 每次运行会把当期完整候选池写入 `site/data/pool.json`；本地未跑真实扫描时该文件不存在，设置页预览会退化为历史入选项目、红线淘汰显示为 0。
