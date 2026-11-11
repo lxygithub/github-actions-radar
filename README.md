@@ -54,6 +54,7 @@
 - `paths-ignore` 排除 `site/**` 与 `*.md`：workflow 自己回写的日报 commit 不会重复触发，纯文档改动也不会浪费一次扫描；只改文档或站点产物时若想重新发布，手动 Run workflow。
 - **不会无限循环**，有两道保险：bot commit 用的是内置 `github.token`，GitHub 规定这类 push 不会再创建新的 workflow run；`paths-ignore` 是额外一道。
 - 设置页「一键提交」用 fine-grained PAT 修改 `radar.config.json` 的那次 commit 属于普通 push，会**立即触发一次重算**，新参数当天就生效。
+- 同一天多次 push 会重跑扫描，但**冷却账本会忽略当天写入的条目**，不会出现「第二次跑，日报从 8 个骤减到 1 个」；跨天的 7 天项目冷却 / 14 天方向冷却照常生效。
 - 手动 Run workflow 仍然保留，随时可强制补跑；`schedule` 与 push 撞车时由 `concurrency: git-radar` 排队，不会互相取消。
 
 > 注意：push 触发的是**完整扫描**，会重新消耗一次 GitHub API 与 Workers AI 免费额度，并产生一条 `chore: 副业雷达日报 …` 的 bot commit。纯改 README 已不会触发。

@@ -107,7 +107,13 @@ async function main() {
   }
   pool.sort((a, b) => b.score - a.score);
 
-  const { picks, rejected: softRejected, revisit } = R.select(pool, ledger, now);
+  // 同一天重跑（例如 push 自动触发了多次）时，账本里 date=今天 的条目是本次运行
+  // 自己刚写进去的，不能再当冷却条件，否则日报会从 8 个骤减到 1 个。
+  // 跨天的条目仍保留，7 天项目冷却 / 14 天方向冷却的语义不变。
+  const effectiveLedger = Object.fromEntries(
+    Object.entries(ledger).filter(([, v]) => v?.date !== date),
+  );
+  const { picks, rejected: softRejected, revisit } = R.select(pool, effectiveLedger, now);
   rejected.push(...softRejected);
 
   // 只调 Cloudflare Workers AI 免费模型；缺凭据或调用失败时自动降级模板文案
@@ -129,6 +135,10 @@ async function main() {
   // 每天全量重渲染历史页：改密码后旧日报也会用新密码重新加密
   const built = await build();
 
+  // 清掉当天旧记录再写入本次结果，避免多次重跑让同一天的条目越堆越多
+  for (const [name, v] of Object.entries(ledger)) {
+    if (v?.date === date) delete ledger[name];
+  }
   for (const p of report.picks) {
     if (!p.revisit) ledger[p.fullName] = { date, direction: p.direction };
   }
