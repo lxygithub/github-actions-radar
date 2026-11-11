@@ -62,5 +62,37 @@
   "t3dotgg/tstack": {
     "date": "2026-11-10",
     "direction": "通用工具"
+  },
+  "haydenschmitty/floorplan": {
+    "date": "2026-11-11",
+    "direction": "通用工具"
+  },
+  "deepseek-ai/DeepInfer": {
+    "date": "2026-11-11",
+    "direction": "通用工具"
+  },
+  "ly05010419/MacNativeGames": {
+    "date": "2026-11-11",
+    "direction": "通用工具"
+  },
+  "patch-gg/pixelfx": {
+    "date": "2026-11-11",
+    "direction": "通用工具"
+  },
+  "qybaihe/bla": {
+    "date": "2026-11-11",
+    "direction": "通用工具"
+  },
+  "deepseek-ai/dsh-superagent-prototype": {
+    "date": "2026-11-11",
+    "direction": "通用工具"
+  },
+  "valentderah/totk-pc-recomp": {
+    "date": "2026-11-11",
+    "direction": "通用工具"
+  },
+  "anomalyco/rune": {
+    "date": "2026-11-11",
+    "direction": "通用工具"
   }
 }
