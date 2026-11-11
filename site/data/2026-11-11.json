@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "generatedAt": "2026-11-11T04:58:14.258Z",
+  "generatedAt": "2026-11-11T10:14:28.537Z",
   "scanned": 80,
   "rejected": [
     {
@@ -224,11 +224,6 @@
       "reason": "分数 30 未达 60 线"
     },
     {
-      "name": "Significant-Gravitas/AutoGPT",
-      "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "reason": "分数 24 未达 60 线"
-    },
-    {
       "name": "torvalds/linux",
       "url": "https://github.com/torvalds/linux",
       "reason": "分数 22 未达 60 线"
@@ -242,6 +237,11 @@
       "name": "codecrafters-io/build-your-own-x",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
       "reason": "分数 20 未达 60 线"
+    },
+    {
+      "name": "massgravel/Microsoft-Activation-Scripts",
+      "url": "https://github.com/massgravel/Microsoft-Activation-Scripts",
+      "reason": "分数 19 未达 60 线"
     },
     {
       "name": "rddmwmddr/android-ad-cleaner",
@@ -279,8 +279,18 @@
       "reason": "名额 / 冷却限制"
     },
     {
+      "name": "microsoft/TokenEconomizer",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "reason": "名额 / 冷却限制"
+    },
+    {
       "name": "seedds/nxnative",
       "url": "https://github.com/seedds/nxnative",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "wangzan101/Mika",
+      "url": "https://github.com/wangzan101/Mika",
       "reason": "名额 / 冷却限制"
     },
     {
@@ -291,11 +301,6 @@
     {
       "name": "HeyPuter/everything",
       "url": "https://github.com/HeyPuter/everything",
-      "reason": "名额 / 冷却限制"
-    },
-    {
-      "name": "jhaizhou-ops/d2r-mobile",
-      "url": "https://github.com/jhaizhou-ops/d2r-mobile",
       "reason": "名额 / 冷却限制"
     },
     {
@@ -319,13 +324,8 @@
       "reason": "名额 / 冷却限制"
     },
     {
-      "name": "wangzan101/Mika",
-      "url": "https://github.com/wangzan101/Mika",
-      "reason": "名额 / 冷却限制"
-    },
-    {
-      "name": "microsoft/TokenEconomizer",
-      "url": "https://github.com/microsoft/TokenEconomizer",
+      "name": "jhaizhou-ops/d2r-mobile",
+      "url": "https://github.com/jhaizhou-ops/d2r-mobile",
       "reason": "名额 / 冷却限制"
     },
     {
@@ -371,8 +371,8 @@
       "name": "floorplan",
       "url": "https://github.com/haydenschmitty/floorplan",
       "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
-      "stars": 3462,
-      "todayStars": 0,
+      "stars": 3471,
+      "todayStars": 9,
       "language": "JavaScript",
       "license": "MIT",
       "openIssues": 60,
@@ -409,13 +409,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "利用AI分析代码库并生成交互式架构地图的工具。",
-        "plain": "卖给开发人员，帮他们快速理解复杂项目的代码结构。",
-        "what": "开发一个SaaS平台或CLI工具，集成Claude API解析仓库并生成可视化图表。",
-        "who": "大型代码库的软件开发人员、技术负责人。",
-        "how": "SaaS订阅模式或开源+商业支持。",
-        "hours": "40-80",
-        "risk": "API调用成本过高或生成图表质量不稳定。"
+        "intro": "使用 AI 将代码库生成交互式地图的工具。",
+        "plain": "开发一个插件，让开发者能快速理解复杂的代码结构。",
+        "what": "开发一个 CLI 或 VS Code 插件，解析代码并调用 LLM 生成可视化的架构图。",
+        "who": "需要重构或理解大型遗留代码库的开发者。",
+        "how": "编写代码解析器，对接 Claude/Codex API，渲染可视化界面。",
+        "hours": "60",
+        "risk": "代码库频繁变动导致地图失效。"
       },
       "revisit": false
     },
@@ -425,8 +425,8 @@
       "name": "DeepInfer",
       "url": "https://github.com/deepseek-ai/DeepInfer",
       "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
-      "stars": 25825,
-      "todayStars": 0,
+      "stars": 25844,
+      "todayStars": 19,
       "language": "Python",
       "license": "Apache-2.0",
       "openIssues": 247,
@@ -450,13 +450,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "DeepSeek模型的高性能推理框架。",
-        "plain": "为需要部署DeepSeek模型的开发者提供推理服务。",
-        "what": "基于此框架搭建一个托管推理API服务。",
-        "who": "需要部署DeepSeek模型的企业或开发者。",
-        "how": "提供API接口供调用。",
-        "hours": "20-40",
-        "risk": "DeepSeek模型的授权限制或同类竞品太多。"
+        "intro": "专为 DeepSeek 模型设计的高性能推理框架。",
+        "plain": "针对大模型部署优化，提供高性能推理服务。",
+        "what": "开发 Python 库，包含优化的内核和分布式调度逻辑。",
+        "who": "需要大规模部署 DeepSeek 模型的 AI 公司。",
+        "how": "编写 CUDA/Metal 加速代码，实现并行计算逻辑。",
+        "hours": "120",
+        "risk": "技术门槛极高，且面临 vLLM 等成熟框架的竞争。"
       },
       "revisit": false
     },
@@ -466,14 +466,14 @@
       "name": "MacNativeGames",
       "url": "https://github.com/ly05010419/MacNativeGames",
       "description": "Play your own Tears of the Kingdom and Breath of the Wild natively on Apple silicon Mac, iPhone and iPad. Not an emulator: the game's ARM64 code runs directly, NVN rebuilt on Metal. Bring your own game.",
-      "stars": 7495,
-      "todayStars": 0,
+      "stars": 7513,
+      "todayStars": 18,
       "language": "C",
       "license": "MIT",
-      "openIssues": 159,
-      "sizeKb": 172978,
+      "openIssues": 152,
+      "sizeKb": 174397,
       "createdAt": "2026-10-17T19:52:00Z",
-      "pushedAt": "2026-11-10T21:13:39Z",
+      "pushedAt": "2026-11-11T10:09:09Z",
       "topics": [
         "apple-silicon",
         "arm64",
@@ -504,8 +504,8 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "不推荐",
-        "plain": "不推荐",
+        "intro": "在 Apple Silicon 设备上原生运行 Nintendo Switch 游戏的项目。",
+        "plain": "将 Switch 游戏移植到 Mac/iOS。",
         "what": "不推荐",
         "who": "不推荐",
         "how": "不推荐",
@@ -520,8 +520,8 @@
       "name": "pixelfx",
       "url": "https://github.com/patch-gg/pixelfx",
       "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
-      "stars": 6740,
-      "todayStars": 12,
+      "stars": 6848,
+      "todayStars": 108,
       "language": "JavaScript",
       "license": "MIT",
       "openIssues": 11,
@@ -554,13 +554,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "包含244个像素艺术效果代码片段的库。",
-        "plain": "卖给游戏开发者，让他们快速为游戏添加炫酷的视觉效果。",
-        "what": "打包这些效果代码，制作成易于集成的库或插件。",
-        "who": "独立游戏开发者、Web游戏开发者。",
-        "how": "在Gumroad或游戏引擎插件商店出售。",
-        "hours": "10-20",
-        "risk": "素材版权问题或同质化严重。"
+        "intro": "包含 244 个像素艺术特效的代码片段集合。",
+        "plain": "提供一套现成的像素风视觉特效库供游戏开发使用。",
+        "what": "开发一个 JavaScript 库，包含火焰、爆炸等 244 种 Canvas 特效。",
+        "who": "独立游戏开发者。",
+        "how": "编写 Canvas 渲染代码，打包发布到素材市场。",
+        "hours": "50",
+        "risk": "市场上同类像素素材库竞争激烈。"
       },
       "revisit": false
     },
@@ -570,14 +570,14 @@
       "name": "bla",
       "url": "https://github.com/qybaihe/bla",
       "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
-      "stars": 5063,
-      "todayStars": 5,
+      "stars": 5188,
+      "todayStars": 125,
       "language": "TypeScript",
       "license": "MIT",
-      "openIssues": 16,
-      "sizeKb": 3120,
+      "openIssues": 14,
+      "sizeKb": 3103,
       "createdAt": "2026-10-25T05:25:45Z",
-      "pushedAt": "2026-11-11T04:25:16Z",
+      "pushedAt": "2026-11-11T05:58:26Z",
       "topics": [
         "adversarial-ai",
         "claude-code",
@@ -606,13 +606,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "保护Web应用免受AI反向工程攻击的防御工具。",
-        "plain": "卖给开发者，保护他们的源代码和业务逻辑不被AI窃取。",
-        "what": "开发一个CLI工具或浏览器扩展，集成代码混淆和验证逻辑。",
-        "who": "需要保护知识产权的前端开发者、企业。",
-        "how": "CLI工具或SaaS订阅。",
-        "hours": "30-60",
-        "risk": "技术上难以完全防御AI，容易被绕过。"
+        "intro": "防止 AI 反编译和逆向工程的对抗性安全工具。",
+        "plain": "保护软件源码不被 AI 模型轻易分析。",
+        "what": "开发一种二进制混淆技术，通过注入噪声干扰 AI 模型识别。",
+        "who": "拥有核心代码需要保护的软件公司。",
+        "how": "编写二进制修改工具，设计对抗性样本。",
+        "hours": "80",
+        "risk": "AI 模型会不断进化，混淆手段可能很快失效。"
       },
       "revisit": false
     },
@@ -622,8 +622,8 @@
       "name": "dsh-superagent-prototype",
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
       "description": "Towards a More Autonomous Agent System",
-      "stars": 22254,
-      "todayStars": 5,
+      "stars": 22359,
+      "todayStars": 105,
       "language": "TypeScript",
       "license": "MIT",
       "openIssues": 0,
@@ -647,13 +647,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "不推荐",
-        "plain": "不推荐",
-        "what": "不推荐",
-        "who": "不推荐",
-        "how": "不推荐",
-        "hours": "不推荐",
-        "risk": "不推荐"
+        "intro": "DeepSeek 团队发布的自主智能体系统研究原型。",
+        "plain": "构建一个能够自主规划和执行任务的 AI 智能体框架。",
+        "what": "开发一个 TypeScript 框架，管理多智能体的协作与状态。",
+        "who": "需要自动化复杂工作流的开发者。",
+        "how": "实现任务分解、工具调用和记忆管理逻辑。",
+        "hours": "70",
+        "risk": "原型代码质量不稳定，缺乏生产环境验证。"
       },
       "revisit": false
     },
@@ -663,11 +663,11 @@
       "name": "totk-pc-recomp",
       "url": "https://github.com/valentderah/totk-pc-recomp",
       "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
-      "stars": 6500,
-      "todayStars": 4,
+      "stars": 6565,
+      "todayStars": 65,
       "language": "C",
       "license": "MIT",
-      "openIssues": 387,
+      "openIssues": 391,
       "sizeKb": 4691,
       "createdAt": "2026-10-29T12:32:46Z",
       "pushedAt": "2026-11-10T16:35:34Z",
@@ -694,8 +694,8 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "不推荐",
-        "plain": "不推荐",
+        "intro": "将《塞尔达传说：王国之泪》静态重编译为 Windows/Linux 原生程序。",
+        "plain": "让 Switch 游戏在 PC 上以原生方式运行。",
         "what": "不推荐",
         "who": "不推荐",
         "how": "不推荐",
@@ -710,14 +710,14 @@
       "name": "rune",
       "url": "https://github.com/anomalyco/rune",
       "description": "Rune: Native UI framework",
-      "stars": 6373,
-      "todayStars": 8,
+      "stars": 6456,
+      "todayStars": 83,
       "language": "Rust",
       "license": "MIT",
-      "openIssues": 264,
-      "sizeKb": 159192,
+      "openIssues": 279,
+      "sizeKb": 159641,
       "createdAt": "2026-10-22T05:51:40Z",
-      "pushedAt": "2026-11-11T04:54:47Z",
+      "pushedAt": "2026-11-11T09:57:49Z",
       "topics": [],
       "isOrg": true,
       "defaultBranch": "dev",
@@ -735,13 +735,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "一个用于构建原生应用的Rust UI框架。",
-        "plain": "卖给Rust开发者，提供比传统方案更轻量的UI开发方案。",
-        "what": "优化框架性能，编写详细文档和示例代码。",
-        "who": "Rust开发者、跨平台应用开发者。",
-        "how": "开源+商业支持或赞助。",
-        "hours": "20-40",
-        "risk": "市场竞争激烈，难以撼动主流框架地位。"
+        "intro": "基于 Rust 的原生 UI 框架。",
+        "plain": "为 Rust 语言提供一套高性能的跨平台 UI 解决方案。",
+        "what": "开发 Rust 库，实现原生窗口管理和组件渲染。",
+        "who": "使用 Rust 开发桌面或移动应用的开发者。",
+        "how": "编写 Rust 代码，移植或重写图形渲染引擎。",
+        "hours": "150",
+        "risk": "技术难度极大，且面临 Tauri、Flutter 等成熟框架的挤压。"
       },
       "revisit": false
     }
