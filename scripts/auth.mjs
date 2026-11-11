@@ -13,6 +13,8 @@ const ITERATIONS = 150_000;
 const DATE_JSON = /^\d{4}-\d{2}-\d{2}\.json$/;
 
 const b64 = (buf) => Buffer.from(buf).toString("base64");
+const escAttr = (s) => String(s).replace(/[&<>"']/g, (c) =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
 async function deriveKey(password, salt) {
   const base = await webcrypto.subtle.importKey(
@@ -121,12 +123,15 @@ const GATE_JS = `
 })();
 `;
 
-/** 生成登录壳页面 */
-export function gatePage(blob) {
+/** 生成登录壳页面。faviconHref 需按页面所在目录传：
+ *  日报在 reports/ 下用 ../favicon.svg，归档首页用 favicon.svg。
+ *  解锁后 head 会被明文页的 head 替换，两边 href 必须一致。 */
+export function gatePage(blob, faviconHref = "favicon.svg") {
   const payload = JSON.stringify(blob).replace(/</g, "\\u003c");
   return `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="${escAttr(faviconHref)}">
 <meta name="robots" content="noindex,nofollow">
 <title>需要访问密码 · GitHub 副业雷达</title><style>${GATE_CSS}</style></head>
 <body><div class="box"><div class="lock"></div>
@@ -150,13 +155,13 @@ export async function rebuildPages({ SITE, DATA, REPORTS, password = "" }) {
     catch { /* 跳过损坏的数据文件 */ }
   }
   const locked = Boolean(password);
-  const write = async (file, html) => {
-    const out = locked ? gatePage(await seal(html, password)) : html;
+  const write = async (file, html, faviconHref) => {
+    const out = locked ? gatePage(await seal(html, password), faviconHref) : html;
     await fs.writeFile(file, out);
   };
   for (const d of history) {
-    await write(path.join(REPORTS, `${d.date}.html`), renderReport(d));
+    await write(path.join(REPORTS, `${d.date}.html`), renderReport(d), "../favicon.svg");
   }
-  await write(path.join(SITE, "index.html"), renderArchive(history));
+  await write(path.join(SITE, "index.html"), renderArchive(history), "favicon.svg");
   return { days: history.length, locked };
 }

@@ -14,24 +14,28 @@ const TEMPLATES = [
   {
     fullName: "night-owl/ziwei-engine", owner: "night-owl", name: "ziwei-engine",
     language: "TypeScript", license: "MIT", direction: "玄学命理", score: 93, grade: "S",
+    intro: "紫微斗数排盘引擎，提供完整的命盘算法与古籍格局知识库，可输出十四主星与四化盘面。",
     what: "包一层网页界面，输个生日点两下，盘面自己出来", who: "做命理内容的人：有流量，但缺好用的工具",
     how: "做成带界面的成品，按份卖，附中文说明", risk: "古籍知识库授权需单独核实",
   },
   {
     fullName: "solo-dev/seo-kit-cn", owner: "solo-dev", name: "seo-kit-cn",
     language: "Python", license: "Apache-2.0", direction: "SEO 流量", score: 86, grade: "A",
+    intro: "一套英文 SEO 审计指令与脚本，用于站点体检、关键词拓展和竞品页面差距分析。",
     what: "把英文指令翻成中文版，再补一份行业词表", who: "中小电商站点运营，买不起 SaaS 订阅",
     how: "中文指令包 + 部署文档，按站点授权", risk: "依赖第三方搜索接口，稳定性不定",
   },
   {
     fullName: "tiny-tools/local-llm-ui", owner: "tiny-tools", name: "local-llm-ui",
     language: "JavaScript", license: "GPL-3.0", direction: "通用工具", score: 72, grade: "B",
+    intro: "给本地大模型用的极简网页界面，支持多模型切换、会话保存与提示词模板。",
     what: "界面中文化，预置几个常见场景", who: "想有自己工具、又不会配置环境的人",
     how: "收部署费，远程帮客户装好", risk: "GPL 许可证，闭源商用前必须确认合规",
   },
   {
     fullName: "shop-lab/cross-border-helper", owner: "shop-lab", name: "cross-border-helper",
     language: "TypeScript", license: "MIT", direction: "电商", score: 81, grade: "A",
+    intro: "跨境电商批量处理工具，含表格导入、汇率换算与商品 listing 文案生成。",
     what: "补一份中文上手教程和批量导入模板", who: "跨境小卖家，需要能直接用的表格工具",
     how: "模板 + 教程打包，按份交付", risk: "平台规则变动可能导致接口失效",
   },
@@ -55,6 +59,7 @@ function makeReport(date, offset) {
     score: t.score - offset, grade: t.grade, breakdown: BREAKDOWN,
     revisit: i === 2 && offset === 2,
     landing: {
+      intro: t.intro,
       plain: `一句说人话：${t.name} 解决的是很具体的小问题`,
       what: t.what, who: t.who, how: t.how,
       hours: "1–3 天（待人工核实）", risk: t.risk,
@@ -76,6 +81,7 @@ const dates = ["2026-11-10", "2026-11-09", "2026-11-08"];
 const history = dates.map((d, i) => makeReport(d, i));
 
 await fs.mkdir(path.join(OUT, "reports"), { recursive: true });
+await fs.copyFile(path.join(ROOT, "site", "favicon.svg"), path.join(OUT, "favicon.svg"));
 for (const d of history) {
   await fs.writeFile(path.join(OUT, "reports", `${d.date}.html`), renderReport(d));
 }

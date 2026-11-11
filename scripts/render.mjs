@@ -7,6 +7,27 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ESC_MAP[c]);
 export const anchor = (fullName) =>
   "repo-" + String(fullName).replace(/[^a-z0-9]+/gi, "-").toLowerCase();
 
+/** 项目简介：AI 生成的中文一句 > GitHub 原始描述 > README 首段 > 兜底。
+ *  历史数据里 landing.intro 不存在时会自动回退，向后兼容。 */
+const clip = (s, n = 220) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s);
+const stripMarkup = (s) => String(s ?? "")
+  .replace(/<[^>]*>/g, " ")
+  .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+  .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+  .replace(/[#>*`_~|]/g, " ")
+  .replace(/\s+/g, " ")
+  .trim();
+
+export function projectIntro(p) {
+  const fromAI = stripMarkup(p?.landing?.intro);
+  if (fromAI) return clip(fromAI);
+  const desc = stripMarkup(p?.description);
+  if (desc) return clip(desc);
+  const readme = stripMarkup(p?.readmeHead);
+  if (readme) return clip(readme);
+  return `${p?.name || "这个项目"} 是一个用 ${p?.language || "开源代码"} 写的项目，仓库未提供简介。`;
+}
+
 const CSS = `
 :root{--bg:#0e1117;--card:#171c26;--line:#2a3242;--fg:#e8ecf4;--muted:#9aa5b8;--accent:#7aa2ff;--good:#4ade80;--warn:#fbbf24;--chip:#202837}
 body[data-theme="light"]{--bg:#f6f7f9;--card:#fff;--line:#e3e7ee;--fg:#1b2230;--muted:#6b7688;--accent:#2f6bff;--good:#0f9d58;--warn:#b45309;--chip:#eef1f6}
@@ -32,6 +53,8 @@ a{color:var(--accent)}
 .card h3 a,.item h3 a{text-decoration:none}
 .meta{color:var(--muted);font-size:12px;margin-bottom:8px}
 .badge{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin:0 6px 6px 0;color:var(--muted)}
+.intro{background:var(--chip);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:8px 11px;margin:10px 0 12px;font-size:13px;line-height:1.6;color:var(--fg);word-break:break-word}
+.intro-label{display:block;color:var(--muted);font-size:11px;letter-spacing:.04em;margin-bottom:2px}
 .row{margin:6px 0}
 .row span{display:inline-block;min-width:64px;color:var(--muted);font-size:12px;vertical-align:top}
 .risk{color:var(--warn);font-size:13px;margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
@@ -68,13 +91,18 @@ const themeBar = () => `
 <button data-set-theme="dark">深夜</button>
 </div>`;
 
-const page = (title, body, extraScript = "") => `<!doctype html>
+const page = (title, body, extraScript = "", faviconHref = "favicon.svg") => `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="${esc(faviconHref)}">
 <title>${esc(title)}</title><style>${CSS}</style></head>
 <body data-theme="dark"><div class="wrap">
 ${body}
 </div>${THEME_SCRIPT}${extraScript}</body></html>`;
+
+/** 简介块：日报卡片与归档页选品库共用 */
+const introBlock = (text) =>
+  `<div class="intro"><span class="intro-label">项目简介</span>${esc(text)}</div>`;
 
 export function renderReport(d) {
   const cards = d.picks.map((p, i) => {
@@ -83,12 +111,18 @@ export function renderReport(d) {
     const delta = p.todayStars === null || p.todayStars === undefined
       ? "" : ` · 今日 ${p.todayStars >= 0 ? "+" : ""}${p.todayStars} ★`;
     const l = p.landing || {};
+    const intro = projectIntro(p);
+    // 模板降级时 plain 就是原始英文描述，跟简介重复，不重复展示
+    const plain = stripMarkup(l.plain);
+    const plainRow = plain && clip(plain) !== intro
+      ? `<div class="row"><span>说人话</span>${esc(plain)}</div>` : "";
     return `<article class="card" id="${anchor(p.fullName)}">
 <span class="grade">${esc(p.grade)} · ${p.score}</span>
 <h3>${i + 1}. <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.fullName)}</a></h3>
 <div class="meta">${esc(p.owner)} · ${esc(p.language)} · ${esc(p.license)} · ★ ${p.stars}${delta} · ${esc(p.direction)}${p.revisit ? ' · <span class="badge">回看</span>' : ""}</div>
+${introBlock(intro)}
 <div>${badges}</div>
-<div class="row"><span>说人话</span>${esc(l.plain)}</div>
+${plainRow}
 <div class="row"><span>改哪一处</span>${esc(l.what)}</div>
 <div class="row"><span>卖给谁</span>${esc(l.who)}</div>
 <div class="row"><span>怎么交付</span>${esc(l.how)}</div>
@@ -112,7 +146,7 @@ ${themeBar()}
 <div class="stats"><div><b>${d.scanned}</b>扫过</div><div><b>${(d.rejected || []).length}</b>排掉</div><div><b>${d.picks.length}</b>留下</div><div><b>${avg}</b>平均分</div></div></div>
 ${cards || '<div class="card">今天没有够格的项目。</div>'}
 <details><summary>今天排掉了什么（${(d.rejected || []).length}）</summary><ul>${rejected || "<li>无</li>"}</ul></details>
-<footer>${ai} · 数据来自 GitHub 公开 API，仅供选品参考</footer>`);
+<footer>${ai} · 数据来自 GitHub 公开 API，仅供选品参考</footer>`, "", "../favicon.svg");
 }
 
 /** 归档页：所有历史日报 + 可按关键词检索的选品库（数据内联，无 fetch，本地双击也能用） */
@@ -132,7 +166,8 @@ export function renderArchive(history) {
       items.push({
         date: d.date, name: p.fullName, url: p.url, score: p.score, grade: p.grade,
         direction: p.direction, language: p.language, license: p.license,
-        stars: p.stars, what: l.what || "", who: l.who || "", how: l.how || "",
+        stars: p.stars, intro: projectIntro(p),
+        what: l.what || "", who: l.who || "", how: l.how || "",
         plain: l.plain || "", risk: l.risk || "", revisit: !!p.revisit,
         anchor: anchor(p.fullName),
       });
@@ -161,11 +196,12 @@ export function renderArchive(history) {
     var kw=(q.value||'').trim().toLowerCase(),d=dir.value,out=[];
     data.items.forEach(function(i){
       if(d&&i.direction!==d)return;
-      var hay=[i.name,i.direction,i.language,i.license,i.plain,i.what,i.who,i.how,i.risk].join(' ').toLowerCase();
+      var hay=[i.name,i.intro,i.direction,i.language,i.license,i.plain,i.what,i.who,i.how,i.risk].join(' ').toLowerCase();
       if(kw&&hay.indexOf(kw)<0)return;
       out.push('<div class="item"><span class="grade">'+esc(i.grade)+' · '+i.score+'</span>'+
         '<h3><a href="reports/'+esc(i.date)+'.html#'+esc(i.anchor)+'">'+esc(i.name)+'</a></h3>'+
         '<div class="meta">'+esc(i.date)+' · '+esc(i.language)+' · '+esc(i.license)+' · ★ '+i.stars+' · '+esc(i.direction)+(i.revisit?' · 回看':'')+'</div>'+
+        '<div class="intro"><span class="intro-label">项目简介</span>'+esc(i.intro||'仓库未提供简介')+'</div>'+
         '<div class="row"><span>改哪一处</span>'+esc(i.what)+'</div>'+
         '<div class="row"><span>卖给谁</span>'+esc(i.who)+'</div></div>');
     });
@@ -186,9 +222,9 @@ ${themeBar()}
 <h2>按日期查看</h2>
 <div class="days">${dayCards || '<div class="empty">还没有报告，等定时任务跑一次。</div>'}</div>
 <h2>选品库检索</h2>
-<div class="bar"><input id="q" placeholder="搜项目名、方向、语言、许可证或三行落地，例如：命理 / TypeScript / MIT / SEO">
+<div class="bar"><input id="q" placeholder="搜项目名、简介、方向、语言、许可证或三行落地，例如：命理 / TypeScript / MIT / SEO">
 <select id="dir"><option value="">全部方向</option>${directions.map((d) => `<option value="${esc(d)}">${esc(d)}</option>`).join("")}</select></div>
 <div class="muted" id="count" style="margin-bottom:10px"></div>
 <div id="items"></div>
-<footer>数据来自 GitHub 公开 API · 中文解说由 Cloudflare Workers AI 免费模型生成</footer>`, script);
+<footer>数据来自 GitHub 公开 API · 中文解说由 Cloudflare Workers AI 免费模型生成</footer>`, script, "favicon.svg");
 }

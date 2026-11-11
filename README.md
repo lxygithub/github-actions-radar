@@ -74,6 +74,7 @@ scripts/render.mjs            日报与归档页 HTML 渲染
 scripts/auth.mjs              整页 AES-GCM 加密 + 登录壳 + 全量重建页面
 scripts/protect.mjs           离线重建/换密码（不联网）
 scripts/preview.mjs           示例预览生成器
+site/favicon.svg              站点图标（登录页与解锁后的页面共用，日报走 ../favicon.svg）
 site/                         Pages 发布目录（日报 + 归档页）；data/ 只留仓库，发布前移除
 ```
 

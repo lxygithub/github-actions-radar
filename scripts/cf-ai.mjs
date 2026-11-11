@@ -9,12 +9,14 @@ export const DEFAULT_FREE_MODEL = "@cf/zai-org/glm-4.7-flash";
 
 const SYSTEM = `你是「GitHub 副业雷达」的中文裁判。只输出可执行的落地判断，不吹捧、不写空话。
 严格返回 JSON 数组，长度必须与输入项目数一致，不要 markdown 代码块，不要任何额外文字。
-每个元素字段：plain(一句说人话)、what(具体改哪一处)、who(卖给谁、为什么买)、how(怎么交付)、hours(预计开发时长)、risk(最大的一个风险)。
+每个元素字段：intro(一句中文说清这个项目原本是做什么的，只描述项目本身，不要写成副业建议)、plain(一句说人话讲清机会)、what(具体改哪一处)、who(卖给谁、为什么买)、how(怎么交付)、hours(预计开发时长)、risk(最大的一个风险)。
 如果某个项目写不出具体的 what/who/how，这三个字段一律写「不推荐」，绝对不要编造。
 涉及破解、绕过平台限制的项目，全部字段写「不推荐」。`;
 
 function fallback(r) {
   return {
+    // intro 留空，渲染层会回退到仓库原始描述，避免把英文简介冒充中文解说
+    intro: "",
     plain: r.description || `${r.name} 是一个用 ${r.language} 写的项目。`,
     what: `先包一层中文界面 / 配置，把 ${r.name} 的核心能力做成开箱即用的小工具`,
     who: "有明确需求、但不想自己搭环境的中小团队或内容创作者",
@@ -38,7 +40,8 @@ function parseArray(raw, n) {
     return Array.from({ length: n }, (_, i) => {
       const o = arr[i] ?? {};
       return {
-        plain: String(o.plain ?? ""), what: String(o.what ?? ""), who: String(o.who ?? ""),
+        intro: String(o.intro ?? ""), plain: String(o.plain ?? ""),
+        what: String(o.what ?? ""), who: String(o.who ?? ""),
         how: String(o.how ?? ""), hours: String(o.hours ?? ""), risk: String(o.risk ?? ""),
       };
     });
