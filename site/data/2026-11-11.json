@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "generatedAt": "2026-11-11T03:40:34.358Z",
+  "generatedAt": "2026-11-11T04:14:48.196Z",
   "scanned": 80,
   "rejected": [
     {
@@ -294,6 +294,11 @@
       "reason": "名额 / 冷却限制"
     },
     {
+      "name": "jhaizhou-ops/d2r-mobile",
+      "url": "https://github.com/jhaizhou-ops/d2r-mobile",
+      "reason": "名额 / 冷却限制"
+    },
+    {
       "name": "JuneYaooo/rea-video",
       "url": "https://github.com/JuneYaooo/rea-video",
       "reason": "名额 / 冷却限制"
@@ -321,11 +326,6 @@
     {
       "name": "microsoft/TokenEconomizer",
       "url": "https://github.com/microsoft/TokenEconomizer",
-      "reason": "名额 / 冷却限制"
-    },
-    {
-      "name": "jhaizhou-ops/d2r-mobile",
-      "url": "https://github.com/jhaizhou-ops/d2r-mobile",
       "reason": "名额 / 冷却限制"
     },
     {
@@ -371,14 +371,14 @@
       "name": "floorplan",
       "url": "https://github.com/haydenschmitty/floorplan",
       "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
-      "stars": 3459,
-      "todayStars": 1,
+      "stars": 3462,
+      "todayStars": 3,
       "language": "JavaScript",
       "license": "MIT",
       "openIssues": 60,
       "sizeKb": 6329,
       "createdAt": "2026-10-27T12:03:01Z",
-      "pushedAt": "2026-11-10T17:49:18Z",
+      "pushedAt": "2026-11-11T03:49:40Z",
       "topics": [
         "ai-coding",
         "architecture-diagram",
@@ -395,7 +395,7 @@
       ],
       "isOrg": false,
       "defaultBranch": "main",
-      "readmeHead": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/images/logo-dark.png\">\n  <img src=\"docs/images/logo-light.png\" alt=\"Floorplan logo\" height=\"88\">\n</picture>\n\n# Floorplan\n\n**See how your app actually fits together.**\n\nClaude or Codex reads your codebase and draws an interactive map of it. Every part, file and web request gets a plain-English name, and every connection between them is shown.\n\n[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-D97757?style=flat-square)](https://code.claude.com/docs/en/overview)\n[![Codex plugin](https://img.shields.io/badge/Codex-plugin-111?style=flat-square)](docs/codex.md)\n[![Tests](https://img.shields.io/github/actions/workflow/status/haydenschmitty/floorplan/test.yml?branch=main&style=flat-square&label=tests)](https://github.com/haydenschmitty/floorplan/actions/workflows/test.yml)\n[![Version](https://img.shields.io/badge/version-0.7.2-111?style=flat-square)](CHANGELOG.md)\n[![License: MIT](https://img.shields.io/badge/license-MIT-111?style=flat-square)](LICENSE)\n[![Node 18+](https://img.shields.io/badge/node-%E2%89%A518-111?style=flat-square)](https://nodejs.org)\n[![Zero dependencies](https://img.shields.io/badge/dependencies-0-111?style=flat-square)](#how-it-works)\n\n<a href=\"https://trendshift.io/repositories/322616\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/322616/daily?language=JavaScript\" alt=\"Floorplan on Trendshift\" width=\"250\" height=\"55\"></a>\n\n**[Try the live demo](https://haydenschmitty.github.io/floorplan-demo/)** · [Watch the video](https://youtu.be/NTUUzC7L_NQ) · [Install](#install) · [Quick start](#quick-start) · [Compared](#floorplan-archify-or-understand-anything) · [Features](#features) · [See it in action](#see-it-in-action) · [How it works](#how-it-works) · [Docs](docs/README.md) · [FAQ](#faq)\n\n</div>\n\n<p align=\"center\">\n  <a href=\"https://youtu.be/NTUUzC7L_NQ\"><img src=\"docs/images/video.jpg\" alt=\"Watch the walkthrough on YouTu",
+      "readmeHead": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/images/logo-dark.png\">\n  <img src=\"docs/images/logo-light.png\" alt=\"Floorplan logo\" height=\"88\">\n</picture>\n\n# Floorplan\n\n**See how your app actually fits together.**\n\nClaude or Codex reads your codebase and draws an interactive map of it. Every part, file and web request gets a plain-English name, and every connection between them is shown.\n\n[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-D97757?style=flat-square)](https://code.claude.com/docs/en/overview)\n[![Codex plugin](https://img.shields.io/badge/Codex-plugin-111?style=flat-square)](docs/codex.md)\n[![Tests](https://img.shields.io/github/actions/workflow/status/haydenschmitty/floorplan/test.yml?branch=main&style=flat-square&label=tests)](https://github.com/haydenschmitty/floorplan/actions/workflows/test.yml)\n[![Version](https://img.shields.io/badge/version-0.7.3-111?style=flat-square)](CHANGELOG.md)\n[![License: MIT](https://img.shields.io/badge/license-MIT-111?style=flat-square)](LICENSE)\n[![Node 18+](https://img.shields.io/badge/node-%E2%89%A518-111?style=flat-square)](https://nodejs.org)\n[![Zero dependencies](https://img.shields.io/badge/dependencies-0-111?style=flat-square)](#how-it-works)\n\n<a href=\"https://trendshift.io/repositories/322616\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/322616/daily?language=JavaScript\" alt=\"Floorplan on Trendshift\" width=\"250\" height=\"55\"></a>\n\n**[Try the live demo](https://haydenschmitty.github.io/floorplan-demo/)** · [Watch the video](https://youtu.be/NTUUzC7L_NQ) · [Install](#install) · [Quick start](#quick-start) · [Compared](#floorplan-archify-or-understand-anything) · [Features](#features) · [See it in action](#see-it-in-action) · [How it works](#how-it-works) · [Docs](docs/README.md) · [FAQ](#faq)\n\n</div>\n\n<p align=\"center\">\n  <a href=\"https://youtu.be/NTUUzC7L_NQ\"><img src=\"docs/images/video.jpg\" alt=\"Watch the walkthrough on YouTu",
       "score": 78,
       "grade": "B",
       "breakdown": {
@@ -409,13 +409,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "使用 Claude 或 Codex 分析代码库并生成交互式结构地图。",
-        "plain": "用 AI 自动画出你代码库的“地图”，解决代码结构混乱问题。",
-        "what": "开发一个插件，利用 LLM 解析代码结构并生成可视化图谱。",
-        "who": "难以理解复杂代码库的开发者。",
-        "how": "集成 Claude API，解析文件依赖，渲染交互式图表。",
-        "hours": "40",
-        "risk": "代码频繁变动导致图谱失效。"
+        "intro": "AI 工具，利用 Claude 或 Codex 自动生成代码库的可视化交互地图。",
+        "plain": "帮开发者快速看懂复杂代码长什么样。",
+        "what": "开发一个 AI 辅助的代码库可视化插件。",
+        "who": "维护大型代码库的开发者和技术团队。",
+        "how": "集成 Claude API 扫描代码结构并生成图表。",
+        "hours": "40 小时",
+        "risk": "代码库结构变化频繁，图表更新维护成本高。"
       },
       "revisit": false
     },
@@ -425,8 +425,8 @@
       "name": "DeepInfer",
       "url": "https://github.com/deepseek-ai/DeepInfer",
       "description": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
-      "stars": 25820,
-      "todayStars": 6,
+      "stars": 25824,
+      "todayStars": 4,
       "language": "Python",
       "license": "Apache-2.0",
       "openIssues": 247,
@@ -450,13 +450,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "DeepSeek 模型的高性能推理框架。",
-        "plain": "在本地或服务器上加速运行 DeepSeek AI 模型。",
-        "what": "封装或优化 DeepSeek 模型的推理服务。",
-        "who": "需要部署大模型的个人或企业。",
-        "how": "提供 Docker 镜像、推理加速脚本或托管服务。",
-        "hours": "50",
-        "risk": "技术门槛高，模型更新快。"
+        "intro": "DeepSeek 模型的高性能推理服务框架。",
+        "plain": "让大模型跑得更快、更稳。",
+        "what": "封装 DeepSeek 模型的推理服务 API。",
+        "who": "需要部署 DeepSeek 模型的企业或开发者。",
+        "how": "提供 REST API 或 SDK 接口。",
+        "hours": "20 小时",
+        "risk": "技术门槛高，需要深入理解底层优化。"
       },
       "revisit": false
     },
@@ -467,10 +467,10 @@
       "url": "https://github.com/ly05010419/MacNativeGames",
       "description": "Play your own Tears of the Kingdom and Breath of the Wild natively on Apple silicon Mac, iPhone and iPad. Not an emulator: the game's ARM64 code runs directly, NVN rebuilt on Metal. Bring your own game.",
       "stars": 7494,
-      "todayStars": 6,
+      "todayStars": 0,
       "language": "C",
       "license": "MIT",
-      "openIssues": 156,
+      "openIssues": 159,
       "sizeKb": 172978,
       "createdAt": "2026-10-17T19:52:00Z",
       "pushedAt": "2026-11-10T21:13:39Z",
@@ -504,13 +504,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "将 Switch 游戏（如塞尔达传说）原生移植到 Apple Silicon 设备。",
-        "plain": "在 Mac/iPhone 上不通过模拟器直接运行 Switch 游戏。",
-        "what": "将游戏引擎（NVN）重写为 Metal 渲染代码。",
-        "who": "拥有游戏版权的 Apple 设备用户。",
-        "how": "提供重写引擎的工具和教程。",
-        "hours": "120",
-        "risk": "版权风险极高，技术难度极大。"
+        "intro": "将任天堂 Switch 游戏（如塞尔达）移植到 Apple 硅设备原生运行。",
+        "plain": "让用户在 Mac/iPhone 上直接运行自己的游戏文件。",
+        "what": "开发游戏运行时环境或编译工具。",
+        "who": "拥有游戏版权的玩家。",
+        "how": "编译游戏二进制文件并提供运行时支持。",
+        "hours": "100 小时",
+        "risk": "法律风险极高，涉及版权问题。"
       },
       "revisit": false
     },
@@ -520,8 +520,8 @@
       "name": "pixelfx",
       "url": "https://github.com/patch-gg/pixelfx",
       "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
-      "stars": 6714,
-      "todayStars": 15,
+      "stars": 6723,
+      "todayStars": 9,
       "language": "JavaScript",
       "license": "MIT",
       "openIssues": 11,
@@ -554,13 +554,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "包含 244 个像素艺术特效代码片段的库。",
-        "plain": "为游戏开发提供现成的像素特效素材。",
-        "what": "整理并销售这些特效代码库。",
+        "intro": "包含 244 个像素艺术特效代码片段的库，并附带 Claude Code 技能。",
+        "plain": "给游戏开发者提供现成的像素特效代码。",
+        "what": "整理并封装像素特效代码库。",
         "who": "2D 游戏开发者。",
-        "how": "在 Gumroad 或 GitHub Sells 上出售。",
-        "hours": "20",
-        "risk": "市场竞争激烈，免费替代品多。"
+        "how": "提供代码下载和 Claude Code 插件。",
+        "hours": "10 小时",
+        "risk": "代码复用性低，用户可能只下载一次。"
       },
       "revisit": false
     },
@@ -570,8 +570,8 @@
       "name": "bla",
       "url": "https://github.com/qybaihe/bla",
       "description": "🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
-      "stars": 5051,
-      "todayStars": 12,
+      "stars": 5055,
+      "todayStars": 4,
       "language": "TypeScript",
       "license": "MIT",
       "openIssues": 14,
@@ -606,13 +606,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "防止 AI 逆向工程工具破解二进制和 Electron 应用的防御盾。",
-        "plain": "保护你的软件不被 AI 自动分析破解。",
-        "what": "开发代码混淆或反调试工具。",
-        "who": "需要保护商业软件的公司。",
-        "how": "提供混淆服务或插件。",
-        "hours": "60",
-        "risk": "AI 工具进化快，防御容易被攻破。"
+        "intro": "防止 AI 逆向工程的对抗性防御工具。",
+        "plain": "保护软件代码不被 AI 自动破解。",
+        "what": "开发代码混淆或对抗性代码生成工具。",
+        "who": "需要保护商业逻辑的软件公司。",
+        "how": "提供工具或服务对代码进行特殊处理。",
+        "hours": "60 小时",
+        "risk": "技术对抗性难以持久，容易被绕过。"
       },
       "revisit": false
     },
@@ -622,8 +622,8 @@
       "name": "dsh-superagent-prototype",
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
       "description": "Towards a More Autonomous Agent System",
-      "stars": 22237,
-      "todayStars": 14,
+      "stars": 22249,
+      "todayStars": 12,
       "language": "TypeScript",
       "license": "MIT",
       "openIssues": 0,
@@ -647,13 +647,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "DeepSeek 团队发布的自主智能体系统研究原型。",
-        "plain": "构建能够自主完成任务的 AI 智能体框架。",
-        "what": "将原型代码转化为生产级智能体框架。",
-        "who": "需要自动化工作流的开发者。",
-        "how": "完善错误处理、文档，提供 SaaS 服务。",
-        "hours": "80",
-        "risk": "原型代码质量不稳定，维护成本高。"
+        "intro": "DeepSeek 团队发布的自主代理系统研究原型代码。",
+        "plain": "提供一个能自主干活的研究级 AI 代理参考。",
+        "what": "基于原型代码进行二次开发或封装。",
+        "who": "AI 研究人员和自动化需求方。",
+        "how": "优化原型代码并部署成可用产品。",
+        "hours": "50 小时",
+        "risk": "原型代码不稳定，不适合直接商用。"
       },
       "revisit": false
     },
@@ -663,8 +663,8 @@
       "name": "totk-pc-recomp",
       "url": "https://github.com/valentderah/totk-pc-recomp",
       "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
-      "stars": 6483,
-      "todayStars": 9,
+      "stars": 6493,
+      "todayStars": 10,
       "language": "C",
       "license": "MIT",
       "openIssues": 386,
@@ -694,13 +694,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "将塞尔达传说：王国之泪静态重编译为原生 PC 版本。",
-        "plain": "在 Windows 和 Linux 上原生运行 Switch 游戏。",
-        "what": "将 Switch 游戏引擎重编译为 x86-64 代码。",
-        "who": "PC 玩家。",
-        "how": "提供重编译工具。",
-        "hours": "120",
-        "risk": "版权风险极高，技术难度极大。"
+        "intro": "将《塞尔达传说：王国之泪》静态重编译为 PC 原生应用。",
+        "plain": "让用户在 PC 上运行自己的游戏副本。",
+        "what": "开发游戏重编译工具或运行时环境。",
+        "who": "拥有游戏版权的玩家。",
+        "how": "提供编译脚本和运行时库。",
+        "hours": "100 小时",
+        "risk": "法律风险极高，涉及版权问题。"
       },
       "revisit": false
     },
@@ -710,14 +710,14 @@
       "name": "rune",
       "url": "https://github.com/anomalyco/rune",
       "description": "Rune: Native UI framework",
-      "stars": 6357,
-      "todayStars": 10,
+      "stars": 6363,
+      "todayStars": 6,
       "language": "Rust",
       "license": "MIT",
-      "openIssues": 260,
+      "openIssues": 261,
       "sizeKb": 158969,
       "createdAt": "2026-10-22T05:51:40Z",
-      "pushedAt": "2026-11-11T03:24:37Z",
+      "pushedAt": "2026-11-11T04:03:03Z",
       "topics": [],
       "isOrg": true,
       "defaultBranch": "dev",
@@ -735,13 +735,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "用 Rust 编写的原生 UI 框架。",
-        "plain": "用 Rust 快速构建跨平台桌面应用界面。",
-        "what": "开发一套易用的 Rust UI 组件库。",
-        "who": "Rust 开发者。",
-        "how": "发布开源库，提供付费高级功能。",
-        "hours": "50",
-        "risk": "市场已有成熟竞品（如 Tauri）。"
+        "intro": "一个基于 Rust 的原生 UI 框架。",
+        "plain": "给 Rust 开发者提供高性能的原生界面开发方案。",
+        "what": "开发一个跨平台或高性能的 UI 组件库。",
+        "who": "需要高性能原生界面的 Rust 开发者。",
+        "how": "编写 UI 组件库和渲染引擎。",
+        "hours": "100 小时",
+        "risk": "市场竞争激烈，开发周期长回报慢。"
       },
       "revisit": false
     }
