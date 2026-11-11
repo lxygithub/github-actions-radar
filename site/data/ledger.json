@@ -94,33 +94,5 @@
   "anomalyco/rune": {
     "date": "2026-11-11",
     "direction": "通用工具"
-  },
-  "storytold/craft-anything": {
-    "date": "2026-11-11",
-    "direction": "通用工具"
-  },
-  "interplains/Zero-Breach-Toolkit": {
-    "date": "2026-11-11",
-    "direction": "通用工具"
-  },
-  "BryceYuuu/RUN": {
-    "date": "2026-11-11",
-    "direction": "通用工具"
-  },
-  "public-apis/public-apis": {
-    "date": "2026-11-11",
-    "direction": "通用工具"
-  },
-  "openclaw/openclaw": {
-    "date": "2026-11-11",
-    "direction": "通用工具"
-  },
-  "NousResearch/hermes-agent": {
-    "date": "2026-11-11",
-    "direction": "通用工具"
-  },
-  "microsoft/vscode": {
-    "date": "2026-11-11",
-    "direction": "通用工具"
   }
 }
