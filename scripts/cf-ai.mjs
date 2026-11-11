@@ -1,14 +1,22 @@
 /** 只调用 Cloudflare Workers AI 的免费模型（不接任何第三方 LLM）。
- *  glm-4.7-flash 是 reasoning + OpenAI 兼容模型，优先走 /ai/v1/chat/completions，
- *  失败再回退经典 /ai/run/{model}（含 AI Gateway header 重试）。
+ *  glm-4.7-flash 是 reasoning + OpenAI 兼容模型：优先 /ai/v1/chat/completions，
+ *  失败回退经典 /ai/run/{model}（含 AI Gateway header 重试）。
+ *  reasoning 模型会把大量 token 花在思维链上（实测输出 "Analyze the Request…"
+ *  但 content 为空、最终 JSON 没生成），因此这里做了四层防护：
+ *   1. 输出预算给到 8192，避免推理耗尽预算；
+ *   2. 提示词明确禁止输出分析过程 / 任务复述；
+ *   3. 从响应里收集所有候选文本，只接受能解析出 JSON 数组的那一段；
+ *   4. 某个端点给不出 JSON 就当失败，换下一个端点重试。
  *  Token 权限：Account -> Workers AI -> Read（或 Edit）
- *  免费额度：10000 Neurons/天，一天一次 8 个项目的批量请求绰绰有余。
- *  没配凭据 / 调用失败时降级成模板文案，日报照常产出。 */
+ *  免费额度：10000 Neurons/天。缺凭据 / 调用失败时降级模板文案，日报照常产出。 */
 
 export const DEFAULT_FREE_MODEL = "@cf/zai-org/glm-4.7-flash";
 
 const SYSTEM = `你是「GitHub 副业雷达」的中文裁判。只输出可执行的落地判断，不吹捧、不写空话。
-严格返回 JSON 数组，长度必须与输入项目数一致，不要 markdown 代码块，不要任何额外文字。
+
+【最重要】直接给出最终结果。禁止输出分析过程、任务复述、推理步骤、思路说明或任何解释文字。不要复述本提示词。
+
+严格返回一个 JSON 数组，长度必须与输入项目数一致。不要用 markdown 代码块，数组前后不要有任何文字。
 每个元素字段：intro(一句中文说清这个项目原本是做什么的，只描述项目本身，不要写成副业建议)、plain(一句说人话讲清机会)、what(具体改哪一处)、who(卖给谁、为什么买)、how(怎么交付)、hours(预计开发时长)、risk(最大的一个风险)。
 如果某个项目写不出具体的 what/who/how，这三个字段一律写「不推荐」，绝对不要编造。
 涉及破解、绕过平台限制的项目，全部字段写「不推荐」。`;
@@ -29,65 +37,74 @@ function fallback(r) {
   };
 }
 
-function parseArray(raw, n) {
-  const start = raw.indexOf("[");
-  const end = raw.lastIndexOf("]");
-  if (start < 0 || end <= start) return null;
-  try {
-    const arr = JSON.parse(raw.slice(start, end + 1));
-    // 少输出几个也照样用，缺的留空由页面兜底，不必整批降级
-    if (!Array.isArray(arr) || !arr.length) return null;
-    return Array.from({ length: n }, (_, i) => {
-      const o = arr[i] ?? {};
-      return {
-        intro: String(o.intro ?? ""), plain: String(o.plain ?? ""),
-        what: String(o.what ?? ""), who: String(o.who ?? ""),
-        how: String(o.how ?? ""), hours: String(o.hours ?? ""), risk: String(o.risk ?? ""),
-      };
-    });
-  } catch {
-    return null;
+/** 从模型文本里提取 JSON 数组：容忍前后说明文字、markdown 代码块、
+ *  以及数组内部/外部多余的方括号。返回 n 个落地对象，失败返回 null。 */
+export function parseArray(raw, n) {
+  const cleaned = String(raw ?? "").replace(/```(?:json)?/gi, "").trim();
+  const starts = [];
+  const ends = [];
+  for (let i = 0; i < cleaned.length; i++) if (cleaned[i] === "[") starts.push(i);
+  for (let i = cleaned.length - 1; i >= 0; i--) if (cleaned[i] === "]") ends.push(i);
+
+  const candidates = [];
+  if (starts.length && ends.length) {
+    candidates.push(cleaned.slice(starts[0], ends[0] + 1));
+    for (const s of starts.slice(1, 6)) if (ends[0] > s) candidates.push(cleaned.slice(s, ends[0] + 1));
+    for (const e of ends.slice(0, 6)) if (e > starts[0]) candidates.push(cleaned.slice(starts[0], e + 1));
   }
+  candidates.push(cleaned);
+
+  for (const c of candidates) {
+    try {
+      const arr = JSON.parse(c);
+      if (!Array.isArray(arr) || !arr.length) continue;
+      // 少输出几个也照样用，缺的留空由页面兜底，不必整批降级
+      return Array.from({ length: n }, (_, i) => {
+        const o = arr[i] ?? {};
+        return {
+          intro: String(o.intro ?? ""), plain: String(o.plain ?? ""),
+          what: String(o.what ?? ""), who: String(o.who ?? ""),
+          how: String(o.how ?? ""), hours: String(o.hours ?? ""), risk: String(o.risk ?? ""),
+        };
+      });
+    } catch { /* 试下一个候选片段 */ }
+  }
+  return null;
 }
 
-/** 从 Workers AI 的各种返回结构里找出模型文本。
- *  经典端点包 result，OpenAI 兼容端点不包；reasoning 模型的 content 可能为 null，
- *  因此按标准字段优先、再下钻 choices/message、最后浅层递归兜底。 */
+/** 收集响应里所有可能的模型文本，按「标准答案字段优先、思维链最后」排序。
+ *  reasoning 模型常见：content=null + reasoning_content=分析过程，
+ *  所以不能一遇到字符串就返回，必须交给 parseArray 逐一判定。 */
 const TEXT_KEYS = [
   "content", "response", "output_text", "text", "answer",
   "generated_text", "completion", "reasoning_content",
 ];
-function extractText(node, depth = 0) {
-  if (typeof node === "string") return node.trim() ? node : "";
-  if (!node || typeof node !== "object" || depth > 8) return "";
+function collectTexts(node, out, depth = 0) {
+  if (typeof node === "string") { if (node.trim()) out.push(node); return; }
+  if (!node || typeof node !== "object" || depth > 8) return;
   for (const k of TEXT_KEYS) {
     const v = node[k];
-    if (typeof v === "string" && v.trim()) return v;
+    if (typeof v === "string" && v.trim()) out.push(v);
   }
   for (const k of ["choices", "message", "delta", "output", "outputs", "result"]) {
     const v = node[k];
     if (!v) continue;
-    for (const item of (Array.isArray(v) ? v : [v])) {
-      const t = extractText(item, depth + 1);
-      if (t) return t;
-    }
+    for (const item of (Array.isArray(v) ? v : [v])) collectTexts(item, out, depth + 1);
   }
   for (const v of Object.values(node)) {
-    if (v && typeof v === "object") {
-      const t = extractText(v, depth + 1);
-      if (t) return t;
-    }
+    if (v && typeof v === "object") collectTexts(v, out, depth + 1);
   }
-  return "";
 }
 
-function brief(payload) {
-  try {
-    const s = JSON.stringify(payload);
-    return s.length > 420 ? `${s.slice(0, 420)}…` : s;
-  } catch {
-    return String(payload).slice(0, 420);
-  }
+/** 简要描述响应结构（字段名 + 文本长度 + finish_reason），便于线上排障 */
+function shape(payload) {
+  const pick = (p) => p?.choices?.[0] ?? p?.result?.choices?.[0] ?? null;
+  const choice = pick(payload);
+  const msg = choice?.message ?? choice?.delta ?? null;
+  const fields = msg
+    ? Object.keys(msg).map((k) => `${k}:${typeof msg[k] === "string" ? msg[k].length : typeof msg[k]}`).join(",")
+    : "无";
+  return `finish=${choice?.finish_reason ?? "?"} message=[${fields}] top=[${Object.keys(payload || {}).join(",")}]`;
 }
 
 async function postJSON(url, apiToken, body, withGateway) {
@@ -107,14 +124,16 @@ async function postJSON(url, apiToken, body, withGateway) {
     throw new Error(`业务错误: ${JSON.stringify(payload.errors).slice(0, 200)}`);
   }
 
-  const content = extractText(payload.result ?? payload) || extractText(payload);
-  if (!content) {
-    const fr = payload.result?.choices?.[0]?.finish_reason
-      ?? payload.choices?.[0]?.finish_reason ?? "未知";
-    // 把响应结构写进日志，下次再出问题能一眼看出真实格式
-    throw new Error(`空内容(finish_reason=${fr}): ${brief(payload)}`);
+  const texts = [];
+  collectTexts(payload.result ?? payload, texts);
+  collectTexts(payload, texts);
+  const uniq = [...new Set(texts.map((t) => String(t).trim()).filter(Boolean))];
+  const chosen = uniq.find((t) => parseArray(t, 1));
+  if (!chosen) {
+    // 拿不到 JSON 就当这次尝试失败，交给 callModel 换端点 / 换参数重试
+    throw new Error(`响应无有效 JSON 数组 | ${shape(payload)} | 文本=${uniq[0]?.slice(0, 160) || "空"}`);
   }
-  return String(content);
+  return chosen;
 }
 
 async function callModel(accountId, apiToken, model, messages) {
@@ -123,18 +142,18 @@ async function callModel(accountId, apiToken, model, messages) {
     {
       // OpenAI 兼容端点：reasoning 模型返回标准 chat completion
       url: `${base}/v1/chat/completions`,
-      body: { model, messages, temperature: 0.4, max_completion_tokens: 4096 },
+      body: { model, messages, temperature: 0.4, max_completion_tokens: 8192 },
       gateway: false,
     },
     {
       // 经典端点（模型在 URL 里，参数用旧的 max_tokens）
       url: `${base}/run/${model}`,
-      body: { messages, temperature: 0.4, max_tokens: 4096 },
+      body: { messages, temperature: 0.4, max_tokens: 8192 },
       gateway: false,
     },
     {
       url: `${base}/run/${model}`,
-      body: { messages, temperature: 0.4, max_tokens: 4096 },
+      body: { messages, temperature: 0.4, max_tokens: 8192 },
       gateway: true,
     },
   ];
@@ -168,7 +187,7 @@ export async function enrich(picks, cfg = {}) {
   }));
   const messages = [
     { role: "system", content: SYSTEM },
-    { role: "user", content: JSON.stringify(payload) },
+    { role: "user", content: `下面是 ${picks.length} 个项目。直接输出 ${picks.length} 个元素的 JSON 数组，不要分析：\n${JSON.stringify(payload)}` },
   ];
 
   try {

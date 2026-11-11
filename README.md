@@ -128,7 +128,7 @@ site/                         Pages 发布目录（日报 + 归档 + 设置页�
 - GitHub 没有官方 Trending API，也没有「今日涨星」字段：榜单用 Search API 组合近似，日增星靠跨天星数快照相减，**跑满两天后才会出现「今日 +xxx」**。
 - 评分规则复刻自公开文章，偏宽松；嫌松可以在筛选设置页调高「入选分数线」，或降低许可证/时效红利的权重。
 - Actions 的 `schedule` 在整点高峰期可能延迟几分钟，且不保证必定触发，可用 `workflow_dispatch` 手动补跑。
-- Workers AI 免费额度 10000 Neurons/天，一天一次批量请求绰绰有余。默认模型是推理 + OpenAI 兼容模型：`scripts/cf-ai.mjs` 优先请求 `/ai/v1/chat/completions`（`max_completion_tokens`），失败回退经典 `/ai/run/{model}` 并带 gateway 头重试；解析兼容 `content` / `response` / `output_text` / `reasoning_content` 等结构，推理模型返回 `content: null` 也能取到文本。确实取不到内容时会把 `finish_reason` 与响应结构写进 `aiError`，便于定位。
+- Workers AI 免费额度 10000 Neurons/天，一天一次批量请求绰绰有余。默认模型是推理 + OpenAI 兼容模型：`scripts/cf-ai.mjs` 优先请求 `/ai/v1/chat/completions`（`max_completion_tokens: 8192`），失败回退经典 `/ai/run/{model}` 并带 gateway 头重试；解析兼容 `content` / `response` / `output_text` / `reasoning_content` 等结构。**推理模型容易把预算全花在思维链上**（实测输出「Analyze the Request…」而 `content` 为空），所以提示词明确禁止输出分析过程、解析层只接受能提取出 JSON 数组的文本、拿不到就换端点重试；确实失败时会把 `finish_reason`、字段名与文本长度写进 `aiError`。若模型始终不配合，把 `CF_AI_MODEL` 换成模型目录里的免费 instruct 模型。
 - workflow 里的官方 action 已全部升级到 Node 24 版本（`checkout@v7`、`setup-node@v7`、`configure-pages@v6`、`upload-pages-artifact@v5`、`deploy-pages@v5`）；继续用 v4/v5 会收到 `Node.js 20 is deprecated` 警告。项目脚本本身仍跑 Node 22。
 - 改了渲染、页面、图标或配置后，push 到 `main` 会自动重新发布；但**改密码 Secret 本身不会触发 push**，需要再 push 一次任意代码或手动 Run workflow，才会用新密码全量重新加密所有历史页。
 - 每次运行会把当期完整候选池写入 `site/data/pool.json`；本地未跑真实扫描时该文件不存在，设置页预览会退化为历史入选项目、红线淘汰显示为 0。
