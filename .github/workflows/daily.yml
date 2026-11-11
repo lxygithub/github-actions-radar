@@ -91,6 +91,20 @@ jobs:
       - name: 发布前移除原始数据
         run: rm -rf site/data
 
+      # 安全闸门：静态产物里绝不允许出现明文 PAT。
+      # 正常情况 PAT 只存在于 AES-GCM 密文里；若口令门被关闭或注入逻辑被改坏，
+      # 这里会直接中止发布，而不是把凭证推到公开的 Pages 上。
+      # 只统计命中文件数量、不打印命中内容，避免检查本身把 PAT 写进公开日志。
+      - name: 发布前凭证泄漏检查
+        run: |
+          hits=$(grep -rlE "github_pat_[A-Za-z0-9_]{20,}|gh[pousr]_[A-Za-z0-9]{20,}" site --include="*.html" --include="*.js" --include="*.json" || true)
+          if [ -n "$hits" ]; then
+            count=$(printf '%s\n' "$hits" | wc -l)
+            echo "::error::静态产物中发现明文 PAT（${count} 个文件），已中止发布。请确认 RADAR_PASSWORD 已配置、页面已加密；文件列表与命中内容不打印以免二次泄漏。"
+            exit 1
+          fi
+          echo "静态产物无明文 PAT"
+
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

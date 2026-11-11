@@ -86,6 +86,10 @@
 
 **安全边界**：`RADAR_PAT` 只在 Actions 构建时注入**已加密的页面**，公开的仓库源码、Pages artifact、静态 HTML 里都只有密文，不含明文 PAT；`RADAR_PASSWORD` 为空（明文站）时代码会直接忽略并告警，不会把凭证写进公开页面。但能解锁页面的人可以在浏览器开发者工具里读到它 —— 所以务必用上面那种最小权限、单仓库、有过期时间的 fine-grained PAT，最坏影响也只是「别人能触发重跑 / 改 `radar.config.json`」。PAT 过期或轮换后，更新 Secret 再跑一次 workflow 即可，不用改代码。
 
+**发布前的自动闸门**：workflow 在上传 Pages artifact 前会扫一遍 `site/` 下的 `.html/.js/.json`，只要出现明文 PAT（fine-grained 与经典 token 格式都认）就直接 `exit 1` 中止发布，并且只报告命中文件数、不打印命中内容，避免检查动作本身把凭证写进公开日志。所以即便将来口令门被关掉、或注入逻辑被改坏，也不会把 Token 推到公开站点上。构建日志里关于凭证只有「已注入 / 未启用」这类状态字样，从不打印值。
+
+**本机操作的边界**：手填的 Token 只存在浏览器 `sessionStorage` / `localStorage`，从不回写仓库或配置文件；`scripts/protect.mjs` 和 `RADAR_OFFLINE=1` 在未设 `RADAR_PASSWORD` 时会拒绝注入并告警，不会产出含 PAT 的明文页面。源码里唯一的 `github_pat_...` 是输入框占位符，不是凭证。想自查可在仓库根目录跑 `grep -rnE "github_pat_[A-Za-z0-9_]{20,}" --exclude-dir=.git .`，正常应无输出。
+
 **清除与优先级**：面板「清除本机保存」会清掉本机记住的手填 Token，档位 A 下会恢复使用站点内置凭证。读取优先级为 **页面内置 > 本标签页手填 > 本机记住**；手填的值可以临时覆盖内置凭证。
 
 ### 其他
