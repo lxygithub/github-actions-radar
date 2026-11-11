@@ -13,12 +13,13 @@
 ## 部署
 
 1. 把本仓库推到自己的 GitHub 账号（私有仓库也可以，Pages 需按账号套餐）。
-2. **Settings → Secrets and variables → Actions → Secrets**，添加两个 repository secrets：
+2. **Settings → Secrets and variables → Actions → Secrets**，添加三个 repository secrets：
 
    | 名称 | 说明 |
    |---|---|
    | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare 账户 ID， Workers & Pages 概览页右侧可见 |
    | `CLOUDFLARE_API_TOKEN` | 创建 API Token，权限 `Account → Workers AI → Read/Edit` |
+   | `RADAR_PASSWORD` | 站点访问密码（不设则站点保持公开） |
 
    不需要 `GITHUB_TOKEN`：workflow 直接使用内置的 `github.token`。
 3. **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
@@ -35,6 +36,23 @@
 - 想改每日入选数量或分数门槛，编辑 `.github/workflows/daily.yml` 里的 `MAX_PICKS` / `MIN_SCORE`。
 
 缺凭据或 Workers AI 调用失败时，会自动降级成模板文案，并在报告页脚标注「AI 未启用」，不会伪装成 AI 生成。
+
+## 访问密码
+
+设了 `RADAR_PASSWORD` 后，每个页面（归档首页和所有历史日报）都会变成一个密码门：
+
+- 页面源码里**只有密文**，没有密码，也没有明文内容。用 PBKDF2-SHA256（15 万轮）+ AES-GCM 加密，浏览器端用 Web Crypto 本地解密，解密失败即提示密码错误。
+- 解密成功后在同一标签页内自动记住（`sessionStorage`），刷新、点进历史日报都无需重输；关闭标签页即失效。
+- **改密码**：更新 Secret 后手动跑一次 workflow 即可 —— 每天运行时会用当前密码全量重渲染所有历史页，不会出现新旧密码混用。
+- **关闭密码**：删掉 Secret 再跑一次，页面会重新变回明文。
+- 本地不设密码也能正常生成明文页面；想验证加密效果：
+
+```bash
+RADAR_PASSWORD=你的密码 node scripts/protect.mjs     # 只用已有数据离线重建，不联网
+RADAR_OFFLINE=1 RADAR_PASSWORD=你的密码 node scripts/run.mjs
+```
+
+> 注意：这是静态站点能做到的强度，挡的是「直接打开网页」。仓库若是 public，`site/data/*.json` 在 **GitHub 源码里**仍是明文（Pages 发布前会移除该目录，但仓库历史里能看到）。要彻底保密请把仓库设为 private，或改用 Cloudflare Access 之类的边缘鉴权。
 
 ## 本地运行
 
@@ -53,8 +71,10 @@ scripts/core.mjs              GitHub 采集、六维打分、红线过滤、冷�
 scripts/cf-ai.mjs             Workers AI 免费模型 REST 调用（含失败降级）
 scripts/run.mjs               主流程编排
 scripts/render.mjs            日报与归档页 HTML 渲染
+scripts/auth.mjs              整页 AES-GCM 加密 + 登录壳 + 全量重建页面
+scripts/protect.mjs           离线重建/换密码（不联网）
 scripts/preview.mjs           示例预览生成器
-site/                         Pages 发布目录（日报 + 归档 + JSON）
+site/                         Pages 发布目录（日报 + 归档页）；data/ 只留仓库，发布前移除
 ```
 
 ## 几点说明

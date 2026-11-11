@@ -9,7 +9,7 @@ import {
   collectCandidates, attachReadmes, withStarDelta, hardFilter, scoreRepo, select,
 } from "./core.mjs";
 import { enrich, DEFAULT_FREE_MODEL } from "./cf-ai.mjs";
-import { renderReport, renderArchive } from "./render.mjs";
+import { rebuildPages } from "./auth.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = path.join(ROOT, "site");
@@ -32,6 +32,14 @@ async function main() {
 
   await fs.mkdir(DATA, { recursive: true });
   await fs.mkdir(REPORTS, { recursive: true });
+
+  const password = process.env.RADAR_PASSWORD || "";
+  // 离线模式：不联网，只用已有 data/*.json 全量重建页面（改密码 / 本地验证用）
+  if (process.env.RADAR_OFFLINE === "1") {
+    const built = await rebuildPages({ SITE, DATA, REPORTS, password });
+    console.log(`[离线重建] ${built.days} 天 | 口令门 ${built.locked ? "启用" : "关闭"}`);
+    return;
+  }
 
   // 历史报告全部来自仓库里的 site/data/*.json —— Git 就是选品库的持久层
   const files = (await fs.readdir(DATA).catch(() => []))
@@ -90,10 +98,8 @@ async function main() {
   };
 
   await fs.writeFile(path.join(DATA, `${date}.json`), JSON.stringify(report, null, 2));
-  await fs.writeFile(path.join(REPORTS, `${date}.html`), renderReport(report));
-  const nextHistory = [report, ...history.filter((d) => d.date !== date)]
-    .sort((a, b) => b.date.localeCompare(a.date));
-  await fs.writeFile(path.join(SITE, "index.html"), renderArchive(nextHistory));
+  // 每天全量重渲染历史页：改密码后旧日报也会用新密码重新加密
+  const built = await rebuildPages({ SITE, DATA, REPORTS, password });
 
   for (const p of report.picks) {
     if (!p.revisit) ledger[p.fullName] = { date, direction: p.direction };
@@ -104,7 +110,7 @@ async function main() {
     JSON.stringify(Object.fromEntries(repos.map((r) => [r.fullName, r.stars])), null, 2),
   );
 
-  console.log(`[${date}] 完成：扫 ${report.scanned} / 排 ${rejected.length} / 留 ${report.picks.length}；归档共 ${nextHistory.length} 天`);
+  console.log(`[${date}] 完成：扫 ${report.scanned} / 排 ${rejected.length} / 留 ${report.picks.length}；归档共 ${built.days} 天 | 口令门 ${built.locked ? "启用" : "关闭"}`);
 }
 
 main().catch((e) => {

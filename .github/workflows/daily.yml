@@ -22,9 +22,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
 
@@ -34,6 +34,7 @@ jobs:
           RADAR_GITHUB_TOKEN: ${{ github.token }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          RADAR_PASSWORD: ${{ secrets.RADAR_PASSWORD }}
           CF_AI_MODEL: ${{ vars.CF_AI_MODEL || '@cf/zai-org/glm-4.7-flash' }}
           MAX_PICKS: "8"
           MIN_SCORE: "60"
@@ -51,9 +52,14 @@ jobs:
             git push
           fi
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      # data/*.json 是仓库里的原始数据源（已 commit 留存），但不必发布到 Pages；
+      # 页面内容已内联在 HTML 里，移除后避免加密页面旁还留着明文数据。
+      - name: 发布前移除原始数据
+        run: rm -rf site/data
+
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
