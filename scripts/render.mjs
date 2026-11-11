@@ -67,6 +67,10 @@ details ul{padding-left:18px;margin:8px 0 0;color:var(--muted);font-size:13px;ma
 .rerun .actions{align-items:center}
 .rr-link{font-size:12px;color:var(--muted);text-decoration:none}
 .rr-link:hover{color:var(--accent)}
+.rr-opt{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);white-space:nowrap;cursor:pointer}
+.rr-opt input{accent-color:var(--accent);width:15px;height:15px;margin:0}
+.actions button.rr-mini{font-size:12px;padding:6px 10px}
+.rr-hint{color:var(--good);font-size:12px;margin:0 0 10px}
 /* 报告日历：52 周热力图 */
 .cal{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;overflow-x:auto}
 .cal-inner{min-width:0}
@@ -159,31 +163,66 @@ const DEFAULT_REPO = "lxygithub/github-actions-radar";
 const WORKFLOW_FILE = "daily.yml";
 const rerunButton = `<button type="button" id="btn-rerun">↻ 立即重跑</button>`;
 
-/** 手动重跑面板：归档页 / 日报页 / 设置页共用，点击后直接调 workflow_dispatch。
+/** 手动重跑面板：归档页 / 日报页 / 设置页共用。
+ *  凭证来源优先级：页面内置（Actions Secret 注入加密页）> 本标签页手填 > 本机记住 > 手动填。
  *  不填 PAT 也能用右侧链接跳到 GitHub 网页手动 Run workflow。 */
-const rerunPanel = (repo) => `<div class="rerun" id="rerun-panel" hidden>
+
+/** 内置凭据会以 JS 字符串字面量出现在加密页里；白名单过滤杜绝引号 / 尖括号 / 反斜杠。
+ *  GitHub PAT 只由字母、数字、下划线组成，不会被误伤。 */
+const inlinePat = (s) => String(s ?? "").replace(/[^A-Za-z0-9_\-.]/g, "");
+
+/** 三个页面共用的凭证读写口径，避免重跑面板与设置页漂移。 */
+const PAT_BOOT = (pat) => `
+  var BUILTIN=${JSON.stringify(inlinePat(pat))},K='radar-pat';
+  function savedToken(){
+    try{return sessionStorage.getItem(K)||localStorage.getItem(K)||BUILTIN||'';}catch(e){return BUILTIN||'';}
+  }
+  function remembered(){try{return !!localStorage.getItem(K);}catch(e){return false;}}
+  function persist(tk,remember){
+    try{
+      if(remember){localStorage.setItem(K,tk);sessionStorage.removeItem(K);}
+      else{sessionStorage.setItem(K,tk);localStorage.removeItem(K);}
+    }catch(e){}
+  }
+  function forget(){try{localStorage.removeItem(K);sessionStorage.removeItem(K);}catch(e){}}
+`;
+
+const rerunPanel = (repo, pat = "") => `<div class="rerun" id="rerun-panel" hidden>
 <div class="rerun-title">手动重跑一次完整扫描</div>
+${inlinePat(pat) ? '<div class="rr-hint">✓ 站点已内置专用 Token，解锁后直接点「触发重跑」即可，无需填写。</div>' : ""}
 <div class="grid">
 <label class="ctl"><span class="lab"><span>仓库 owner/repo</span></span><input type="text" id="rr-repo" value="${esc(repo)}"></label>
 <label class="ctl"><span class="lab"><span>分支</span></span><input type="text" id="rr-branch" value="main"></label>
-<label class="ctl"><span class="lab"><span>Fine-grained PAT（Actions 读写）</span></span><input type="password" id="rr-token" placeholder="github_pat_..." autocomplete="off"></label>
+<label class="ctl"><span class="lab"><span>Fine-grained PAT${inlinePat(pat) ? "（已内置，可覆盖）" : ""}</span></span><input type="password" id="rr-token" placeholder="github_pat_..." autocomplete="off"></label>
 </div>
 <div class="actions"><button type="button" id="rr-go" class="primary">触发重跑</button>
+<label class="rr-opt"><input type="checkbox" id="rr-remember"><span>记住此 Token</span></label>
+<button type="button" id="rr-clear" class="rr-mini">清除本机保存</button>
 <a class="rr-link" id="rr-gh" href="https://github.com/${esc(repo)}/actions/workflows/${WORKFLOW_FILE}" target="_blank" rel="noopener">在 GitHub 上手动 Run workflow ↗</a></div>
 <div class="status" id="rr-status"></div>
-<div class="note">Token 只保存在当前标签页的 sessionStorage，关闭标签页即失效，不会写进页面源码或配置文件；需要该仓库 <b>Actions: read/write</b>（设置页提交配置还需要 <b>Contents: read/write</b>）。也可不填 Token，点右侧链接到 GitHub 网页手动运行。</div>
+<div class="note">${inlinePat(pat)
+    ? "Token 由 Actions Secret 在构建时注入本加密页，静态文件与公开仓库里都没有明文；能解锁页面的人可在浏览器中读到它，请务必使用最小权限的 fine-grained PAT。"
+    : "Token 默认只保存在当前标签页的 sessionStorage；勾选「记住此 Token」会存到本机 localStorage，换设备仍需重填。也可不填 Token，点右侧链接到 GitHub 网页手动运行。"}
+需要该仓库 <b>Actions: read/write</b>（设置页提交配置还需要 <b>Contents: read/write</b>）。</div>
 </div>`;
 
-const RERUN_SCRIPT = `<script>
+const rerunScript = (pat = "") => `<script>
 (function(){
   var btn=document.getElementById('btn-rerun'),panel=document.getElementById('rerun-panel');
   if(!btn||!panel)return;
-  var K='radar-pat',go=document.getElementById('rr-go'),st=document.getElementById('rr-status');
+  ${PAT_BOOT(pat)}
+  var go=document.getElementById('rr-go'),st=document.getElementById('rr-status');
   var repoEl=document.getElementById('rr-repo'),brEl=document.getElementById('rr-branch'),tkEl=document.getElementById('rr-token'),ghLink=document.getElementById('rr-gh');
-  try{var saved=sessionStorage.getItem(K)||'';if(saved)tkEl.value=saved;}catch(e){}
+  var rememberEl=document.getElementById('rr-remember'),clearEl=document.getElementById('rr-clear');
+  tkEl.value=savedToken();
+  if(rememberEl)rememberEl.checked=remembered();
   function msg(s,bad){st.className='status'+(bad?' bad':'');st.textContent=s||'';}
   btn.addEventListener('click',function(){panel.hidden=!panel.hidden;if(!panel.hidden){msg('');tkEl.focus();}});
   repoEl.addEventListener('change',function(){ghLink.href='https://github.com/'+repoEl.value.trim()+'/actions/workflows/${WORKFLOW_FILE}';});
+  if(clearEl)clearEl.addEventListener('click',function(){
+    forget();tkEl.value=BUILTIN;if(rememberEl)rememberEl.checked=false;
+    msg(BUILTIN?'已清除本机保存的 Token，恢复使用站点内置凭证。':'已清除本机保存的 Token，请重新填写。');
+  });
   go.addEventListener('click',async function(){
     var repo=repoEl.value.trim(),br=brEl.value.trim()||'main',tk=tkEl.value.trim();
     var parts=repo.split('/');
@@ -197,10 +236,10 @@ const RERUN_SCRIPT = `<script>
         body:JSON.stringify({ref:br})
       });
       if(!r.ok){
-        var hint=(r.status===401||r.status===403)?'（请确认 PAT 授予了该仓库 Actions: read/write）':'';
+        var hint=(r.status===401||r.status===403)?'（请确认 PAT 授予了该仓库 Actions: read/write，且未过期）':'';
         throw new Error('HTTP '+r.status+' '+(await r.text()).slice(0,140)+hint);
       }
-      try{sessionStorage.setItem(K,tk);}catch(e){}
+      persist(tk,rememberEl&&rememberEl.checked);
       msg('已触发 '+br+' 分支的重跑，约 1 分钟后刷新本页；右侧链接可查看运行进度。');
     }catch(e){msg('触发失败：'+String(e),true);}
     finally{go.disabled=false;}
@@ -223,6 +262,7 @@ const introBlock = (text) =>
 
 export function renderReport(d, opts = {}) {
   const repo = opts.repo || DEFAULT_REPO;
+  const pat = opts.pat || "";
   const cards = d.picks.map((p, i) => {
     const badges = Object.entries(p.breakdown || {})
       .map(([k, v]) => `<span class="badge">${esc(k)} ${v > 0 ? "+" : ""}${v}</span>`).join("");
@@ -256,7 +296,7 @@ ${plainRow}
 
   return page(`GitHub 副业雷达 · ${d.date}`, `
 <div class="bar"><a href="../index.html">← 历史归档与选品库</a><a href="../settings.html">筛选设置</a>${rerunButton}</div>
-${rerunPanel(repo)}
+${rerunPanel(repo, pat)}
 <h1>GitHub 副业雷达</h1>
 <div class="date">${esc(d.date)} · 生成于 ${esc(String(d.generatedAt).replace("T", " ").slice(0, 16))} UTC</div>
 ${themeBar()}
@@ -265,7 +305,7 @@ ${themeBar()}
 <div class="stats"><div><b>${d.scanned}</b>扫过</div><div><b>${(d.rejected || []).length}</b>排掉</div><div><b>${d.picks.length}</b>留下</div><div><b>${avg}</b>平均分</div></div></div>
 ${cards || '<div class="card">今天没有够格的项目。</div>'}
 <details><summary>今天排掉了什么（${(d.rejected || []).length}）</summary><ul>${rejected || "<li>无</li>"}</ul></details>
-<footer>${ai} · 数据来自 GitHub 公开 API，仅供选品参考</footer>`, RERUN_SCRIPT, "../favicon.svg");
+<footer>${ai} · 数据来自 GitHub 公开 API，仅供选品参考</footer>`, rerunScript(pat), "../favicon.svg");
 }
 
 /* ---------------- 归档页：日历 + 月份折叠 + 选品库 ---------------- */
@@ -352,6 +392,7 @@ function monthCards(days) {
 /** 归档页：报告日历 + 按日期折叠列表 + 可按关键词检索的选品库（数据内联，本地双击也能用） */
 export function renderArchive(history, opts = {}) {
   const repo = opts.repo || DEFAULT_REPO;
+  const pat = opts.pat || "";
   const days = history.map((d) => ({
     date: d.date,
     scanned: d.scanned,
@@ -450,7 +491,7 @@ export function renderArchive(history, opts = {}) {
 
   return page("GitHub 副业雷达 · 历史归档", `
 <div class="bar"><a href="settings.html">筛选设置</a>${rerunButton}</div>
-${rerunPanel(repo)}
+${rerunPanel(repo, pat)}
 <h1>GitHub 副业雷达 · 历史归档</h1>
 <div class="date">每天一份日报，永久留存；下面是可检索的选品库</div>
 ${themeBar()}
@@ -471,21 +512,21 @@ ${calendarHTML(days)}
 <select id="dir"><option value="">全部方向</option>${directions.map((d) => `<option value="${esc(d)}">${esc(d)}</option>`).join("")}</select></div>
 <div class="muted" id="count" style="margin-bottom:10px"></div>
 <div id="items"></div>
-<footer>数据来自 GitHub 公开 API · 中文解说由 Cloudflare Workers AI 免费模型生成</footer>`, script + RERUN_SCRIPT, "favicon.svg");
+<footer>数据来自 GitHub 公开 API · 中文解说由 Cloudflare Workers AI 免费模型生成</footer>`, script + rerunScript(pat), "favicon.svg");
 }
 
 /* ---------------- 筛选设置页 ---------------- */
 
-const SETTINGS_JS = String.raw`
+const settingsScript = (pat = "") => String.raw`
 (function(){
+  ${PAT_BOOT(pat)}
   var D=JSON.parse(document.getElementById('settings-data').textContent);
   var R=window.RadarRules;
   var cfg=R.normalizeConfig(D.config), POOL=D.pool||{repos:[]};
   function get(o,p){return p.split('.').reduce(function(x,k){return x==null?undefined:x[k];},o);}
   function set(o,p,v){var a=p.split('.'),x=o;for(var i=0;i<a.length-1;i++)x=x[a[i]];x[a[a.length-1]]=v;}
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
-  var K='radar-pat',saved='';try{saved=sessionStorage.getItem(K)||'';}catch(e){}
-  if(saved)document.getElementById('gh-token').value=saved;
+  document.getElementById('gh-token').value=savedToken();
   function status(id,msg,bad){var e=document.getElementById(id);e.className='status'+(bad?' bad':'');e.textContent=msg||'';}
   function cur(){
     document.querySelectorAll('[data-path]').forEach(function(el){
@@ -576,7 +617,7 @@ const SETTINGS_JS = String.raw`
       if(sha)body.sha=sha;
       var r=await fetch(url,{method:'PUT',headers:Object.assign({},h,{'Content-Type':'application/json'}),body:JSON.stringify(body)});
       if(!r.ok){throw new Error('提交失败 HTTP '+r.status+' '+(await r.text()).slice(0,160));}
-      try{sessionStorage.setItem(K,token);}catch(e){}
+      var rem=document.getElementById('rr-remember');persist(token,rem&&rem.checked);
       status('gh-status','已提交到 '+repo+' 的 '+branch+'，push 会自动触发一次重算；想立刻看效果也可以点右上角「立即重跑」。');
     }catch(e){status('gh-status',String(e),true);}
   }
@@ -599,7 +640,7 @@ const SETTINGS_JS = String.raw`
 
 /** 生成设置页。rulesSource 是 scripts/rules.mjs 的源码（去掉 export 后内联），
  *  保证浏览器预览与 Actions 打分用的是同一份规则实现。 */
-export function renderSettings({ config, defaultConfig, rulesSource, pool, repo }) {
+export function renderSettings({ config, defaultConfig, rulesSource, pool, repo, pat = "" }) {
   const data = JSON.stringify({ config, defaultConfig, pool, repo }).replace(/</g, "\\u003c");
   const browserRules = rulesSource.replace(/^export\s+/gm, "") +
     "\nwindow.RadarRules={normalizeConfig:normalizeConfig,createRules:createRules,DEFAULT_CONFIG:DEFAULT_CONFIG};";
@@ -611,7 +652,7 @@ export function renderSettings({ config, defaultConfig, rulesSource, pool, repo 
 
   const body = `
 <div class="bar"><a href="index.html">← 历史归档与选品库</a>${rerunButton}</div>
-${rerunPanel(repo)}
+${rerunPanel(repo, pat)}
 <h1>筛选设置</h1>
 <div class="date">参数保存在仓库根目录 radar.config.json，下次定时任务运行生效</div>
 ${themeBar()}
@@ -700,7 +741,7 @@ ${textarea("keywords.vertical", "垂类加分正则")}
 <div class="status" id="main-status"></div></div>
 
 <details class="panel"><summary>直接提交到 GitHub（免手动上传）</summary>
-<div class="note" style="margin-top:10px">填一个只授予该仓库 Contents 读写权限的 fine-grained PAT。Token 只保存在当前标签页的 sessionStorage（与「立即重跑」共用），关闭标签页即失效，不写入 localStorage、不保存进页面源码或配置文件。公开站点上请勿使用权限过大的经典 Token。</div>
+<div class="note" style="margin-top:10px">与「立即重跑」共用同一个 Token：站点已内置时会自动填好，无需操作；否则可手填并勾选「记住此 Token」存到本机。该 Token 需要本仓库 <b>Contents: read/write</b>（重跑还要 <b>Actions: read/write</b>）。请用只勾选这一个仓库、设了过期时间的 fine-grained PAT，公开站点上不要使用权限过大的经典 Token。</div>
 <div class="grid" style="margin-top:12px">
 <label class="ctl"><span class="lab"><span>仓库 owner/repo</span></span><input type="text" id="gh-repo" value="${esc(repo)}"></label>
 <label class="ctl"><span class="lab"><span>分支</span></span><input type="text" id="gh-branch" value="main"></label>
@@ -720,7 +761,7 @@ ${textarea("keywords.vertical", "垂类加分正则")}
 ${body}
 </div><script id="settings-data" type="application/json">${data}</script>
 <script>${browserRules}</script>
-<script>${SETTINGS_JS}</script>
-${RERUN_SCRIPT}
+<script>${settingsScript(pat)}</script>
+${rerunScript(pat)}
 ${THEME_SCRIPT}</body></html>`;
 }

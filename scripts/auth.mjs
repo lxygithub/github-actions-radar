@@ -147,7 +147,7 @@ export function gatePage(blob, faviconHref = "favicon.svg") {
 
 /** 从 data/*.json 全量重建所有页面。每次运行都重渲染历史页，
  *  这样改密码后旧日报也会被重新加密，不会出现「新旧密码混用」。 */
-export async function rebuildPages({ SITE, DATA, REPORTS, ROOT, password = "", repo = "" }) {
+export async function rebuildPages({ SITE, DATA, REPORTS, ROOT, password = "", repo = "", pat = "" }) {
   const files = (await fs.readdir(DATA).catch(() => []))
     .filter((f) => DATE_JSON.test(f)).sort().reverse();
   const history = [];
@@ -156,8 +156,13 @@ export async function rebuildPages({ SITE, DATA, REPORTS, ROOT, password = "", r
     catch { /* 跳过损坏的数据文件 */ }
   }
   const locked = Boolean(password);
+  // 没有口令门时页面是公开的，绝不允许把 PAT 内联进明文 HTML。
+  const builtInPat = locked ? String(pat || "").trim() : "";
+  if (pat && !locked) {
+    console.warn("[安全] 未启用口令门（RADAR_PASSWORD 为空），已忽略 RADAR_PAT，避免凭证出现在明文页面");
+  }
   const repoName = repo || process.env.RADAR_REPO || process.env.GITHUB_REPOSITORY || "";
-  const pageOpts = { repo: repoName || undefined };
+  const pageOpts = { repo: repoName || undefined, pat: builtInPat };
   const write = async (file, html, faviconHref) => {
     const out = locked ? gatePage(await seal(html, password), faviconHref) : html;
     await fs.writeFile(file, out);
@@ -189,11 +194,12 @@ export async function rebuildPages({ SITE, DATA, REPORTS, ROOT, password = "", r
         rulesSource,
         pool,
         repo: repoName || "lxygithub/github-actions-radar",
+        pat: builtInPat,
       });
       await write(path.join(SITE, "settings.html"), html, "favicon.svg");
     }
   }
-  return { days: history.length, locked };
+  return { days: history.length, locked, builtInPat: Boolean(builtInPat) };
 }
 
 /** 设置页的预览样本：优先用最近一次扫描的完整候选池，否则退回历史日报里入选过的项目 */

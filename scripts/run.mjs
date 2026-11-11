@@ -55,12 +55,14 @@ async function main() {
   await fs.mkdir(REPORTS, { recursive: true });
 
   const password = process.env.RADAR_PASSWORD || "";
-  const build = () => rebuildPages({ SITE, DATA, REPORTS, ROOT, password });
+  // 可选：把免填重跑用的 PAT 从 Secret 注入加密页。明文站会在 rebuildPages 里被拒绝。
+  const pat = process.env.RADAR_PAT || "";
+  const build = () => rebuildPages({ SITE, DATA, REPORTS, ROOT, password, pat });
 
   // 离线模式：不联网，只用已有 data/*.json 全量重建页面（改密码 / 本地验证用）
   if (process.env.RADAR_OFFLINE === "1") {
     const built = await build();
-    console.log(`[离线重建] ${built.days} 天 | 口令门 ${built.locked ? "启用" : "关闭"}`);
+    console.log(`[离线重建] ${built.days} 天 | 口令门 ${built.locked ? "启用" : "关闭"} | 内置凭证 ${built.builtInPat ? "已注入" : "未启用"}`);
     return;
   }
 
@@ -148,7 +150,7 @@ async function main() {
     JSON.stringify(Object.fromEntries(repos.map((r) => [r.fullName, r.stars])), null, 2),
   );
 
-  console.log(`[${date}] 完成：扫 ${report.scanned} / 排 ${rejected.length} / 留 ${report.picks.length}；归档共 ${built.days} 天 | 口令门 ${built.locked ? "启用" : "关闭"}`);
+  console.log(`[${date}] 完成：扫 ${report.scanned} / 排 ${rejected.length} / 留 ${report.picks.length}；归档共 ${built.days} 天 | 口令门 ${built.locked ? "启用" : "关闭"} | 内置凭证 ${built.builtInPat ? "已注入" : "未启用"}`);
 }
 
 main().catch((e) => {

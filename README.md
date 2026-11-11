@@ -9,7 +9,7 @@
 - **每日日报** `reports/YYYY-MM-DD.html`：S/A/B 分级、打分明细、项目简介、说人话/改哪一处/卖给谁/怎么交付、被淘汰原因，三套配色（摸鱼绿 / 白天 / 深夜），可单独转发。
 - **历史归档 + 选品库** `index.html`：**报告日历**（GitHub 风格热力图，点方块直达当天日报）、**日期跳转**、**按月份折叠的紧凑列表**（年份 / 关键词筛选、展开收起全部），并对所有历史项目做关键词搜索（项目名、简介、方向、语言、许可证、落地三行）与方向筛选。日期再多也不用翻一长串卡片。
 - **筛选设置** `settings.html`：图形化调整分数线、名额、六个评分维度权重与可接手度、红线开关、冷却天数、方向关键词和采集查询，实时用真实候选池重算预览，可下载配置或直接提交回仓库。
-- **手动重跑**「↻ 立即重跑」：归档页、日报页、设置页顶部都有，填一次 fine-grained PAT 即可从页面直接触发 workflow，不必去 GitHub 网页点 Run workflow。
+- **手动重跑**「↻ 立即重跑」：归档页、日报页、设置页顶部都有；配好 Secret `RADAR_PAT` 后，解锁页面即可一键触发 workflow，全程不用填 Token，也不必去 GitHub 网页点 Run workflow。
 - **项目简介**：日报卡片与选品库都展示一句项目说明，取值优先级为 AI 生成的中文简介 → GitHub 原始 `description` → README 首段（去 HTML/Markdown），超长截断；简介并入搜索关键词。AI 未启用时显示英文原始描述。
 - **站点图标** `site/favicon.svg`：登录页与解锁后的页面共用，日报走 `../favicon.svg`。
 - **原始数据** `data/*.json`：每天一份；`ledger.json` 记冷却账本，`stars.json` 记跨天星数快照（用来算「今日 +xxx」），`pool.json` 是给设置页做预览的候选池快照。默认存在 `radar-data` 分支，见「历史数据持久层」。
@@ -17,13 +17,14 @@
 ## 部署
 
 1. 把本仓库推到自己的 GitHub 账号（私有仓库也可以，Pages 需按账号套餐）。
-2. **Settings → Secrets and variables → Actions → Secrets**，添加三个 repository secrets：
+2. **Settings → Secrets and variables → Actions → Secrets**，添加以下 repository secrets（前三个必填）：
 
    | 名称 | 说明 |
    |---|---|
    | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare 账户 ID， Workers & Pages 概览页右侧可见 |
    | `CLOUDFLARE_API_TOKEN` | 创建 API Token，权限 `Account → Workers AI → Read/Edit` |
    | `RADAR_PASSWORD` | 站点访问密码（不设则站点保持公开） |
+   | `RADAR_PAT`（可选） | 免填重跑用的 fine-grained PAT，见「手动重跑按钮与凭证」；不配则页面回退到手填模式 |
 
    不需要 `GITHUB_TOKEN`（workflow 直接用内置的 `github.token`）；`RADAR_REPO` 也由 `${{ github.repository }}` 自动注入，供设置页「一键提交」与重跑按钮定位仓库，无需手工配置。
 3. **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
@@ -62,14 +63,34 @@
 
 > 注意：push 触发的是**完整扫描**，会重新消耗一次 GitHub API 与 Workers AI 免费额度；但不会再往 `main` 写任何 bot commit。纯改 README 不会触发。
 
-## 手动重跑按钮
+## 手动重跑按钮与凭证
 
-归档页、日报页、设置页右上角都有「↻ 立即重跑」。点开后：
+归档页、日报页、设置页右上角都有「↻ 立即重跑」。点开后点「触发重跑」即可；页面直接调 `POST /repos/{repo}/actions/workflows/daily.yml/dispatches`，等价于在 GitHub 网页点 Run workflow，约 1 分钟后刷新就能看到新日报。
 
-- 填 **owner/repo**（已自动填好）、**分支**（默认 `main`）、**fine-grained PAT**，点「触发重跑」；页面直接调 `POST /repos/{repo}/actions/workflows/daily.yml/dispatches`，等价于在 GitHub 网页点 Run workflow，约 1 分钟后刷新即可看到新日报。
-- PAT 需要该仓库 **Actions: read/write**（fine-grained token 支持，GitHub 官方 REST 文档明确列出）；如果同时也想用设置页「一键提交」改配置，再勾上 **Contents: read/write**，一个 Token 就够。
-- Token 只存在当前标签页的 `sessionStorage`（与设置页「一键提交」共用，只需填一次），关闭标签页即失效；不写 localStorage、不写进页面源码或配置文件。
-- **不想用 Token**：点面板里的「在 GitHub 上手动 Run workflow ↗」，登录 GitHub 后点一下即可；`workflow_dispatch` 一直保留。
+浏览器要调 GitHub 写接口就必须带凭证，三档任选（按免填程度排序）：
+
+| 档位 | 配置 | 体验 | 代价 |
+|---|---|---|---|
+| **A. 站点内置（推荐）** | 仓库 Secret 加 `RADAR_PAT` | 输一次站点密码，之后所有设备、所有浏览器**永久免填**，直接点按钮 | PAT 随加密页下发，能解锁页面的人可在浏览器里读到它 |
+| **B. 本机记住** | 面板勾「记住此 Token」 | 填一次，本机长期免填 | 明文存浏览器 localStorage；换设备 / 清缓存要重填 |
+| **C. 不配置** | 什么都不做 | 每次新标签页手填；或点「在 GitHub 上手动 Run workflow ↗」在网页上跑 | 最啰嗦，但零凭证下发 |
+
+### 档位 A：一次性配置
+
+1. 在 GitHub **头像 → Settings → Developer settings → Personal access tokens → Fine-grained tokens** 建一个 PAT：
+   - Resource owner 选自己；Repository access 选 `Only select repositories` → 只勾本仓库；过期时间建议 90 天。
+   - Repository permissions：**Actions: Read and write**（重跑）+ **Contents: Read and write**（设置页一键提交）；其余全部 No access。
+   - 已有 PAT 直接点进去改权限并保存即可，Token 字符串不变，不用重新生成。
+2. **Settings → Secrets and variables → Actions → Secrets → New repository secret**，名称 `RADAR_PAT`，值填这串 PAT。
+3. 跑一次 workflow（Actions 手动 Run，或在站点用旧方式手填一次 Token 点重跑）。每次运行都会用当前 Secret 全量重渲染并重新加密所有页面，之后新页面就内置了凭证。
+
+**安全边界**：`RADAR_PAT` 只在 Actions 构建时注入**已加密的页面**，公开的仓库源码、Pages artifact、静态 HTML 里都只有密文，不含明文 PAT；`RADAR_PASSWORD` 为空（明文站）时代码会直接忽略并告警，不会把凭证写进公开页面。但能解锁页面的人可以在浏览器开发者工具里读到它 —— 所以务必用上面那种最小权限、单仓库、有过期时间的 fine-grained PAT，最坏影响也只是「别人能触发重跑 / 改 `radar.config.json`」。PAT 过期或轮换后，更新 Secret 再跑一次 workflow 即可，不用改代码。
+
+**清除与优先级**：面板「清除本机保存」会清掉本机记住的手填 Token，档位 A 下会恢复使用站点内置凭证。读取优先级为 **页面内置 > 本标签页手填 > 本机记住**；手填的值可以临时覆盖内置凭证。
+
+### 其他
+
+- `workflow_dispatch` 一直保留，任何时候都能在 GitHub 网页或 Actions API 手动触发。
 - 重跑是完整扫描，会重新消耗一次 GitHub API 与 Workers AI 免费额度；同日重跑会忽略当天账本，不会把 8 个推荐砍成 1 个。
 
 ## 历史数据持久层（回写 bot commit 能避免吗）
@@ -117,7 +138,7 @@
 1. **下载** `radar.config.json`，放回仓库根目录并 push。
 2. **复制** 配置内容，粘贴到 GitHub 网页编辑器。
 3. **导入** 已有的配置文件，继续在上面改。
-4. **一键提交**：页面底部展开「直接提交到 GitHub」，用只授予该仓库 Contents 读写权限的 fine-grained PAT 走 GitHub Contents API commit。Token 只保存在当前标签页的 `sessionStorage`（与「立即重跑」共用），关闭标签页即失效，不写 localStorage、不落盘到页面或配置文件。
+4. **一键提交**：页面底部展开「直接提交到 GitHub」，走 GitHub Contents API commit。它与「立即重跑」共用同一个 Token：配了 Secret `RADAR_PAT` 时自动填好、无需操作；否则手填（可勾「记住此 Token」存到本机）。该 Token 需要本仓库 **Contents: read/write**，重跑还需要 **Actions: read/write**，详见上节。
 
 另有「撤销改动」可还原到线上配置。配置改动在**下一次运行**生效：用「一键提交」或把配置 push 到 `main` 会自动触发一次重算，也可以点「立即重跑」或手动 Run workflow；配置改动不会改写已生成的历史报告。
 
