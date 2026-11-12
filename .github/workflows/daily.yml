@@ -2,8 +2,9 @@ name: 每日 GitHub 副业雷达
 
 on:
   schedule:
-    # UTC 00:00 = 北京时间 08:00。GitHub Actions 高峰期可能延迟几分钟
-    - cron: "0 0 * * *"
+    # UTC 01:17 = 北京时间 09:17。刻意避开整点：GitHub 官方文档说明每小时开头是负载高峰，
+    # 定时任务可能延迟数小时甚至被直接丢弃（本项目 2026-11-12 曾因 "0 0 * * *" 漏跑一整天）。
+    - cron: "17 1 * * *"
   workflow_dispatch:
   # push 代码后自动跑完整流程并发布，不用再手动点 Run workflow
   push:

@@ -29,7 +29,7 @@
    不需要 `GITHUB_TOKEN`（workflow 直接用内置的 `github.token`）；`RADAR_REPO` 也由 `${{ github.repository }}` 自动注入，供设置页「一键提交」与重跑按钮定位仓库，无需手工配置。
 3. **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**。
 4. **Actions → 每日 GitHub 副业雷达 → Run workflow** 手动跑第一次；之后也可以直接在站点点「↻ 立即重跑」。
-5. 之后每天 UTC 00:00（北京时间 08:00）自动运行；往 `main` push 代码也会自动触发一次完整运行并发布，详见下节。
+5. 之后每天 UTC 01:17（北京时间 09:17）自动运行；往 `main` push 代码也会自动触发一次完整运行并发布，详见下节。时间刻意避开整点 —— GitHub 官方文档说明每小时开头是 Actions 负载高峰，定时任务可能延迟数小时甚至被直接丢弃（本项目 2026-11-12 曾因 `0 0 * * *` 漏跑一整天）。若某天发现没出日报，用页面「↻ 立即重跑」或 Actions 手动 Run 补一次即可，同日重跑是幂等的。
 
 访问地址：默认是 `https://<用户名>.github.io/<仓库名>/`；本实例绑定了自定义域 **`https://gh-radar.ieop.top/`**，日报路径形如 `/reports/YYYY-MM-DD.html`。
 
