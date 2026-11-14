@@ -146,5 +146,13 @@
   "tangerineturtle1/NX2navi": {
     "date": "2026-11-13",
     "direction": "通用工具"
+  },
+  "vercel-labs/ui": {
+    "date": "2026-11-14",
+    "direction": "通用工具"
+  },
+  "mromidev/claude-animated-shorts": {
+    "date": "2026-11-14",
+    "direction": "通用工具"
   }
 }
