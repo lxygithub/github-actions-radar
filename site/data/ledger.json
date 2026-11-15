@@ -154,5 +154,13 @@
   "mromidev/claude-animated-shorts": {
     "date": "2026-11-14",
     "direction": "通用工具"
+  },
+  "RoutineMiku/apkstart": {
+    "date": "2026-11-15",
+    "direction": "通用工具"
+  },
+  "libracoder/kiri": {
+    "date": "2026-11-15",
+    "direction": "通用工具"
   }
 }

@@ -1,0 +1,557 @@
+{
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-15T07:50:53.616Z",
+  "scanned": 80,
+  "rejected": [
+    {
+      "name": "kingcharleslzy-ai/dsh-purge",
+      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "unclebob/ub-mode",
+      "url": "https://github.com/unclebob/ub-mode",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "interplains/Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "amosblomqvist/learnharness",
+      "url": "https://github.com/amosblomqvist/learnharness",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "huamidev/GestaltX",
+      "url": "https://github.com/huamidev/GestaltX",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "xiaoyang111222/cn-math-taxonomy",
+      "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "designfuchen/word-atlas",
+      "url": "https://github.com/designfuchen/word-atlas",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "TheAlgorithms/Python",
+      "url": "https://github.com/TheAlgorithms/Python",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "Revivedx/SavageWindRecomp",
+      "url": "https://github.com/Revivedx/SavageWindRecomp",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "reason": "分数 48 未达 60 线"
+    },
+    {
+      "name": "zortos293/Lichii",
+      "url": "https://github.com/zortos293/Lichii",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "reason": "分数 46 未达 60 线"
+    },
+    {
+      "name": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "reason": "分数 45 未达 60 线"
+    },
+    {
+      "name": "Gathin23/cleanyourtv",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "reason": "分数 43 未达 60 线"
+    },
+    {
+      "name": "ossu/computer-science",
+      "url": "https://github.com/ossu/computer-science",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "reason": "分数 40 未达 60 线"
+    },
+    {
+      "name": "JustAResearcher/gpu-unlock-ada",
+      "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "Zagitta/gpu-unlock",
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "reason": "分数 37 未达 60 线"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "reason": "分数 37 未达 60 线"
+    },
+    {
+      "name": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "reason": "分数 31 未达 60 线"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "reason": "分数 30 未达 60 线"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "reason": "分数 24 未达 60 线"
+    },
+    {
+      "name": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "reason": "分数 22 未达 60 线"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "reason": "分数 21 未达 60 线"
+    },
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "reason": "分数 20 未达 60 线"
+    },
+    {
+      "name": "massgravel/Microsoft-Activation-Scripts",
+      "url": "https://github.com/massgravel/Microsoft-Activation-Scripts",
+      "reason": "分数 19 未达 60 线"
+    },
+    {
+      "name": "rddmwmddr/android-ad-cleaner",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "pengchujin/aerial-tv",
+      "url": "https://github.com/pengchujin/aerial-tv",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Lee-xeo/Claude-Cage",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Jakeschincariol/day-trader-skill",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "LNPANDY/NX2Apple",
+      "url": "https://github.com/LNPANDY/NX2Apple",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "haydenschmitty/floorplan",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "l0ng-ai/openidea",
+      "url": "https://github.com/l0ng-ai/openidea",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Verlintas/NOIR",
+      "url": "https://github.com/Verlintas/NOIR",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "simbasjungles/free-my-tv",
+      "url": "https://github.com/simbasjungles/free-my-tv",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "aicodeking/leanrea",
+      "url": "https://github.com/aicodeking/leanrea",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "t3dotgg/tstack",
+      "url": "https://github.com/t3dotgg/tstack",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "wangzan101/Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "expo/exact",
+      "url": "https://github.com/expo/exact",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "ly05010419/MacNativeGames",
+      "url": "https://github.com/ly05010419/MacNativeGames",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/DeepInfer",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "valentderah/totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "anomalyco/rune",
+      "url": "https://github.com/anomalyco/rune",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "modelflare-ai/AnyModelBot",
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "BryceYuuu/RUN",
+      "url": "https://github.com/BryceYuuu/RUN",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "elvarofficial/teardown",
+      "url": "https://github.com/elvarofficial/teardown",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "tangerineturtle1/NX2navi",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "reason": "名额 / 冷却限制"
+    }
+  ],
+  "picks": [
+    {
+      "fullName": "RoutineMiku/apkstart",
+      "owner": "RoutineMiku",
+      "name": "apkstart",
+      "url": "https://github.com/RoutineMiku/apkstart",
+      "description": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+      "stars": 4252,
+      "todayStars": null,
+      "language": "JavaScript",
+      "license": "MIT",
+      "openIssues": 53,
+      "sizeKb": 9295,
+      "createdAt": "2026-10-29T13:44:03Z",
+      "pushedAt": "2026-11-15T07:43:58Z",
+      "topics": [
+        "android",
+        "android-x86",
+        "apk",
+        "electron",
+        "emulator",
+        "freeform",
+        "qemu",
+        "windows",
+        "wsa"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# ApkStart\n\n<p align=\"center\"><img src=\"docs/images/logo.png\" alt=\"ApkStart Logo\" width=\"160\" /></p>\n\n[![CI](https://github.com/RoutineMiku/apkstart/actions/workflows/ci.yml/badge.svg)](https://github.com/RoutineMiku/apkstart/actions/workflows/ci.yml)\n[![Release](https://img.shields.io/github/v/release/RoutineMiku/apkstart?include_prereleases&sort=semver)](https://github.com/RoutineMiku/apkstart/releases)\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)\n[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64-0078D6.svg)](#)\n\n**Windows 上的安卓应用运行器 —— 让安卓应用像 Windows 原生软件一样被安装和使用。**\n\n- 🖱️ **双击 .apk 即安装**：注册 .apk 文件关联后，在资源管理器里双击 APK，自动解析 → 安装 → 生成桌面图标，全程无需打开任何模拟器界面。\n- 🧩 **每个应用一个桌面图标**：图标从 APK 内部离线提取并转为多尺寸 ICO，双击桌面图标 = 直接启动该应用，与打开一个原生 Windows 软件的体验一致。\n- 🪟 **应用就是一个窗口**：运行时以**带窗口**模式启动（无头模式下 Android 不出 VSYNC，应用进程活着但屏幕上是空的），ApkStart 把这块窗口改标题、换真实应用图标、按竖屏比例摆好位置，就是一个独立应用窗口；**全屏**铺满屏幕高度并居中，**窗口模式**可自由拖动缩放且按应用记忆尺寸。\n- 🔍 **能被 Windows 搜到**：安装后同时创建桌面 + 开始菜单（`程序\\ApkStart\\`）快捷方式，按应用名在开始菜单搜索即可直达，任务栏按应用分组。\n- 📁 **数据互通**：`%USERPROFILE%\\ApkStartShared` ↔ 安卓内 `/sdcard/ApkStartShared` 持续双向同步，安卓应用存下的文件直接出现在本机。\n- 🪶 **极致轻量**：壳层本身零第三方依赖（连 ZIP / PNG / ICO / AXML 解析都是手写的），运行时按需拉起，空闲自动回收；也可以完全复用你机器上已有的安卓运行时，额外占用为零。\n\n![主界面](docs/images/app.png)\n\n```\n┌────────────────────────────────────────────────────────────┐\n│  桌面图标（真实应用图标 .lnk）                              │\n│      │  双击                                               │\n│      ▼                                                     │\n│  ApkStart.exe --launch <包名>                              │\n│      │  运行时未启动？→ 自动拉起（Android Emulator + API34）│\n│      ▼                                                     │\n│  按系统解析出的 LAUNCHER 入口启动（不是 APK 里的主 Activity）│\n│      │  存活观察 18 秒，闪退自动重试 / 重置数据 / 补权限     │\n│      ▼                                                     │\n│  模拟器窗口 = 应用窗口（改标题、换图标、竖屏比例、全屏居中） │\n└────────────────────────────────────────────────────────────┘\n```\n\n## 下载即用（不想编译）\n\n两个源内容一致，国内建议用 Gitee：\n\n",
+      "score": 93,
+      "grade": "S",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 15,
+        "需求真实": 16,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "Windows 上的一款双击即装安卓应用运行器，支持独立窗口运行。",
+        "plain": "让用户在 Windows 上像原生软件一样使用安卓应用。",
+        "what": "集成 QEMU 运行时并封装一键安装程序。",
+        "who": "需要在 Windows 桌面环境无缝使用安卓 App 的用户。",
+        "how": "提供安装包或一键安装脚本。",
+        "hours": "2-4",
+        "risk": "QEMU 兼容性及性能问题。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "libracoder/kiri",
+      "owner": "libracoder",
+      "name": "kiri",
+      "url": "https://github.com/libracoder/kiri",
+      "description": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+      "stars": 4210,
+      "todayStars": null,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "openIssues": 75,
+      "sizeKb": 4082,
+      "createdAt": "2026-11-02T16:11:30Z",
+      "pushedAt": "2026-11-14T23:07:41Z",
+      "topics": [
+        "containers",
+        "docker",
+        "kubernetes",
+        "linux",
+        "macos",
+        "oci",
+        "windows"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"brand/logo/kiri-horizontal-dark.svg\">\n    <img src=\"brand/logo/kiri-horizontal-light.svg\" alt=\"Kiri\" width=\"220\">\n  </picture>\n</p>\n\n<p align=\"center\">\n  <b>A tiny, fast container runtime for macOS, Windows and Linux.</b><br>\n  Runs your Docker images and works with the <code>docker</code> CLI, Compose and buildx you already use.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://runkiri.com/releases/\">Download</a> ·\n  <a href=\"docs/features.md\">Features</a> ·\n  <a href=\"docs/development.md\">Build from source</a> ·\n  <a href=\"https://github.com/libracoder/kiri/releases\">Releases</a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/libracoder/kiri/releases/latest\"><img alt=\"Latest release\" src=\"https://img.shields.io/github/v/release/libracoder/kiri?label=release&color=2f6feb\"></a>\n  <a href=\"LICENSE\"><img alt=\"License: Apache-2.0\" src=\"https://img.shields.io/badge/license-Apache--2.0-555\"></a>\n  <a href=\"#in-your-language\"><img alt=\"38 languages\" src=\"https://img.shields.io/badge/languages-38-2ea043\"></a>\n</p>\n\n<p align=\"center\">\n  🇬🇧 🇮🇩 🇩🇪 🇪🇸 🇫🇷 🇮🇹 🇵🇱 🇧🇷 🇻🇳 🇹🇷 🇷🇺 🇸🇦 🇯🇵 🇰🇷 🇨🇳 🇹🇼<br>\n  <sub>Kiri speaks 38 languages. <a href=\"#in-your-language\">Is yours one?</a></sub>\n</p>\n\n<p align=\"center\">\n  <img src=\"docs/images/kiri-window.png\" alt=\"The Kiri window, showing containers grouped by Compose project with their state, ports, local domains and size\" width=\"900\">\n</p>\n\n---\n\nKiri is a lightweight replacement for Docker Desktop and OrbStack, written in\nRust. It runs containers in one small Linux VM (or straight on the kernel on\nLinux) and speaks the Docker Engine API, so your tools just work.\n\nThe name comes from the Igbo word *ntakịrị*, \"small\".\n\n## Why Kiri\n\n- **Fast**: a container starts and exits in about 2.5 ms through the Docker API. That's around 80 times faster than Docker Desktop.\n- **Light**: the VM sleeps after 60 s idle, the daemon stays at abo",
+      "score": 67,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 12,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": -6
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "跨平台的轻量级容器运行时，兼容 Docker 命令，自带免费内网穿透。",
+        "plain": "为开发者提供更轻量、自带内网穿透的容器解决方案。",
+        "what": "集成免费内网穿透功能并打包发布。",
+        "who": "需要快速部署容器且希望自带内网穿透的开发者。",
+        "how": "提供二进制可执行文件及安装文档。",
+        "hours": "1-2",
+        "risk": "与 Docker Desktop 等成熟产品的竞争。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "JuneYaooo/rea-video",
+      "owner": "JuneYaooo",
+      "name": "rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+      "stars": 8757,
+      "todayStars": 625,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "openIssues": 5,
+      "sizeKb": 157070,
+      "createdAt": "2026-10-29T16:15:01Z",
+      "pushedAt": "2026-11-15T04:12:51Z",
+      "topics": [
+        "agent-skills",
+        "ai-video",
+        "aigc-detection",
+        "claude-code",
+        "codex",
+        "ffmpeg",
+        "prompt-engineering",
+        "remotion",
+        "reverse-engineering",
+        "short-video",
+        "shot-detection",
+        "subtitles",
+        "video-analysis",
+        "video-breakdown",
+        "video-editing",
+        "video-generation",
+        "videomd",
+        "vlm"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/brand/logo-light.svg\">\n  <img src=\"docs/brand/logo-dark.svg\" width=\"400\" alt=\"rea-video\">\n</picture>\n\nReverse-engineer any video.\n\nShot by shot: was it filmed, AI-generated or coded, and how to remake it.\n\nEvery breakdown is written in **[VIDEO.md](https://videomd.github.io/videomd/)**, an open format that agents read layer by layer.\n\n[Website](https://www.reavideo.ai) | [中文](i18n/README_zh.md) | English | [Русский](i18n/README_ru.md) | [日本語](i18n/README_ja.md) | [한국어](i18n/README_ko.md) | [Español](i18n/README_es.md) | [Português](i18n/README_pt.md) | [Français](i18n/README_fr.md) | [Deutsch](i18n/README_de.md) | [Tiếng Việt](i18n/README_vi.md) | [বাংলা](i18n/README_bn.md)\n\n[![Stars](https://img.shields.io/github/stars/JuneYaooo/rea-video?style=flat)](https://github.com/JuneYaooo/rea-video/stargazers)\n![Python](https://img.shields.io/badge/python-%E2%89%A53.10-blue)\n![Agent](https://img.shields.io/badge/runs%20in-Claude%20Code%20%7C%20Codex-8A2BE2)\n[![Output: VIDEO.md](https://img.shields.io/badge/output-VIDEO.md-3d4fd6)](https://videomd.github.io/videomd/)\n\n<a href=\"https://trendshift.io/repositories/334878\" target=\"_blank\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/334878/daily\" alt=\"JuneYaooo/rea-video | Trendshift\" width=\"250\" height=\"55\"></a>\n\n[![Visit our website](https://img.shields.io/badge/Visit%20our%20website-6644D8?style=for-the-badge)](https://www.reavideo.ai) [![Join our Discord](https://img.shields.io/badge/Join%20our%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/dZj8D3GqWT) [![WeChat group](https://img.shields.io/badge/WeChat%20group-07C160?style=for-the-badge&logo=wechat&logoColor=white)](i18n/README_zh.md#社区) [![Follow on X](https://img.shields.io/badge/Follow%20%40yao__june12106-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/yao_june12106)\n\n⭐ *Help more people find rea-video",
+      "score": 71,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 8,
+        "需求真实": 6,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "内容创作",
+      "landing": {
+        "intro": "一个分析视频来源（拍摄/AI/代码）并输出复刻教程的工具。",
+        "plain": "帮助用户分析视频制作技术或检测 AI 内容。",
+        "what": "开发前端上传界面并集成 AI 模型进行镜头分析。",
+        "who": "内容创作者、研究人员或需要分析视频技术的用户。",
+        "how": "搭建 SaaS 平台或桌面应用。",
+        "hours": "20-40",
+        "risk": "AI 分析模型准确性不足。"
+      },
+      "revisit": true
+    }
+  ],
+  "aiUsed": true,
+  "aiModel": "@cf/zai-org/glm-4.7-flash",
+  "aiError": null
+}
