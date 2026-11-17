@@ -1,0 +1,781 @@
+{
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T09:12:38.442Z",
+  "scanned": 80,
+  "rejected": [
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "JenkinWoo/sheeridVerify",
+      "url": "https://github.com/JenkinWoo/sheeridVerify",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "unclebob/ub-mode",
+      "url": "https://github.com/unclebob/ub-mode",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "interplains/Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "shanselman/gputaskman",
+      "url": "https://github.com/shanselman/gputaskman",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "huamidev/GestaltX",
+      "url": "https://github.com/huamidev/GestaltX",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "designfuchen/word-atlas",
+      "url": "https://github.com/designfuchen/word-atlas",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "TheAlgorithms/Python",
+      "url": "https://github.com/TheAlgorithms/Python",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "benjitaylor/skills",
+      "url": "https://github.com/benjitaylor/skills",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "wesbos/3d-model-anything",
+      "url": "https://github.com/wesbos/3d-model-anything",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "reason": "分数 48 未达 60 线"
+    },
+    {
+      "name": "zortos293/Lichii",
+      "url": "https://github.com/zortos293/Lichii",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "xiaoyang111222/cn-math-taxonomy",
+      "url": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "reason": "分数 46 未达 60 线"
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "reason": "分数 40 未达 60 线"
+    },
+    {
+      "name": "JustAResearcher/gpu-unlock-ada",
+      "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "Zagitta/gpu-unlock",
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "reason": "分数 33 未达 60 线"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "reason": "分数 31 未达 60 线"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "reason": "分数 30 未达 60 线"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "reason": "分数 24 未达 60 线"
+    },
+    {
+      "name": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "reason": "分数 22 未达 60 线"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "reason": "分数 21 未达 60 线"
+    },
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "reason": "分数 20 未达 60 线"
+    },
+    {
+      "name": "massgravel/Microsoft-Activation-Scripts",
+      "url": "https://github.com/massgravel/Microsoft-Activation-Scripts",
+      "reason": "分数 19 未达 60 线"
+    },
+    {
+      "name": "RoutineMiku/apkstart",
+      "url": "https://github.com/RoutineMiku/apkstart",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "pengchujin/aerial-tv",
+      "url": "https://github.com/pengchujin/aerial-tv",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Lee-xeo/Claude-Cage",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "haydenschmitty/floorplan",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Verlintas/NOIR",
+      "url": "https://github.com/Verlintas/NOIR",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/chat-demo",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "wangzan101/Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "mromidev/claude-animated-shorts",
+      "url": "https://github.com/mromidev/claude-animated-shorts",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "libracoder/kiri",
+      "url": "https://github.com/libracoder/kiri",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "expo/exact",
+      "url": "https://github.com/expo/exact",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "valentderah/totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "anomalyco/rune",
+      "url": "https://github.com/anomalyco/rune",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "modelflare-ai/AnyModelBot",
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "BryceYuuu/RUN",
+      "url": "https://github.com/BryceYuuu/RUN",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "elvarofficial/teardown",
+      "url": "https://github.com/elvarofficial/teardown",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "tangerineturtle1/NX2navi",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "reason": "名额 / 冷却限制"
+    }
+  ],
+  "picks": [
+    {
+      "fullName": "rddmwmddr/android-ad-cleaner",
+      "owner": "rddmwmddr",
+      "name": "android-ad-cleaner",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+      "stars": 8240,
+      "todayStars": 64,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 214,
+      "sizeKb": 28603,
+      "createdAt": "2026-10-24T05:35:47Z",
+      "pushedAt": "2026-11-16T17:40:20Z",
+      "topics": [
+        "adb",
+        "ai-agent",
+        "android",
+        "coloros",
+        "debloat",
+        "hyperos",
+        "magicos",
+        "originos"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# 肉呆去广告\n\n关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。\n\n介绍页：**https://rddmwmddr.github.io/android-ad-cleaner/**\n\n如果大家有其他需求可以加VX和电报群：\n\nhttps://t.me/+A5X3Mxzs-Cg3NjYx\n\n<img width=\"1080\" height=\"1596\" alt=\"IMG_7235\" src=\"https://github.com/user-attachments/assets/6197911c-7b6d-47eb-a698-107b99865aee\" />\n\n\n## 下载桌面客户端\n\n插上手机，点几下按钮。不需要 Python，也不需要 AI 工具。\n\n> **v0.4.4 · 2026-11-13**：这一版给一加 16 与真我 GT5 Pro 补了机型脚本，修好了长列表页只关最后一段、vivo 锁屏段一直没生效等几处问题；引擎里把各机型脚本里重复的段体与导航收成共用一份，用起来不变。0.4.1 及以前没有应用内更新，要先手动装一次 0.4.2；从 0.4.2 起可以在 App 里检查、下载并安装更新，手机版仍需在系统弹窗里确认；0.2.7 起的客户端左下角会提示新版；请重新下载，已有备份会保留。详见 [更新记录](CHANGELOG.md)，错误日志上报说明见 [这里](docs/12-错误日志上报.md)。官网：https://ahuamiao.com/sites/other/android-ad-removal-intro.html\n\n此前版本已处理 Windows 本地页面超时、荣耀截图越界、通知渠道误操作风险、vivo 快应用与备份问题。各 Issue 的处理范围和待验证项见 [社区问题处理记录](docs/09-社区问题处理.md)。0.4.2 起 Mac / Windows 客户端也能连纯血鸿蒙手机，这条通道还没有在鸿蒙真机上复测，见 [鸿蒙接入说明](harmony/README.md)。\n\n| 设备 | 下载 | 说明 |\n|---|---|---|\n| Mac · Apple 芯片（M1 及以后） | [AndroidAdCleaner-0.4.4-mac-arm64.dmg](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-mac-arm64.dmg) | 已签名、通过苹果公证，双击就能打开 |\n| Mac · Intel 芯片（macOS 11 及以上） | [AndroidAdCleaner-0.4.4-mac-intel.dmg](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-mac-intel.dmg) | 同上 |\n| Windows 10 / 11 · 安装版 | [AndroidAdCleaner-0.4.4-windows-setup.exe](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-windows-setup.exe) | 弹「Windows 已保护你的电脑」时点「更多信息」→「仍要运行」；和旧版共用安装标识，会原地升级 |\n| Windows 10 / 11 · 免安装 | [AndroidAdCleaner-0.4.4-windows-portable.zip](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-windows-portable.zip) | 解压后双击 `AndroidAdCleaner.exe`；不会替换、也不会卸载已安装的旧版 |\n| 安卓手机 · 手机版（安卓 11 及以上） | [AndroidAdCleaner-0.4.4-android-arm64.apk](https://github.com/rddmwmddr/android-ad-cleaner/releases/download/v0.4.4/AndroidAdCleaner-0.4.4-android-arm64.apk) | 不用连电脑，安装和授权见[手机版教程](docs/手机版教程/README.md) |",
+      "score": 100,
+      "grade": "S",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 15,
+        "需求真实": 20,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 8
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一款支持 AI 智能体一键执行的国产安卓手机去广告工具。",
+        "plain": "帮讨厌广告的用户一键清理手机系统广告。",
+        "what": "修改 ADB 脚本以适配特定机型。",
+        "who": "拥有国产安卓手机的用户。",
+        "how": "提供桌面客户端或在线服务。",
+        "hours": "30",
+        "risk": "系统更新导致脚本失效"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "Jakeschincariol/day-trader-skill",
+      "owner": "Jakeschincariol",
+      "name": "day-trader-skill",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill",
+      "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+      "stars": 8260,
+      "todayStars": 196,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 61,
+      "sizeKb": 414,
+      "createdAt": "2026-10-20T14:17:54Z",
+      "pushedAt": "2026-10-20T14:18:00Z",
+      "topics": [
+        "backtesting",
+        "claude",
+        "claude-skills",
+        "day-trading",
+        "stock-market"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# The Day Trader skill\n\n11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.\n\nFree, MIT, no signup, no API key. The tools are plain Python that read free\npublic data: Yahoo Finance charts, Nasdaq Trader's symbol lists, SEC EDGAR\nand the House Clerk.\n\nOne scans thousands of charts for setups. Another tracks breaking news on\nevery stock you watch. One watches a setup bar by bar and tells you the moment\nto get in, and another sets your stop and your target before you do. And the\ncraziest one is the Time Machine: before you risk a dollar, it replays the\nrest of the session 10,000 times from the stock's own recent bars, plus every\npast day the same setup fired, and tells you the honest odds.\n\nAnd no trade goes through until you say yes. Nothing in this pack can place\nan order on its own. Paper trading is the default.\n\n> **Looking for the original Trader skill?** Copy an investor's 13F, the\n> stock screener, tax lots and rebalancing live in\n> [github.com/Jakeschincariol/trader-skill](https://github.com/Jakeschincariol/trader-skill).\n> This repo is its day-trading sequel: the Trader skill v2.\n\n## Install\n\nPaste this into Claude:\n\n```\nhttps://github.com/Jakeschincariol/day-trader-skill\n\ninstall skill\n```\n\nOr as a plugin, in Claude Code:\n\n```\n/plugin marketplace add Jakeschincariol/day-trader-skill\n/plugin install day-trader-skill@day-trader-skill\n```\n\nClaude Code namespaces plugin skills, so installed as a plugin they show up as\n`/day-trader-skill:trader-scanner` and so on. Copy the folders instead if you want\nplain `/trader-scanner`:\n\n```bash\ngit clone https://github.com/Jakeschincariol/day-trader-skill.git\ncp -r day-trader-skill/trader-* ~/.claude/skills/\n```\n\nProject-local instead of global: copy the same folders into your repo's\n`.claude/skills/`. No Claude Code at all? Paste any single `SKILL.md` at the\ntop of a chat and it runs as a mode. You lose the Python tools",
+      "score": 81,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一套用于日内交易分析的 Claude 技能工具集。",
+        "plain": "帮交易员自动化扫描图表和追踪新闻。",
+        "what": "优化 Python 脚本的数据抓取和分析逻辑。",
+        "who": "日内交易员。",
+        "how": "作为 Claude 插件或付费服务。",
+        "hours": "50",
+        "risk": "市场波动导致建议错误"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "LNPANDY/NX2Apple",
+      "owner": "LNPANDY",
+      "name": "NX2Apple",
+      "url": "https://github.com/LNPANDY/NX2Apple",
+      "description": "Play your own Switch games on iPhone/iPad — one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
+      "stars": 7513,
+      "todayStars": 198,
+      "language": "Swift",
+      "license": "MIT",
+      "openIssues": 234,
+      "sizeKb": 268965,
+      "createdAt": "2026-10-20T18:16:07Z",
+      "pushedAt": "2026-11-17T04:49:08Z",
+      "topics": [
+        "apple-silicon",
+        "custom-format",
+        "homebrew",
+        "ios",
+        "ipa",
+        "ipad",
+        "ipados",
+        "iphone",
+        "metal",
+        "native-port",
+        "nintendo-switch",
+        "nxnative",
+        "romfs",
+        "switch-games"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"frontend/screenshots/logo-dark.png\">\n  <img src=\"frontend/screenshots/logo-light.png\" width=\"360\" alt=\"NX2Apple, by nxnative\">\n</picture>\n\n**Your Switch games, running on your iPhone.**\n\n**Not an emulator. No terminal. A macOS or Windows app does the whole build in a few clicks.**\n\n[![Stars](https://img.shields.io/github/stars/LNPANDY/NX2Apple?style=social)](https://github.com/LNPANDY/NX2Apple/stargazers)\n[![Forks](https://img.shields.io/github/forks/LNPANDY/NX2Apple?style=social)](https://github.com/LNPANDY/NX2Apple/network/members)\n[![Issues](https://img.shields.io/github/issues/LNPANDY/NX2Apple)](https://github.com/LNPANDY/NX2Apple/issues)\n[![License](https://img.shields.io/github/license/LNPANDY/NX2Apple)](LICENSE)\n[![Games](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLNPANDY%2FNX2Apple%2Fmain%2F.github%2Fbadges%2Fgames.json)](.github/badges/games.json)\n\n[![中文](https://img.shields.io/badge/🇨🇳_中文-available-green)](README.zh-CN.md)\n[![English](https://img.shields.io/badge/🇺🇸_English-current-blue)](README.md)\n[![Svenska](https://img.shields.io/badge/🇸🇪_Svenska-available-green)](README.sv.md)\n[![Deutsch](https://img.shields.io/badge/🇩🇪_Deutsch-available-green)](README.de.md)\n[![Français](https://img.shields.io/badge/🇫🇷_Français-available-green)](README.fr.md)\n[![Italiano](https://img.shields.io/badge/🇮🇹_Italiano-available-green)](README.it.md)\n\n<img src=\"frontend/screenshots/hero-features-en.png\" width=\"100%\" alt=\"NX2Apple — Switch games on iPhone and Mac\">\n\n#### 🆕 Latest highlights\n\n- **Windows launcher (`NX2Apple-windows-x64.zip`)**: Build iPhone and iPad IPAs on Windows with the same 1.2 interface, a bundled engine tree (no git needed), guided first-run setup, multi-core NSO rewriting, and in-app self-update (`NX2Apple.exe`).\n- **Switch 2 games**: Pick a Switch 2 game folder or `.nup` file in the Mac or Windows launcher, with no `p",
+      "score": 81,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 8,
+        "需求真实": 20,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一款将 Switch 游戏转换为 iPhone 可运行格式的 macOS 工具。",
+        "plain": "帮游戏玩家把 Switch 游戏装进 iPhone。",
+        "what": "修改转换器核心代码以提升兼容性。",
+        "who": "iOS 游戏玩家。",
+        "how": "提供桌面软件下载或转换服务。",
+        "hours": "70",
+        "risk": "版权或平台封禁风险"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "KKKKhazix/agent-autoloop",
+      "owner": "KKKKhazix",
+      "name": "agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "stars": 5744,
+      "todayStars": 163,
+      "language": "TypeScript",
+      "license": "MIT",
+      "openIssues": 2,
+      "sizeKb": 1247,
+      "createdAt": "2026-11-03T08:02:11Z",
+      "pushedAt": "2026-11-17T01:20:39Z",
+      "topics": [
+        "ai-agents",
+        "automation",
+        "claude-code",
+        "cli",
+        "codex",
+        "event-driven",
+        "mcp",
+        "nodejs",
+        "self-hosted",
+        "typescript",
+        "workflow"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# Agent Autoloop\n\n**让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。**\n\n**中文** | [English](README.en.md)\n\n[上手](#上手) · [场景模板](#拿来即用的场景模板) · [插件](#插件体系四个方向都能自由替换) · [内核](#内核的四个机制) · [文档](#更多文档)\n\n![架构图](docs/architecture.svg)\n\n## 它解决什么问题？\n\n平时我们用 Claude Code、Codex 这类命令行 Agent，大多是“人守着终端用”：你输一句话，盯着它跑，等它问你下一步；一旦关掉窗口或者人走开，事情就断了。\n\n**Agent Autoloop** 是一个极轻量的自动化中台。它把任务调度做成一个零外部依赖的**内核**，把事件来源、Agent、通知通道，甚至代码上线流水线全部拆成可随时插拔的**插件**。\n\n- **一台电脑、一条命令就能跑。** 装在你的 Windows、Mac 或 Linux 上，不用买云服务器，也不用开放公网端口。\n- **一行配置接新 Agent。** 不需要 SDK，也不需要改 Agent 源码，能接收提示词并打印最后一条回复的命令行工具都能接。\n- **没有后台界面。** 需要你拍板时把卡片推到飞书、钉钉、企微、Slack、Discord 或桌面通知；想看全局进展，敲一行命令。\n\n## 上手\n\n支持 Windows、macOS 和 Linux。需要 Node 24 或更新、Git，以及一个已经登录的命令行 Agent；macOS/Linux 还需要 curl，不需要 GitHub 账号。也可以把[安装说明](INSTALL.md)交给你的 Agent。\n\nWindows PowerShell：\n\n```powershell\nirm https://raw.githubusercontent.com/KKKKhazix/agent-autoloop/main/install.ps1 | iex\n```\n\nmacOS / Linux：\n\n```bash\ncurl -fsSL https://raw.githubusercontent.com/KKKKhazix/agent-autoloop/main/install.sh | sh\n```\n\n安装和 `agent-autoloop update` 都装最新的 [Release](https://github.com/KKKKhazix/agent-autoloop/releases)，那是通过了全部检查的版本。\n\n装好后用你本机的 Agent 真实走一遍“提问 → 退出等回复 → 拍板 → 接着干完”：\n\n```bash\nagent-autoloop try\n```\n\n下面是在终端里的真实输出：\n\n```text\n事件发出去了，Agent 开始干活……\n\nAgent 结束了这一轮，问了你一个问题。它现在不占进程、不花 Token。\n\n【等你决定】#1 试跑：选一个颜色\n这是一次试跑，选哪个都行。\n  1. 蓝色\n  2. 绿色\n回答：agent-autoloop answer 1 <序号>\n答完运行 agent-autoloop status，能看到它接着把活干完。\n```\n\n交互终端里直接输入数字回车；非交互终端运行 `agent-autoloop answer 1 2` 选择“绿色”。再跑 `agent-autoloop status`，就能看到它接上刚才的会话并显示“你选了绿色，试跑通过”，还有今天和最近 7 天的轮数、Token 和费用（[统计口径](skills/agent-autoloop/SKILL.md#看情况回答)）。\n\n## 一件事怎么转起来\n\n编号和上面的架构图一一对应：\n\n1. **新事件进来。** 早上 9 点的定时任务、GitHub 上新提的 Issue、业务系统报的错，都变成一条标准事件送进内核。\n2. **按规则派活。** 内核照你写的规则，决定交给哪个 Agent、去哪个目录干。同一件事排队时又来的消息，会合并成一轮处理。\n3. **干完一轮就退出。** Agent 把结果写在最后一条回复里，进程直接退出。\n4. **拿不准才问你。** 碰到删数据、停服、花钱、对外发消息这类事，内核通过飞书或桌面通知发一张卡片给你。等你回复期间，它不占后台进程，也不消耗 Token。\n5. **点一下，接着干。** 你选完，它接上原来的对话，把剩下的活干完。\n\n能自己搞定的事走图上方的自动闭环：直接办完，或者约个时间（比如半小时后）再醒来复查，全程不打扰你。\n\n## 日常怎么配？\n\n### 写一份规则（`",
+      "score": 80,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 15,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": -6
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个让命令行 Agent 自动化后台任务的中台工具。",
+        "plain": "帮开发者让 AI Agent 自动处理代码任务。",
+        "what": "扩展内核插件接口以支持更多 Agent。",
+        "who": "开发者。",
+        "how": "开源或 SaaS 模式。",
+        "hours": "50",
+        "risk": "技术门槛高导致用户少"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "jhaizhou-ops/S2Arm",
+      "owner": "jhaizhou-ops",
+      "name": "S2Arm",
+      "url": "https://github.com/jhaizhou-ops/S2Arm",
+      "description": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。",
+      "stars": 3416,
+      "todayStars": null,
+      "language": "C#",
+      "license": "Apache-2.0",
+      "openIssues": 532,
+      "sizeKb": 94694,
+      "createdAt": "2026-11-08T05:49:46Z",
+      "pushedAt": "2026-11-17T09:12:13Z",
+      "topics": [
+        "apple-silicon",
+        "arm64",
+        "game-porting",
+        "ios",
+        "ipados",
+        "macos",
+        "metal",
+        "s2arm",
+        "static-recompilation",
+        "switch"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<p align=\"center\"><a href=\"https://s2arm.com\"><img src=\"docs/images/s2arm-wordmark.png\" width=\"420\" alt=\"S2Arm\"></a><br><a href=\"https://s2arm.com\">s2arm.com</a></p>\n\n> [!NOTE]\n> **Good news: [s2arm.com](https://s2arm.com) is now the official S2Arm website.** S2Arm is free and open source and never accepts donations; get S2Arm only from [s2arm.com](https://s2arm.com) or this GitHub repository.\n\n**Your own Switch games, running natively on iPhone, iPad and Mac.** Game code is rewritten to native ARM64 and runs directly on the device's processor, with graphics going straight to Metal. Your whole library lives in one app, and a few clicks in the Mac or Windows launcher take a game from import to play.\n\nPlatforms: iPhone / iPad (iOS / iPadOS 18 and later) · Mac (Apple silicon, macOS 15 and later) · Build on Mac or Windows · Android / HarmonyOS coming soon · License: Apache-2.0 · **Bring your own games**\n\n[简体中文](README.zh-CN.md) · [Download the launcher](https://jhaizhou-ops.github.io/S2Arm/) · [All releases](https://github.com/jhaizhou-ops/S2Arm/releases) · [Evidence](docs/validation/EVIDENCE.md)\n\n<p align=\"center\"><img src=\"docs/images/launcher-welcome-en.png\" width=\"760\" alt=\"S2Arm launcher welcome page\"></p>\n\n## A native port, not an emulator\n\nThe game's own ARM64 code is rewritten at build time and then runs directly on the processor in your iPhone, iPad or Mac. There is no CPU emulator in between. Graphics calls are translated straight to Metal, and system services come from a native host. That is where the speed, the low heat and the battery life come from. [Evidence](docs/validation/EVIDENCE.md#native-port)\n\n## One app, your whole library\n\nEvery game you import goes into the same S2Arm app; open it and pick what to play. The whole library takes a single App slot on your developer account, so adding a game never means installing another app or spending another signing slot. [Evidence](docs/validation/EVIDENCE.md#one-app-whole-library)\n\n## Graphical launchers, next",
+      "score": 75,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 0,
+        "需求真实": 20,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一款将 Switch 游戏重写为 ARM64 原生代码在 iOS/Mac 运行的工具。",
+        "plain": "帮玩家在 iPhone 上流畅运行 Switch 游戏。",
+        "what": "修改重写引擎以适配更多游戏。",
+        "who": "iOS 游戏玩家。",
+        "how": "提供转换工具或服务。",
+        "hours": "90",
+        "risk": "游戏更新导致兼容性差"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "l0ng-ai/openidea",
+      "owner": "l0ng-ai",
+      "name": "openidea",
+      "url": "https://github.com/l0ng-ai/openidea",
+      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+      "stars": 9235,
+      "todayStars": 123,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "openIssues": 177,
+      "sizeKb": 103849,
+      "createdAt": "2026-10-21T12:23:14Z",
+      "pushedAt": "2026-11-17T09:08:23Z",
+      "topics": [
+        "code-editor",
+        "cross-platform",
+        "dap",
+        "database-client",
+        "debugger",
+        "desktop-app",
+        "developer-tools",
+        "git",
+        "http-client",
+        "ide",
+        "intellij",
+        "lsp",
+        "rust",
+        "tauri",
+        "terminal"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"src-tauri/icons/source/openidea-wordmark-dark.svg\">\n    <img src=\"src-tauri/icons/source/openidea-wordmark.svg\" alt=\"OpenIDEA\" height=\"56\">\n  </picture>\n</p>\n\n<p align=\"center\">\n  The IDE you know, rebuilt in Rust.\n</p>\n\n<p align=\"center\">\n  English · <a href=\"README.zh-CN.md\">简体中文</a> · <a href=\"README.tr.md\">Türkçe</a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/l0ng-ai/openidea/releases/latest\"><b>Download</b></a>\n  &nbsp;·&nbsp;\n  <a href=\"https://openidea.sh\">Docs</a>\n  &nbsp;·&nbsp;\n  <a href=\"#benchmark\">Benchmark</a>\n  &nbsp;·&nbsp;\n  <a href=\"#plugins\">Plugins</a>\n  &nbsp;·&nbsp;\n  <a href=\"#community\">Community</a>\n</p>\n\nhttps://github.com/user-attachments/assets/234dd54c-1255-4b3a-b35c-533d78d737c0\n\nOpenIDEA brings the IntelliJ IDEA way of working — its keymap, its tool windows,\nits search-everything habits — to a native app with a Rust core.\n\nEditor, code insight, debugger, Git, terminal, database and HTTP clients,\nfor 60+ languages. Builds for macOS, Windows and Linux.\n\n## Benchmark\n\nOpening [freqtrade](https://github.com/freqtrade/freqtrade) (Python, ~770 files)\nwith warm caches, median of 5 runs:\n\n|                             | OpenIDEA          | IntelliJ IDEA 2026.2.3 |\n| --------------------------- | ----------------- | ---------------------- |\n| Window with the project     | **0.9 s**         | 3.1 s                  |\n| Ready (CPU settled)         | **1.1 s**         | 13.2 s                 |\n| Memory (USS, all processes) | **169 MB**        | 2011 MB                |\n| CPU time until ready        | **2.4 s**         | 47.9 s                 |\n| Idle CPU                    | **4 %** of a core | 7 % of a core          |\n| Quit                        | **0.3 s**         | 5.9 s                  |\n\nA release build of OpenIDEA from `main` and IDEA with default settings and plugins, on\nWindows 11, 32-core AMD, 62 GB RAM.\nIDEA analyses Python more deepl",
+      "score": 73,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一款用 Rust 重写的跨平台代码编辑器。",
+        "plain": "帮开发者提供比传统 IDE 更轻快的代码编写体验。",
+        "what": "定制开发特定企业功能或 UI 主题。",
+        "who": "企业开发者。",
+        "how": "定制服务。",
+        "hours": "120",
+        "risk": "市场竞争激烈"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "simbasjungles/free-my-tv",
+      "owner": "simbasjungles",
+      "name": "free-my-tv",
+      "url": "https://github.com/simbasjungles/free-my-tv",
+      "description": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+      "stars": 6466,
+      "todayStars": 33,
+      "language": "Java",
+      "license": "MIT",
+      "openIssues": 117,
+      "sizeKb": 21697,
+      "createdAt": "2026-10-19T19:29:01Z",
+      "pushedAt": "2026-11-13T02:31:41Z",
+      "topics": [
+        "android-tv",
+        "claude-code",
+        "google-tv",
+        "home-screen",
+        "launcher",
+        "no-ads",
+        "open-source",
+        "samsung-tizen",
+        "tizen",
+        "tmdb",
+        "webos"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<img src=\"docs/assets/icon-512.png\" width=\"96\" alt=\"\">\n\n# Free My TV\n\n**A fast, ad-free home screen for Google TV, LG and Samsung TVs.**\n\nTrending picks from your own apps, the weather at a glance, and a look that follows the sunset.<br>\nOpen source. Built with Claude Code. One button to undo.\n\n[**freemytv.io**](https://freemytv.io) · [Install](#install) · [LG TVs](#lg-tvs-webos) · [Samsung TVs](#samsung-tvs-tizen) · [Any TV](#any-tv) · [Make it yours](#make-it-yours)\n\n<img src=\".github/preview.webp\" width=\"880\" alt=\"The Free My TV home screen: a glass shelf of apps, trending picks, and a drawer with the weather and crypto prices\">\n\n</div>\n\n## What you get\n\n- **No ads.** No sponsored rows, banners or autoplaying promos. Not one.\n- **Your apps, front and center.** The streaming apps you actually use, on a glass shelf. Pick them and their order right on the TV, or (on Google TV and Android TV) let the one you opened last come first.\n- **Trending, not sponsored.** Three fresh picks every hour (up to six, in Home Settings) from what's trending this week and the latest releases, only from apps you already have, and from the services you choose. The focused one opens wide and the others show their posters. Movies and Shows get their own tabs, and on Google TV your own [Plex library](#your-plex-library-optional) can join in.\n- **Continue Watching** (Google TV and Android TV). *Home Settings* → *Top of the screen* puts what you left halfway in your apps on top, with its progress, and OK picks it up in its app. Or a big clock, or the picks.\n- **Your TMDB key from your phone.** *Home Settings* → *TMDB key* shows a QR code: scan it and paste the key. On LG and Samsung, type it with the remote.\n- **Weather and markets, one press away.** The hour-by-hour forecast (or the next 5 days), sunrise and sunset, and live crypto prices; on LG and Samsung, also rain in the next two hours, the UV index and the air quality.\n- **Live TV or your box on HDMI, one press aw",
+      "score": 71,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一款为 Google TV、LG 和三星电视打造的无广告主页应用。",
+        "plain": "帮电视用户替换系统广告多的开机界面。",
+        "what": "修改 Launcher 代码以优化 UI 和功能。",
+        "who": "智能电视用户。",
+        "how": "提供应用安装包。",
+        "hours": "40",
+        "risk": "电视系统更新导致应用失效"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "t3dotgg/tstack",
+      "owner": "t3dotgg",
+      "name": "tstack",
+      "url": "https://github.com/t3dotgg/tstack",
+      "description": "The agent skills I use every day. Works with Claude Code and Codex.",
+      "stars": 4079,
+      "todayStars": 156,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 17,
+      "sizeKb": 14,
+      "createdAt": "2026-10-24T05:00:20Z",
+      "pushedAt": "2026-11-11T11:33:03Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# tstack\n\nThe agent skills I use every day, cleaned up so anyone can use them. They work\nin Claude Code and Codex. Some use [T3 Code](https://github.com/pingdotgg/t3code)\nfeatures when they are available and fall back to native tools when they are\nnot.\n\n## Skills\n\n| Skill | Say | What it does |\n|---|---|---|\n| `full-send` | \"full send\" | Takes a change to a merged PR with nobody watching: proves it, reviews it, files it, babysits it, merges it. |\n| `full-stop` | \"full stop\" | Same as `full-send`, but stops when the PR is ready for you to merge. |\n| `council` | \"council\" | Gets review from three models from different providers, and loops until they agree. |\n| `sol-loop` | \"sol loop\" | Reviews a change with GPT Sol in a loop until both agents agree. |\n| `file-pr` | \"file a PR\" | Files a short PR that leads with the problem, not an inventory of changes. |\n| `takeover` | \"take over\" | Finishes someone else's PR, branch, or agent thread, and keeps their credit. |\n| `babysit-pr` | \"babysit\" | Watches a PR through CI and review bots, and fixes the real findings. |\n| `modernize` | \"modernize\" | Rebases an old PR and decides if it should still exist. |\n| `leaving-pr-comments` | (automatic) | Formats comments that an agent posts on your behalf. |\n\nSome skills call others. Install the ones they need too:\n\n- `full-send` uses `sol-loop`, `file-pr`, and `babysit-pr`.\n- `full-stop` uses `full-send`.\n- `takeover` uses `modernize`, `file-pr`, `babysit-pr`, and `leaving-pr-comments`.\n- `file-pr`, `babysit-pr`, and `modernize` use `leaving-pr-comments`.\n\n## Install\n\n```bash\ngit clone https://github.com/t3dotgg/tstack\ncp -R tstack/skills/* ~/.claude/skills/   # Claude Code\ncp -R tstack/skills/* ~/.codex/skills/    # Codex\n```\n\n## Requirements\n\n- An authenticated [GitHub CLI](https://cli.github.com) (`gh`).\n- `python3` for `babysit-pr`'s `pr-wait` script.\n- `council` and `sol-loop` need subagents on other providers' models. T3 Code\n  does this with `delegate_task`. Otherwise you need a ",
+      "score": 71,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一套用于 Claude Code 和 Codex 的开发者 Agent 技能集。",
+        "plain": "帮开发者自动化处理代码审查和 PR 合并。",
+        "what": "扩充技能库或优化现有技能逻辑。",
+        "who": "开发者。",
+        "how": "出售脚本或订阅服务。",
+        "hours": "25",
+        "risk": "技能通用性导致价值低"
+      },
+      "revisit": false
+    }
+  ],
+  "aiUsed": true,
+  "aiModel": "@cf/zai-org/glm-4.7-flash",
+  "aiError": null
+}

@@ -1,6 +1,6 @@
 {
   "rddmwmddr/android-ad-cleaner": {
-    "date": "2026-11-10",
+    "date": "2026-11-17",
     "direction": "通用工具"
   },
   "pengchujin/aerial-tv": {
@@ -8,15 +8,15 @@
     "direction": "内容创作"
   },
   "Jakeschincariol/day-trader-skill": {
-    "date": "2026-11-10",
+    "date": "2026-11-17",
     "direction": "通用工具"
   },
   "LNPANDY/NX2Apple": {
-    "date": "2026-11-10",
+    "date": "2026-11-17",
     "direction": "通用工具"
   },
   "KKKKhazix/agent-autoloop": {
-    "date": "2026-11-10",
+    "date": "2026-11-17",
     "direction": "通用工具"
   },
   "Arekejoker/qwen21-nsfw-pose-skill": {
@@ -24,7 +24,7 @@
     "direction": "通用工具"
   },
   "l0ng-ai/openidea": {
-    "date": "2026-11-10",
+    "date": "2026-11-17",
     "direction": "通用工具"
   },
   "microsoft/TokenEconomizer": {
@@ -36,7 +36,7 @@
     "direction": "通用工具"
   },
   "simbasjungles/free-my-tv": {
-    "date": "2026-11-10",
+    "date": "2026-11-17",
     "direction": "通用工具"
   },
   "HeyPuter/everything": {
@@ -60,7 +60,7 @@
     "direction": "通用工具"
   },
   "t3dotgg/tstack": {
-    "date": "2026-11-10",
+    "date": "2026-11-17",
     "direction": "通用工具"
   },
   "haydenschmitty/floorplan": {
@@ -165,6 +165,10 @@
   },
   "deepseek-ai/chat-demo": {
     "date": "2026-11-16",
+    "direction": "通用工具"
+  },
+  "jhaizhou-ops/S2Arm": {
+    "date": "2026-11-17",
     "direction": "通用工具"
   }
 }
