@@ -47,10 +47,6 @@
     "date": "2026-11-10",
     "direction": "通用工具"
   },
-  "wangzan101/Mika": {
-    "date": "2026-11-18",
-    "direction": "通用工具"
-  },
   "Leonxlnx/earshot": {
     "date": "2026-11-10",
     "direction": "通用工具"
@@ -63,36 +59,12 @@
     "date": "2026-11-17",
     "direction": "通用工具"
   },
-  "haydenschmitty/floorplan": {
-    "date": "2026-11-18",
-    "direction": "通用工具"
-  },
   "deepseek-ai/DeepInfer": {
     "date": "2026-11-11",
     "direction": "通用工具"
   },
   "ly05010419/MacNativeGames": {
     "date": "2026-11-11",
-    "direction": "通用工具"
-  },
-  "patch-gg/pixelfx": {
-    "date": "2026-11-18",
-    "direction": "通用工具"
-  },
-  "qybaihe/bla": {
-    "date": "2026-11-18",
-    "direction": "通用工具"
-  },
-  "deepseek-ai/dsh-superagent-prototype": {
-    "date": "2026-11-18",
-    "direction": "通用工具"
-  },
-  "valentderah/totk-pc-recomp": {
-    "date": "2026-11-18",
-    "direction": "通用工具"
-  },
-  "anomalyco/rune": {
-    "date": "2026-11-18",
     "direction": "通用工具"
   },
   "Lee-xeo/Claude-Cage": {
@@ -169,6 +141,34 @@
   },
   "jhaizhou-ops/S2Arm": {
     "date": "2026-11-17",
+    "direction": "通用工具"
+  },
+  "haydenschmitty/floorplan": {
+    "date": "2026-11-18",
+    "direction": "通用工具"
+  },
+  "wangzan101/Mika": {
+    "date": "2026-11-18",
+    "direction": "通用工具"
+  },
+  "patch-gg/pixelfx": {
+    "date": "2026-11-18",
+    "direction": "通用工具"
+  },
+  "qybaihe/bla": {
+    "date": "2026-11-18",
+    "direction": "通用工具"
+  },
+  "deepseek-ai/dsh-superagent-prototype": {
+    "date": "2026-11-18",
+    "direction": "通用工具"
+  },
+  "valentderah/totk-pc-recomp": {
+    "date": "2026-11-18",
+    "direction": "通用工具"
+  },
+  "anomalyco/rune": {
+    "date": "2026-11-18",
     "direction": "通用工具"
   }
 }
