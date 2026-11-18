@@ -71,27 +71,6 @@ details ul{padding-left:18px;margin:8px 0 0;color:var(--muted);font-size:13px;ma
 .rr-opt input{accent-color:var(--accent);width:15px;height:15px;margin:0}
 .actions button.rr-mini{font-size:12px;padding:6px 10px}
 .rr-hint{color:var(--good);font-size:12px;margin:0 0 10px}
-/* 报告日历：52 周热力图 */
-.cal{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;overflow-x:auto}
-.cal-inner{min-width:0}
-.cal-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
-.cal-head b{font-size:14px;font-weight:500}
-.cal-months{display:grid;gap:3px;margin:2px 0 6px 22px;font-size:10px;line-height:14px;color:var(--muted);height:16px;white-space:nowrap}
-.cal-main{display:flex;gap:4px}
-.cal-wd{display:grid;grid-template-rows:repeat(7,11px);gap:3px;width:18px;font-size:9px;color:var(--muted);text-align:right}
-.cal-wd span{line-height:11px}
-.cal-grid{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,11px);grid-auto-columns:11px;gap:3px}
-.cc{display:block;width:11px;height:11px;border-radius:2px;background:var(--chip)}
-.cc-none{opacity:.7}
-.cc-future{opacity:.22}
-.cc-l1{background:var(--accent);opacity:.35}
-.cc-l2{background:var(--accent);opacity:.55}
-.cc-l3{background:var(--accent);opacity:.78}
-.cc-l4{background:var(--accent)}
-a.cc:hover{outline:1px solid var(--fg);outline-offset:1px}
-.cal-legend{display:flex;align-items:center;gap:4px;color:var(--muted);font-size:11px;margin-top:10px;flex-wrap:wrap}
-.cal-legend .cc{width:10px;height:10px}
-.cal-legend .spacer{margin-left:auto}
 /* 按日期：月份折叠 + 紧凑行 */
 .month{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
 .month summary{list-style:none;cursor:pointer;padding:11px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
@@ -308,69 +287,16 @@ ${cards || '<div class="card">今天没有够格的项目。</div>'}
 <footer>${ai} · 数据来自 GitHub 公开 API，仅供选品参考</footer>`, rerunScript(pat), "../favicon.svg");
 }
 
-/* ---------------- 归档页：日历 + 月份折叠 + 选品库 ---------------- */
+/* ---------------- 归档页：月份折叠 + 选品库 ---------------- */
 
 const WEEKDAYS = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
-const DAY_MS = 86_400_000;
-const isoDay = (dt) => dt.toISOString().slice(0, 10);
 const weekdayOf = (s) => WEEKDAYS[new Date(`${s}T00:00:00Z`).getUTCDay()];
 
-/** GitHub 风格报告日历：按周排列，颜色深浅 = 当天入选数；有报告的格子可直接点开。
- *  跨度随历史自动增长，最多 52 周，更早的日期交给下面的月份列表。 */
-function calendarHTML(days) {
-  if (!days.length) return '<div class="empty">还没有报告，等定时任务跑一次。</div>';
-  const byDate = new Map(days.map((d) => [d.date, d]));
-  const last = new Date(`${days[0].date}T00:00:00Z`);
-  const first = new Date(`${days[days.length - 1].date}T00:00:00Z`);
-  const end = new Date(last.getTime() + (6 - last.getUTCDay()) * DAY_MS);
-  const spanWeeks = Math.ceil((end - first) / (7 * DAY_MS)) + 1;
-  const weeks = Math.min(52, Math.max(16, spanWeeks));
-  const start = new Date(end.getTime() - (weeks * 7 - 1) * DAY_MS);
-  const maxKept = Math.max(1, ...days.map((d) => d.kept));
-  const lastKey = isoDay(last);
-
-  let cells = "";
-  for (let w = 0; w < weeks; w++) {
-    for (let d = 0; d < 7; d++) {
-      const key = isoDay(new Date(start.getTime() + (w * 7 + d) * DAY_MS));
-      const rec = byDate.get(key);
-      if (rec) {
-        const lvl = Math.min(4, Math.max(1, Math.ceil(rec.kept / maxKept * 4)));
-        cells += `<a class="cc cc-l${lvl}" href="reports/${esc(key)}.html" title="${esc(key)} · 扫 ${rec.scanned} / 排 ${rec.rejected} / 留 ${rec.kept} / 均分 ${rec.avg}"></a>`;
-      } else {
-        cells += `<span class="cc ${key > lastKey ? "cc-future" : "cc-none"}" title="${esc(key)} · 无报告"></span>`;
-      }
-    }
-  }
-
-  let labels = "", prevCol = -1;
-  const cur = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth(), 1));
-  while (cur <= end) {
-    if (cur >= start) {
-      const col = Math.floor((cur - start) / (7 * DAY_MS));
-      if (col > prevCol && col < weeks) {
-        const yTag = cur.getUTCFullYear() === end.getUTCFullYear() ? "" : `${String(cur.getUTCFullYear()).slice(2)}/`;
-        labels += `<span style="grid-column:${col + 1}">${yTag}${cur.getUTCMonth() + 1}月</span>`;
-        prevCol = col;
-      }
-    }
-    cur.setUTCMonth(cur.getUTCMonth() + 1);
-  }
-
-  const legend = `<div class="cal-legend"><span>共 ${days.length} 天有报告 · 覆盖近 ${weeks} 周</span>
-<span class="spacer">少</span><i class="cc"></i><i class="cc cc-l1"></i><i class="cc cc-l2"></i><i class="cc cc-l3"></i><i class="cc cc-l4"></i><span>多</span></div>`;
-  return `<div class="cal"><div class="cal-inner" style="min-width:${22 + weeks * 14 + 24}px">
-<div class="cal-head"><b>报告日历</b><span class="muted">点方块直接打开当天日报；留得越多颜色越深</span></div>
-<div class="cal-months" style="grid-template-columns:repeat(${weeks},11px)">${labels}</div>
-<div class="cal-main"><div class="cal-wd"><span></span><span>一</span><span></span><span>三</span><span></span><span>五</span><span></span></div>
-<div class="cal-grid">${cells}</div></div>
-${legend}</div></div>`;
-}
-
-/** 按月份分组的紧凑行列表：最新一个月默认展开，其余折叠，日期再多也不用长翻。 */
+/** 按月份分组的紧凑行列表：只展示最近 3 天的报告，日期再多也不用长翻。 */
 function monthCards(days) {
+  const shown = days.slice(0, 3);
   const groups = new Map();
-  for (const d of days) {
+  for (const d of shown) {
     const ym = d.date.slice(0, 7);
     if (!groups.has(ym)) groups.set(ym, []);
     groups.get(ym).push(d);
@@ -389,7 +315,7 @@ function monthCards(days) {
   }).join("");
 }
 
-/** 归档页：报告日历 + 按日期折叠列表 + 可按关键词检索的选品库（数据内联，本地双击也能用） */
+/** 归档页：按日期折叠列表（最近 3 天）+ 可按关键词检索的选品库（数据内联，本地双击也能用） */
 export function renderArchive(history, opts = {}) {
   const repo = opts.repo || DEFAULT_REPO;
   const pat = opts.pat || "";
@@ -453,21 +379,21 @@ export function renderArchive(history, opts = {}) {
   }
   q.addEventListener('input',render);dir.addEventListener('change',render);render();
 
-  /* 日历日期跳转 */
+  /* 日期跳转 */
   var jump=document.getElementById('cal-jump'),jmsg=document.getElementById('cal-jump-msg');
   document.getElementById('cal-go').addEventListener('click',function(){
     var v=jump.value;
     if(!v){jmsg.textContent='先选一个日期';return;}
     var hit=data.days.some(function(d){return d.date===v;});
     if(hit)location.href='reports/'+v+'.html';
-    else jmsg.textContent=v+' 没有报告（日历里浅色格子就是没跑）';
+    else jmsg.textContent=v+' 没有报告（浅色说明那天没跑）';
   });
 
   /* 月份列表筛选 / 展开收起 */
   var ys=document.getElementById('day-year'),dq=document.getElementById('day-q'),dcount=document.getElementById('day-count');
   var months=[].slice.call(document.querySelectorAll('#day-months .month'));
   function filterDays(){
-    var y=ys.value,kw=(dq.value||'').trim().toLowerCase(),n=0;
+    var y=ys.value,kw=(dq.value||'').trim().toLowerCase();
     months.forEach(function(m){
       var vis=0;
       [].slice.call(m.querySelectorAll('.dayrow')).forEach(function(row){
@@ -478,9 +404,8 @@ export function renderArchive(history, opts = {}) {
       m.style.display=vis?'':'none';
       m.querySelector('.mh-count').textContent=vis;
       if(y||kw)m.open=true;
-      n+=vis;
     });
-    dcount.textContent='共 '+data.days.length+' 天报告，当前显示 '+n+' 天'+(n?'（点月份标题可折叠）':'');
+    dcount.textContent='共 '+data.days.length+' 天报告，下方列出最近 3 天';
   }
   ys.addEventListener('change',filterDays);dq.addEventListener('input',filterDays);
   document.getElementById('day-expand').addEventListener('click',function(){months.forEach(function(m){if(m.style.display!=='none')m.open=true;});});
@@ -499,7 +424,6 @@ ${themeBar()}
 <div class="stats"><div><b>${days.length}</b>报告天数</div><div><b>${totalScanned}</b>累计扫描</div><div><b>${totalKept}</b>累计推荐</div><div><b>${avgAll}</b>平均评分</div></div>
 </div>
 <h2>按日期查看</h2>
-${calendarHTML(days)}
 <div class="bar"><input type="date" id="cal-jump" min="${esc(minDate)}" max="${esc(maxDate)}" value="${esc(maxDate)}">
 <button type="button" id="cal-go">打开该日报告</button><span class="muted" id="cal-jump-msg"></span></div>
 <div class="bar"><select id="day-year"><option value="">全部年份</option>${years.map((y) => `<option value="${esc(y)}">${esc(y)} 年</option>`).join("")}</select>
