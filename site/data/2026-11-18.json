@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "generatedAt": "2026-11-18T08:32:23.023Z",
+  "generatedAt": "2026-11-18T08:37:18.849Z",
   "scanned": 80,
   "rejected": [
     {
@@ -371,8 +371,8 @@
       "name": "floorplan",
       "url": "https://github.com/haydenschmitty/floorplan",
       "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
-      "stars": 4750,
-      "todayStars": 0,
+      "stars": 4751,
+      "todayStars": 1,
       "language": "JavaScript",
       "license": "MIT",
       "openIssues": 38,
@@ -409,13 +409,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "可视化代码库结构的 AI 工具。",
-        "plain": "为开发者提供代码库架构的可视化地图。",
-        "what": "不推荐",
-        "who": "不推荐",
-        "how": "不推荐",
-        "hours": "不推荐",
-        "risk": "不推荐"
+        "intro": "使用 Claude 或 Codex 读取代码库并绘制交互式架构图的工具。",
+        "plain": "为大型代码库提供架构可视化服务，帮助开发者理解复杂的系统。",
+        "what": "开发一个 SaaS 平台，允许用户上传代码库（或连接 Git 仓库），自动生成架构图。",
+        "who": "需要架构可视化的软件开发团队、技术经理。",
+        "how": "前端界面（上传/连接），后端 API（调用 Claude/Codex），数据库（存储图数据）。",
+        "hours": "40-60",
+        "risk": "技术栈复杂度高，AI 成本可能较高。"
       },
       "revisit": false
     },
@@ -425,8 +425,8 @@
       "name": "Mika",
       "url": "https://github.com/wangzan101/Mika",
       "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-      "stars": 9011,
-      "todayStars": 4,
+      "stars": 9012,
+      "todayStars": 1,
       "language": "Kotlin",
       "license": "Apache-2.0",
       "openIssues": 134,
@@ -459,13 +459,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "Android 后台 AI 自动化代理。",
-        "plain": "帮用户自动完成手机上的重复操作。",
-        "what": "增加付费订阅功能或针对特定场景（如电商抢购、自动打卡）的定制脚本模块。",
-        "who": "需要自动化手机操作的用户（如电商党、学生党）。",
-        "how": "开发 App 内购订阅或提供定制脚本服务。",
-        "hours": "40-60 小时",
-        "risk": "Android 版本更新导致无障碍服务失效。"
+        "intro": "运行在 Android 后台的 AI 代理，通过语音指令操作应用和网页完成任务。",
+        "plain": "为手机用户提供自动化任务处理服务，解放双手。",
+        "what": "开发一个 App，允许用户设置自动化脚本（如自动抢票、自动回复），通过 AI 理解自然语言指令并执行。",
+        "who": "手机重度用户，需要自动化办公或娱乐的普通用户。",
+        "how": "开发 Android App，集成 LLM API 和无障碍服务/自动化框架。",
+        "hours": "60-80",
+        "risk": "平台规则限制（无障碍服务限制），用户隐私担忧。"
       },
       "revisit": false
     },
@@ -476,7 +476,7 @@
       "url": "https://github.com/patch-gg/pixelfx",
       "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
       "stars": 8057,
-      "todayStars": 7,
+      "todayStars": 0,
       "language": "JavaScript",
       "license": "MIT",
       "openIssues": 14,
@@ -509,13 +509,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "244 个像素艺术效果的代码库。",
-        "plain": "不推荐",
-        "what": "不推荐",
-        "who": "不推荐",
-        "how": "不推荐",
-        "hours": "不推荐",
-        "risk": "不推荐"
+        "intro": "包含 244 个像素艺术特效代码片段的库，附带 Claude Code 技能。",
+        "plain": "为游戏开发者提供现成的像素特效素材和生成工具。",
+        "what": "开发一个付费的像素特效素材包，或提供基于 Claude Code 的特效定制服务。",
+        "who": "独立游戏开发者，像素艺术爱好者。",
+        "how": "打包素材，在 Gumroad 或 itch.io 上销售，或提供付费咨询。",
+        "hours": "20-30",
+        "risk": "市场竞争激烈，同质化素材多。"
       },
       "revisit": false
     },
@@ -526,7 +526,7 @@
       "url": "https://github.com/qybaihe/bla",
       "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
       "stars": 6091,
-      "todayStars": 4,
+      "todayStars": 0,
       "language": "TypeScript",
       "license": "MIT",
       "openIssues": 6,
@@ -570,13 +570,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "保护代码库免受 AI 反编译的防御工具。",
-        "plain": "防止 AI 抓取或分析你的核心代码逻辑。",
-        "what": "增加针对特定语言（如 Python 脚本）或特定平台的保护模块。",
-        "who": "拥有核心代码逻辑需要保护的开发者。",
-        "how": "提供 Docker 容器或 CLI 工具服务。",
-        "hours": "30-50 小时",
-        "risk": "防御手段被 AI 破解或性能损耗过大。"
+        "intro": "保护 JS/TS、Electron、WASM 等代码免受 AI 反编译的工具。",
+        "plain": "不推荐",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "涉及破解与反破解，合规风险极大。"
       },
       "revisit": false
     },
@@ -587,7 +587,7 @@
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
       "description": "Towards a More Autonomous Agent System",
       "stars": 23744,
-      "todayStars": 6,
+      "todayStars": 0,
       "language": "TypeScript",
       "license": "MIT",
       "openIssues": 0,
@@ -611,13 +611,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "自主代理系统的研究原型。",
-        "plain": "不推荐",
-        "what": "不推荐",
-        "who": "不推荐",
-        "how": "不推荐",
-        "hours": "不推荐",
-        "risk": "不推荐"
+        "intro": "DeepSeek 开发的更自主的代理系统原型。",
+        "plain": "构建更智能、更自主的 AI 代理系统，用于处理复杂任务流。",
+        "what": "基于该原型开发一个垂直领域的智能代理产品（如智能客服、自动化办公助手）。",
+        "who": "企业客户，需要自动化业务流程的公司。",
+        "how": "基于原型代码进行二次开发，添加业务逻辑，部署 API。",
+        "hours": "80-100",
+        "risk": "技术门槛极高，模型能力不稳定，落地难。"
       },
       "revisit": false
     },
@@ -628,7 +628,7 @@
       "url": "https://github.com/valentderah/totk-pc-recomp",
       "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
       "stars": 7647,
-      "todayStars": 2,
+      "todayStars": 0,
       "language": "C",
       "license": "MIT",
       "openIssues": 373,
@@ -658,13 +658,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "Switch 游戏《塞尔达传说》的 PC 移植工具。",
-        "plain": "不推荐",
-        "what": "不推荐",
-        "who": "不推荐",
-        "how": "不推荐",
-        "hours": "不推荐",
-        "risk": "不推荐"
+        "intro": "一个用 Rust 编写的原生 UI 框架。",
+        "plain": "为开发者提供高性能的跨平台 UI 开发解决方案。",
+        "what": "开发一个基于 Rune 的桌面应用模板或 UI 组件库，并在开发者社区推广。",
+        "who": "Rust 开发者，需要高性能桌面应用的开发者。",
+        "how": "编写文档，创建示例项目，在 GitHub 上开源或出售模板。",
+        "hours": "30-50",
+        "risk": "Rust 学习曲线陡峭，社区规模小。"
       },
       "revisit": false
     },
@@ -699,13 +699,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "原生 UI 框架。",
-        "plain": "不推荐",
-        "what": "不推荐",
-        "who": "不推荐",
-        "how": "不推荐",
-        "hours": "不推荐",
-        "risk": "不推荐"
+        "intro": "参照 Apple TV 设计的开源 Android TV 桌面，用于国产电视的替代方案。",
+        "plain": "为国产电视用户提供无广告、类似 Apple TV 的桌面体验服务。",
+        "what": "推广该 APK，提供电视安装服务，或开发配套的遥控器/配件。",
+        "who": "拥有国产智能电视但讨厌广告的用户。",
+        "how": "在淘宝/闲鱼销售安装服务，或推广 APK 下载。",
+        "hours": "10-20",
+        "risk": "电视厂商系统更新可能屏蔽该应用，版权风险。"
       },
       "revisit": false
     },
@@ -716,10 +716,10 @@
       "url": "https://github.com/pengchujin/aerial-tv",
       "description": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
       "stars": 12392,
-      "todayStars": 6,
+      "todayStars": 0,
       "language": "Kotlin",
       "license": "MIT",
-      "openIssues": 406,
+      "openIssues": 407,
       "sizeKb": 15382,
       "createdAt": "2026-10-20T09:13:06Z",
       "pushedAt": "2026-11-18T01:33:02Z",
@@ -740,13 +740,13 @@
       },
       "direction": "内容创作",
       "landing": {
-        "intro": "去广告的 Android TV 桌面启动器。",
-        "plain": "给国产电视装一个没有广告的桌面系统。",
-        "what": "增加针对特定电视品牌（如海信、创维）的深度适配功能。",
-        "who": "讨厌电视广告的用户和极客用户。",
-        "how": "开发 APK 并上架应用商店或提供刷机包。",
-        "hours": "20-30 小时",
-        "risk": "电视厂商更新固件导致兼容性问题。"
+        "intro": "将《塞尔达传说：王国之泪》从 Switch 静态重编译为 Windows/Linux 的工具。",
+        "plain": "不推荐",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "涉及游戏逆向工程与破解，法律风险极高。"
       },
       "revisit": true
     }
