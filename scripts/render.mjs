@@ -43,6 +43,8 @@ a{color:var(--accent)}
 .bar button,.bar a{font:inherit;font-size:12px;color:var(--muted);background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 11px;text-decoration:none;cursor:pointer}
 .bar input,.bar select{font:inherit;font-size:13px;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 10px;outline:none}
 .bar input{flex:1;min-width:200px}
+.daynav{justify-content:space-between}
+.bar .navend{font-size:12px;color:var(--muted);padding:3px 0}
 .summary,.card,.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
 .summary{margin-bottom:18px}
 .stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:12px;color:var(--muted);font-size:12px}
@@ -242,6 +244,9 @@ const introBlock = (text) =>
 export function renderReport(d, opts = {}) {
   const repo = opts.repo || DEFAULT_REPO;
   const pat = opts.pat || "";
+  // 相邻报告日期由 rebuildPages 按 history 顺序注入；同窗口切换，sessionStorage 里的解锁状态天然保留
+  const prevDate = opts.prevDate || "";
+  const nextDate = opts.nextDate || "";
   const cards = d.picks.map((p, i) => {
     const badges = Object.entries(p.breakdown || {})
       .map(([k, v]) => `<span class="badge">${esc(k)} ${v > 0 ? "+" : ""}${v}</span>`).join("");
@@ -272,9 +277,14 @@ ${plainRow}
   const intro = d.picks.length ? `今晚可动手：${esc(d.picks[0]?.landing?.what || "看第一张卡")}` : "今天没筛出够格的项目，宁可不推。";
   const avg = d.picks.length ? Math.round(d.picks.reduce((s, p) => s + p.score, 0) / d.picks.length) : 0;
   const ai = d.aiUsed ? `Workers AI · ${esc(d.aiModel)}` : "模板文案（AI 未启用）";
+  const dayNav = `<div class="bar daynav">
+${prevDate ? `<a href="${esc(prevDate)}.html">← 上一份 ${esc(prevDate)}</a>` : '<span class="navend">已是最早的报告</span>'}
+${nextDate ? `<a href="${esc(nextDate)}.html">下一份 ${esc(nextDate)} →</a>` : '<span class="navend">已是最新报告</span>'}
+</div>`;
 
   return page(`GitHub 副业雷达 · ${d.date}`, `
 <div class="bar"><a href="../index.html">← 历史归档与选品库</a><a href="../settings.html">筛选设置</a>${rerunButton}</div>
+${dayNav}
 ${rerunPanel(repo, pat)}
 <h1>GitHub 副业雷达</h1>
 <div class="date">${esc(d.date)} · 生成于 ${esc(String(d.generatedAt).replace("T", " ").slice(0, 16))} UTC</div>
@@ -306,7 +316,7 @@ function monthCards(days) {
     const kept = list.reduce((s, d) => s + d.kept, 0);
     const avg = kept ? Math.round(list.reduce((s, d) => s + d.avg * d.kept, 0) / kept) : 0;
     const rows = list.map((d) => `<div class="dayrow" data-year="${esc(y)}" data-hay="${esc(`${d.date} ${ym} ${d.top}`.toLowerCase())}">
-<div class="dr-date"><a href="reports/${esc(d.date)}.html">${esc(d.date)}</a><span class="dr-wd">${esc(weekdayOf(d.date))}</span></div>
+<div class="dr-date"><a href="reports/${esc(d.date)}.html" target="_blank" rel="opener">${esc(d.date)}</a><span class="dr-wd">${esc(weekdayOf(d.date))}</span></div>
 <div class="dr-stat"><span>扫 <b>${d.scanned}</b></span><span>排 <b>${d.rejected}</b></span><span>留 <b>${d.kept}</b></span><span>均分 <b>${d.avg}</b></span></div>
 <div class="dr-top" title="Top 1 · ${esc(d.top)}">Top 1 · ${esc(d.top)}</div></div>`).join("");
     return `<details class="month" ${i === 0 ? "open" : ""}>
@@ -368,7 +378,7 @@ export function renderArchive(history, opts = {}) {
       var hay=[i.name,i.intro,i.direction,i.language,i.license,i.plain,i.what,i.who,i.how,i.risk].join(' ').toLowerCase();
       if(kw&&hay.indexOf(kw)<0)return;
       out.push('<div class="item"><span class="grade">'+esc(i.grade)+' · '+i.score+'</span>'+
-        '<h3><a href="reports/'+esc(i.date)+'.html#'+esc(i.anchor)+'">'+esc(i.name)+'</a></h3>'+
+        '<h3><a href="reports/'+esc(i.date)+'.html#'+esc(i.anchor)+'" target="_blank" rel="opener">'+esc(i.name)+'</a></h3>'+
         '<div class="meta">'+esc(i.date)+' · '+esc(i.language)+' · '+esc(i.license)+' · ★ '+i.stars+' · '+esc(i.direction)+(i.revisit?' · 回看':'')+'</div>'+
         '<div class="intro"><span class="intro-label">项目简介</span>'+esc(i.intro||'仓库未提供简介')+'</div>'+
         '<div class="row"><span>改哪一处</span>'+esc(i.what)+'</div>'+
@@ -385,7 +395,10 @@ export function renderArchive(history, opts = {}) {
     var v=jump.value;
     if(!v){jmsg.textContent='先选一个日期';return;}
     var hit=data.days.some(function(d){return d.date===v;});
-    if(hit)location.href='reports/'+v+'.html';
+    if(hit){
+      var a=document.createElement('a');a.href='reports/'+v+'.html';a.target='_blank';a.rel='opener';
+      document.body.appendChild(a);a.click();a.remove();jmsg.textContent='';
+    }
     else jmsg.textContent=v+' 没有报告（浅色说明那天没跑）';
   });
 

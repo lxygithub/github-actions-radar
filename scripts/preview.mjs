@@ -83,8 +83,10 @@ const history = dates.map((d, i) => makeReport(d, i));
 
 await fs.mkdir(path.join(OUT, "reports"), { recursive: true });
 await fs.copyFile(path.join(ROOT, "site", "favicon.svg"), path.join(OUT, "favicon.svg"));
-for (const d of history) {
-  await fs.writeFile(path.join(OUT, "reports", `${d.date}.html`), renderReport(d));
+for (let i = 0; i < history.length; i++) {
+  const d = history[i];
+  const nav = { prevDate: history[i + 1]?.date || "", nextDate: history[i - 1]?.date || "" };
+  await fs.writeFile(path.join(OUT, "reports", `${d.date}.html`), renderReport(d, nav));
 }
 await fs.writeFile(path.join(OUT, "index.html"), renderArchive(history));
 

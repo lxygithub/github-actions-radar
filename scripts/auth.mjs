@@ -185,8 +185,11 @@ export async function rebuildPages({ SITE, DATA, REPORTS, ROOT, password = "", r
     const out = locked ? gatePage(await seal(html, password), faviconHref) : html;
     await fs.writeFile(file, out);
   };
-  for (const d of history) {
-    await write(path.join(REPORTS, `${d.date}.html`), renderReport(d, pageOpts), "../favicon.svg");
+  for (let i = 0; i < history.length; i++) {
+    const d = history[i];
+    // history 倒序（最新在前）：上一天 = 更早 = i+1，下一天 = 更新 = i-1
+    const nav = { prevDate: history[i + 1]?.date || "", nextDate: history[i - 1]?.date || "" };
+    await write(path.join(REPORTS, `${d.date}.html`), renderReport(d, { ...pageOpts, ...nav }), "../favicon.svg");
   }
   await write(path.join(SITE, "index.html"), renderArchive(history, pageOpts), "favicon.svg");
 
