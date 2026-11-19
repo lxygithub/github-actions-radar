@@ -1,0 +1,801 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T08:46:41.715Z",
+  "scanned": 80,
+  "rejected": [
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "CyC2018/CS-Notes",
+      "url": "https://github.com/CyC2018/CS-Notes",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "JenkinWoo/sheeridVerify",
+      "url": "https://github.com/JenkinWoo/sheeridVerify",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "unclebob/ub-mode",
+      "url": "https://github.com/unclebob/ub-mode",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "interplains/Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "huami1314/GestaltX",
+      "url": "https://github.com/huami1314/GestaltX",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "krisgfx9/Wireless-Device-Battery-Monitor",
+      "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+      "reason": "分数 55 未达 60 线"
+    },
+    {
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "designfuchen/word-atlas",
+      "url": "https://github.com/designfuchen/word-atlas",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "TheAlgorithms/Python",
+      "url": "https://github.com/TheAlgorithms/Python",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "benjitaylor/skills",
+      "url": "https://github.com/benjitaylor/skills",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "wesbos/3d-model-anything",
+      "url": "https://github.com/wesbos/3d-model-anything",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "reason": "分数 48 未达 60 线"
+    },
+    {
+      "name": "zortos293/Lichii",
+      "url": "https://github.com/zortos293/Lichii",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "reason": "分数 46 未达 60 线"
+    },
+    {
+      "name": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "reason": "分数 45 未达 60 线"
+    },
+    {
+      "name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "reason": "分数 44 未达 60 线"
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "JustAResearcher/gpu-unlock-ada",
+      "url": "https://github.com/JustAResearcher/gpu-unlock-ada",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "reason": "分数 31 未达 60 线"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "reason": "分数 30 未达 60 线"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "reason": "分数 24 未达 60 线"
+    },
+    {
+      "name": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "reason": "分数 22 未达 60 线"
+    },
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "reason": "分数 20 未达 60 线"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "reason": "分数 17 未达 60 线"
+    },
+    {
+      "name": "rddmwmddr/android-ad-cleaner",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "RoutineMiku/apkstart",
+      "url": "https://github.com/RoutineMiku/apkstart",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "pengchujin/aerial-tv",
+      "url": "https://github.com/pengchujin/aerial-tv",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Jakeschincariol/day-trader-skill",
+      "url": "https://github.com/Jakeschincariol/day-trader-skill",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "haydenschmitty/floorplan",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "l0ng-ai/openidea",
+      "url": "https://github.com/l0ng-ai/openidea",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "LNPANDY/NX2Apple",
+      "url": "https://github.com/LNPANDY/NX2Apple",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Verlintas/NOIR",
+      "url": "https://github.com/Verlintas/NOIR",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "jhaizhou-ops/S2Arm",
+      "url": "https://github.com/jhaizhou-ops/S2Arm",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/chat-demo",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "t3dotgg/tstack",
+      "url": "https://github.com/t3dotgg/tstack",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "wangzan101/Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "mromidev/claude-animated-shorts",
+      "url": "https://github.com/mromidev/claude-animated-shorts",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "libracoder/kiri",
+      "url": "https://github.com/libracoder/kiri",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "expo/exact",
+      "url": "https://github.com/expo/exact",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "anomalyco/rune",
+      "url": "https://github.com/anomalyco/rune",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "modelflare-ai/AnyModelBot",
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "elvarofficial/teardown",
+      "url": "https://github.com/elvarofficial/teardown",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "valentderah/totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "tangerineturtle1/NX2navi",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "reason": "名额 / 冷却限制"
+    }
+  ],
+  "picks": [
+    {
+      "fullName": "Lee-xeo/Claude-Cage",
+      "owner": "Lee-xeo",
+      "name": "Claude-Cage",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "description": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+      "stars": 6754,
+      "todayStars": 264,
+      "language": "Go",
+      "license": "MIT",
+      "openIssues": 268,
+      "sizeKb": 51726,
+      "createdAt": "2026-10-31T15:07:08Z",
+      "pushedAt": "2026-11-19T06:35:30Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<h1>Claude Cage</h1>\n\n**把 Claude 大小姐关起来，为了更好地保护我们的相遇**\n\n<img src=\"assets/claude-cage-character.png\" alt=\"Claude Cage\" width=\"320\" />\n\n[![Release](https://img.shields.io/github/v/release/Lee-xeo/Claude-Cage?include_prereleases)](https://github.com/Lee-xeo/Claude-Cage/releases) [![MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)\n\n<a href=\"https://trendshift.io/repositories/339051#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/339051/daily?language=Go\" alt=\"Trendshift — Go Repository of the Day\" width=\"250\" height=\"55\" /></a> <a href=\"https://trendshift.io/repositories/339051#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/339051/weekly?language=Go\" alt=\"Trendshift — Go Repository of the Week\" width=\"250\" height=\"55\" /></a>\n\n<a href=\"https://trendshift.io/repositories/339051#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/339051/daily\" alt=\"Trendshift — Repository of the Day\" width=\"250\" height=\"55\" /></a> <a href=\"https://trendshift.io/repositories/339051#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/339051/weekly\" alt=\"Trendshift — Repository of the Week\" width=\"250\" height=\"55\" /></a>\n\n**[项目主页](https://claude-cage.com/) · [下载应用](https://claude-cage.com/#download) · [使用文档](https://claude-cage.com/docs/) · [常见问题](https://claude-cage.com/docs/troubleshooting/)**\n\n[简体中文](README.md) · [繁體中文](README.zh-TW.md) · [Русский](README.ru.md) · [العربية](README.ar.md) · [فارسی](README.fa.md) · [한국어](README.ko.md) · [Español](README.es.md) · [မြန်မာဘာသာ](README.my.md) · [Беларуская](README.be.md) · [پښتو](README.ps.md) · [دری](README.prs.md) · [አማርኛ](README.am.md) · [Soomaali](README.so.md) · [ትግርኛ](README.ti.md) · [Français](README.fr.md)\n\n</div>\n\n## 受够了 Anthropic\n\n作为一个只是想和 Claude 对话与合作的正常用户，受够了折腾各种 VPS，指纹浏览器，环境检测，面对封号的担惊受怕和财产损失。我们提出 **Claude Cage** 项目：**一个开箱即用的桌面程序，配置好自己的网络代理，集中管理隔离环境、时区语言和环境检查。**\n\nClaude Cage 让你在熟悉",
+      "score": 83,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 8,
+        "需求真实": 20,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个为 Claude 特化的轻量化虚拟机，用于隔离和管控 API 访问。",
+        "plain": "不推荐",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "mdiri-ai/SoduWork",
+      "owner": "mdiri-ai",
+      "name": "SoduWork",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "stars": 3546,
+      "todayStars": null,
+      "language": "JavaScript",
+      "license": "MIT",
+      "openIssues": 128,
+      "sizeKb": 68876,
+      "createdAt": "2026-10-29T02:43:14Z",
+      "pushedAt": "2026-11-19T07:56:48Z",
+      "topics": [
+        "agent-harness",
+        "agent-orchestration",
+        "agent-workflows",
+        "ai-agents",
+        "ai-workflows",
+        "anti-slop",
+        "claude-code",
+        "codex",
+        "deepseek",
+        "electron",
+        "fastapi",
+        "harness",
+        "human-in-the-loop",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "opencode",
+        "plugin-system",
+        "self-hosted",
+        "team-collaboration"
+      ],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "**English** · [简体中文](README.zh-CN.md)\n\n> **中文文档入口：[文档目录](docs/README.zh-CN.md) · [安装与启动](docs/getting-started.md) · [开发指南](docs/development.md)**\n\n<div align=\"center\">\n\n<img src=\"client/build/icons/256x256.png\" alt=\"SoduWork\" width=\"96\" />\n\n# SoduWork\n\n## The AI-native engine for teams and their agents\n\n**A chat ends with an answer. A SoduWork request ends when the person who asked signs off.**\n\n**Multi-harness · Multi-agent · Self-hosted**\n\nWorks with Pi · OpenCode · DeepSeek Harness · Qwen Code · Kimi Code · Codex Harness · Codex\n\n```sh\ngit clone https://github.com/mdiri-ai/SoduWork\ncd SoduWork\n```\n\n| Platform | Start command |\n| --- | --- |\n| macOS / Linux | `sh start.sh --desktop` |\n| Windows PowerShell | `.\\start.cmd --desktop` |\n| Windows Command Prompt | `start.cmd --desktop` |\n\n[Website](https://soduwork.ai) | [Live demo](https://soduwork.ai) | [Documentation](docs/README.md) | [Docs website](https://dev.soduwork.ai) | [Releases](https://github.com/mdiri-ai/SoduWork/releases) | [Discord](https://discord.gg/AXYNrAYHy)\n\n[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![Release](https://img.shields.io/github/v/release/mdiri-ai/SoduWork)](https://github.com/mdiri-ai/SoduWork/releases)\n[![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#quick-start)\n[![Discord](https://img.shields.io/badge/chat-Discord-5865F2.svg)](https://discord.gg/AXYNrAYHy)\n\n</div>\n\n---\n\n## What SoduWork can do for you\n\n| | |\n| --- | --- |\n| **One harness does the work, another reviews it** | Pick Pi to do the work. OpenCode, on a different model, reviews it against the acceptance criteria. If the review fails, the work goes back with the reasons. |\n| **Hand a request to a colleague's agent** | People and AI work together: you file a request, AI writes the acceptance criteria, and you assign it to yourself or a colleague. The assignee's agent does the work and reviews it, and a person signs off. Everyone on th",
+      "score": 79,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 20,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个自托管的 AI 原生引擎，支持多 Harness、多代理编排。",
+        "plain": "做企业级的 AI 代理工作流平台。",
+        "what": "开发 SaaS 版本，增加企业级权限、监控和高级工作流模板。",
+        "who": "需要自动化工作流的中大型企业。",
+        "how": "托管服务 + 付费订阅。",
+        "hours": "300",
+        "risk": "技术债务，竞争对手（LangChain 等）"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "shanselman/gputaskman",
+      "owner": "shanselman",
+      "name": "gputaskman",
+      "url": "https://github.com/shanselman/gputaskman",
+      "description": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights for NVIDIA, AMD, and Intel GPUs (plus Huawei Ascend on Linux).",
+      "stars": 3542,
+      "todayStars": 47,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 18,
+      "sizeKb": 3260,
+      "createdAt": "2026-11-03T00:49:34Z",
+      "pushedAt": "2026-11-19T02:30:26Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# gputaskman\n\n**An `htop` for what's inside your GPU, not just how full it is.**\n\nWindows with NVIDIA/AMD telemetry and Intel WDDM activity, plus Linux and WSL support (NVIDIA\neverywhere, AMD and Intel on native Linux; see\n[Linux and WSL](#linux-and-wsl)) and macOS on Apple Silicon (see [macOS](#macos-apple-silicon)). A terminal UI\nthat connects per-process GPU memory and engine activity with loaded runtimes, model files, and\nLLM buffer breakdowns.\n\nTask Manager says \"15 GB used.\" This tries to answer: *by what? Model weights? KV cache?\nYour browser? The desktop compositor? And why is so much GPU memory in system RAM?*\n\n**Scope: local GPU workloads, not cloud services.** Decision models, vision, speech, LLM inference,\ntraining/fine-tuning (including Unsloth), graphics, and video all belong here. Visibility varies:\nprocess memory and engine activity are measured; identifying individual models and their work\nrequires supporting evidence. A PyTorch/CUDA DLL alone cannot identify a model or prove training,\nand a mapped file does not prove that model is resident on the GPU or being exercised.\nCPU-only, NPU-only, and cloud workloads are out of scope.\n\n![Live GPU overview with an LLM's weights, KV cache, and compute buffer breakdown](docs/screenshots/overview.png)\n\n> Early, experimental software. Device and process counters are measurements; classifications\n> and GGUF-derived breakdowns are estimates. This does not dump VRAM or enumerate a game's textures.\n\n## Install from PyPI\n\n[gputaskman is on PyPI](https://pypi.org/project/gputaskman/). No repository clone is needed:\n\n```powershell\nuv tool install gputaskman\ngputaskman\n```\n\nOr, with [pipx](https://pipx.pypa.io/):\n\n```powershell\npipx install gputaskman\ngputaskman\n```\n\nWorks on Windows, Linux/WSL, and macOS with Python 3.11+ and the supported GPU/driver\nconfiguration described below. Both installers keep the app in an isolated environment.\nThe shorter `gtm` command is also available. Upgrade with `uv tool upgrade gputask",
+      "score": 69,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": -12
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个终端 UI 工具，用于监控 GPU VRAM、活动以及 LLM 缓存使用情况。",
+        "plain": "做本地 AI 开发者的 GPU 监控面板。",
+        "what": "开发带图形界面的桌面监控软件，集成到现有工具中。",
+        "who": "本地部署 LLM 的 AI 开发者和极客。",
+        "how": "开发桌面客户端应用。",
+        "hours": "150",
+        "risk": "硬件兼容性问题"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "BryceYuuu/RUN",
+      "owner": "BryceYuuu",
+      "name": "RUN",
+      "url": "https://github.com/BryceYuuu/RUN",
+      "description": "RUN · 润：中国护照持有人的海外移居手册。欧洲 36 国 110 条移民路线 + 13 个主要移民地区：数字游民签证、欧盟蓝卡、技术移民、留学转工作、创业自雇、投资居留，每条附官方来源，持续更新。",
+      "stars": 4969,
+      "todayStars": 31,
+      "language": "Python",
+      "license": "CC-BY-SA-4.0",
+      "openIssues": 8,
+      "sizeKb": 356,
+      "createdAt": "2026-10-29T11:28:43Z",
+      "pushedAt": "2026-11-07T08:57:32Z",
+      "topics": [
+        "china",
+        "chinese",
+        "digital-nomad",
+        "digital-nomad-visa",
+        "emigration",
+        "eu-blue-card",
+        "europe",
+        "expat",
+        "golden-visa",
+        "immigration",
+        "immigration-guide",
+        "relocation",
+        "residence-permit",
+        "run-philosophy",
+        "schengen",
+        "study-abroad",
+        "visa",
+        "work-visa"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "",
+      "score": 62,
+      "grade": "C",
+      "breakdown": {
+        "许可证": 8,
+        "上手成本": 20,
+        "中文友好": 8,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一份详尽的海外移居指南，涵盖欧洲 36 国的 110 条移民路线。",
+        "plain": "做付费移民咨询服务，或者定制化的一对一指导。",
+        "what": "建立咨询网站，提供付费的移民路径分析和申请协助。",
+        "who": "计划移民海外的中国公民。",
+        "how": "咨询服务 + 知识付费课程。",
+        "hours": "50",
+        "risk": "法律合规性，政策变化"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "ersinkoc/phonebox",
+      "owner": "ersinkoc",
+      "name": "phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 12 languages. USB or paired Wi-Fi. No cloud required.",
+      "stars": 3396,
+      "todayStars": null,
+      "language": "C#",
+      "license": "MIT",
+      "openIssues": 5,
+      "sizeKb": 29610,
+      "createdAt": "2026-11-07T16:45:16Z",
+      "pushedAt": "2026-11-19T08:24:31Z",
+      "topics": [
+        "android",
+        "claude-code",
+        "codex",
+        "dashboard",
+        "desk-panel",
+        "dotnet",
+        "home-assistant",
+        "linux",
+        "macos",
+        "old-phone",
+        "smart-stack",
+        "stream-deck",
+        "system-monitor",
+        "tailscale",
+        "webhooks",
+        "widgets",
+        "windows"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "",
+      "score": 61,
+      "grade": "C",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "把旧安卓手机变成跨平台的桌面控制面板，提供各种系统监控和自动化小部件。",
+        "plain": "卖现成的桌面面板模板，或者提供定制开发服务。",
+        "what": "开发一套精美的桌面面板模板库，并在应用商店上架。",
+        "who": "想要打造个性化桌面或家庭自动化的极客。",
+        "how": "模板销售 + 应用内购买。",
+        "hours": "100",
+        "risk": "用户基数小，硬件老化问题"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "public-apis/public-apis",
+      "owner": "public-apis",
+      "name": "public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "stars": 500161,
+      "todayStars": 210,
+      "language": "Python",
+      "license": "MIT",
+      "openIssues": 2775,
+      "sizeKb": 17567,
+      "createdAt": "2016-03-20T23:49:42Z",
+      "pushedAt": "2026-11-18T19:27:01Z",
+      "topics": [
+        "api",
+        "apis",
+        "dataset",
+        "development",
+        "free",
+        "list",
+        "lists",
+        "open-source",
+        "public",
+        "public-api",
+        "public-apis",
+        "resources",
+        "software"
+      ],
+      "isOrg": true,
+      "defaultBranch": "master",
+      "readmeHead": "",
+      "score": 61,
+      "grade": "C",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 7,
+        "时效红利": 1,
+        "可接手度": -8
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个免费 API 集合列表。",
+        "plain": "不推荐",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "erkamyaman/rust-anything",
+      "owner": "erkamyaman",
+      "name": "rust-anything",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+      "stars": 3956,
+      "todayStars": null,
+      "language": "Rust",
+      "license": "MIT",
+      "openIssues": 1,
+      "sizeKb": 7773,
+      "createdAt": "2026-11-16T12:10:36Z",
+      "pushedAt": "2026-11-19T08:45:01Z",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "cli",
+        "code-migration",
+        "codex",
+        "ffi",
+        "golang",
+        "java",
+        "javascript",
+        "mcp",
+        "migration",
+        "napi",
+        "performance",
+        "porting",
+        "pyo3",
+        "python",
+        "rewrite",
+        "ruby",
+        "rust",
+        "typescript"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "",
+      "score": 60,
+      "grade": "C",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 12,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个自动化工具，用于将现有应用逐步迁移到 Rust，同时保持行为一致。",
+        "plain": "提供老旧代码库迁移到 Rust 的咨询服务。",
+        "what": "开发一个 SaaS 平台，上传旧代码即可生成迁移报告。",
+        "who": "想要提升性能和安全的遗留系统开发者。",
+        "how": "SaaS 平台 + 技术咨询。",
+        "hours": "200",
+        "risk": "迁移错误导致系统崩溃"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "openclaw/openclaw",
+      "owner": "openclaw",
+      "name": "openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+      "stars": 394784,
+      "todayStars": 81,
+      "language": "TypeScript",
+      "license": "MIT",
+      "openIssues": 8419,
+      "sizeKb": 15992259,
+      "createdAt": "2025-11-24T10:16:47Z",
+      "pushedAt": "2026-11-19T08:42:18Z",
+      "topics": [
+        "ai",
+        "assistant",
+        "crustacean",
+        "molty",
+        "openclaw",
+        "own-your-data",
+        "personal"
+      ],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "",
+      "score": 60,
+      "grade": "C",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 20,
+        "交付轻重": 2,
+        "时效红利": 1,
+        "可接手度": -8
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个跨平台的个人 AI 助手框架，旨在让 AI 执行实际任务。",
+        "plain": "做 AI 管家服务，帮用户自动处理邮件、日程和文件整理。",
+        "what": "开发一个基于 OpenClaw 的托管服务，提供预设的自动化任务脚本。",
+        "who": "忙碌的专业人士和需要自动化日常琐事的人。",
+        "how": "订阅制服务。",
+        "hours": "250",
+        "risk": "隐私担忧，AI 幻觉"
+      },
+      "revisit": false
+    }
+  ],
+  "aiUsed": true,
+  "aiModel": "@cf/zai-org/glm-4.7-flash",
+  "aiError": null
+}

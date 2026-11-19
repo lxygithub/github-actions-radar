@@ -68,7 +68,7 @@
     "direction": "通用工具"
   },
   "Lee-xeo/Claude-Cage": {
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "direction": "通用工具"
   },
   "storytold/craft-anything": {
@@ -80,15 +80,15 @@
     "direction": "通用工具"
   },
   "BryceYuuu/RUN": {
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "direction": "通用工具"
   },
   "public-apis/public-apis": {
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "direction": "通用工具"
   },
   "openclaw/openclaw": {
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "direction": "通用工具"
   },
   "NousResearch/hermes-agent": {
@@ -169,6 +169,22 @@
   },
   "anomalyco/rune": {
     "date": "2026-11-18",
+    "direction": "通用工具"
+  },
+  "mdiri-ai/SoduWork": {
+    "date": "2026-11-19",
+    "direction": "通用工具"
+  },
+  "shanselman/gputaskman": {
+    "date": "2026-11-19",
+    "direction": "通用工具"
+  },
+  "ersinkoc/phonebox": {
+    "date": "2026-11-19",
+    "direction": "通用工具"
+  },
+  "erkamyaman/rust-anything": {
+    "date": "2026-11-19",
     "direction": "通用工具"
   }
 }
