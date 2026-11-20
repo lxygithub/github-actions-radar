@@ -92,7 +92,7 @@
     "direction": "通用工具"
   },
   "NousResearch/hermes-agent": {
-    "date": "2026-11-12",
+    "date": "2026-11-20",
     "direction": "通用工具"
   },
   "microsoft/vscode": {
@@ -100,23 +100,23 @@
     "direction": "通用工具"
   },
   "Verlintas/NOIR": {
-    "date": "2026-11-13",
+    "date": "2026-11-20",
     "direction": "通用工具"
   },
   "expo/exact": {
-    "date": "2026-11-13",
+    "date": "2026-11-20",
     "direction": "通用工具"
   },
   "modelflare-ai/AnyModelBot": {
-    "date": "2026-11-13",
+    "date": "2026-11-20",
     "direction": "通用工具"
   },
   "elvarofficial/teardown": {
-    "date": "2026-11-13",
+    "date": "2026-11-20",
     "direction": "通用工具"
   },
   "tangerineturtle1/NX2navi": {
-    "date": "2026-11-13",
+    "date": "2026-11-20",
     "direction": "通用工具"
   },
   "vercel-labs/ui": {
@@ -185,6 +185,14 @@
   },
   "erkamyaman/rust-anything": {
     "date": "2026-11-19",
+    "direction": "通用工具"
+  },
+  "govijr/terminal-mac": {
+    "date": "2026-11-20",
+    "direction": "通用工具"
+  },
+  "xevrion/hatchzip": {
+    "date": "2026-11-20",
     "direction": "通用工具"
   }
 }
