@@ -96,7 +96,7 @@
     "direction": "通用工具"
   },
   "microsoft/vscode": {
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "direction": "通用工具"
   },
   "Verlintas/NOIR": {
@@ -120,11 +120,11 @@
     "direction": "通用工具"
   },
   "vercel-labs/ui": {
-    "date": "2026-11-14",
+    "date": "2026-11-21",
     "direction": "通用工具"
   },
   "mromidev/claude-animated-shorts": {
-    "date": "2026-11-14",
+    "date": "2026-11-21",
     "direction": "通用工具"
   },
   "RoutineMiku/apkstart": {
@@ -193,6 +193,10 @@
   },
   "xevrion/hatchzip": {
     "date": "2026-11-20",
+    "direction": "通用工具"
+  },
+  "jamesondh/chimera-vocal-synth": {
+    "date": "2026-11-21",
     "direction": "通用工具"
   }
 }
