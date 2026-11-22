@@ -128,11 +128,11 @@
     "direction": "通用工具"
   },
   "RoutineMiku/apkstart": {
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "direction": "通用工具"
   },
   "libracoder/kiri": {
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "direction": "通用工具"
   },
   "deepseek-ai/chat-demo": {
@@ -197,6 +197,18 @@
   },
   "jamesondh/chimera-vocal-synth": {
     "date": "2026-11-21",
+    "direction": "通用工具"
+  },
+  "Immortal-Protocols/lastbook": {
+    "date": "2026-11-22",
+    "direction": "通用工具"
+  },
+  "ItsNotRexed/Leonida": {
+    "date": "2026-11-22",
+    "direction": "通用工具"
+  },
+  "DietrichGebert/ponytail": {
+    "date": "2026-11-22",
     "direction": "通用工具"
   }
 }
