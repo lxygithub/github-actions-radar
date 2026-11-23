@@ -1,0 +1,638 @@
+{
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T02:37:31.867Z",
+  "scanned": 80,
+  "rejected": [
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "JenkinWoo/sheeridVerify",
+      "url": "https://github.com/JenkinWoo/sheeridVerify",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "ItsNotRexed/Leonida",
+      "url": "https://github.com/ItsNotRexed/Leonida",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "unclebob/ub-mode",
+      "url": "https://github.com/unclebob/ub-mode",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "interplains/Zero-Breach-Toolkit",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "shanselman/gputaskman",
+      "url": "https://github.com/shanselman/gputaskman",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "huami1314/GestaltX",
+      "url": "https://github.com/huami1314/GestaltX",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "simplexai-labs/linger",
+      "url": "https://github.com/simplexai-labs/linger",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "toyxyz/toyxyz_RGBMocap",
+      "url": "https://github.com/toyxyz/toyxyz_RGBMocap",
+      "reason": "分数 53 未达 60 线"
+    },
+    {
+      "name": "designfuchen/word-atlas",
+      "url": "https://github.com/designfuchen/word-atlas",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "benjitaylor/skills",
+      "url": "https://github.com/benjitaylor/skills",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "ccch1mneyyy/dsh-Go",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "reason": "分数 48 未达 60 线"
+    },
+    {
+      "name": "zortos293/Lichii",
+      "url": "https://github.com/zortos293/Lichii",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "reason": "分数 46 未达 60 线"
+    },
+    {
+      "name": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "reason": "分数 45 未达 60 线"
+    },
+    {
+      "name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "reason": "分数 44 未达 60 线"
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "reason": "分数 40 未达 60 线"
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "reason": "分数 39 未达 60 线"
+    },
+    {
+      "name": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "reason": "分数 31 未达 60 线"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "reason": "分数 30 未达 60 线"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "reason": "分数 24 未达 60 线"
+    },
+    {
+      "name": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "reason": "分数 22 未达 60 线"
+    },
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "reason": "分数 20 未达 60 线"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "reason": "分数 17 未达 60 线"
+    },
+    {
+      "name": "RoutineMiku/apkstart",
+      "url": "https://github.com/RoutineMiku/apkstart",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "rddmwmddr/android-ad-cleaner",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Lee-xeo/Claude-Cage",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "mdiri-ai/SoduWork",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Immortal-Protocols/lastbook",
+      "url": "https://github.com/Immortal-Protocols/lastbook",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "haydenschmitty/floorplan",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "mromidev/claude-animated-shorts",
+      "url": "https://github.com/mromidev/claude-animated-shorts",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Verlintas/NOIR",
+      "url": "https://github.com/Verlintas/NOIR",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "jhaizhou-ops/S2Arm",
+      "url": "https://github.com/jhaizhou-ops/S2Arm",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "t3dotgg/tstack",
+      "url": "https://github.com/t3dotgg/tstack",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "wangzan101/Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "jamesondh/chimera-vocal-synth",
+      "url": "https://github.com/jamesondh/chimera-vocal-synth",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "ersinkoc/phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "expo/exact",
+      "url": "https://github.com/expo/exact",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "libracoder/kiri",
+      "url": "https://github.com/libracoder/kiri",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "modelflare-ai/AnyModelBot",
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "BryceYuuu/RUN",
+      "url": "https://github.com/BryceYuuu/RUN",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "elvarofficial/teardown",
+      "url": "https://github.com/elvarofficial/teardown",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "erkamyaman/rust-anything",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "valentderah/totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "tangerineturtle1/NX2navi",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "reason": "名额 / 冷却限制"
+    }
+  ],
+  "picks": [
+    {
+      "fullName": "havenicec/google-qr-sms-helper",
+      "owner": "havenicec",
+      "name": "google-qr-sms-helper",
+      "url": "https://github.com/havenicec/google-qr-sms-helper",
+      "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
+      "stars": 3239,
+      "todayStars": null,
+      "language": "JavaScript",
+      "license": "MIT",
+      "openIssues": 24,
+      "sizeKb": 99,
+      "createdAt": "2026-10-26T10:44:47Z",
+      "pushedAt": "2026-10-28T15:43:15Z",
+      "topics": [
+        "browser-automation",
+        "chrome-extension",
+        "google-auth",
+        "manifest-v3",
+        "sms-verification"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# Google QR SMS Helper (`google-qr-sms-helper`)\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/Manifest-V3-1a73e8?style=flat-square&logo=googlechrome&logoColor=white\" alt=\"Manifest V3\" />\n  <img src=\"https://img.shields.io/badge/Version-1.1.0-34a853?style=flat-square\" alt=\"Version 1.1.0\" />\n  <img src=\"https://img.shields.io/badge/License-MIT-fbbc04?style=flat-square\" alt=\"MIT License\" />\n  <img src=\"https://img.shields.io/badge/Platform-Chrome%20%7C%20Edge%20%7C%20Brave-ea4335?style=flat-square\" alt=\"Platform\" />\n</p>\n\n<p align=\"center\">\n  <b>将 Google 桌面端强制跨设备扫码验证（MO-SMS / GMS Constellation）一键降级回传统的「输入手机号接收 6 位短信验证码」流程。</b><br/>\n  Switch Google's mandatory cross-device QR verification back to standard 6-digit SMS / Voice verification on desktop browsers.\n</p>\n\n---\n\n## 📦 一、安装教程 (Installation)\n\n### 方式 1：直接下载 Release 压缩包（推荐新手）\n1. 前往本仓库的 **[Releases 页面](https://github.com/havenicec/google-qr-sms-helper/releases/latest)**，下载最新的 `google-qr-sms-helper-v1.1.0.zip` 并解压到本地文件夹。\n2. 打开 Chrome / Edge / Brave 浏览器，在地址栏输入 `chrome://extensions/` 并回车。\n3. 打开页面右上角的 **「开发者模式 (Developer mode)」** 开关。\n4. 点击左上角的 **「加载已解压的扩展程序 (Load unpacked)」**，选中刚才解压出来的文件夹即可完成安装。\n\n### 方式 2：通过 Git 克隆安装\n```bash\ngit clone https://github.com/havenicec/google-qr-sms-helper.git\n```\n然后在 `chrome://extensions/` 中开启「开发者模式」，点击「加载已解压的扩展程序」并选择 `google-qr-sms-helper` 目录。\n\n---\n\n## 🚀 二、保姆级图文使用教程 (Step-by-Step Usage Guide)\n\n> [!IMPORTANT]\n> **核心前提（必看）**：**不要**直接从第三方客户端（如 Antigravity / Gemini Code Assist 授权页）弹出的二维码页面降级（因为其 `continue` 参数包含多层嵌套重定向，会被 Google 重新拦截回二维码）。  \n> **必须先打开 Google Cloud Console 通过 Cloud Shell 唤出原生的 `Verify` 窗口**！在这里过完一次短信验证后，你的 Google 账号权限将全局解锁，再回 Antigravity 等工具登录即可直接丝滑通过。\n\n### 第 1 步：打开 Google Cloud Console 并唤起 Cloud Shell 验证\n1. 在浏览器中登录你需要验证的 Google 账号，访问 **[https://console.cloud.google.com/](https://console.cloud.google.com/)**。\n2. 如下图所示，点击页面右上角导航栏的 **「激活 Cloud Shell」终端图标 `[>_]`**（或者直接点击页面右下角插件悬浮窗里的 **`1. 自动点击 Cloud Shell 终端图标`** 按钮）。\n3. 在底部弹出的 `Verify your account` 窗口中，点击蓝色的 **`Verify",
+      "score": 88,
+      "grade": "A",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 7,
+        "需求真实": 16,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "不推荐",
+        "plain": "不推荐",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "FrigadeHQ/yogurt",
+      "owner": "FrigadeHQ",
+      "name": "yogurt",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "description": "Private AI meeting notes that stay on your computer. No meeting bot. Free and open source for Mac, Windows and Linux. An alternative to Granola, Otter and Fireflies.",
+      "stars": 2987,
+      "todayStars": null,
+      "language": "TypeScript",
+      "license": "MIT",
+      "openIssues": 53,
+      "sizeKb": 16726,
+      "createdAt": "2026-11-10T20:01:01Z",
+      "pushedAt": "2026-11-22T18:20:57Z",
+      "topics": [
+        "ai-meeting-assistant",
+        "ai-notetaker",
+        "electron",
+        "granola-alternative",
+        "linux",
+        "llama-cpp",
+        "local-ai",
+        "local-first",
+        "macos",
+        "mcp",
+        "meeting-minutes",
+        "meeting-notes",
+        "offline-first",
+        "open-source",
+        "privacy",
+        "speech-to-text",
+        "transcription",
+        "whisper",
+        "whisper-cpp",
+        "windows"
+      ],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "<p align=\"center\"><a href=\"https://yogurt.so?utm_source=github&utm_medium=readme&utm_campaign=yogurt\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/assets/readme-banner-app-dark.webp\"><img src=\"docs/assets/readme-banner-app-light.webp\" width=\"880\" alt=\"Yogurt. AI meeting notes without a bot. The app showing a launch planning meeting with Ask open.\"></picture></a></p>\n\n<div align=\"center\"><strong>Yogurt</strong></div>\n<div align=\"center\">Private AI meeting notes, with no bot in your call.<br />A free, open-source alternative to Granola, Otter and Fireflies.</div>\n<br />\n<div align=\"center\">\n<a href=\"https://yogurt.so?utm_source=github&utm_medium=readme&utm_campaign=yogurt\">Website</a>\n<span> · </span>\n<a href=\"https://github.com/FrigadeHQ/yogurt\">GitHub</a>\n</div>\n\n## Introduction\n\nYogurt records your microphone and call audio, then transcribes and summarizes on your Mac, Windows or Linux computer. It names speakers from Zoom, Teams and Meet and answers questions across meetings with sources.\n\n## Why\n\nOur conversations should be our own business. Good notes shouldn't need third-party servers or an account. That's why we built Yogurt to record, transcribe and summarize on your computer. It goes online only to download models and check for updates.\n\n## Download\n\nYogurt is free for [Mac](https://github.com/FrigadeHQ/yogurt/releases/latest/download/Yogurt-mac-arm64.dmg), [Windows](https://github.com/FrigadeHQ/yogurt/releases/latest/download/Yogurt-windows-x64.exe) and [Linux](https://github.com/FrigadeHQ/yogurt/releases/latest/download/Yogurt-linux-x86_64.AppImage).\n\nOn a Mac you can also use [Homebrew](https://brew.sh).\n\n```sh\nbrew install --cask frigadehq/yogurt/yogurt\n```\n\n## What it does\n\n- **Live transcripts.** Yogurt records calls and turns speech into text as you talk.\n- **Meeting summaries.** Yogurt writes up the conversation and any notes you add.\n- **Private by default.** Your audio, transcripts and AI processing stay on your computer.\n- **",
+      "score": 78,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一款本地运行的跨平台 AI 会议记录应用，无需机器人。",
+        "plain": "保护隐私的本地 AI 会议记录工具，替代 Granola 等竞品。",
+        "what": "开发一个 Electron 应用，集成本地 LLM 进行音频转录和会议纪要生成。",
+        "who": "需要隐私保护的商务人士和远程工作者。",
+        "how": "提供可下载的桌面软件安装包。",
+        "hours": "50",
+        "risk": "本地 AI 模型识别准确率可能不足。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "deepseek-ai/chat-demo",
+      "owner": "deepseek-ai",
+      "name": "chat-demo",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "description": "Chat Demo",
+      "stars": 5293,
+      "todayStars": 46,
+      "language": "TypeScript",
+      "license": "MIT",
+      "openIssues": 1,
+      "sizeKb": 265,
+      "createdAt": "2026-11-12T08:08:19Z",
+      "pushedAt": "2026-11-20T08:48:26Z",
+      "topics": [],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "# chat-demo\n\nEnglish | [简体中文](README.zh-CN.md)\n\nA static chat demo powered by the DeepSeek API. No application backend is required: the browser connects directly to the configured API service.\n\nYou can [try the app online](https://deepseek-ai.github.io/chat-demo/) or download the archive from [Releases](https://github.com/deepseek-ai/deepseek-chat-demo/releases), extract it, and double-click `index.html` to use it locally without installation or a build. Enter your API key in Settings before your first chat.\n\n## Getting started\n\nInstall Node.js 22.12+ and pnpm, then run:\n\n```sh\ngit clone https://github.com/deepseek-ai/chat-demo.git\ncd chat-demo\npnpm install\npnpm dev\n```\n\nOpen http://localhost:8090.\n\nTo build the static site:\n\n```sh\npnpm build\n```\n\nThe output is written to `dist/`. Deploy it to a static web server or open `dist/index.html` directly. Opening the file directly requires browser support for storage on `file://` pages and an API service that permits their cross-origin requests.\n\n## Features\n\n- Multiple conversations with automatic titles, renaming, and deletion; edit prompts, regenerate replies, and switch between message branches.\n- Streaming replies, deep thinking, smart search, link reading, and source citations; stop generation or continue eligible replies.\n- Upload, paste, or drag and drop attachments; use voice input and read replies aloud. A live audio spectrum appears in the first row of the input area while recording on mobile.\n- Markdown, syntax highlighting, KaTeX math, and Mermaid diagrams.\n- Simplified Chinese and English, light and dark themes, mobile layouts, location settings, and chat history import and export.\n\n## Data and storage\n\nYour API key and settings are stored in the browser's localStorage. Conversations and original attachments are stored in IndexedDB. Local data is isolated by browser profile and site origin. Sending messages, uploading attachments, and using speech features sends the relevant content to the configured API serv",
+      "score": 71,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个静态网页聊天界面，直接连接 DeepSeek API。",
+        "plain": "为 DeepSeek API 提供现成的 UI，无需后端开发。",
+        "what": "添加前端 UI、API 密钥输入框和消息历史记录管理功能。",
+        "who": "需要简单聊天界面的开发者或 DeepSeek 用户。",
+        "how": "提供一个 HTML 文件。",
+        "hours": "5",
+        "risk": "UI 界面可能过于简陋，缺乏专业感。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "paipiange/nvzhuang",
+      "owner": "paipiange",
+      "name": "nvzhuang",
+      "url": "https://github.com/paipiange/nvzhuang",
+      "description": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+      "stars": 2969,
+      "todayStars": 13,
+      "language": "Go",
+      "license": "MIT",
+      "openIssues": 0,
+      "sizeKb": 221490,
+      "createdAt": "2026-10-29T06:08:00Z",
+      "pushedAt": "2026-11-10T07:40:37Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# 拍片哥女装 · AI 服装参考图集 (COSTUME-DB-01)\n\n一个深色主题的纯净服装参考图集网站，收录 **2727 套**（写实真人版 1407 套 + 二次元动漫版 1320 套）人物不入镜的 AI 生成纯服装图像（2:3 比例），支持中英文双语浏览、多维检索，并配备可选的 AI 一键换装试穿。\n\n> 👗 **【Linux.do 3级常任理事专属彩蛋】**  \n> 听说在 [LINUX DO](https://linux.do/) 社区只要升到 **3 级（常任理事）** 就可以解锁“看女装大佬”的保留节目？身为一名尊贵的 Linux.do 3 级老兵，逛了一圈发现坛里的女装资源还不够看，干脆亲手搓了这个 **「拍片哥女装」** 项目！  \n> 不仅收录了写实与动漫双图库合计 2727 套纯净高质量服装图，还顺手接了 AI 虚拟换装后端——这下各位佬友哪怕现实中没有小裙子，直接传张自拍照就能一键无痛变身“女装大佬”出道了 😂！\n\n> 🔗 **在线预览**：https://paipiange.github.io/nvzhuang/  \n> ⭐ **GitHub 源码**：https://github.com/paipiange/nvzhuang  \n> 📱 **Android APK 下载**：[GitHub Releases 直链](https://github.com/paipiange/nvzhuang/releases/latest/download/nvzhuang-release.apk)（[全部版本](https://github.com/paipiange/nvzhuang/releases)） | 也可[夸克网盘下载](https://pan.quark.cn/s/a914f76fac0b)（「拍片哥女装」`https://pan.quark.cn/s/a914f76fac0b`）  \n> 👤 **AI 模特脸部与造型图库**：集成自 [ai-portrait-gallery](https://ai-portrait-gallery.pages.dev/)（あぎ @agi_aibusi · CC0 1.0）  \n> 💃 **兄弟项目（AI 姿势参考与生图工坊）**：https://github.com/paipiange/ai-pose-gallery-zh  \n> 💡 **原作者推文 / 灵感来源**：X [@giaaibusi](https://x.com/giaaibusi)  \n> 🐧 **社区友链**：[LINUX DO (https://linux.do/)](https://linux.do/)\n\n## ⏱️ 10 秒了解本项目\n\n- 🆓 **免费使用（无需部署 / 无需 Key）**：三大图库一键无缝切换：**写实服装 (1407 套) + 动漫服装 (1320 套) + AI 模特库 (1499 位)**，支持分类筛选、中英双语双向检索、大图全屏查看、基础搭配台与同款跳转，由纯前端静态驱动，在线打开即可使用。\n- 👤 **内置 1499 位 AI 模特（全量本地化）**：完整集成 CC0 1.0 授权的 AI 模特脸部特写与造型图库，AI 试衣时可直接一键挑选心仪模特，彻底告别“想体验换装却找不到合适人像照片”的困扰。\n- ⚙️ **自选扩展（需自建后端 / 需自备 Key）**：真实 AI 试衣换装功能依赖 `backend/` 的 GoFrame 服务。需自行配置大模型（如 GPT Image 2、豆包 Seedream 或 Gemini）的 API Key 与 Base URL，调用将消耗对应的第三方模型配额。\n- 📜 **完全可商用 · 免费开源**：基于 [MIT License](LICENSE) 全量开源，代码与图集资源完全开放，支持自由商用创作、设计参考及二次开发。详见 [合规审计报告](docs/LINUXDO_RELEASE_AUDIT.md)。\n\n## 📱 Android 客户端下载\n\n提供离线封装版 Android APK（内置完整前端页面与离线示例图集，安装即可打开使用）：\n\n- **GitHub Releases 直接下载（推荐）**：\n  - 最新版 APK 直链：https://github.com/paipiange/nvzhuang/releases/latest/download/nvzhuang-release.apk\n  - 历史版本与说明：https://github.com/paipiange/nvzhuang/releases\n- **夸克网盘下载（国内备用）**：\n  - 「拍片哥女装」链接：https:",
+      "score": 74,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 15,
+        "需求真实": 6,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "内容创作",
+      "landing": {
+        "intro": "一个深色主题的 AI 服装参考图集网站，支持中英检索和虚拟试穿。",
+        "plain": "提供高质量的服装参考数据库和 AI 换装工具。",
+        "what": "构建静态网站展示图集，并集成 OpenAI/Gemini API 实现一键换装功能。",
+        "who": "服装设计师、内容创作者或寻找灵感的人群。",
+        "how": "提供托管在 GitHub Pages 上的网站。",
+        "hours": "40",
+        "risk": "AI 换装生成质量不稳定，导致用户体验差。"
+      },
+      "revisit": true
+    },
+    {
+      "fullName": "JuneYaooo/rea-video",
+      "owner": "JuneYaooo",
+      "name": "rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+      "stars": 12271,
+      "todayStars": 319,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "openIssues": 7,
+      "sizeKb": 75031,
+      "createdAt": "2026-10-29T16:15:01Z",
+      "pushedAt": "2026-11-23T02:35:32Z",
+      "topics": [
+        "agent-skills",
+        "ai-video",
+        "aigc-detection",
+        "claude-code",
+        "codex",
+        "ffmpeg",
+        "prompt-engineering",
+        "remotion",
+        "reverse-engineering",
+        "short-video",
+        "shot-detection",
+        "subtitles",
+        "video-analysis",
+        "video-breakdown",
+        "video-editing",
+        "video-generation",
+        "videomd",
+        "vlm"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/brand/logo-light.svg\">\n  <img src=\"docs/brand/logo-dark.svg\" width=\"400\" alt=\"rea-video\">\n</picture>\n\nReverse-engineer any video.\n\nShot by shot: was it filmed, AI-generated or coded, and how to remake it.\n\nEvery breakdown is written in **[VIDEO.md](https://videomd.github.io/videomd/)**, an open format that agents read layer by layer.\n\n[Website](https://www.reavideo.ai) | [中文](i18n/README_zh.md) | English | [Русский](i18n/README_ru.md) | [日本語](i18n/README_ja.md) | [한국어](i18n/README_ko.md) | [Español](i18n/README_es.md) | [Português](i18n/README_pt.md) | [Français](i18n/README_fr.md) | [Deutsch](i18n/README_de.md) | [Tiếng Việt](i18n/README_vi.md) | [বাংলা](i18n/README_bn.md) | [Türkçe](i18n/README_tr.md)\n\n**⚠️ Notice: rea-video is an open-source project. I have not launched and will not launch any cryptocurrency token. Any token using this project’s name is not affiliated with me, and I do not endorse it or accept fees from it. Please be cautious of scams.**\n\n[![Stars](https://img.shields.io/github/stars/JuneYaooo/rea-video?style=flat)](https://github.com/JuneYaooo/rea-video/stargazers)\n![Python](https://img.shields.io/badge/python-%E2%89%A53.10-blue)\n![Agent](https://img.shields.io/badge/runs%20in-Claude%20Code%20%7C%20Codex-8A2BE2)\n[![Output: VIDEO.md](https://img.shields.io/badge/output-VIDEO.md-3d4fd6)](https://videomd.github.io/videomd/)\n\n<a href=\"https://trendshift.io/repositories/334878\" target=\"_blank\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/334878/daily\" alt=\"JuneYaooo/rea-video | Trendshift\" width=\"250\" height=\"55\"></a>\n\n[![Visit our website](https://img.shields.io/badge/Visit%20our%20website-6644D8?style=for-the-badge)](https://www.reavideo.ai) [![Join our Discord](https://img.shields.io/badge/Join%20our%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/dZj8D3GqWT) [![WeChat group](https://img.shields.io",
+      "score": 73,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 8,
+        "需求真实": 6,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "内容创作",
+      "landing": {
+        "intro": "一个分析视频逐个镜头并解释其制作方法（拍摄、AI 或代码）的工具。",
+        "plain": "为视频创作者提供视频拆解服务，帮助他们学习如何复刻复杂效果。",
+        "what": "开发一个脚本，利用 FFmpeg 和 AI 分析视频，输出 VIDEO.md 格式的复刻指南。",
+        "who": "视频创作者、特效艺术家。",
+        "how": "提供一个 CLI 工具或 SaaS 服务。",
+        "hours": "60",
+        "risk": "AI 分析可能不准确，无法完全复刻原视频效果。"
+      },
+      "revisit": true
+    }
+  ],
+  "aiUsed": true,
+  "aiModel": "@cf/zai-org/glm-4.7-flash",
+  "aiError": null
+}

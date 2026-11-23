@@ -136,7 +136,7 @@
     "direction": "通用工具"
   },
   "deepseek-ai/chat-demo": {
-    "date": "2026-11-16",
+    "date": "2026-11-23",
     "direction": "通用工具"
   },
   "jhaizhou-ops/S2Arm": {
@@ -209,6 +209,14 @@
   },
   "DietrichGebert/ponytail": {
     "date": "2026-11-22",
+    "direction": "通用工具"
+  },
+  "havenicec/google-qr-sms-helper": {
+    "date": "2026-11-23",
+    "direction": "通用工具"
+  },
+  "FrigadeHQ/yogurt": {
+    "date": "2026-11-23",
     "direction": "通用工具"
   }
 }
