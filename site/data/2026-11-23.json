@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "generatedAt": "2026-11-23T02:37:31.867Z",
+  "generatedAt": "2026-11-23T02:44:39.849Z",
   "scanned": 80,
   "rejected": [
     {
@@ -386,8 +386,8 @@
       "name": "google-qr-sms-helper",
       "url": "https://github.com/havenicec/google-qr-sms-helper",
       "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback.",
-      "stars": 3239,
-      "todayStars": null,
+      "stars": 3247,
+      "todayStars": 8,
       "language": "JavaScript",
       "license": "MIT",
       "openIssues": 24,
@@ -417,7 +417,7 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "不推荐",
+        "intro": "Chrome 扩展，通过 iPad Mini 配置文件和 RPC 回退将 Google 强制 QR 验证改回标准 6 位 SMS 验证。",
         "plain": "不推荐",
         "what": "不推荐",
         "who": "不推荐",
@@ -434,7 +434,7 @@
       "url": "https://github.com/FrigadeHQ/yogurt",
       "description": "Private AI meeting notes that stay on your computer. No meeting bot. Free and open source for Mac, Windows and Linux. An alternative to Granola, Otter and Fireflies.",
       "stars": 2987,
-      "todayStars": null,
+      "todayStars": 0,
       "language": "TypeScript",
       "license": "MIT",
       "openIssues": 53,
@@ -479,13 +479,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "一款本地运行的跨平台 AI 会议记录应用，无需机器人。",
-        "plain": "保护隐私的本地 AI 会议记录工具，替代 Granola 等竞品。",
-        "what": "开发一个 Electron 应用，集成本地 LLM 进行音频转录和会议纪要生成。",
-        "who": "需要隐私保护的商务人士和远程工作者。",
-        "how": "提供可下载的桌面软件安装包。",
-        "hours": "50",
-        "risk": "本地 AI 模型识别准确率可能不足。"
+        "intro": "本地运行的 AI 会议记录工具，无需联网或机器人。",
+        "plain": "提供本地隐私安全的 AI 会议记录服务。",
+        "what": "基于开源代码开发商业版，集成更多本地模型和UI优化。",
+        "who": "注重隐私的企业和开发者。",
+        "how": "开发桌面客户端软件。",
+        "hours": "60 小时",
+        "risk": "本地算力要求高，用户设备可能跑不动。"
       },
       "revisit": false
     },
@@ -496,7 +496,7 @@
       "url": "https://github.com/deepseek-ai/chat-demo",
       "description": "Chat Demo",
       "stars": 5293,
-      "todayStars": 46,
+      "todayStars": 0,
       "language": "TypeScript",
       "license": "MIT",
       "openIssues": 1,
@@ -520,13 +520,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "一个静态网页聊天界面，直接连接 DeepSeek API。",
-        "plain": "为 DeepSeek API 提供现成的 UI，无需后端开发。",
-        "what": "添加前端 UI、API 密钥输入框和消息历史记录管理功能。",
-        "who": "需要简单聊天界面的开发者或 DeepSeek 用户。",
-        "how": "提供一个 HTML 文件。",
-        "hours": "5",
-        "risk": "UI 界面可能过于简陋，缺乏专业感。"
+        "intro": "一个直接连接 DeepSeek API 的静态对话演示页面。",
+        "plain": "提供现成的 DeepSeek API 对话前端服务。",
+        "what": "基于源码增加会话管理、Markdown 渲染和流式输出优化。",
+        "who": "需要快速接入大模型 API 的开发者。",
+        "how": "托管为 SaaS 服务或私有化部署包。",
+        "hours": "20 小时",
+        "risk": "API 成本波动，或同质化竞争严重。"
       },
       "revisit": false
     },
@@ -537,7 +537,7 @@
       "url": "https://github.com/paipiange/nvzhuang",
       "description": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
       "stars": 2969,
-      "todayStars": 13,
+      "todayStars": 0,
       "language": "Go",
       "license": "MIT",
       "openIssues": 0,
@@ -561,13 +561,13 @@
       },
       "direction": "内容创作",
       "landing": {
-        "intro": "一个深色主题的 AI 服装参考图集网站，支持中英检索和虚拟试穿。",
-        "plain": "提供高质量的服装参考数据库和 AI 换装工具。",
-        "what": "构建静态网站展示图集，并集成 OpenAI/Gemini API 实现一键换装功能。",
-        "who": "服装设计师、内容创作者或寻找灵感的人群。",
-        "how": "提供托管在 GitHub Pages 上的网站。",
-        "hours": "40",
-        "risk": "AI 换装生成质量不稳定，导致用户体验差。"
+        "intro": "一个收录 AI 生成服装图的网站，支持通过 API 进行虚拟试穿。",
+        "plain": "提供基于 AI 的虚拟试穿和服装图库服务。",
+        "what": "将现有的虚拟试穿功能封装为 API 接口，供第三方调用。",
+        "who": "电商卖家、服装设计师。",
+        "how": "提供 API 接口或 SaaS 服务。",
+        "hours": "30 小时",
+        "risk": "API 调用成本高，或换装效果不自然。"
       },
       "revisit": true
     },
@@ -577,12 +577,12 @@
       "name": "rea-video",
       "url": "https://github.com/JuneYaooo/rea-video",
       "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
-      "stars": 12271,
-      "todayStars": 319,
+      "stars": 12275,
+      "todayStars": 4,
       "language": "Python",
       "license": "Apache-2.0",
       "openIssues": 7,
-      "sizeKb": 75031,
+      "sizeKb": 75195,
       "createdAt": "2026-10-29T16:15:01Z",
       "pushedAt": "2026-11-23T02:35:32Z",
       "topics": [
@@ -621,13 +621,13 @@
       },
       "direction": "内容创作",
       "landing": {
-        "intro": "一个分析视频逐个镜头并解释其制作方法（拍摄、AI 或代码）的工具。",
-        "plain": "为视频创作者提供视频拆解服务，帮助他们学习如何复刻复杂效果。",
-        "what": "开发一个脚本，利用 FFmpeg 和 AI 分析视频，输出 VIDEO.md 格式的复刻指南。",
-        "who": "视频创作者、特效艺术家。",
-        "how": "提供一个 CLI 工具或 SaaS 服务。",
-        "hours": "60",
-        "risk": "AI 分析可能不准确，无法完全复刻原视频效果。"
+        "intro": "一个用于逆向分析视频来源（拍摄、AI 生成或代码）的工具。",
+        "plain": "提供视频内容溯源和复刻指导服务。",
+        "what": "将其开发为 SaaS 平台，用户上传视频即可获得详细的分析报告和复刻代码。",
+        "who": "内容创作者、营销人员。",
+        "how": "Web 平台，用户上传视频，系统分析并输出报告。",
+        "hours": "80 小时",
+        "risk": "逆向工程技术门槛高，或分析结果准确性难以保证。"
       },
       "revisit": true
     }

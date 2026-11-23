@@ -135,10 +135,6 @@
     "date": "2026-11-22",
     "direction": "通用工具"
   },
-  "deepseek-ai/chat-demo": {
-    "date": "2026-11-23",
-    "direction": "通用工具"
-  },
   "jhaizhou-ops/S2Arm": {
     "date": "2026-11-17",
     "direction": "通用工具"
@@ -216,6 +212,10 @@
     "direction": "通用工具"
   },
   "FrigadeHQ/yogurt": {
+    "date": "2026-11-23",
+    "direction": "通用工具"
+  },
+  "deepseek-ai/chat-demo": {
     "date": "2026-11-23",
     "direction": "通用工具"
   }
