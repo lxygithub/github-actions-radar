@@ -48,6 +48,9 @@ async function main() {
   const now = new Date();
   const cfg = await loadConfig();
   const R = createRules(cfg);
+  // 日报日期沿用 UTC：报告汇总的是 GitHub 按 UTC 统计的当天数据，账本冷却也按 UTC 时刻算。
+  // cron 在 UTC 22:37 跑（北京次日 06:37），北京早上看到的是前一日 UTC 的快照，属正常日报语义。
+  // 手动补数可用 RADAR_DATE 覆盖（YYYY-MM-DD）。
   const date = process.env.RADAR_DATE || now.toISOString().slice(0, 10);
   const ghToken = process.env.RADAR_GITHUB_TOKEN || process.env.GITHUB_TOKEN || "";
 

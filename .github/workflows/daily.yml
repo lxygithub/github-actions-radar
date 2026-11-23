@@ -2,9 +2,12 @@ name: 每日 GitHub 副业雷达
 
 on:
   schedule:
-    # UTC 01:17 = 北京时间 09:17。刻意避开整点：GitHub 官方文档说明每小时开头是负载高峰，
-    # 定时任务可能延迟数小时甚至被直接丢弃（本项目 2026-11-12 曾因 "0 0 * * *" 漏跑一整天）。
-    - cron: "17 1 * * *"
+    # UTC 22:37 = 北京时间次日 06:37，选在 Actions 的低负载时段。
+    # 依据：GitHub 官方说明整点是负载高峰、schedule 可能延迟数小时甚至被丢弃；
+    # 社区对 2 万余条 cron 的统计显示 00:00-06:59 UTC 占 64% 日程、中位延迟 103 分钟，
+    # 而 21:00-23:59 UTC 中位延迟仅 22-35 分钟。原 "17 1 * * *"（北京 09:17）
+    # 实测每次都拖到 UTC 07:50-09:12（北京 15:50-17:12），故挪到 22:37。
+    - cron: "37 22 * * *"
   workflow_dispatch:
   # push 代码后自动跑完整流程并发布，不用再手动点 Run workflow
   push:
@@ -18,6 +21,7 @@ permissions:
   contents: write      # 把历史数据写到独立的 radar-data 分支（main 不再有 bot commit）
   pages: write
   id-token: write
+  actions: read        # 上传后轮询 artifact 元数据，规避 deploy-pages 的 API 一致性竞态
 
 concurrency:
   group: git-radar
@@ -110,5 +114,29 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
+
+      # deploy-pages 会在上传完成后立刻查 artifact 元数据；偶发情况下对象存储已写入、
+      # 但 metadata API 还没一致，导致 "No artifacts named github-pages were found"（run #27）。
+      # 这里先轮询到 artifact 可见再部署，把这类竞态挡在部署之前。
+      - name: 等待 artifact 元数据可见
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          API_URL: ${{ github.api_url }}
+        run: |
+          for i in $(seq 1 20); do
+            n=$(curl -fsS -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              "$API_URL/repos/$REPO/actions/runs/$RUN_ID/artifacts?per_page=100" \
+              | jq '[.artifacts[] | select(.name == "github-pages")] | length' 2>/dev/null || echo 0)
+            if [ "$n" -ge 1 ]; then
+              echo "artifact 元数据已可见（第 ${i} 次检查）"
+              exit 0
+            fi
+            echo "artifact 尚未在 API 中可见，第 ${i}/20 次，5 秒后重试"
+            sleep 5
+          done
+          echo "::warning::等待 100 秒后 artifact 仍不可见，尝试继续部署（若失败请重跑该 run）"
+
       - id: deploy
         uses: actions/deploy-pages@v5
