@@ -16,7 +16,7 @@
     "direction": "通用工具"
   },
   "KKKKhazix/agent-autoloop": {
-    "date": "2026-11-17",
+    "date": "2026-11-24",
     "direction": "通用工具"
   },
   "Arekejoker/qwen21-nsfw-pose-skill": {
@@ -136,7 +136,7 @@
     "direction": "通用工具"
   },
   "jhaizhou-ops/S2Arm": {
-    "date": "2026-11-17",
+    "date": "2026-11-24",
     "direction": "通用工具"
   },
   "haydenschmitty/floorplan": {
@@ -217,6 +217,18 @@
   },
   "deepseek-ai/chat-demo": {
     "date": "2026-11-23",
+    "direction": "通用工具"
+  },
+  "Hut-hzf/ung220z-tool": {
+    "date": "2026-11-24",
+    "direction": "通用工具"
+  },
+  "JuneYaooo/rea-video": {
+    "date": "2026-11-24",
+    "direction": "内容创作"
+  },
+  "EL4CTEO/fast-anything": {
+    "date": "2026-11-24",
     "direction": "通用工具"
   }
 }
