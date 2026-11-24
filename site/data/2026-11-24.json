@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "generatedAt": "2026-11-24T03:13:39.737Z",
+  "generatedAt": "2026-11-24T06:19:33.656Z",
   "scanned": 80,
   "rejected": [
     {
@@ -79,11 +79,6 @@
       "reason": "分数 57 未达 60 线"
     },
     {
-      "name": "simplexai-labs/linger",
-      "url": "https://github.com/simplexai-labs/linger",
-      "reason": "分数 57 未达 60 线"
-    },
-    {
       "name": "Marvisak/VIctory",
       "url": "https://github.com/Marvisak/VIctory",
       "reason": "分数 57 未达 60 线"
@@ -91,6 +86,11 @@
     {
       "name": "ivall/xcl",
       "url": "https://github.com/ivall/xcl",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "simplexai-labs/linger",
+      "url": "https://github.com/simplexai-labs/linger",
       "reason": "分数 57 未达 60 线"
     },
     {
@@ -194,6 +194,11 @@
       "reason": "分数 40 未达 60 线"
     },
     {
+      "name": "XinaTian/MROffice",
+      "url": "https://github.com/XinaTian/MROffice",
+      "reason": "分数 38 未达 60 线"
+    },
+    {
       "name": "ohmyzsh/ohmyzsh",
       "url": "https://github.com/ohmyzsh/ohmyzsh",
       "reason": "分数 35 未达 60 线"
@@ -251,11 +256,6 @@
     {
       "name": "mdiri-ai/SoduWork",
       "url": "https://github.com/mdiri-ai/SoduWork",
-      "reason": "名额 / 冷却限制"
-    },
-    {
-      "name": "Immortal-Protocols/lastbook",
-      "url": "https://github.com/Immortal-Protocols/lastbook",
       "reason": "名额 / 冷却限制"
     },
     {
@@ -319,6 +319,11 @@
       "reason": "名额 / 冷却限制"
     },
     {
+      "name": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "reason": "名额 / 冷却限制"
+    },
+    {
       "name": "deepseek-ai/dsh-superagent-prototype",
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
       "reason": "名额 / 冷却限制"
@@ -326,11 +331,6 @@
     {
       "name": "modelflare-ai/AnyModelBot",
       "url": "https://github.com/modelflare-ai/AnyModelBot",
-      "reason": "名额 / 冷却限制"
-    },
-    {
-      "name": "qybaihe/bla",
-      "url": "https://github.com/qybaihe/bla",
       "reason": "名额 / 冷却限制"
     },
     {
@@ -386,11 +386,11 @@
       "name": "agent-autoloop",
       "url": "https://github.com/KKKKhazix/agent-autoloop",
       "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
-      "stars": 6410,
-      "todayStars": 103,
+      "stars": 6420,
+      "todayStars": 10,
       "language": "TypeScript",
       "license": "MIT",
-      "openIssues": 0,
+      "openIssues": 2,
       "sizeKb": 2132,
       "createdAt": "2026-11-03T08:02:11Z",
       "pushedAt": "2026-11-24T01:35:10Z",
@@ -423,13 +423,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "一个命令行 Agent 自动化中台，让 Agent 在后台自主处理任务并仅在必要时请求确认。",
-        "plain": "把命令行 AI Agent 变成后台自动化助手，省心省力。",
-        "what": "开发一个插件化的 CLI 自动化内核，支持事件驱动和任务调度。",
-        "who": "需要自动化运维、开发流程优化的开发者或团队。",
-        "how": "开发 Rust/Go 后端，编写插件接口，提供配置文件和 CLI 工具。",
-        "hours": "40-60 小时",
-        "risk": "生态建设难，用户习惯迁移成本高。"
+        "intro": "一个让命令行 Agent 自动处理任务并仅在必要时请求确认的自动化中台。",
+        "plain": "把 AI Agent 变成真正的“后台员工”，省去盯着终端的麻烦。",
+        "what": "开发付费插件模板，提供现成的自动化流程（如自动部署、日志监控）。",
+        "who": "需要自动化运维或开发流程的技术团队。",
+        "how": "开发插件模板 + 提供技术支持/定制服务。",
+        "hours": "40-60",
+        "risk": "依赖外部 Agent（Claude等）的 API 费用，或用户习惯难以改变。"
       },
       "revisit": false
     },
@@ -439,8 +439,8 @@
       "name": "ung220z-tool",
       "url": "https://github.com/Hut-hzf/ung220z-tool",
       "description": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
-      "stars": 3497,
-      "todayStars": null,
+      "stars": 3737,
+      "todayStars": 240,
       "language": "Python",
       "license": "MIT",
       "openIssues": 12,
@@ -480,14 +480,14 @@
       "name": "rea-video",
       "url": "https://github.com/JuneYaooo/rea-video",
       "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
-      "stars": 12721,
-      "todayStars": 433,
+      "stars": 12762,
+      "todayStars": 41,
       "language": "Python",
       "license": "Apache-2.0",
       "openIssues": 7,
-      "sizeKb": 75145,
+      "sizeKb": 75151,
       "createdAt": "2026-10-29T16:15:01Z",
-      "pushedAt": "2026-11-24T02:53:34Z",
+      "pushedAt": "2026-11-24T05:38:23Z",
       "topics": [
         "agent-skills",
         "ai-video",
@@ -524,13 +524,13 @@
       },
       "direction": "内容创作",
       "landing": {
-        "intro": "一个视频逆向分析工具，逐镜头解析视频来源（拍摄、AI生成或代码制作）并输出结构化报告。",
-        "plain": "告诉你视频是怎么做的，是拍的还是 AI 生成的，还能教你复刻。",
-        "what": "开发视频分析引擎，结合 AI 模型识别镜头来源，并生成 VIDEO.md 报告。",
-        "who": "内容创作者、视频分析师、需要验证内容真实性的用户。",
-        "how": "集成 FFmpeg 和 AI 视觉模型，编写解析脚本，实现 VIDEO.md 格式输出。",
-        "hours": "60-80 小时",
-        "risk": "AI 识别准确率不稳定，视频格式兼容性差。"
+        "intro": "一个逆向工程视频并逐个镜头分析其来源（拍摄/AI/代码）的脚本。",
+        "plain": "帮客户分析视频是怎么做的，是拍的还是 AI 生成的，并教他们怎么复刻。",
+        "what": "开发一个 SaaS 平台或付费 API，批量处理视频分析请求。",
+        "who": "内容创作者、营销人员、需要验证 AI 内容真实性的企业。",
+        "how": "收取分析服务费或 API 调用费。",
+        "hours": "30-50",
+        "risk": "视频版权问题，或 AI 检测准确率受争议。"
       },
       "revisit": false
     },
@@ -540,14 +540,14 @@
       "name": "S2Arm",
       "url": "https://github.com/jhaizhou-ops/S2Arm",
       "description": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。",
-      "stars": 3870,
-      "todayStars": 49,
+      "stars": 3876,
+      "todayStars": 6,
       "language": "C#",
       "license": "Apache-2.0",
-      "openIssues": 739,
-      "sizeKb": 142806,
+      "openIssues": 750,
+      "sizeKb": 142768,
       "createdAt": "2026-11-08T05:49:46Z",
-      "pushedAt": "2026-11-24T03:03:58Z",
+      "pushedAt": "2026-11-24T05:52:39Z",
       "topics": [
         "apple-silicon",
         "arm64",
@@ -576,13 +576,13 @@
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "一个跨平台游戏移植工具，将 Switch 游戏代码重写为 ARM64 并适配 Metal 渲染，在 Apple 设备上原生运行。",
-        "plain": "让你在 iPhone 和 Mac 上玩 Switch 游戏，不用模拟器。",
-        "what": "开发游戏重编译引擎，将 Switch 代码转换为 ARM64，并适配 Metal 图形接口。",
-        "who": "Apple 生态下的游戏玩家和独立开发者。",
-        "how": "编译器工具链开发，图形 API 映射，提供游戏导入和运行环境。",
-        "hours": "100+ 小时",
-        "risk": "版权风险极高，游戏代码重写法律灰色地带。"
+        "intro": "一个将 Switch 游戏代码重写为 ARM64 并在 Apple 设备上原生运行的移植工具。",
+        "plain": "让 iPhone 和 Mac 用户能玩 Switch 游戏，不用买 Switch。",
+        "what": "开发一个 App Store 应用，提供游戏库管理或特定热门游戏的移植服务。",
+        "who": "Switch 游戏玩家、Apple Silicon 用户。",
+        "how": "收取应用内购买费用或订阅费。",
+        "hours": "80-100",
+        "risk": "任天堂的版权打击和 DMCA 潜在问题。"
       },
       "revisit": false
     },
@@ -592,11 +592,11 @@
       "name": "fast-anything",
       "url": "https://github.com/EL4CTEO/fast-anything",
       "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
-      "stars": 3206,
-      "todayStars": null,
+      "stars": 3276,
+      "todayStars": 70,
       "language": "Rust",
       "license": "MIT",
-      "openIssues": 11,
+      "openIssues": 26,
       "sizeKb": 1037,
       "createdAt": "2026-11-21T14:40:27Z",
       "pushedAt": "2026-11-24T00:18:49Z",
@@ -624,27 +624,27 @@
       ],
       "isOrg": false,
       "defaultBranch": "main",
-      "readmeHead": "",
-      "score": 63,
-      "grade": "C",
+      "readmeHead": "<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/EL4CTEO/fast-anything/main/docs/assets/wordmark.png\" alt=\"fast-anything\" width=\"520\">\n</p>\n\n<p align=\"center\"><b>Don't rewrite it in Rust. Rewrite the 5% that's slow.</b></p>\n\n<p align=\"center\">\n  <a href=\"https://trendshift.io/repositories/371252\"><img src=\"https://trendshift.io/api/badge/repositories/371252\" alt=\"EL4CTEO/fast-anything | Trendshift\" width=\"250\" height=\"55\"></a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/@el4cteo/fast-anything\"><img src=\"https://img.shields.io/npm/v/@el4cteo/fast-anything?color=f74c00&label=npm\" alt=\"npm\"></a>\n  <a href=\"https://crates.io/crates/fast-anything\"><img src=\"https://img.shields.io/crates/v/fast-anything?color=f74c00\" alt=\"crates.io\"></a>\n  <a href=\"https://github.com/EL4CTEO/fast-anything/actions/workflows/ci.yml\"><img src=\"https://github.com/EL4CTEO/fast-anything/actions/workflows/ci.yml/badge.svg\" alt=\"CI\"></a>\n  <img src=\"https://img.shields.io/badge/Python%20%C2%B7%20Node%20%C2%B7%20TypeScript%20%C2%B7%20Ruby%20%C2%B7%20Java%20%C2%B7%20Kotlin%20%C2%B7%20Go%20%C2%B7%20PHP%20%C2%B7%20C%20%C2%B7%20C%2B%2B%20%C2%B7%20C%23%20%C2%B7%20R-2563eb\" alt=\"Python, Node, TypeScript, Ruby, Java, Kotlin, Go, PHP, C, C++, C#, R\">\n  <img src=\"https://img.shields.io/badge/Claude%20Code-plugin-d97757\" alt=\"Claude Code plugin\">\n  <img src=\"https://img.shields.io/badge/MCP-server-555\" alt=\"MCP server\">\n  <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-MIT-555\" alt=\"MIT\"></a>\n</p>\n\nRewriting a whole app in Rust costs months, minute-long compiles and gigabytes of `target/`. Most of the runtime sits in a few functions anyway.\n\n**fast-anything** finds those functions, has your coding agent port *only them* to Rust, proves the port gives the same results on real recorded calls, and swaps it in. One command, fully reversible.\n\n<p align=\"center\"><img src=\"https://raw.githubusercontent.com/EL4CTEO/fast-anything/main/docs/assets/demo.gif\" alt=\"",
+      "score": 67,
+      "grade": "B",
       "breakdown": {
         "许可证": 25,
         "上手成本": 12,
         "中文友好": 0,
-        "需求真实": 6,
+        "需求真实": 16,
         "交付轻重": 10,
         "时效红利": 10,
-        "可接手度": 0
+        "可接手度": -6
       },
       "direction": "通用工具",
       "landing": {
-        "intro": "一个性能分析工具，用于定位 Python、Node 或 Ruby 应用中的瓶颈，并协助用 AI 代理重写热函数。",
-        "plain": "找出代码里最慢的那 5%，用 AI 帮你改快。",
-        "what": "开发性能分析器，识别热点代码，提供 FFI 接口以便重写。",
-        "who": "需要优化性能的软件开发者。",
-        "how": "编写性能分析器，集成 AI 编码助手，提供 FFI 绑定。",
-        "hours": "30-50 小时",
-        "risk": "重写后行为一致性难以保证，调试复杂。"
+        "intro": "一个工具，用于分析 Python/Node/Ruby 应用并使用 Rust 重写热点函数以提升性能。",
+        "plain": "帮开发者在不用大改代码的情况下，只把慢的地方用 Rust 换掉，让程序跑得更快。",
+        "what": "将工具包装成付费服务，帮客户分析慢代码并提供 Rust 移植方案。",
+        "who": "性能敏感的后端开发人员、初创公司。",
+        "how": "收取代码审计和优化服务费。",
+        "hours": "50-80",
+        "risk": "Rust 学习曲线陡峭，客户对性能提升的感知不明显。"
       },
       "revisit": false
     }
