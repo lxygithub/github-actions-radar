@@ -1,0 +1,715 @@
+{
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T05:00:21.878Z",
+  "scanned": 80,
+  "rejected": [
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "CyC2018/CS-Notes",
+      "url": "https://github.com/CyC2018/CS-Notes",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "JenkinWoo/sheeridVerify",
+      "url": "https://github.com/JenkinWoo/sheeridVerify",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "shanselman/gputaskman",
+      "url": "https://github.com/shanselman/gputaskman",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "4lwayz/portwatch-vi",
+      "url": "https://github.com/4lwayz/portwatch-vi",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "Marvisak/VIctory",
+      "url": "https://github.com/Marvisak/VIctory",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "huami1314/GestaltX",
+      "url": "https://github.com/huami1314/GestaltX",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "xcl-dev/xcl",
+      "url": "https://github.com/xcl-dev/xcl",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "simplexai-labs/linger",
+      "url": "https://github.com/simplexai-labs/linger",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "toyxyz/toyxyz_RGBMocap",
+      "url": "https://github.com/toyxyz/toyxyz_RGBMocap",
+      "reason": "分数 53 未达 60 线"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "anhao/ai-pose-gallery-zh",
+      "url": "https://github.com/anhao/ai-pose-gallery-zh",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "benjitaylor/skills",
+      "url": "https://github.com/benjitaylor/skills",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "zortos293/Lichii",
+      "url": "https://github.com/zortos293/Lichii",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "reason": "分数 46 未达 60 线"
+    },
+    {
+      "name": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "reason": "分数 45 未达 60 线"
+    },
+    {
+      "name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "reason": "分数 44 未达 60 线"
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "reason": "分数 40 未达 60 线"
+    },
+    {
+      "name": "XinaTian/MROffice",
+      "url": "https://github.com/XinaTian/MROffice",
+      "reason": "分数 38 未达 60 线"
+    },
+    {
+      "name": "AFK-surf/xnulinux",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "reason": "分数 37 未达 60 线"
+    },
+    {
+      "name": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "reason": "分数 31 未达 60 线"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "reason": "分数 30 未达 60 线"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "reason": "分数 24 未达 60 线"
+    },
+    {
+      "name": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "reason": "分数 22 未达 60 线"
+    },
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "reason": "分数 20 未达 60 线"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "reason": "分数 17 未达 60 线"
+    },
+    {
+      "name": "RoutineMiku/apkstart",
+      "url": "https://github.com/RoutineMiku/apkstart",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "havenicec/google-qr-sms-helper",
+      "url": "https://github.com/havenicec/google-qr-sms-helper",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Hut-hzf/ung220z-tool",
+      "url": "https://github.com/Hut-hzf/ung220z-tool",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Lee-xeo/Claude-Cage",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "mdiri-ai/SoduWork",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Immortal-Protocols/lastbook",
+      "url": "https://github.com/Immortal-Protocols/lastbook",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "FrigadeHQ/yogurt",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Verlintas/NOIR",
+      "url": "https://github.com/Verlintas/NOIR",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "jhaizhou-ops/S2Arm",
+      "url": "https://github.com/jhaizhou-ops/S2Arm",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/chat-demo",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "erkamyaman/rust-anything",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "mromidev/claude-animated-shorts",
+      "url": "https://github.com/mromidev/claude-animated-shorts",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "jamesondh/chimera-vocal-synth",
+      "url": "https://github.com/jamesondh/chimera-vocal-synth",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "ersinkoc/phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "expo/exact",
+      "url": "https://github.com/expo/exact",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "libracoder/kiri",
+      "url": "https://github.com/libracoder/kiri",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "modelflare-ai/AnyModelBot",
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "EL4CTEO/fast-anything",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "BryceYuuu/RUN",
+      "url": "https://github.com/BryceYuuu/RUN",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "elvarofficial/teardown",
+      "url": "https://github.com/elvarofficial/teardown",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "tangerineturtle1/NX2navi",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "reason": "名额 / 冷却限制"
+    }
+  ],
+  "picks": [
+    {
+      "fullName": "haydenschmitty/floorplan",
+      "owner": "haydenschmitty",
+      "name": "floorplan",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+      "stars": 6722,
+      "todayStars": 219,
+      "language": "JavaScript",
+      "license": "MIT",
+      "openIssues": 82,
+      "sizeKb": 7263,
+      "createdAt": "2026-10-27T12:03:01Z",
+      "pushedAt": "2026-11-16T16:57:59Z",
+      "topics": [
+        "ai-coding",
+        "architecture-diagram",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "codebase-visualization",
+        "codex",
+        "codex-plugin",
+        "developer-tools",
+        "onboarding",
+        "openai",
+        "vibe-coding"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/images/logo-dark.png\">\n  <img src=\"docs/images/logo-light.png\" alt=\"Floorplan logo\" height=\"88\">\n</picture>\n\n# Floorplan\n\n**See how your app actually fits together.**\n\nClaude or Codex reads your codebase and draws an interactive map of it. Every part, file and web request gets a plain-English name, and every connection between them is shown.\n\n[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-D97757?style=flat-square)](https://code.claude.com/docs/en/overview)\n[![Codex plugin](https://img.shields.io/badge/Codex-plugin-111?style=flat-square)](docs/codex.md)\n[![Tests](https://img.shields.io/github/actions/workflow/status/haydenschmitty/floorplan/test.yml?branch=main&style=flat-square&label=tests)](https://github.com/haydenschmitty/floorplan/actions/workflows/test.yml)\n[![Version](https://img.shields.io/badge/version-0.11.0-111?style=flat-square)](CHANGELOG.md)\n[![License: MIT](https://img.shields.io/badge/license-MIT-111?style=flat-square)](LICENSE)\n[![Node 18+](https://img.shields.io/badge/node-%E2%89%A518-111?style=flat-square)](https://nodejs.org)\n[![Zero dependencies](https://img.shields.io/badge/dependencies-0-111?style=flat-square)](#how-it-works)\n\n<a href=\"https://trendshift.io/repositories/322616\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/322616/daily?language=JavaScript\" alt=\"Floorplan on Trendshift\" width=\"250\" height=\"55\"></a>\n\n**[Try the live demo](https://haydenschmitty.github.io/floorplan-demo/)** · [Watch the video](https://youtu.be/NTUUzC7L_NQ) · [Install](#install) · [Quick start](#quick-start) · [Compared](#floorplan-archify-or-understand-anything) · [Features](#features) · [See it in action](#see-it-in-action) · [How it works](#how-it-works) · [Docs](docs/README.md) · [FAQ](#faq)\n\n</div>\n\n<p align=\"center\">\n  <a href=\"https://youtu.be/NTUUzC7L_NQ\"><img src=\"docs/images/video.jpg\" alt=\"Watch the walkthrough on YouT",
+      "score": 78,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "利用 AI 自动生成代码库交互式架构图的工具。",
+        "plain": "帮助开发者快速理解复杂代码结构，提升维护效率。",
+        "what": "开发一个 Web 应用，集成 Claude API 读取代码库并生成可视化架构图。",
+        "who": "需要维护大型遗留代码库的开发者或技术团队。",
+        "how": "SaaS 模式，按项目或用户收费。",
+        "hours": "40-60",
+        "risk": "API 成本高或难以处理大型代码库上下文限制。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "wangzan101/Mika",
+      "owner": "wangzan101",
+      "name": "Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "description": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "stars": 9892,
+      "todayStars": 91,
+      "language": "Kotlin",
+      "license": "Apache-2.0",
+      "openIssues": 108,
+      "sizeKb": 325102,
+      "createdAt": "2026-10-29T14:34:07Z",
+      "pushedAt": "2026-11-25T04:21:27Z",
+      "topics": [
+        "accessibility",
+        "ai-agent",
+        "android",
+        "automation",
+        "jetpack-compose",
+        "kotlin",
+        "llm",
+        "mobile-agent"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<img src=\"docs/media/logo.png\" alt=\"Mika\" width=\"88\" />\n\n# Mika\n\n**An AI assistant on your phone: say what you need, and it works your apps and the web until it's done.**\n\nIt works on a hidden background screen, so you can keep using your phone.\n\n<a href=\"https://github.com/wangzan101/Mika\"><img src=\"docs/media/star-banner-v2.png\" alt=\"Like Mika? Give it a star — click Star in the top-right corner\" width=\"620\" /></a>\n\n<br/>\n\n<a href=\"https://github.com/wangzan101/Mika/releases/latest\"><img src=\"https://img.shields.io/badge/Download%20APK-Android%2011%2B-2ea043?style=for-the-badge&logo=android&logoColor=white\" alt=\"Download APK\" /></a> <a href=\"https://github.com/wangzan101/Mika\"><img src=\"https://img.shields.io/github/stars/wangzan101/Mika?style=for-the-badge&logo=github&label=Star&color=FFD700&logoColor=white\" alt=\"Star this repo\" /></a>\n\n<br/>\n\n<a href=\"https://github.com/wangzan101/Mika/releases\"><img src=\"https://img.shields.io/github/downloads/wangzan101/Mika/total?label=downloads&color=2ea043\" alt=\"downloads\" /></a> <a href=\"https://github.com/wangzan101/Mika/releases/latest\"><img src=\"https://img.shields.io/github/v/release/wangzan101/Mika?include_prereleases&label=version\" alt=\"version\" /></a> <a href=\"LICENSE\"><img src=\"https://img.shields.io/badge/license-Apache--2.0-lightgrey\" alt=\"license\" /></a>\n\n<br/>\n\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/daily?language=Kotlin\" alt=\"#1 Kotlin Repository of the Day\" width=\"250\" height=\"55\" /></a>\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/weekly?language=Kotlin\" alt=\"#1 Kotlin Repository of the Week\" width=\"250\" height=\"55\" /></a>\n<a href=\"https://trendshift.io/repositories/326940#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/326940/daily\" alt=\"#5 Repository of the Day\" wi",
+      "score": 69,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个在 Android 手机后台运行，利用 AI 自动操作应用和网页完成任务的智能助手。",
+        "plain": "帮用户自动化手机操作，解放双手处理琐事。",
+        "what": "开发一个 Android App，集成无障碍服务和 LLM，实现自动化任务流。",
+        "who": "追求效率、讨厌重复操作的手机用户。",
+        "how": "开源免费，通过广告或高级功能（如特定自动化脚本）变现。",
+        "hours": "100+",
+        "risk": "Google Play 政策限制（无障碍服务滥用）或 App 被封禁。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "wquguru/cicada",
+      "owner": "wquguru",
+      "name": "cicada",
+      "url": "https://github.com/wquguru/cicada",
+      "description": "知了 Cicada · 任何会议和直播的实时字幕、同声传译、AI 会议纪要，Mac、Windows、Linux、Android 免费开源。Live subtitles, interpreting and meeting notes for any call or stream, on Mac, Windows, Linux and Android.",
+      "stars": 3189,
+      "todayStars": null,
+      "language": "Swift",
+      "license": "Apache-2.0",
+      "openIssues": 10,
+      "sizeKb": 40019,
+      "createdAt": "2026-11-01T05:41:23Z",
+      "pushedAt": "2026-11-25T02:16:03Z",
+      "topics": [
+        "android",
+        "linux",
+        "live-captions",
+        "macos",
+        "meeting-notes",
+        "menubar-app",
+        "simultaneous-interpretation",
+        "speech-recognition",
+        "subtitles",
+        "swift",
+        "swiftui",
+        "translation",
+        "windows"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<p align=\"center\">\n  <img src=\"docs/icon.png\" width=\"128\" height=\"128\" alt=\"Cicada icon\">\n</p>\n\n<h1 align=\"center\">Cicada · 知了</h1>\n\n<p align=\"center\">\n  Every call. Every stream. No language barrier.<br>\n  Understand, speak back, and remember everything. Live meeting notes, bilingual transcripts, subtitles and interpreting on Mac, Windows, Linux and Android.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://cicada.indaloop.app\"><img src=\"https://img.shields.io/badge/Website-cicada.indaloop.app-E8552B?style=for-the-badge\" alt=\"Website: cicada.indaloop.app\" height=\"36\"></a>\n  &nbsp;\n  <a href=\"https://cicada.indaloop.app/en/download/\"><img src=\"https://img.shields.io/badge/Download-Mac%20·%20Windows%20·%20Linux%20·%20Android-15171C?style=for-the-badge\" alt=\"Download for Mac, Windows, Linux and Android\" height=\"36\"></a>\n  &nbsp;\n  <a href=\"https://x.com/wquguru\"><img src=\"https://img.shields.io/badge/Follow-@wquguru-000000?style=for-the-badge&logo=x&logoColor=white\" alt=\"Follow @wquguru on X\" height=\"36\"></a>\n</p>\n\n<p align=\"center\">\n  <img src=\"https://img.shields.io/badge/macOS-14.4%2B-black\" alt=\"macOS 14.4+\">\n  <img src=\"https://img.shields.io/badge/Windows-10%202004%2B-black\" alt=\"Windows 10 2004+\">\n  <img src=\"https://img.shields.io/badge/Ubuntu-22.04%2B-black\" alt=\"Ubuntu 22.04+\">\n  <img src=\"https://img.shields.io/badge/Android-10%2B-black\" alt=\"Android 10+\">\n  <img src=\"https://img.shields.io/badge/license-Apache--2.0-blue\" alt=\"Apache-2.0\">\n</p>\n\n<p align=\"center\">⭐ Star this repo if you find it useful so you can find it again later</p>\n\n<p align=\"center\"><a href=\"README.md\">English</a> · <a href=\"README.zh-CN.md\">简体中文</a> · <a href=\"README.ja.md\">日本語</a> · <a href=\"README.ko.md\">한국어</a></p>\n\n> [!WARNING]\n> **Notice**: Cicada has nothing to do with any cryptocurrency, token or NFT. We have never issued a coin and never will.\n\nIn meetings or livestreams, Cicada gives you live bilingual subtitles and writes structured meeting notes as it listens. When it's your turn",
+      "score": 69,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 8,
+        "需求真实": 6,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "跨平台的实时字幕与会议纪要工具，支持多语言互译。",
+        "plain": "解决会议和直播的语言障碍，自动生成双语字幕和纪要。",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "patch-gg/pixelfx",
+      "owner": "patch-gg",
+      "name": "pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "stars": 9104,
+      "todayStars": 176,
+      "language": "JavaScript",
+      "license": "MIT",
+      "openIssues": 18,
+      "sizeKb": 25365,
+      "createdAt": "2026-10-30T06:43:25Z",
+      "pushedAt": "2026-11-13T08:43:39Z",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "canvas",
+        "claude-code-plugin",
+        "gamedev",
+        "pixel-art",
+        "sprite-sheet",
+        "vfx"
+      ],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "",
+      "score": 65,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个包含 244 个像素艺术特效代码片段的库，配合 Claude Code 可快速生成特效。",
+        "plain": "游戏开发者可以快速获取现成的像素特效代码，加速开发。",
+        "what": "开发一个 Web 端特效展示与下载平台，或出售这些特效代码包。",
+        "who": "独立游戏开发者或像素画师。",
+        "how": "销售代码包或提供高级特效订阅。",
+        "hours": "20-30",
+        "risk": "市场竞争激烈，特效同质化严重。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "deepseek-ai/dsh-superagent-prototype",
+      "owner": "deepseek-ai",
+      "name": "dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "description": "Towards a More Autonomous Agent System",
+      "stars": 24510,
+      "todayStars": 111,
+      "language": "TypeScript",
+      "license": "MIT",
+      "openIssues": 0,
+      "sizeKb": 37,
+      "createdAt": "2026-10-31T09:32:46Z",
+      "pushedAt": "2026-11-03T09:29:14Z",
+      "topics": [],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "",
+      "score": 63,
+      "grade": "C",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 10,
+        "时效红利": 10,
+        "可接手度": -8
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "DeepSeek 发布的一个探索更自主代理系统的原型项目。",
+        "plain": "技术研究参考，目前不具备直接商业落地价值。",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "valentderah/totk-pc-recomp",
+      "owner": "valentderah",
+      "name": "totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
+      "stars": 8245,
+      "todayStars": 92,
+      "language": "C",
+      "license": "MIT",
+      "openIssues": 397,
+      "sizeKb": 10365,
+      "createdAt": "2026-10-29T12:32:46Z",
+      "pushedAt": "2026-11-25T04:33:50Z",
+      "topics": [
+        "game",
+        "linux",
+        "port",
+        "recompilation",
+        "windows"
+      ],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# TotK Recomp\n\n**TotK Recomp** is a static recompilation of *The Legend of Zelda: Tears of the Kingdom* (Nintendo Switch, 2023) into a native x86-64 application for Windows and Linux ([docs/architecture.md](docs/architecture.md)).\n\n> [!IMPORTANT]\n> **No game files are included.** You need your own legally obtained copy of *Tears of the Kingdom*, dumped from your own console: the base game and the 1.1.0, 1.2.1 or 1.4.3 update. Instructions for obtaining those files will not be provided.\n>\n> The game is built from your files on your machine, so the result contains the game. It is for your own use. Do not share it.\n\n## Status\n\nEarly development. The game is playable on Windows and Linux; visual bugs and crashes are still expected.\n\nReport problems as issues, following [CONTRIBUTING.md](CONTRIBUTING.md).\n\n## Features\n\n- Native code, not emulation\n- Game updates 1.1.0, 1.2.1 and 1.4.3; 1.2.1 and 1.4.3 saves carry over between them\n- Takes NSP and XCI game files, and compressed NSZ and XCZ as they are: the setup unpacks them itself\n- 60 fps by default; up to 144 fps or the monitor's refresh rate (experimental)\n- Custom resolutions (1080p, 2k...), supersampling and AMD FSR 1 upscaling\n- NVIDIA DLSS / DLAA on RTX GPUs: the setup downloads `nvngx_dlss.dll` from NVIDIA's DLSS SDK repository\n  (github.com/NVIDIA/DLSS, NVIDIA RTX SDK license) when it finds an RTX GPU; untick it in the setup to skip it\n- HDR10 output with peak, game and HUD brightness settings\n- 16:10 (Steam Deck, handhelds), 3:2 (Surface, Framework), 21:9 and 32:9 (ultrawide) game resolutions, with the camera and the interface in that shape\n- Anisotropic texture filtering up to 16x, for sharp ground into the distance\n- In-game settings menu (F1) and performance overlay (F10)\n- Play time across runs on the Game tab of the settings menu, kept in `playtime.txt` next to the saves\n- Discord Rich Presence (\"Playing TotK Recomp\" with the play time), off by default, own application id supported\n- Setup in 11 languages,",
+      "score": 60,
+      "grade": "C",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 10,
+        "中文友好": 0,
+        "需求真实": 20,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": -12
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "将《塞尔达传说：王国之泪》移植到 PC 端的静态重新编译工具。",
+        "plain": "不推荐",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "paipiange/nvzhuang",
+      "owner": "paipiange",
+      "name": "nvzhuang",
+      "url": "https://github.com/paipiange/nvzhuang",
+      "description": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+      "stars": 3027,
+      "todayStars": null,
+      "language": "Go",
+      "license": "MIT",
+      "openIssues": 0,
+      "sizeKb": 221490,
+      "createdAt": "2026-10-29T06:08:00Z",
+      "pushedAt": "2026-11-10T07:40:37Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# 拍片哥女装 · AI 服装参考图集 (COSTUME-DB-01)\n\n一个深色主题的纯净服装参考图集网站，收录 **2727 套**（写实真人版 1407 套 + 二次元动漫版 1320 套）人物不入镜的 AI 生成纯服装图像（2:3 比例），支持中英文双语浏览、多维检索，并配备可选的 AI 一键换装试穿。\n\n> 👗 **【Linux.do 3级常任理事专属彩蛋】**  \n> 听说在 [LINUX DO](https://linux.do/) 社区只要升到 **3 级（常任理事）** 就可以解锁“看女装大佬”的保留节目？身为一名尊贵的 Linux.do 3 级老兵，逛了一圈发现坛里的女装资源还不够看，干脆亲手搓了这个 **「拍片哥女装」** 项目！  \n> 不仅收录了写实与动漫双图库合计 2727 套纯净高质量服装图，还顺手接了 AI 虚拟换装后端——这下各位佬友哪怕现实中没有小裙子，直接传张自拍照就能一键无痛变身“女装大佬”出道了 😂！\n\n> 🔗 **在线预览**：https://paipiange.github.io/nvzhuang/  \n> ⭐ **GitHub 源码**：https://github.com/paipiange/nvzhuang  \n> 📱 **Android APK 下载**：[GitHub Releases 直链](https://github.com/paipiange/nvzhuang/releases/latest/download/nvzhuang-release.apk)（[全部版本](https://github.com/paipiange/nvzhuang/releases)） | 也可[夸克网盘下载](https://pan.quark.cn/s/a914f76fac0b)（「拍片哥女装」`https://pan.quark.cn/s/a914f76fac0b`）  \n> 👤 **AI 模特脸部与造型图库**：集成自 [ai-portrait-gallery](https://ai-portrait-gallery.pages.dev/)（あぎ @agi_aibusi · CC0 1.0）  \n> 💃 **兄弟项目（AI 姿势参考与生图工坊）**：https://github.com/paipiange/ai-pose-gallery-zh  \n> 💡 **原作者推文 / 灵感来源**：X [@giaaibusi](https://x.com/giaaibusi)  \n> 🐧 **社区友链**：[LINUX DO (https://linux.do/)](https://linux.do/)\n\n## ⏱️ 10 秒了解本项目\n\n- 🆓 **免费使用（无需部署 / 无需 Key）**：三大图库一键无缝切换：**写实服装 (1407 套) + 动漫服装 (1320 套) + AI 模特库 (1499 位)**，支持分类筛选、中英双语双向检索、大图全屏查看、基础搭配台与同款跳转，由纯前端静态驱动，在线打开即可使用。\n- 👤 **内置 1499 位 AI 模特（全量本地化）**：完整集成 CC0 1.0 授权的 AI 模特脸部特写与造型图库，AI 试衣时可直接一键挑选心仪模特，彻底告别“想体验换装却找不到合适人像照片”的困扰。\n- ⚙️ **自选扩展（需自建后端 / 需自备 Key）**：真实 AI 试衣换装功能依赖 `backend/` 的 GoFrame 服务。需自行配置大模型（如 GPT Image 2、豆包 Seedream 或 Gemini）的 API Key 与 Base URL，调用将消耗对应的第三方模型配额。\n- 📜 **完全可商用 · 免费开源**：基于 [MIT License](LICENSE) 全量开源，代码与图集资源完全开放，支持自由商用创作、设计参考及二次开发。详见 [合规审计报告](docs/LINUXDO_RELEASE_AUDIT.md)。\n\n## 📱 Android 客户端下载\n\n提供离线封装版 Android APK（内置完整前端页面与离线示例图集，安装即可打开使用）：\n\n- **GitHub Releases 直接下载（推荐）**：\n  - 最新版 APK 直链：https://github.com/paipiange/nvzhuang/releases/latest/download/nvzhuang-release.apk\n  - 历史版本与说明：https://github.com/paipiange/nvzhuang/releases\n- **夸克网盘下载（国内备用）**：\n  - 「拍片哥女装」链接：https:",
+      "score": 74,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 15,
+        "需求真实": 6,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "内容创作",
+      "landing": {
+        "intro": "一个收录大量 AI 女装参考图的网站，支持多模型 API 调用实现虚拟试穿。",
+        "plain": "提供服装参考图库和 AI 试穿功能，满足时尚参考或娱乐需求。",
+        "what": "开发一个 Web 站点，整合图库和 AI 接口，提供虚拟试穿服务。",
+        "who": "对 AI 试穿感兴趣的用户或时尚从业者。",
+        "how": "免费浏览，付费解锁高清图或高级试穿功能。",
+        "hours": "30-50",
+        "risk": "API 成本高，或图片版权/合规风险。"
+      },
+      "revisit": true
+    }
+  ],
+  "aiUsed": true,
+  "aiModel": "@cf/zai-org/glm-4.7-flash",
+  "aiError": null
+}

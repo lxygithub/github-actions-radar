@@ -132,15 +132,15 @@
     "direction": "通用工具"
   },
   "haydenschmitty/floorplan": {
-    "date": "2026-11-18",
+    "date": "2026-11-25",
     "direction": "通用工具"
   },
   "wangzan101/Mika": {
-    "date": "2026-11-18",
+    "date": "2026-11-25",
     "direction": "通用工具"
   },
   "patch-gg/pixelfx": {
-    "date": "2026-11-18",
+    "date": "2026-11-25",
     "direction": "通用工具"
   },
   "qybaihe/bla": {
@@ -148,11 +148,11 @@
     "direction": "通用工具"
   },
   "deepseek-ai/dsh-superagent-prototype": {
-    "date": "2026-11-18",
+    "date": "2026-11-25",
     "direction": "通用工具"
   },
   "valentderah/totk-pc-recomp": {
-    "date": "2026-11-18",
+    "date": "2026-11-25",
     "direction": "通用工具"
   },
   "anomalyco/rune": {
@@ -229,6 +229,10 @@
   },
   "EL4CTEO/fast-anything": {
     "date": "2026-11-24",
+    "direction": "通用工具"
+  },
+  "wquguru/cicada": {
+    "date": "2026-11-25",
     "direction": "通用工具"
   }
 }
