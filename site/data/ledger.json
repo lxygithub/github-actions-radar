@@ -76,15 +76,15 @@
     "direction": "通用工具"
   },
   "BryceYuuu/RUN": {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "direction": "通用工具"
   },
   "public-apis/public-apis": {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "direction": "通用工具"
   },
   "openclaw/openclaw": {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "direction": "通用工具"
   },
   "NousResearch/hermes-agent": {
@@ -160,7 +160,7 @@
     "direction": "通用工具"
   },
   "mdiri-ai/SoduWork": {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "direction": "通用工具"
   },
   "shanselman/gputaskman": {
@@ -168,11 +168,11 @@
     "direction": "通用工具"
   },
   "ersinkoc/phonebox": {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "direction": "通用工具"
   },
   "erkamyaman/rust-anything": {
-    "date": "2026-11-19",
+    "date": "2026-11-26",
     "direction": "通用工具"
   },
   "govijr/terminal-mac": {
@@ -233,6 +233,14 @@
   },
   "wquguru/cicada": {
     "date": "2026-11-25",
+    "direction": "通用工具"
+  },
+  "Eynnzerr/TelemetryCleaner": {
+    "date": "2026-11-26",
+    "direction": "通用工具"
+  },
+  "4lwayz/portwatch-vi": {
+    "date": "2026-11-26",
     "direction": "通用工具"
   }
 }
