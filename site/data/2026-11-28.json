@@ -1,0 +1,598 @@
+{
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T04:10:31.492Z",
+  "scanned": 80,
+  "rejected": [
+    {
+      "name": "nilbuild/developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "vinta/awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "practical-tutorials/project-based-learning",
+      "url": "https://github.com/practical-tutorials/project-based-learning",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "avelino/awesome-go",
+      "url": "https://github.com/avelino/awesome-go",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "CyC2018/CS-Notes",
+      "url": "https://github.com/CyC2018/CS-Notes",
+      "reason": "纯清单 / 合集型仓库"
+    },
+    {
+      "name": "JenkinWoo/sheeridVerify",
+      "url": "https://github.com/JenkinWoo/sheeridVerify",
+      "reason": "合规红线：破解 / 绕过类"
+    },
+    {
+      "name": "storytold/craft-anything",
+      "url": "https://github.com/storytold/craft-anything",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "janestreet/agent_skills",
+      "url": "https://github.com/janestreet/agent_skills",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "shanselman/gputaskman",
+      "url": "https://github.com/shanselman/gputaskman",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "Noniv/abyssal-garden",
+      "url": "https://github.com/Noniv/abyssal-garden",
+      "reason": "分数 59 未达 60 线"
+    },
+    {
+      "name": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "reason": "分数 58 未达 60 线"
+    },
+    {
+      "name": "Marvisak/VIctory",
+      "url": "https://github.com/Marvisak/VIctory",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "huami1314/GestaltX",
+      "url": "https://github.com/huami1314/GestaltX",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "simplexai-labs/linger",
+      "url": "https://github.com/simplexai-labs/linger",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "trustno1-coder/VIctory-NVIDIA",
+      "url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
+      "reason": "分数 57 未达 60 线"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "reason": "分数 56 未达 60 线"
+    },
+    {
+      "name": "521xueweihan/HelloGitHub",
+      "url": "https://github.com/521xueweihan/HelloGitHub",
+      "reason": "分数 55 未达 60 线"
+    },
+    {
+      "name": "heydamir/unslop",
+      "url": "https://github.com/heydamir/unslop",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "libracoder/kiri",
+      "url": "https://github.com/libracoder/kiri",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "xcl-dev/xcl",
+      "url": "https://github.com/xcl-dev/xcl",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "reason": "分数 54 未达 60 线"
+    },
+    {
+      "name": "fxceless/victory-fork",
+      "url": "https://github.com/fxceless/victory-fork",
+      "reason": "分数 51 未达 60 线"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "reason": "分数 50 未达 60 线"
+    },
+    {
+      "name": "AFK-surf/xnulinux",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "apex-compute/ANR",
+      "url": "https://github.com/apex-compute/ANR",
+      "reason": "分数 49 未达 60 线"
+    },
+    {
+      "name": "zortos293/Lichii",
+      "url": "https://github.com/zortos293/Lichii",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "reason": "分数 47 未达 60 线"
+    },
+    {
+      "name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "reason": "分数 46 未达 60 线"
+    },
+    {
+      "name": "imxieyi/Kernarium",
+      "url": "https://github.com/imxieyi/Kernarium",
+      "reason": "分数 45 未达 60 线"
+    },
+    {
+      "name": "Eglantine-Community/Eglantine",
+      "url": "https://github.com/Eglantine-Community/Eglantine",
+      "reason": "分数 43 未达 60 线"
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "reason": "分数 42 未达 60 线"
+    },
+    {
+      "name": "anefzaoui/misterdownloadmanager",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "Minireel/HGhub",
+      "url": "https://github.com/Minireel/HGhub",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "reason": "分数 41 未达 60 线"
+    },
+    {
+      "name": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "reason": "分数 40 未达 60 线"
+    },
+    {
+      "name": "XinaTian/MROffice",
+      "url": "https://github.com/XinaTian/MROffice",
+      "reason": "分数 38 未达 60 线"
+    },
+    {
+      "name": "ohmyzsh/ohmyzsh",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "reason": "分数 35 未达 60 线"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "reason": "分数 31 未达 60 线"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "reason": "分数 30 未达 60 线"
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "reason": "分数 24 未达 60 线"
+    },
+    {
+      "name": "torvalds/linux",
+      "url": "https://github.com/torvalds/linux",
+      "reason": "分数 22 未达 60 线"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "reason": "分数 17 未达 60 线"
+    },
+    {
+      "name": "RoutineMiku/apkstart",
+      "url": "https://github.com/RoutineMiku/apkstart",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Eynnzerr/TelemetryCleaner",
+      "url": "https://github.com/Eynnzerr/TelemetryCleaner",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Hut-hzf/ung220z-tool",
+      "url": "https://github.com/Hut-hzf/ung220z-tool",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "FrigadeHQ/yogurt",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Immortal-Protocols/lastbook",
+      "url": "https://github.com/Immortal-Protocols/lastbook",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "sarpstar/cinecode",
+      "url": "https://github.com/sarpstar/cinecode",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "Verlintas/NOIR",
+      "url": "https://github.com/Verlintas/NOIR",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "jhaizhou-ops/S2Arm",
+      "url": "https://github.com/jhaizhou-ops/S2Arm",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "mdiri-ai/SoduWork",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/chat-demo",
+      "url": "https://github.com/deepseek-ai/chat-demo",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "erkamyaman/rust-anything",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "wangzan101/Mika",
+      "url": "https://github.com/wangzan101/Mika",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "wquguru/cicada",
+      "url": "https://github.com/wquguru/cicada",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "ersinkoc/phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "expo/exact",
+      "url": "https://github.com/expo/exact",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "EL4CTEO/fast-anything",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "BryceYuuu/RUN",
+      "url": "https://github.com/BryceYuuu/RUN",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "elvarofficial/teardown",
+      "url": "https://github.com/elvarofficial/teardown",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "valentderah/totk-pc-recomp",
+      "url": "https://github.com/valentderah/totk-pc-recomp",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "4lwayz/portwatch-vi",
+      "url": "https://github.com/4lwayz/portwatch-vi",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "tangerineturtle1/NX2navi",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "reason": "名额 / 冷却限制"
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "reason": "名额 / 冷却限制"
+    }
+  ],
+  "picks": [
+    {
+      "fullName": "mromidev/claude-animated-shorts",
+      "owner": "mromidev",
+      "name": "claude-animated-shorts",
+      "url": "https://github.com/mromidev/claude-animated-shorts",
+      "description": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion",
+      "stars": 5224,
+      "todayStars": 117,
+      "language": "TypeScript",
+      "license": "MIT",
+      "openIssues": 25,
+      "sizeKb": 17948,
+      "createdAt": "2026-11-01T05:50:38Z",
+      "pushedAt": "2026-11-01T05:57:14Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# Claude Animated Shorts\n\nThe free Claude skill from the video **\"How to Make Viral Animated Shorts Using Claude (Full Workflow)\"**.\n\nIt makes 55-70 s vertical animated story shorts: 2D characters in a colourful 3D world, with ink outlines, a painted town, lens blur, gliding cameras, a march score and sound effects. Everything is rendered with three.js inside Remotion on your own PC, with no AI video generator.\n\nProven on **The Bridge That Fell for a Song**, a 67 s short about the 1831 Broughton bridge.\n\n## What's inside\n| Path | What it is |\n|---|---|\n| `SKILL.md` | The skill: the full pipeline, every rule, every fix, and the final look values |\n| `templates/bridge/` | The full source of the bridge short: world, characters, ink, lens blur, grade, story/camera |\n| `templates/audio/` | The synthesized sound: SFX, march music, the mix with ducking and loudness |\n| `templates/scripts/` | Stills, side-by-side sheets, shot merge and frame-by-frame QA helpers |\n| `references/STYLE_BIBLE.md` | The script and visual formula measured from 20 reference shorts |\n| `references/reports/` | Seven measured reports: motion, depth, textures, characters, lighting, outlines, grade |\n| `references/frames/` | 38 full-size reference frames (540x960) to compare your frames against |\n| `references/sheets/` | 20 contact sheets, one per reference short, 60 frames each (1,200 frames) |\n\n## Install\n1. Copy this folder to `~/.claude/skills/cartoon-3d-short/` (clone it there, or download the ZIP).\n2. You need [Remotion](https://www.remotion.dev/) with `@remotion/three`, plus Node, Python 3 and ffmpeg.\n3. In Claude Code, say: *\"Use the cartoon short skill and make a short about …\"*.\n\nClaude then follows `SKILL.md`: topic and facts, then script, then voice, then the shot plan in `story.ts`, then stills, then renders. Agents check your frames against the reports and the frames, and you get the final 2K render and sound mix.\n\n## Notes\n- Set `REMOTION_TMP` to a folder on a big drive. Every Remotion b",
+      "score": 68,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 6,
+        "交付轻重": 7,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "使用 Three.js 和 Remotion 在本地渲染垂直动画短片的工具，无需 AI 视频生成器。",
+        "plain": "做短视频博主，用这个工具批量生产 2D 角色在 3D 场景里的动画故事。",
+        "what": "优化渲染速度或添加预制场景模板。",
+        "who": "内容创作者、营销人员、需要视觉叙事的独立创作者。",
+        "how": "卖模板、卖教程、或者卖定制服务。",
+        "hours": "20-40",
+        "risk": "版权问题（音乐/角色）或技术门槛导致无法制作出爆款。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "jamesondh/chimera-vocal-synth",
+      "owner": "jamesondh",
+      "name": "chimera-vocal-synth",
+      "url": "https://github.com/jamesondh/chimera-vocal-synth",
+      "description": "the ultimate vocal synthesizer - sing, speak, beatbox, and more",
+      "stars": 3395,
+      "todayStars": 104,
+      "language": "Rust",
+      "license": "MIT",
+      "openIssues": 63,
+      "sizeKb": 28200,
+      "createdAt": "2026-11-05T19:10:42Z",
+      "pushedAt": "2026-11-27T13:36:41Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# CHIMERA\n\nA physical-modeling voice synthesizer in the browser. Every sound comes from a simulated\nairway (lungs, vocal folds or syrinx, a branched vocal tract, lips, nose), not from samples.\nThe engine is Rust, compiled to WebAssembly for an AudioWorklet; the same code runs natively\nfor tests and the `chimera` CLI.\n\n## Vision & scope\n\n1. **One instrument**: a physically modeled voice (lungs, vocal folds, throat, mouth). No\n   samples, no neural audio.\n2. **The web app is the primary surface**: anyone should be able to make songs in it without\n   an LLM's help. Mobile is the likely next surface. The plugin (CLAP/VST3/AU) still ships, but\n   it's secondary.\n3. **As realistic as we can make it**: the main push is to see how close the simulation gets to\n   a real voice. The robotic, Vocaloid-like sound people like today stays playable as a preset\n   ([#93](https://github.com/jamesondh/chimera-vocal-synth/issues/93)).\n4. **Languages enter through one shared front-end design**, not one-off hacks. Each needs a\n   native speaker's check and must leave English unchanged.\n5. **The design language (the vector display) is settled**; the look within it can still evolve.\n6. **Nothing copyrighted in git**; MIT; a deterministic, real-time-safe engine.\n7. **The 3D head can be worn by a body** ([docs/rig.md](docs/rig.md)), for the videos people\n   make with the voice, posed by joint angles or moved by other tools' motion (Mixamo, BVH,\n   glTF): a small library, not animation software (no timeline, no renderer).\n8. **Not now**: a DAW or sequencer, a light theme, multi-voice dialogue, translating the\n   interface (the voice speaks and sings many languages; the labels stay in English).\n\n## What it does\n\n- **Play**: drag the tongue, lips and jaw in a live cutaway of the head; vowel pad, encoders,\n  computer keyboard and Web MIDI.\n- **Speak**: English text (CMUdict with a letter-to-sound fallback), Turkish text (EN/TR) or\n  IPA, turned into gestures and prosody, with the gestural score ",
+      "score": 67,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 12,
+        "中文友好": 0,
+        "需求真实": 16,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "一个基于物理模型的浏览器语音合成器，模拟声带和声道发声。",
+        "plain": "做游戏音效、AI 配音工具或者有声书生成器的开发者，可以用它做底层引擎。",
+        "what": "将其封装成 SaaS API 或桌面应用。",
+        "who": "游戏开发者、有声书创作者、AI 辅助工具开发者。",
+        "how": "提供按次付费的 API 服务。",
+        "hours": "30-50",
+        "risk": "技术复杂度高，难以维护，且浏览器音频兼容性问题。"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "microsoft/vscode",
+      "owner": "microsoft",
+      "name": "vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "description": "Visual Studio Code",
+      "stars": 195706,
+      "todayStars": -131,
+      "language": "TypeScript",
+      "license": "MIT",
+      "openIssues": 21910,
+      "sizeKb": 1809283,
+      "createdAt": "2015-09-03T20:23:38Z",
+      "pushedAt": "2026-11-28T03:54:09Z",
+      "topics": [
+        "editor",
+        "electron",
+        "microsoft",
+        "typescript",
+        "visual-studio-code"
+      ],
+      "isOrg": true,
+      "defaultBranch": "main",
+      "readmeHead": "",
+      "score": 60,
+      "grade": "C",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 20,
+        "中文友好": 0,
+        "需求真实": 20,
+        "交付轻重": 2,
+        "时效红利": 1,
+        "可接手度": -8
+      },
+      "direction": "通用工具",
+      "landing": {
+        "intro": "微软开发的代码编辑器。",
+        "plain": "不推荐。这是微软的产品，无法作为个人副业项目进行商业落地。",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
+      },
+      "revisit": false
+    },
+    {
+      "fullName": "Lee-xeo/Claude-Cage",
+      "owner": "Lee-xeo",
+      "name": "Claude-Cage",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "description": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+      "stars": 9071,
+      "todayStars": 222,
+      "language": "Go",
+      "license": "MIT",
+      "openIssues": 164,
+      "sizeKb": 68813,
+      "createdAt": "2026-10-31T15:07:08Z",
+      "pushedAt": "2026-11-28T02:50:23Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "<div align=\"center\">\n\n<h1>Claude Cage</h1>\n\n**把 Claude 大小姐关起来，为了更好地保护我们的相遇**\n\n<img src=\"assets/claude-cage-character.png\" alt=\"Claude Cage\" width=\"320\" />\n\n[![Release](https://img.shields.io/github/v/release/Lee-xeo/Claude-Cage?include_prereleases)](https://github.com/Lee-xeo/Claude-Cage/releases) [![MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)\n\n<a href=\"https://trendshift.io/repositories/339051#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/339051/daily?language=Go\" alt=\"Trendshift — Go Repository of the Day\" width=\"250\" height=\"55\" /></a> <a href=\"https://trendshift.io/repositories/339051#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/339051/weekly?language=Go\" alt=\"Trendshift — Go Repository of the Week\" width=\"250\" height=\"55\" /></a>\n\n<a href=\"https://trendshift.io/repositories/339051#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/339051/daily\" alt=\"Trendshift — Repository of the Day\" width=\"250\" height=\"55\" /></a> <a href=\"https://trendshift.io/repositories/339051#achievements\"><img src=\"https://trendshift.io/api/badge/trendshift/repositories/339051/weekly\" alt=\"Trendshift — Repository of the Week\" width=\"250\" height=\"55\" /></a>\n\n**[项目主页](https://claude-cage.com/) · [下载应用](https://claude-cage.com/#download) · [插件市场](https://claude-cage.com/plugins/) · [使用文档](https://claude-cage.com/docs/) · [常见问题](https://claude-cage.com/docs/troubleshooting/)**\n\n[简体中文](README.md) · [繁體中文](README.zh-TW.md) · [Русский](README.ru.md) · [العربية](README.ar.md) · [فارسی](README.fa.md) · [한국어](README.ko.md) · [Español](README.es.md) · [မြန်မာဘာသာ](README.my.md) · [Беларуская](README.be.md) · [پښتو](README.ps.md) · [دری](README.prs.md) · [አማርኛ](README.am.md) · [Soomaali](README.so.md) · [ትግርኛ](README.ti.md) · [Français](README.fr.md)\n\n</div>\n\n## 设计理念\n\n1. **Claude 本身是安全的，但它的运行外壳（harness）及相关程序不是**——包括 Claude Code、Claude Desktop，以及浏览器里接触到的邮件、网页与环境信号。\n2. **想要在保证安全的前提下使用 Cla",
+      "score": 79,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 8,
+        "需求真实": 16,
+        "交付轻重": 4,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "内容创作",
+      "landing": {
+        "intro": "一个为 Claude 设计的轻量级虚拟机，用于隔离和保护网络环境。",
+        "plain": "不推荐。涉及多账号管理和远程部署，属于滥用平台限制的行为。",
+        "what": "不推荐",
+        "who": "不推荐",
+        "how": "不推荐",
+        "hours": "不推荐",
+        "risk": "不推荐"
+      },
+      "revisit": true
+    },
+    {
+      "fullName": "paipiange/nvzhuang",
+      "owner": "paipiange",
+      "name": "nvzhuang",
+      "url": "https://github.com/paipiange/nvzhuang",
+      "description": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+      "stars": 3072,
+      "todayStars": 10,
+      "language": "Go",
+      "license": "MIT",
+      "openIssues": 0,
+      "sizeKb": 221964,
+      "createdAt": "2026-10-29T06:08:00Z",
+      "pushedAt": "2026-11-25T07:27:32Z",
+      "topics": [],
+      "isOrg": false,
+      "defaultBranch": "main",
+      "readmeHead": "# 拍片哥女装 · AI 服装参考图集 (COSTUME-DB-01)\n\n一个深色主题的纯净服装参考图集网站，收录 **2727 套**（写实真人版 1407 套 + 二次元动漫版 1320 套）人物不入镜的 AI 生成纯服装图像（2:3 比例），支持中英文双语浏览、多维检索，并配备可选的 AI 一键换装试穿。\n\n> 👗 **【Linux.do 3级常任理事专属彩蛋】**  \n> 听说在 [LINUX DO](https://linux.do/) 社区只要升到 **3 级（常任理事）** 就可以解锁“看女装大佬”的保留节目？身为一名尊贵的 Linux.do 3 级老兵，逛了一圈发现坛里的女装资源还不够看，干脆亲手搓了这个 **「拍片哥女装」** 项目！  \n> 不仅收录了写实与动漫双图库合计 2727 套纯净高质量服装图，还顺手接了 AI 虚拟换装后端——这下各位佬友哪怕现实中没有小裙子，直接传张自拍照就能一键无痛变身“女装大佬”出道了 😂！\n\n> 🔗 **在线预览**：https://paipiange.github.io/nvzhuang/  \n> ⭐ **GitHub 源码**：https://github.com/paipiange/nvzhuang  \n> 📱 **Android APK 下载**：[GitHub Releases 直链](https://github.com/paipiange/nvzhuang/releases/latest/download/nvzhuang-release.apk)（[全部版本](https://github.com/paipiange/nvzhuang/releases)） | 也可[夸克网盘下载](https://pan.quark.cn/s/a914f76fac0b)（「拍片哥女装」`https://pan.quark.cn/s/a914f76fac0b`）  \n> 👤 **AI 模特脸部与造型图库**：集成自 [ai-portrait-gallery](https://ai-portrait-gallery.pages.dev/)（あぎ @agi_aibusi · CC0 1.0）  \n> 💃 **兄弟项目（AI 姿势参考与生图工坊）**：https://github.com/paipiange/ai-pose-gallery-zh  \n> 💡 **原作者推文 / 灵感来源**：X [@giaaibusi](https://x.com/giaaibusi)  \n> 🐧 **社区友链**：[LINUX DO (https://linux.do/)](https://linux.do/)\n\n## ⏱️ 10 秒了解本项目\n\n- 🆓 **免费使用（无需部署 / 无需 Key）**：三大图库一键无缝切换：**写实服装 (1407 套) + 动漫服装 (1320 套) + AI 模特库 (1499 位)**，支持分类筛选、中英双语双向检索、大图全屏查看、基础搭配台与同款跳转，由纯前端静态驱动，在线打开即可使用。\n- 👤 **内置 1499 位 AI 模特（全量本地化）**：完整集成 CC0 1.0 授权的 AI 模特脸部特写与造型图库，AI 试衣时可直接一键挑选心仪模特，彻底告别“想体验换装却找不到合适人像照片”的困扰。\n- ⚙️ **自选扩展（需自建后端 / 需自备 Key）**：真实 AI 试衣换装功能依赖 `backend/` 的 GoFrame 服务。需自行配置大模型（如 GPT Image 2、豆包 Seedream 或 Gemini）的 API Key 与 Base URL，调用将消耗对应的第三方模型配额。\n- 💬 **AI 虚拟陪伴与角色工作室**：独立本机页面可浏览 AI 模特、服装图库，选择姿势并调用图像模型生成换装形象，还能用本机中文语音朗读聊天回复。支持自带聊天与生图模型 Key、FLClash 代理。启动方式、模型能力与隐私说明见 [`girlfriend/README.md`](girlfriend/README.md)。\n- 📜 **完全可商用 · 免费开源**：基于 [MIT License](LICENSE) 全量开源，代码与图集资源完全开放，支持自由商用创作、设计参考及二次开发。详见 [合规审计报告](docs/LINUXDO_RELEASE_AUDIT.md)。\n\n## 📱 Android 客户端下载\n\n提供离线封装版 Android APK（内置完整前端页面与离线示例图集，安装即可打开使用）：\n\n- **GitHub Releases 直接下载（推荐）**：\n  - 最新版 APK 直链：https://github",
+      "score": 74,
+      "grade": "B",
+      "breakdown": {
+        "许可证": 25,
+        "上手成本": 16,
+        "中文友好": 15,
+        "需求真实": 6,
+        "交付轻重": 2,
+        "时效红利": 10,
+        "可接手度": 0
+      },
+      "direction": "内容创作",
+      "landing": {
+        "intro": "一个包含 AI 生成服装图像的参考图集网站，支持中英文检索和 AI 虚拟试穿。",
+        "plain": "开个服装素材站或 AI 试衣服务，卖会员或 API 调用。",
+        "what": "优化检索算法或增加更多服装分类。",
+        "who": "服装设计师、电商卖家、需要素材的创作者。",
+        "how": "收取会员费或按次调用 API 的费用。",
+        "hours": "10-20",
+        "risk": "API 成本高，或图片版权风险。"
+      },
+      "revisit": true
+    }
+  ],
+  "aiUsed": true,
+  "aiModel": "@cf/zai-org/glm-4.7-flash",
+  "aiError": null
+}
